@@ -1,0 +1,29 @@
+{
+  "fps": 30,
+  "largura": 1920,
+  "altura": 1080,
+  "batida_s": 0.4838806959754097,
+  "trilha": {
+    "arquivo": "bgm-tech-house.mp3",
+    "bpm": 123.998,
+    "batida0_fonte_s": 9.456328533302164,
+    "batida_fonte_no_quadro0": 180
+  },
+  "cenas": [
+    {"id": "s01", "nome": "O problema", "b0": 0, "b1": 56, "fala_em_s": 1.45},
+    {"id": "s02", "nome": "Marca", "b0": 56, "b1": 68, "fala_em_s": 0.5},
+    {"id": "s03", "nome": "Público-alvo", "b0": 68, "b1": 84, "fala_em_s": 0.35},
+    {"id": "s04", "nome": "Visão Geral", "b0": 84, "b1": 100, "fala_em_s": 0.4},
+    {"id": "s05", "nome": "Talhão B", "b0": 100, "b1": 112, "fala_em_s": 0.35},
+    {"id": "s06", "nome": "E quando falta dado?", "b0": 112, "b1": 116, "fala_em_s": 0.3},
+    {"id": "s07", "nome": "Antes e depois", "b0": 116, "b1": 136, "fala_em_s": 0.3},
+    {"id": "s08", "nome": "O porquê", "b0": 136, "b1": 152, "fala_em_s": 0.3},
+    {"id": "s09", "nome": "Event log", "b0": 152, "b1": 168, "fala_em_s": 0.35},
+    {"id": "s10", "nome": "E roda sozinho", "b0": 168, "b1": 172, "fala_em_s": 0.3},
+    {"id": "s11", "nome": "Um comando", "b0": 172, "b1": 188, "fala_em_s": 0.3},
+    {"id": "s12", "nome": "Qualidade e segurança", "b0": 188, "b1": 212, "fala_em_s": 0.35},
+    {"id": "s13", "nome": "Estágio do produto", "b0": 212, "b1": 232, "fala_em_s": 0.35},
+    {"id": "s14", "nome": "Proposta de valor", "b0": 232, "b1": 252, "fala_em_s": 0.3},
+    {"id": "s15", "nome": "Encerramento", "b0": 252, "b1": 276, "fala_em_s": 1.3}
+  ]
+}

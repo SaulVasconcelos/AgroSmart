@@ -1,0 +1,109 @@
+1
+00:00:01,417 --> 00:00:05,197
+Uma lavoura monitorada produz dados o tempo todo.
+
+2
+00:00:05,527 --> 00:00:11,377
+Os sensores medem umidade e temperatura, e quem anda
+pelo campo anota o que vê nas plantas.
+
+3
+00:00:11,467 --> 00:00:17,047
+Mas essas informações ficam separadas,
+e nenhuma delas diz onde está a urgência.
+
+4
+00:00:17,887 --> 00:00:20,727
+Um alerta sem explicação é difícil de confiar.
+
+5
+00:00:21,417 --> 00:00:26,177
+E, quando falta a observação de campo,
+o sensor sozinho não prova que está tudo bem.
+
+6
+00:00:27,550 --> 00:00:31,250
+Este é o AgroMonitor, um módulo do AgroSmart.
+
+7
+00:00:33,217 --> 00:00:39,307
+Ele foi pensado para quem decide no campo: o produtor rural,
+o agrônomo e o gestor da operação.
+
+8
+00:00:41,033 --> 00:00:46,483
+Ele cruza sensores e observações de campo
+e mostra as prioridades de cada talhão.
+
+9
+00:00:48,717 --> 00:00:53,537
+Aqui, o Talhão B aparece com prioridade alta,
+pela regra R2.
+
+10
+00:00:54,510 --> 00:00:55,630
+E quando falta dado?
+
+11
+00:00:56,383 --> 00:01:00,863
+Sem observação de campo, a resposta é indeterminada,
+nunca normal.
+
+12
+00:01:01,333 --> 00:01:05,623
+Registrada a observação, a mesma leitura
+passa a prioridade alta.
+
+13
+00:01:06,110 --> 00:01:12,670
+Toda prioridade mostra o porquê: a regra aplicada,
+a evidência usada e a orientação sugerida.
+
+14
+00:01:13,910 --> 00:01:20,080
+Cada execução deixa rastro no event log, da entrada recebida
+até a publicação do resultado.
+
+15
+00:01:21,550 --> 00:01:22,820
+E roda sozinho.
+
+16
+00:01:23,483 --> 00:01:30,043
+Um comando sobe a plataforma em um container, e a execução
+contínua gera e processa leituras em ciclos.
+
+17
+00:01:31,343 --> 00:01:34,643
+São 63 testes automatizados aprovados,
+
+18
+00:01:34,733 --> 00:01:41,963
+22 de 22 verificações no container e nenhuma vulnerabilidade
+crítica ou alta com correção disponível.
+
+19
+00:01:42,883 --> 00:01:45,033
+O software está entregue e testado.
+
+20
+00:01:45,133 --> 00:01:46,923
+Os dados são simulados.
+
+21
+00:01:46,893 --> 00:01:50,953
+Sensores físicos, login e notificações ficam no roadmap.
+
+22
+00:01:52,517 --> 00:01:57,737
+A nossa proposta de valor: saber onde olhar primeiro
+na lavoura, e por quê.
+
+23
+00:02:03,183 --> 00:02:04,173
+AgroSmart.
+
+24
+00:02:04,223 --> 00:02:08,353
+O código, as evidências e a documentação
+estão no nosso repositório.

@@ -1,0 +1,310 @@
+{
+ "narracao": {
+  "arquivo": "public/audio/narracao/narracao_gemini_nika.wav",
+  "nota": "Uma única gravação (Gemini 3.8 Flash TTS, voz Nika). Os trechos, em segundos do arquivo, foram separados pelas pausas da fala.",
+  "trechos": {
+   "s01": [
+    0.0,
+    24.46
+   ],
+   "s02": [
+    25.34,
+    28.74
+   ],
+   "s03": [
+    29.73,
+    35.52
+   ],
+   "s04": [
+    36.6,
+    41.8
+   ],
+   "s05": [
+    42.62,
+    47.14
+   ],
+   "s06": [
+    47.95,
+    48.83
+   ],
+   "s07": [
+    49.6,
+    58.54
+   ],
+   "s08": [
+    59.7,
+    66.02
+   ],
+   "s09": [
+    67.12,
+    73.05
+   ],
+   "s10": [
+    73.95,
+    74.92
+   ],
+   "s11": [
+    75.81,
+    82.07
+   ],
+   "s12": [
+    82.82,
+    93.2
+   ],
+   "s13": [
+    93.97,
+    101.74
+   ],
+   "s14": [
+    102.61,
+    107.53
+   ],
+   "s15": [
+    108.44,
+    113.31
+   ]
+  }
+ },
+ "efeitos": [
+  {
+   "cena": "s02",
+   "quadro": 2,
+   "arquivo": "transition-soft.mp3",
+   "volume": 0.3,
+   "acao": "entrada no palco da marca"
+  },
+  {
+   "cena": "s02",
+   "quadro": 68,
+   "arquivo": "sparkle.mp3",
+   "volume": 0.55,
+   "acao": "a palavra AGROMONITOR fecha"
+  },
+  {
+   "cena": "s03",
+   "fala_s": 2.4,
+   "arquivo": "pop.mp3",
+   "volume": 0.26,
+   "acao": "etiqueta: o produtor rural"
+  },
+  {
+   "cena": "s03",
+   "fala_s": 3.52,
+   "arquivo": "pop.mp3",
+   "volume": 0.23,
+   "acao": "etiqueta: o agrônomo"
+  },
+  {
+   "cena": "s03",
+   "fala_s": 4.27,
+   "arquivo": "pop.mp3",
+   "volume": 0.2,
+   "acao": "etiqueta: o gestor da operação"
+  },
+  {
+   "cena": "s04",
+   "quadro": 26,
+   "arquivo": "whoosh-big.mp3",
+   "volume": 0.26,
+   "acao": "a câmera sobe (trecho mais rápido)"
+  },
+  {
+   "cena": "s05",
+   "quadro": 40,
+   "arquivo": "whoosh-fast.mp3",
+   "volume": 0.26,
+   "acao": "aproximação lateral"
+  },
+  {
+   "cena": "s05",
+   "quadro": 66,
+   "arquivo": "sparkle.mp3",
+   "volume": 0.5,
+   "acao": "feixe no contorno da linha"
+  },
+  {
+   "cena": "s05",
+   "quadro": 128,
+   "arquivo": "transition-snap.mp3",
+   "volume": 0.32,
+   "acao": "a linha volta ao lugar"
+  },
+  {
+   "cena": "s06",
+   "quadro": 8,
+   "arquivo": "swoosh-quick.mp3",
+   "volume": 0.2,
+   "acao": "cartão de texto"
+  },
+  {
+   "cena": "s07",
+   "fala_s": 5.12,
+   "arquivo": "whoosh-fast.mp3",
+   "volume": 0.3,
+   "acao": "arremesso da barra"
+  },
+  {
+   "cena": "s07",
+   "fala_s": 5.75,
+   "arquivo": "transition-snap.mp3",
+   "volume": 0.2,
+   "acao": "a barra assenta em 70%"
+  },
+  {
+   "cena": "s08",
+   "fala_s": 2.6,
+   "arquivo": "click-camera.mp3",
+   "volume": 0.7,
+   "acao": "moldura fecha: a regra"
+  },
+  {
+   "cena": "s08",
+   "fala_s": 3.69,
+   "arquivo": "click-camera.mp3",
+   "volume": 0.7,
+   "acao": "moldura fecha: a evidência"
+  },
+  {
+   "cena": "s08",
+   "fala_s": 4.96,
+   "arquivo": "click-camera.mp3",
+   "volume": 0.7,
+   "acao": "moldura fecha: a orientação"
+  },
+  {
+   "cena": "s09",
+   "fala_s": 3.94,
+   "arquivo": "whoosh-fast.mp3",
+   "volume": 0.26,
+   "acao": "a câmera corre pela régua (trecho mais rápido)"
+  },
+  {
+   "cena": "s09",
+   "fala_s": 5.5,
+   "arquivo": "transition-snap.mp3",
+   "volume": 0.36,
+   "acao": "freada na última etapa"
+  },
+  {
+   "cena": "s10",
+   "quadro": 8,
+   "arquivo": "swoosh-quick.mp3",
+   "volume": 0.2,
+   "acao": "cartão de texto"
+  },
+  {
+   "cena": "s11",
+   "quadro": 10,
+   "arquivo": "keyboard.mp3",
+   "volume": 0.45,
+   "duracao_quadros": 40,
+   "alinhar": "inicio",
+   "acao": "digitação do comando"
+  },
+  {
+   "cena": "s11",
+   "quadro": 66,
+   "arquivo": "whoosh-fast.mp3",
+   "volume": 0.32,
+   "acao": "Enter: avanço para a tela real"
+  },
+  {
+   "cena": "s11",
+   "quadro": 69,
+   "arquivo": "transition-snap.mp3",
+   "volume": 0.28,
+   "acao": "corte e assentamento do painel"
+  },
+  {
+   "cena": "s12",
+   "quadro": 42,
+   "arquivo": "click-camera.mp3",
+   "volume": 0.6,
+   "acao": "dígito 6 trava"
+  },
+  {
+   "cena": "s12",
+   "quadro": 49,
+   "arquivo": "click-camera.mp3",
+   "volume": 0.7,
+   "acao": "dígito 3 trava"
+  },
+  {
+   "cena": "s12",
+   "fala_s": 3.49,
+   "arquivo": "pop.mp3",
+   "volume": 0.22,
+   "acao": "linha: 22 de 22"
+  },
+  {
+   "cena": "s12",
+   "fala_s": 6.5,
+   "arquivo": "pop.mp3",
+   "volume": 0.2,
+   "acao": "linha: 0 vulnerabilidades"
+  },
+  {
+   "cena": "s13",
+   "fala_s": 0.4,
+   "arquivo": "swoosh-quick.mp3",
+   "volume": 0.2,
+   "acao": "vira: Entregue"
+  },
+  {
+   "cena": "s13",
+   "fala_s": 2.6,
+   "arquivo": "swoosh-quick.mp3",
+   "volume": 0.18,
+   "acao": "vira: Simulado"
+  },
+  {
+   "cena": "s13",
+   "fala_s": 4.35,
+   "arquivo": "swoosh-quick.mp3",
+   "volume": 0.16,
+   "acao": "vira: Roadmap"
+  },
+  {
+   "cena": "s14",
+   "fala_s": 2.31,
+   "arquivo": "whoosh-fast.mp3",
+   "volume": 0.24,
+   "acao": "a palavra recua e a frase se monta"
+  },
+  {
+   "cena": "s15",
+   "quadro": 33,
+   "arquivo": "riser-cine.mp3",
+   "volume": 0.11,
+   "acao": "preparação para a entrada do nome"
+  },
+  {
+   "cena": "s15",
+   "quadro": 45,
+   "arquivo": "impact-deep-whoosh.mp3",
+   "volume": 0.34,
+   "acao": "o nome AgroSmart entra"
+  },
+  {
+   "cena": "s15",
+   "quadro": 64,
+   "arquivo": "sparkle.mp3",
+   "volume": 0.5,
+   "acao": "traço sob o nome"
+  }
+ ],
+ "trilha": {
+  "alvo_lufs": -27.0,
+  "reducao_sob_fala_db": 7.5,
+  "entrada_s": 2.0,
+  "saida_s": 3.2
+ },
+ "fala": {
+  "alvo_lufs": -17.5
+ },
+ "mestre": {
+  "alvo_lufs": -16.0,
+  "teto_dbfs": -1.5
+ },
+ "nota_efeitos": "O quadro (ou o instante da fala) de cada efeito é onde o PICO do som deve cair. Os arquivos têm um trecho quase mudo antes do pico (até 1,5 s no sparkle); o script mede o pico de cada arquivo e adianta o início. Com \"alinhar\": \"inicio\" o som começa no quadro indicado."
+}

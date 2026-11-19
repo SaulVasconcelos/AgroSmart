@@ -1,4 +1,6 @@
-# Roteiro — vídeo pitch (até 5 minutos)
+# Roteiro — vídeo pitch por slides (reserva)
+
+> O vídeo pitch entregue é o filme animado de [video_pitch_animado/](video_pitch_animado/LEIA_ME.md), feito a partir de [roteiro_video_pitch_animado.md](roteiro_video_pitch_animado.md) e aprovado pela equipe em 19/11/2026. Este roteiro, com uma fala por slide, fica como reserva, para uma apresentação ao vivo dos slides.
 
 Duração planejada: **4 min 40 s**. O limite é de 5 minutos, então há 20 segundos de folga.
 

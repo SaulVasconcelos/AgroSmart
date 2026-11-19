@@ -4,9 +4,9 @@
 |---|---|
 | Slides do pitch (problema, solução, diferencial, público-alvo, proposta de valor) | **Prontos e revisados.** Deck editável: <https://claude.ai/artifact/KqJzpFu9JXSFy71Du9Eukv> (privado da conta que o criou, até ser compartilhado). **PENDENTE:** exportar o arquivo (PowerPoint ou PDF) para esta pasta |
 | Roteiro do vídeo final técnico (5–8 min) | **Pronto:** [roteiro_video_tecnico.md](roteiro_video_tecnico.md), 8 cenas, 7 minutos planejados. Os passos da interface foram ensaiados na versão final |
-| Roteiro do vídeo pitch (até 5 min) | **Pronto:** [roteiro_video_pitch.md](roteiro_video_pitch.md), uma fala por slide, 4 min 40 s planejados |
+| Roteiro do vídeo pitch (até 5 min) | **Aprovado pela equipe em 19/11/2026:** [roteiro_video_pitch_animado.md](roteiro_video_pitch_animado.md), filme animado narrado com voz gerada pelo Gemini, com imagens de lavoura do Gemini na abertura e telas reais animadas pelo plugin video-shotcraft. **Reserva:** [roteiro_video_pitch.md](roteiro_video_pitch.md), uma fala por slide, 4 min 40 s |
 | Vídeo final técnico (5–8 min) — MP4 | **PENDENTE** — gravação pela equipe |
-| Vídeo pitch (até 5 min) — MP4 | **Gerado com voz sintética:** [video_pitch/video_pitch.mp4](video_pitch/video_pitch.mp4), 4 min 39,5 s, 1920 × 1080, com legendas em [video_pitch.srt](video_pitch/video_pitch.srt). **PENDENTE:** a equipe assistir e aprovar, porque a pronúncia não foi conferida por audição, e confirmar se a disciplina aceita narração sintética. A alternativa é gravar com a voz da equipe, pelo roteiro |
+| Vídeo pitch (até 5 min) — MP4 | **Pronto e aprovado pela equipe em 19/11/2026:** [video_pitch_animado/video_pitch_agrosmart.mp4](video_pitch_animado/video_pitch_agrosmart.mp4), 2 min 14 s, 1920 × 1080, com versão sem trilha e legendas à parte. Como foi feito e o que foi medido: [video_pitch_animado/LEIA_ME.md](video_pitch_animado/LEIA_ME.md). O rascunho anterior, com voz RHVoice, foi reprovado (voz robótica) e continua em [video_pitch/](video_pitch/) |
 
 São dois vídeos separados. O MP4 prévio da Fase 6 é histórico e não atende aos requisitos da Fase 7.
 
@@ -30,9 +30,13 @@ São 11 slides, pensados para um pitch de até 5 minutos. O número de slides e 
 
 O deck não traz números de mercado, clientes, ganhos de produtividade nem economia, porque o projeto não tem dados para isso.
 
-## Vídeo do pitch com voz sintética
+## Vídeo pitch animado
 
-A pasta [video_pitch/](video_pitch/) tem o vídeo e tudo o que foi usado para montá-lo, em 19/11/2026, no ambiente de trabalho do Claude:
+A versão atual do vídeo pitch está em [video_pitch_animado/](video_pitch_animado/), com o projeto que a gera e a conferência feita depois da montagem. O [LEIA_ME.md](video_pitch_animado/LEIA_ME.md) da pasta descreve as ferramentas, as diferenças em relação ao roteiro, a origem de cada imagem e de cada número e os avisos de licença.
+
+## Rascunho anterior: vídeo com voz RHVoice (reprovado)
+
+A pasta [video_pitch/](video_pitch/) tem o primeiro vídeo e tudo o que foi usado para montá-lo, em 19/11/2026, no ambiente de trabalho do Claude. A equipe o reprovou porque a voz ficou robótica:
 
 - **Imagem:** um quadro por slide em [video_pitch/quadros/](video_pitch/quadros/), desenhado no Chromium a partir dos arquivos do próprio deck, com as mesmas fontes. Não é uma exportação feita pela página do deck, então pequenos detalhes de desenho podem diferir.
 - **Narração:** voz sintética Letícia-F123, do sintetizador RHVoice 1.8.0 (pacotes `rhvoice` e `rhvoice-brazilian-portuguese` do Ubuntu 24.04). A voz é de Olga Yakovleva e Fernando H. F. Botelho, sob licença CC BY-SA 4.0. Ninguém da equipe fala no vídeo.
