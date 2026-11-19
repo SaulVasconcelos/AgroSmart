@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.ruff_cache/
+.venv-devsecops/
+02_plataforma/relatorios/
+# Saídas de execução nativa local (a amostra versionada fica em raw/trusted/refined)
+02_plataforma/data/logs/
+02_plataforma/data/processos/
+02_plataforma/data/operacao/
+*.tmp
+# Zip de artefato baixado do GitHub Actions (o conteúdo vai para 03_evidencias/devsecops_ci/)
+relatorios-devsecops-*.zip

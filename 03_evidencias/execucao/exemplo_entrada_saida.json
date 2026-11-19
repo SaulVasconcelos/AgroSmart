@@ -1,0 +1,72 @@
+{
+  "gerado_em_utc": "2026-11-18T02:42:43+00:00",
+  "natureza": "Execução real do software; leitura e observação de campo SIMULADAS.",
+  "entrada_post_api_simular": {
+    "payload": {
+      "talhao": "Talhao B",
+      "quantidade": 1
+    },
+    "http": 200,
+    "evento_gerado": {
+      "data_hora": "2026-11-17T23:42:43.301932",
+      "sensor_id": "S-002",
+      "talhao": "Talhao B",
+      "cultura": "Milho",
+      "umidade_solo": 62,
+      "temperatura": 26,
+      "probabilidade_praga": 49,
+      "alerta": "Normal",
+      "recomendacao": "Manter monitoramento."
+    }
+  },
+  "saida_refined_sem_observacao_de_campo": {
+    "regra": "ND",
+    "severidade": "Indeterminada",
+    "alerta": "Observação de campo ausente",
+    "acao": "Registrar observação de campo para avaliar todas as regras R1–R7",
+    "justificativa": "Sensores não comprovam ausência de infestação.",
+    "avaliacao": "Parcial",
+    "origem_observacao": "Ausente",
+    "percentual_folhas_doentes": "",
+    "praga_detectada": "",
+    "dias_mesma_praga": ""
+  },
+  "entrada_post_importar_observacoes": {
+    "csv": "data;talhao;cultura;percentual_folhas_doentes;praga_detectada;dias_mesma_praga;origem_dados\n2026-11-17;Talhao B;Milho;34;Lagarta;4;SIMULADO - evidência Fase 7\n",
+    "http": 200,
+    "importadas": 1
+  },
+  "saida_refined_apos_observacao": {
+    "regra": "R2",
+    "severidade": "Alta",
+    "alerta": "Alerta de infestação",
+    "acao": "Realizar inspeção técnica",
+    "justificativa": "Percentual de folhas doentes superior a 30%.",
+    "avaliacao": "Completa",
+    "origem_observacao": "SIMULADO - evidência Fase 7",
+    "percentual_folhas_doentes": "34.0",
+    "praga_detectada": "Lagarta",
+    "dias_mesma_praga": "4"
+  },
+  "pipeline_apos": {
+    "raw_sensores": 148,
+    "trusted_sensores": 148,
+    "duplicados_removidos": 0,
+    "observacoes_campo": 37,
+    "diagnosticos_historicos": 766,
+    "monitoramento_refinado": 148,
+    "alertas": 112,
+    "rejeitados": 0,
+    "regras": {
+      "R2": 29,
+      "R7": 35,
+      "R1": 9,
+      "R4": 10,
+      "R5": 12,
+      "R6": 28,
+      "R3": 24,
+      "ND": 1
+    },
+    "modo": "Simulação acadêmica / processamento local"
+  }
+}

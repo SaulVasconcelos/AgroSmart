@@ -1,0 +1,4 @@
+# Ferramentas de desenvolvimento/CI (NÃO entram na imagem de runtime).
+# Versões fixadas e conferidas no PyPI em 17/11/2026.
+ruff==0.17.5
+bandit==1.9.4

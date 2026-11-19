@@ -1,0 +1,121 @@
+$ node --test tests/test_frontend.cjs
+# exit_code=0
+
+TAP version 13
+# Subtest: no readings show missing averages
+ok 1 - no readings show missing averages
+  ---
+  duration_ms: 16.902393
+  type: 'test'
+  ...
+# Subtest: measured zero remains a valid measurement
+ok 2 - measured zero remains a valid measurement
+  ---
+  duration_ms: 1.557265
+  type: 'test'
+  ...
+# Subtest: diagnostics and pipeline use their full scope
+ok 3 - diagnostics and pipeline use their full scope
+  ---
+  duration_ms: 1.733022
+  type: 'test'
+  ...
+# Subtest: alert counts distinguish displayed and total and escape content
+ok 4 - alert counts distinguish displayed and total and escape content
+  ---
+  duration_ms: 4.111685
+  type: 'test'
+  ...
+# Subtest: aggregate chart and latest date have explicit context
+ok 5 - aggregate chart and latest date have explicit context
+  ---
+  duration_ms: 1.020768
+  type: 'test'
+  ...
+# Subtest: old responses cannot replace the latest filter response
+ok 6 - old responses cannot replace the latest filter response
+  ---
+  duration_ms: 1.490275
+  type: 'test'
+  ...
+# Subtest: invalid interval and HTTP failure hide old results and allow retry
+ok 7 - invalid interval and HTTP failure hide old results and allow retry
+  ---
+  duration_ms: 1.089536
+  type: 'test'
+  ...
+# Subtest: simulation preserves filters and separates mutation and refresh outcomes
+ok 8 - simulation preserves filters and separates mutation and refresh outcomes
+  ---
+  duration_ms: 0.972006
+  type: 'test'
+  ...
+# Subtest: import disables resubmission and preserves context
+ok 9 - import disables resubmission and preserves context
+  ---
+  duration_ms: 1.534588
+  type: 'test'
+  ...
+# Subtest: server import rejection releases buttons and preserves context
+ok 10 - server import rejection releases buttons and preserves context
+  ---
+  duration_ms: 1.054173
+  type: 'test'
+  ...
+# Subtest: reading evidence uses actual schema and ND stays undetermined
+ok 11 - reading evidence uses actual schema and ND stays undetermined
+  ---
+  duration_ms: 0.882523
+  type: 'test'
+  ...
+# Subtest: context URLs preserve period severity page and exact reading
+ok 12 - context URLs preserve period severity page and exact reading
+  ---
+  duration_ms: 0.804578
+  type: 'test'
+  ...
+# Subtest: new alert API receives filters and can return its actual page
+ok 13 - new alert API receives filters and can return its actual page
+  ---
+  duration_ms: 1.043386
+  type: 'test'
+  ...
+# Subtest: plot lookup failure hides prior detail and reports available retry
+ok 14 - plot lookup failure hides prior detail and reports available retry
+  ---
+  duration_ms: 0.87207
+  type: 'test'
+  ...
+# Subtest: operation panel shows active worker, data age and cycle history
+ok 15 - operation panel shows active worker, data age and cycle history
+  ---
+  duration_ms: 1.161349
+  type: 'test'
+  ...
+# Subtest: stopped worker explains reason and re-enables start
+ok 16 - stopped worker explains reason and re-enables start
+  ---
+  duration_ms: 0.826138
+  type: 'test'
+  ...
+# Subtest: operation status failure hides previous status instead of showing stale data
+ok 17 - operation status failure hides previous status instead of showing stale data
+  ---
+  duration_ms: 0.960031
+  type: 'test'
+  ...
+# Subtest: server without operation data does not crash the tools page
+ok 18 - server without operation data does not crash the tools page
+  ---
+  duration_ms: 0.606175
+  type: 'test'
+  ...
+1..18
+# tests 18
+# suites 0
+# pass 18
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 101.377022

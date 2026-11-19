@@ -1,0 +1,4 @@
+$ docker run --rm --entrypoint python agrosmart:fase7-pipeline -c import importlib.util;print('pip_ausente' if importlib.util.find_spec('pip') is None else 'pip_presente')
+# exit_code=0
+
+pip_ausente

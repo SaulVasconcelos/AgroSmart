@@ -1,0 +1,36 @@
+flowchart TD
+  A0["Aplicar regras R1–R7<br/>mediana 0.84 ms"]
+  A1["Publicar Refined<br/>mediana 6.51 ms"]
+  A2["Persistir Raw<br/>mediana 0.12 ms"]
+  A3["Publicar Trusted<br/>mediana 14.70 ms"]
+  A4["Validar dados de entrada<br/>mediana 0.03 ms"]
+  A5["Aguardar trava de escrita<br/>mediana 0.00 ms"]
+  A6["Gerar leituras simuladas<br/>mediana 0.03 ms"]
+  A7(["Execução concluída"])
+  A8(["Entrada recebida"])
+  A9["Validar requisição<br/>mediana 0.02 ms"]
+  A10["Resposta entregue"]
+  A11(["Entrada rejeitada"])
+  A12["Descartar duplicatas"]
+  A0 -->|34| A1
+  A2 -->|33| A3
+  A3 -->|33| A0
+  A4 -->|32| A5
+  A5 -->|32| A2
+  A6 -->|31| A4
+  A1 -->|22| A7
+  A8 -->|20| A6
+  A8 -->|17| A9
+  A1 -->|12| A10
+  A10 -->|12| A7
+  A9 -->|11| A6
+  A10 -->|5| A11
+  A9 -->|3| A10
+  A9 -->|3| A4
+  A4 -->|2| A10
+  A8 -->|2| A4
+  A4 -->|1| A2
+  A3 -->|1| A12
+  A12 -->|1| A0
+  A4 -->|1| A11
+  A8 -->|1| A3

@@ -1,0 +1,4 @@
+$ docker exec agrosmart-pipeline-20261118t231148z python -c import time;print(time.strftime('%z'))
+# exit_code=0
+
+-0300

@@ -1,0 +1,981 @@
+{
+  "resumo": {
+    "eventos": 600,
+    "casos": 40,
+    "variantes": 8,
+    "resultados": {
+      "Execução concluída": 34,
+      "Entrada rejeitada": 6
+    },
+    "inicio_utc": "2026-11-18T02:33:23.715462+00:00",
+    "fim_utc": "2026-11-18T02:35:00.699251+00:00",
+    "duracao_ponta_a_ponta_ms_concluidos": {
+      "n": 34,
+      "media": 36.137,
+      "mediana": 25.447,
+      "p95": 115.392,
+      "max": 134.921,
+      "soma": 1228.666
+    }
+  },
+  "por_gatilho": {
+    "api_importar_observacoes": {
+      "casos": 3,
+      "resultados": {
+        "Execução concluída": 1,
+        "Entrada rejeitada": 2
+      },
+      "duracao_ponta_a_ponta_ms": {
+        "n": 3,
+        "media": 8.083,
+        "mediana": 0.788,
+        "p95": 22.714,
+        "max": 22.714,
+        "soma": 24.249
+      },
+      "conformes_ao_esperado": "1/3"
+    },
+    "api_simular": {
+      "casos": 14,
+      "resultados": {
+        "Execução concluída": 11,
+        "Entrada rejeitada": 3
+      },
+      "duracao_ponta_a_ponta_ms": {
+        "n": 14,
+        "media": 45.575,
+        "mediana": 30.056,
+        "p95": 134.921,
+        "max": 134.921,
+        "soma": 638.045
+      },
+      "conformes_ao_esperado": "11/14"
+    },
+    "cli_importar_sensores": {
+      "casos": 2,
+      "resultados": {
+        "Execução concluída": 1,
+        "Entrada rejeitada": 1
+      },
+      "duracao_ponta_a_ponta_ms": {
+        "n": 2,
+        "media": 14.675,
+        "mediana": 14.675,
+        "p95": 28.378,
+        "max": 28.378,
+        "soma": 29.351
+      },
+      "conformes_ao_esperado": "0/2"
+    },
+    "cli_processar": {
+      "casos": 1,
+      "resultados": {
+        "Execução concluída": 1
+      },
+      "duracao_ponta_a_ponta_ms": {
+        "n": 1,
+        "media": 26.8,
+        "mediana": 26.8,
+        "p95": 26.8,
+        "max": 26.8,
+        "soma": 26.8
+      },
+      "conformes_ao_esperado": "1/1"
+    },
+    "execucao_continua": {
+      "casos": 20,
+      "resultados": {
+        "Execução concluída": 20
+      },
+      "duracao_ponta_a_ponta_ms": {
+        "n": 20,
+        "media": 25.741,
+        "mediana": 25.236,
+        "p95": 30.144,
+        "max": 35.062,
+        "soma": 514.815
+      },
+      "conformes_ao_esperado": "20/20"
+    }
+  },
+  "variantes": [
+    {
+      "casos": 20,
+      "percentual": 50.0,
+      "atividades": [
+        "Entrada recebida",
+        "Gerar leituras simuladas",
+        "Validar dados de entrada",
+        "Aguardar trava de escrita",
+        "Persistir Raw",
+        "Publicar Trusted",
+        "Aplicar regras R1–R7",
+        "Publicar Refined",
+        "Execução concluída"
+      ],
+      "exemplo_case_id": "RUN-20261118T023323Z-2c93e668"
+    },
+    {
+      "casos": 11,
+      "percentual": 27.5,
+      "atividades": [
+        "Entrada recebida",
+        "Validar requisição",
+        "Gerar leituras simuladas",
+        "Validar dados de entrada",
+        "Aguardar trava de escrita",
+        "Persistir Raw",
+        "Publicar Trusted",
+        "Aplicar regras R1–R7",
+        "Publicar Refined",
+        "Resposta entregue",
+        "Execução concluída"
+      ],
+      "exemplo_case_id": "RUN-20261118T023323Z-f7fef31e"
+    },
+    {
+      "casos": 3,
+      "percentual": 7.5,
+      "atividades": [
+        "Entrada recebida",
+        "Validar requisição",
+        "Resposta entregue",
+        "Entrada rejeitada"
+      ],
+      "exemplo_case_id": "RUN-20261118T023331Z-7ebeda6c"
+    },
+    {
+      "casos": 2,
+      "percentual": 5.0,
+      "atividades": [
+        "Entrada recebida",
+        "Validar requisição",
+        "Validar dados de entrada",
+        "Resposta entregue",
+        "Entrada rejeitada"
+      ],
+      "exemplo_case_id": "RUN-20261118T023331Z-c9967afe"
+    },
+    {
+      "casos": 1,
+      "percentual": 2.5,
+      "atividades": [
+        "Entrada recebida",
+        "Validar requisição",
+        "Validar dados de entrada",
+        "Aguardar trava de escrita",
+        "Persistir Raw",
+        "Publicar Trusted",
+        "Aplicar regras R1–R7",
+        "Publicar Refined",
+        "Resposta entregue",
+        "Execução concluída"
+      ],
+      "exemplo_case_id": "RUN-20261118T023331Z-3110cd94"
+    },
+    {
+      "casos": 1,
+      "percentual": 2.5,
+      "atividades": [
+        "Entrada recebida",
+        "Validar dados de entrada",
+        "Persistir Raw",
+        "Publicar Trusted",
+        "Descartar duplicatas",
+        "Aplicar regras R1–R7",
+        "Publicar Refined",
+        "Execução concluída"
+      ],
+      "exemplo_case_id": "RUN-20261118T023500Z-b9d77400"
+    },
+    {
+      "casos": 1,
+      "percentual": 2.5,
+      "atividades": [
+        "Entrada recebida",
+        "Validar dados de entrada",
+        "Entrada rejeitada"
+      ],
+      "exemplo_case_id": "RUN-20261118T023500Z-a4e9c7d9"
+    },
+    {
+      "casos": 1,
+      "percentual": 2.5,
+      "atividades": [
+        "Entrada recebida",
+        "Publicar Trusted",
+        "Aplicar regras R1–R7",
+        "Publicar Refined",
+        "Execução concluída"
+      ],
+      "exemplo_case_id": "RUN-20261118T023500Z-b908f4f0"
+    }
+  ],
+  "atividades": {
+    "Gerar leituras simuladas": {
+      "n": 31,
+      "media": 0.119,
+      "mediana": 0.033,
+      "p95": 1.229,
+      "max": 1.244,
+      "soma": 3.679
+    },
+    "Validar dados de entrada": {
+      "n": 36,
+      "media": 0.032,
+      "mediana": 0.025,
+      "p95": 0.085,
+      "max": 0.1,
+      "soma": 1.145
+    },
+    "Aguardar trava de escrita": {
+      "n": 32,
+      "media": 9.098,
+      "mediana": 0.001,
+      "p95": 72.415,
+      "max": 93.031,
+      "soma": 291.135
+    },
+    "Persistir Raw": {
+      "n": 33,
+      "media": 0.186,
+      "mediana": 0.123,
+      "p95": 0.465,
+      "max": 1.438,
+      "soma": 6.123
+    },
+    "Publicar Trusted": {
+      "n": 34,
+      "media": 15.717,
+      "mediana": 14.703,
+      "p95": 19.812,
+      "max": 25.567,
+      "soma": 534.384
+    },
+    "Aplicar regras R1–R7": {
+      "n": 34,
+      "media": 0.847,
+      "mediana": 0.838,
+      "p95": 1.152,
+      "max": 1.676,
+      "soma": 28.799
+    },
+    "Publicar Refined": {
+      "n": 34,
+      "media": 6.503,
+      "mediana": 6.514,
+      "p95": 8.843,
+      "max": 9.503,
+      "soma": 221.09
+    },
+    "Validar requisição": {
+      "n": 17,
+      "media": 0.023,
+      "mediana": 0.02,
+      "p95": 0.075,
+      "max": 0.075,
+      "soma": 0.395
+    }
+  },
+  "participacao_no_tempo_medido_pct": [
+    [
+      "Publicar Trusted",
+      49.2
+    ],
+    [
+      "Aguardar trava de escrita",
+      26.8
+    ],
+    [
+      "Publicar Refined",
+      20.3
+    ],
+    [
+      "Aplicar regras R1–R7",
+      2.7
+    ],
+    [
+      "Persistir Raw",
+      0.6
+    ],
+    [
+      "Gerar leituras simuladas",
+      0.3
+    ],
+    [
+      "Validar dados de entrada",
+      0.1
+    ],
+    [
+      "Validar requisição",
+      0.0
+    ]
+  ],
+  "dfg": [
+    {
+      "de": "Aplicar regras R1–R7",
+      "para": "Publicar Refined",
+      "contagem": 34,
+      "intervalo_medio_ms": 6.704
+    },
+    {
+      "de": "Persistir Raw",
+      "para": "Publicar Trusted",
+      "contagem": 33,
+      "intervalo_medio_ms": 15.872
+    },
+    {
+      "de": "Publicar Trusted",
+      "para": "Aplicar regras R1–R7",
+      "contagem": 33,
+      "intervalo_medio_ms": 1.103
+    },
+    {
+      "de": "Validar dados de entrada",
+      "para": "Aguardar trava de escrita",
+      "contagem": 32,
+      "intervalo_medio_ms": 9.293
+    },
+    {
+      "de": "Aguardar trava de escrita",
+      "para": "Persistir Raw",
+      "contagem": 32,
+      "intervalo_medio_ms": 0.37
+    },
+    {
+      "de": "Gerar leituras simuladas",
+      "para": "Validar dados de entrada",
+      "contagem": 31,
+      "intervalo_medio_ms": 0.366
+    },
+    {
+      "de": "Publicar Refined",
+      "para": "Execução concluída",
+      "contagem": 22,
+      "intervalo_medio_ms": 0.356
+    },
+    {
+      "de": "Entrada recebida",
+      "para": "Gerar leituras simuladas",
+      "contagem": 20,
+      "intervalo_medio_ms": 0.526
+    },
+    {
+      "de": "Entrada recebida",
+      "para": "Validar requisição",
+      "contagem": 17,
+      "intervalo_medio_ms": 2.881
+    },
+    {
+      "de": "Publicar Refined",
+      "para": "Resposta entregue",
+      "contagem": 12,
+      "intervalo_medio_ms": 1.057
+    },
+    {
+      "de": "Resposta entregue",
+      "para": "Execução concluída",
+      "contagem": 12,
+      "intervalo_medio_ms": 0.38
+    },
+    {
+      "de": "Validar requisição",
+      "para": "Gerar leituras simuladas",
+      "contagem": 11,
+      "intervalo_medio_ms": 1.505
+    },
+    {
+      "de": "Resposta entregue",
+      "para": "Entrada rejeitada",
+      "contagem": 5,
+      "intervalo_medio_ms": 0.064
+    },
+    {
+      "de": "Validar requisição",
+      "para": "Resposta entregue",
+      "contagem": 3,
+      "intervalo_medio_ms": 0.255
+    },
+    {
+      "de": "Validar requisição",
+      "para": "Validar dados de entrada",
+      "contagem": 3,
+      "intervalo_medio_ms": 0.171
+    },
+    {
+      "de": "Validar dados de entrada",
+      "para": "Resposta entregue",
+      "contagem": 2,
+      "intervalo_medio_ms": 0.227
+    },
+    {
+      "de": "Entrada recebida",
+      "para": "Validar dados de entrada",
+      "contagem": 2,
+      "intervalo_medio_ms": 0.647
+    },
+    {
+      "de": "Validar dados de entrada",
+      "para": "Persistir Raw",
+      "contagem": 1,
+      "intervalo_medio_ms": 0.221
+    },
+    {
+      "de": "Publicar Trusted",
+      "para": "Descartar duplicatas",
+      "contagem": 1,
+      "intervalo_medio_ms": 0.158
+    },
+    {
+      "de": "Descartar duplicatas",
+      "para": "Aplicar regras R1–R7",
+      "contagem": 1,
+      "intervalo_medio_ms": 1.074
+    },
+    {
+      "de": "Validar dados de entrada",
+      "para": "Entrada rejeitada",
+      "contagem": 1,
+      "intervalo_medio_ms": 0.079
+    },
+    {
+      "de": "Entrada recebida",
+      "para": "Publicar Trusted",
+      "contagem": 1,
+      "intervalo_medio_ms": 18.574
+    }
+  ],
+  "crescimento_publicar_trusted": {
+    "n": 34,
+    "registros_min": 147.0,
+    "registros_max": 232.0,
+    "pearson_r": 0.281,
+    "ms_por_registro": 0.027207
+  },
+  "casos": [
+    {
+      "case_id": "RUN-20261118T023323Z-2c93e668",
+      "trigger": "execucao_continua",
+      "resultado": "Execução concluída",
+      "eventos": 16,
+      "inicio_utc": "2026-11-18T02:33:23.715462+00:00",
+      "fim_utc": "2026-11-18T02:33:23.739043+00:00",
+      "duracao_ponta_a_ponta_ms": 23.581,
+      "duracao_medida_atividades_ms": 20.042,
+      "tempo_nao_atribuido_ms": 3.539,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023323Z-f7fef31e",
+      "trigger": "api_simular",
+      "resultado": "Execução concluída",
+      "eventos": 19,
+      "inicio_utc": "2026-11-18T02:33:23.717803+00:00",
+      "fim_utc": "2026-11-18T02:33:23.763760+00:00",
+      "duracao_ponta_a_ponta_ms": 45.957,
+      "duracao_medida_atividades_ms": 39.449,
+      "tempo_nao_atribuido_ms": 6.508,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Validar requisição → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Resposta entregue → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023325Z-dc660806",
+      "trigger": "api_simular",
+      "resultado": "Execução concluída",
+      "eventos": 19,
+      "inicio_utc": "2026-11-18T02:33:25.263161+00:00",
+      "fim_utc": "2026-11-18T02:33:25.289360+00:00",
+      "duracao_ponta_a_ponta_ms": 26.199,
+      "duracao_medida_atividades_ms": 23.871,
+      "tempo_nao_atribuido_ms": 2.328,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Validar requisição → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Resposta entregue → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023326Z-f0dadbab",
+      "trigger": "api_simular",
+      "resultado": "Execução concluída",
+      "eventos": 19,
+      "inicio_utc": "2026-11-18T02:33:26.791435+00:00",
+      "fim_utc": "2026-11-18T02:33:26.813144+00:00",
+      "duracao_ponta_a_ponta_ms": 21.709,
+      "duracao_medida_atividades_ms": 19.595,
+      "tempo_nao_atribuido_ms": 2.114,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Validar requisição → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Resposta entregue → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023328Z-0fa607d3",
+      "trigger": "api_simular",
+      "resultado": "Execução concluída",
+      "eventos": 19,
+      "inicio_utc": "2026-11-18T02:33:28.314948+00:00",
+      "fim_utc": "2026-11-18T02:33:28.338124+00:00",
+      "duracao_ponta_a_ponta_ms": 23.176,
+      "duracao_medida_atividades_ms": 20.581,
+      "tempo_nao_atribuido_ms": 2.595,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Validar requisição → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Resposta entregue → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023328Z-8fc55db6",
+      "trigger": "execucao_continua",
+      "resultado": "Execução concluída",
+      "eventos": 16,
+      "inicio_utc": "2026-11-18T02:33:28.740362+00:00",
+      "fim_utc": "2026-11-18T02:33:28.770506+00:00",
+      "duracao_ponta_a_ponta_ms": 30.144,
+      "duracao_medida_atividades_ms": 28.467,
+      "tempo_nao_atribuido_ms": 1.677,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023329Z-4d4f99a9",
+      "trigger": "api_simular",
+      "resultado": "Execução concluída",
+      "eventos": 19,
+      "inicio_utc": "2026-11-18T02:33:29.840447+00:00",
+      "fim_utc": "2026-11-18T02:33:29.864725+00:00",
+      "duracao_ponta_a_ponta_ms": 24.278,
+      "duracao_medida_atividades_ms": 22.007,
+      "tempo_nao_atribuido_ms": 2.271,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Validar requisição → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Resposta entregue → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023331Z-7ebeda6c",
+      "trigger": "api_simular",
+      "resultado": "Entrada rejeitada",
+      "eventos": 5,
+      "inicio_utc": "2026-11-18T02:33:31.366409+00:00",
+      "fim_utc": "2026-11-18T02:33:31.367220+00:00",
+      "duracao_ponta_a_ponta_ms": 0.811,
+      "duracao_medida_atividades_ms": 0.028,
+      "tempo_nao_atribuido_ms": 0.783,
+      "conforme_fluxo_esperado": false,
+      "variante": "Entrada recebida → Validar requisição → Resposta entregue → Entrada rejeitada"
+    },
+    {
+      "case_id": "RUN-20261118T023331Z-0ef42f5d",
+      "trigger": "api_simular",
+      "resultado": "Entrada rejeitada",
+      "eventos": 5,
+      "inicio_utc": "2026-11-18T02:33:31.368322+00:00",
+      "fim_utc": "2026-11-18T02:33:31.368998+00:00",
+      "duracao_ponta_a_ponta_ms": 0.676,
+      "duracao_medida_atividades_ms": 0.025,
+      "tempo_nao_atribuido_ms": 0.651,
+      "conforme_fluxo_esperado": false,
+      "variante": "Entrada recebida → Validar requisição → Resposta entregue → Entrada rejeitada"
+    },
+    {
+      "case_id": "RUN-20261118T023331Z-25e1c0c0",
+      "trigger": "api_simular",
+      "resultado": "Entrada rejeitada",
+      "eventos": 5,
+      "inicio_utc": "2026-11-18T02:33:31.370009+00:00",
+      "fim_utc": "2026-11-18T02:33:31.370608+00:00",
+      "duracao_ponta_a_ponta_ms": 0.599,
+      "duracao_medida_atividades_ms": 0.028,
+      "tempo_nao_atribuido_ms": 0.571,
+      "conforme_fluxo_esperado": false,
+      "variante": "Entrada recebida → Validar requisição → Resposta entregue → Entrada rejeitada"
+    },
+    {
+      "case_id": "RUN-20261118T023331Z-3110cd94",
+      "trigger": "api_importar_observacoes",
+      "resultado": "Execução concluída",
+      "eventos": 17,
+      "inicio_utc": "2026-11-18T02:33:31.371597+00:00",
+      "fim_utc": "2026-11-18T02:33:31.394311+00:00",
+      "duracao_ponta_a_ponta_ms": 22.714,
+      "duracao_medida_atividades_ms": 20.844,
+      "tempo_nao_atribuido_ms": 1.87,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Validar requisição → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Resposta entregue → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023331Z-c9967afe",
+      "trigger": "api_importar_observacoes",
+      "resultado": "Entrada rejeitada",
+      "eventos": 7,
+      "inicio_utc": "2026-11-18T02:33:31.395403+00:00",
+      "fim_utc": "2026-11-18T02:33:31.396191+00:00",
+      "duracao_ponta_a_ponta_ms": 0.788,
+      "duracao_medida_atividades_ms": 0.065,
+      "tempo_nao_atribuido_ms": 0.723,
+      "conforme_fluxo_esperado": false,
+      "variante": "Entrada recebida → Validar requisição → Validar dados de entrada → Resposta entregue → Entrada rejeitada"
+    },
+    {
+      "case_id": "RUN-20261118T023331Z-64357703",
+      "trigger": "api_importar_observacoes",
+      "resultado": "Entrada rejeitada",
+      "eventos": 7,
+      "inicio_utc": "2026-11-18T02:33:31.397130+00:00",
+      "fim_utc": "2026-11-18T02:33:31.397877+00:00",
+      "duracao_ponta_a_ponta_ms": 0.747,
+      "duracao_medida_atividades_ms": 0.039,
+      "tempo_nao_atribuido_ms": 0.708,
+      "conforme_fluxo_esperado": false,
+      "variante": "Entrada recebida → Validar requisição → Validar dados de entrada → Resposta entregue → Entrada rejeitada"
+    },
+    {
+      "case_id": "RUN-20261118T023331Z-bb429adf",
+      "trigger": "api_simular",
+      "resultado": "Execução concluída",
+      "eventos": 19,
+      "inicio_utc": "2026-11-18T02:33:31.399551+00:00",
+      "fim_utc": "2026-11-18T02:33:31.433465+00:00",
+      "duracao_ponta_a_ponta_ms": 33.914,
+      "duracao_medida_atividades_ms": 27.696,
+      "tempo_nao_atribuido_ms": 6.218,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Validar requisição → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Resposta entregue → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023331Z-77014f1c",
+      "trigger": "api_simular",
+      "resultado": "Execução concluída",
+      "eventos": 19,
+      "inicio_utc": "2026-11-18T02:33:31.404503+00:00",
+      "fim_utc": "2026-11-18T02:33:31.454183+00:00",
+      "duracao_ponta_a_ponta_ms": 49.68,
+      "duracao_medida_atividades_ms": 46.533,
+      "tempo_nao_atribuido_ms": 3.147,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Validar requisição → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Resposta entregue → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023331Z-4eedf1be",
+      "trigger": "api_simular",
+      "resultado": "Execução concluída",
+      "eventos": 19,
+      "inicio_utc": "2026-11-18T02:33:31.405898+00:00",
+      "fim_utc": "2026-11-18T02:33:31.521290+00:00",
+      "duracao_ponta_a_ponta_ms": 115.392,
+      "duracao_medida_atividades_ms": 94.297,
+      "tempo_nao_atribuido_ms": 21.095,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Validar requisição → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Resposta entregue → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023331Z-6dae4182",
+      "trigger": "api_simular",
+      "resultado": "Execução concluída",
+      "eventos": 19,
+      "inicio_utc": "2026-11-18T02:33:31.406464+00:00",
+      "fim_utc": "2026-11-18T02:33:31.476148+00:00",
+      "duracao_ponta_a_ponta_ms": 69.684,
+      "duracao_medida_atividades_ms": 52.679,
+      "tempo_nao_atribuido_ms": 17.005,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Validar requisição → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Resposta entregue → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023331Z-d68fd430",
+      "trigger": "api_simular",
+      "resultado": "Execução concluída",
+      "eventos": 19,
+      "inicio_utc": "2026-11-18T02:33:31.407459+00:00",
+      "fim_utc": "2026-11-18T02:33:31.498508+00:00",
+      "duracao_ponta_a_ponta_ms": 91.049,
+      "duracao_medida_atividades_ms": 71.101,
+      "tempo_nao_atribuido_ms": 19.948,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Validar requisição → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Resposta entregue → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023331Z-cd050702",
+      "trigger": "api_simular",
+      "resultado": "Execução concluída",
+      "eventos": 19,
+      "inicio_utc": "2026-11-18T02:33:31.412138+00:00",
+      "fim_utc": "2026-11-18T02:33:31.547059+00:00",
+      "duracao_ponta_a_ponta_ms": 134.921,
+      "duracao_medida_atividades_ms": 117.394,
+      "tempo_nao_atribuido_ms": 17.527,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Validar requisição → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Resposta entregue → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023333Z-6c3ee662",
+      "trigger": "execucao_continua",
+      "resultado": "Execução concluída",
+      "eventos": 16,
+      "inicio_utc": "2026-11-18T02:33:33.771185+00:00",
+      "fim_utc": "2026-11-18T02:33:33.794343+00:00",
+      "duracao_ponta_a_ponta_ms": 23.158,
+      "duracao_medida_atividades_ms": 21.461,
+      "tempo_nao_atribuido_ms": 1.697,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023338Z-2e0934f8",
+      "trigger": "execucao_continua",
+      "resultado": "Execução concluída",
+      "eventos": 16,
+      "inicio_utc": "2026-11-18T02:33:38.795027+00:00",
+      "fim_utc": "2026-11-18T02:33:38.824296+00:00",
+      "duracao_ponta_a_ponta_ms": 29.269,
+      "duracao_medida_atividades_ms": 27.368,
+      "tempo_nao_atribuido_ms": 1.901,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023343Z-7dd7bccd",
+      "trigger": "execucao_continua",
+      "resultado": "Execução concluída",
+      "eventos": 16,
+      "inicio_utc": "2026-11-18T02:33:43.824987+00:00",
+      "fim_utc": "2026-11-18T02:33:43.850446+00:00",
+      "duracao_ponta_a_ponta_ms": 25.459,
+      "duracao_medida_atividades_ms": 23.784,
+      "tempo_nao_atribuido_ms": 1.675,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023348Z-dec30292",
+      "trigger": "execucao_continua",
+      "resultado": "Execução concluída",
+      "eventos": 16,
+      "inicio_utc": "2026-11-18T02:33:48.851145+00:00",
+      "fim_utc": "2026-11-18T02:33:48.873261+00:00",
+      "duracao_ponta_a_ponta_ms": 22.116,
+      "duracao_medida_atividades_ms": 20.555,
+      "tempo_nao_atribuido_ms": 1.561,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023353Z-6865137b",
+      "trigger": "execucao_continua",
+      "resultado": "Execução concluída",
+      "eventos": 16,
+      "inicio_utc": "2026-11-18T02:33:53.873876+00:00",
+      "fim_utc": "2026-11-18T02:33:53.899311+00:00",
+      "duracao_ponta_a_ponta_ms": 25.435,
+      "duracao_medida_atividades_ms": 23.652,
+      "tempo_nao_atribuido_ms": 1.783,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023358Z-fcf4712f",
+      "trigger": "execucao_continua",
+      "resultado": "Execução concluída",
+      "eventos": 16,
+      "inicio_utc": "2026-11-18T02:33:58.900055+00:00",
+      "fim_utc": "2026-11-18T02:33:58.922820+00:00",
+      "duracao_ponta_a_ponta_ms": 22.765,
+      "duracao_medida_atividades_ms": 20.936,
+      "tempo_nao_atribuido_ms": 1.829,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023403Z-86c2ded4",
+      "trigger": "execucao_continua",
+      "resultado": "Execução concluída",
+      "eventos": 16,
+      "inicio_utc": "2026-11-18T02:34:03.923460+00:00",
+      "fim_utc": "2026-11-18T02:34:03.948457+00:00",
+      "duracao_ponta_a_ponta_ms": 24.997,
+      "duracao_medida_atividades_ms": 23.207,
+      "tempo_nao_atribuido_ms": 1.79,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023408Z-25bba299",
+      "trigger": "execucao_continua",
+      "resultado": "Execução concluída",
+      "eventos": 16,
+      "inicio_utc": "2026-11-18T02:34:08.949172+00:00",
+      "fim_utc": "2026-11-18T02:34:08.975577+00:00",
+      "duracao_ponta_a_ponta_ms": 26.405,
+      "duracao_medida_atividades_ms": 24.54,
+      "tempo_nao_atribuido_ms": 1.865,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023413Z-a08026c7",
+      "trigger": "execucao_continua",
+      "resultado": "Execução concluída",
+      "eventos": 16,
+      "inicio_utc": "2026-11-18T02:34:13.976346+00:00",
+      "fim_utc": "2026-11-18T02:34:13.998871+00:00",
+      "duracao_ponta_a_ponta_ms": 22.525,
+      "duracao_medida_atividades_ms": 20.856,
+      "tempo_nao_atribuido_ms": 1.669,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023418Z-9ca119f2",
+      "trigger": "execucao_continua",
+      "resultado": "Execução concluída",
+      "eventos": 16,
+      "inicio_utc": "2026-11-18T02:34:18.999447+00:00",
+      "fim_utc": "2026-11-18T02:34:19.023591+00:00",
+      "duracao_ponta_a_ponta_ms": 24.144,
+      "duracao_medida_atividades_ms": 22.326,
+      "tempo_nao_atribuido_ms": 1.818,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023424Z-1a5b3306",
+      "trigger": "execucao_continua",
+      "resultado": "Execução concluída",
+      "eventos": 16,
+      "inicio_utc": "2026-11-18T02:34:24.024329+00:00",
+      "fim_utc": "2026-11-18T02:34:24.049762+00:00",
+      "duracao_ponta_a_ponta_ms": 25.433,
+      "duracao_medida_atividades_ms": 23.78,
+      "tempo_nao_atribuido_ms": 1.653,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023429Z-40a352a9",
+      "trigger": "execucao_continua",
+      "resultado": "Execução concluída",
+      "eventos": 16,
+      "inicio_utc": "2026-11-18T02:34:29.050303+00:00",
+      "fim_utc": "2026-11-18T02:34:29.074139+00:00",
+      "duracao_ponta_a_ponta_ms": 23.836,
+      "duracao_medida_atividades_ms": 22.124,
+      "tempo_nao_atribuido_ms": 1.712,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023434Z-5563b5f2",
+      "trigger": "execucao_continua",
+      "resultado": "Execução concluída",
+      "eventos": 16,
+      "inicio_utc": "2026-11-18T02:34:34.074809+00:00",
+      "fim_utc": "2026-11-18T02:34:34.109871+00:00",
+      "duracao_ponta_a_ponta_ms": 35.062,
+      "duracao_medida_atividades_ms": 33.195,
+      "tempo_nao_atribuido_ms": 1.867,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023439Z-80cd9b0d",
+      "trigger": "execucao_continua",
+      "resultado": "Execução concluída",
+      "eventos": 16,
+      "inicio_utc": "2026-11-18T02:34:39.110506+00:00",
+      "fim_utc": "2026-11-18T02:34:39.139287+00:00",
+      "duracao_ponta_a_ponta_ms": 28.781,
+      "duracao_medida_atividades_ms": 26.789,
+      "tempo_nao_atribuido_ms": 1.992,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023444Z-6c548369",
+      "trigger": "execucao_continua",
+      "resultado": "Execução concluída",
+      "eventos": 16,
+      "inicio_utc": "2026-11-18T02:34:44.140950+00:00",
+      "fim_utc": "2026-11-18T02:34:44.167110+00:00",
+      "duracao_ponta_a_ponta_ms": 26.16,
+      "duracao_medida_atividades_ms": 24.334,
+      "tempo_nao_atribuido_ms": 1.826,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023449Z-3bcd4c39",
+      "trigger": "execucao_continua",
+      "resultado": "Execução concluída",
+      "eventos": 16,
+      "inicio_utc": "2026-11-18T02:34:49.167759+00:00",
+      "fim_utc": "2026-11-18T02:34:49.192833+00:00",
+      "duracao_ponta_a_ponta_ms": 25.074,
+      "duracao_medida_atividades_ms": 23.347,
+      "tempo_nao_atribuido_ms": 1.727,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023454Z-03fd621f",
+      "trigger": "execucao_continua",
+      "resultado": "Execução concluída",
+      "eventos": 16,
+      "inicio_utc": "2026-11-18T02:34:54.193514+00:00",
+      "fim_utc": "2026-11-18T02:34:54.218814+00:00",
+      "duracao_ponta_a_ponta_ms": 25.3,
+      "duracao_medida_atividades_ms": 23.503,
+      "tempo_nao_atribuido_ms": 1.797,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023459Z-09b3239d",
+      "trigger": "execucao_continua",
+      "resultado": "Execução concluída",
+      "eventos": 16,
+      "inicio_utc": "2026-11-18T02:34:59.219447+00:00",
+      "fim_utc": "2026-11-18T02:34:59.244618+00:00",
+      "duracao_ponta_a_ponta_ms": 25.171,
+      "duracao_medida_atividades_ms": 23.373,
+      "tempo_nao_atribuido_ms": 1.798,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Gerar leituras simuladas → Validar dados de entrada → Aguardar trava de escrita → Persistir Raw → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023500Z-b9d77400",
+      "trigger": "cli_importar_sensores",
+      "resultado": "Execução concluída",
+      "eventos": 13,
+      "inicio_utc": "2026-11-18T02:35:00.513675+00:00",
+      "fim_utc": "2026-11-18T02:35:00.542053+00:00",
+      "duracao_ponta_a_ponta_ms": 28.378,
+      "duracao_medida_atividades_ms": 27.028,
+      "tempo_nao_atribuido_ms": 1.35,
+      "conforme_fluxo_esperado": false,
+      "variante": "Entrada recebida → Validar dados de entrada → Persistir Raw → Publicar Trusted → Descartar duplicatas → Aplicar regras R1–R7 → Publicar Refined → Execução concluída"
+    },
+    {
+      "case_id": "RUN-20261118T023500Z-a4e9c7d9",
+      "trigger": "cli_importar_sensores",
+      "resultado": "Entrada rejeitada",
+      "eventos": 4,
+      "inicio_utc": "2026-11-18T02:35:00.609826+00:00",
+      "fim_utc": "2026-11-18T02:35:00.610799+00:00",
+      "duracao_ponta_a_ponta_ms": 0.973,
+      "duracao_medida_atividades_ms": 0.077,
+      "tempo_nao_atribuido_ms": 0.896,
+      "conforme_fluxo_esperado": false,
+      "variante": "Entrada recebida → Validar dados de entrada → Entrada rejeitada"
+    },
+    {
+      "case_id": "RUN-20261118T023500Z-b908f4f0",
+      "trigger": "cli_processar",
+      "resultado": "Execução concluída",
+      "eventos": 8,
+      "inicio_utc": "2026-11-18T02:35:00.672451+00:00",
+      "fim_utc": "2026-11-18T02:35:00.699251+00:00",
+      "duracao_ponta_a_ponta_ms": 26.8,
+      "duracao_medida_atividades_ms": 25.774,
+      "tempo_nao_atribuido_ms": 1.026,
+      "conforme_fluxo_esperado": true,
+      "variante": "Entrada recebida → Publicar Trusted → Aplicar regras R1–R7 → Publicar Refined → Execução concluída"
+    }
+  ],
+  "validacao": {
+    "problemas": [],
+    "aprovado": true
+  }
+}

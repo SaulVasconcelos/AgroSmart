@@ -1,0 +1,2 @@
+{"ciclo": 1, "case_id": "RUN-20261118T231246Z-fbb033cf", "inicio_utc": "2026-11-18T23:12:46.142+00:00", "fim_utc": "2026-11-18T23:12:46.173+00:00", "duracao_ms": 31.427, "resultado": "sucesso", "recebidos": 3, "aceitos": 3, "duplicados": 0, "rejeitados": 0, "raw_total": 148, "erro": ""}
+{"ciclo": 2, "case_id": "RUN-20261118T231251Z-2fd58fcf", "inicio_utc": "2026-11-18T23:12:51.175+00:00", "fim_utc": "2026-11-18T23:12:51.213+00:00", "duracao_ms": 38.697, "resultado": "sucesso", "recebidos": 3, "aceitos": 3, "duplicados": 0, "rejeitados": 0, "raw_total": 151, "erro": ""}

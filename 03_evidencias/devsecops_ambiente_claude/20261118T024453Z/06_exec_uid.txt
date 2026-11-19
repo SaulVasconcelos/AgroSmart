@@ -1,0 +1,4 @@
+$ docker exec agrosmart-pipeline-20261118t024453z id -u
+# exit_code=0
+
+10001

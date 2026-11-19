@@ -1,0 +1,7 @@
+$ docker pull aquasec/trivy:0.76.1
+# exit_code=0
+
+0.76.1: Pulling from aquasec/trivy
+Digest: sha256:790fd66d1697395d8693d1acaa1ea702406a20f109b6fc7bac8db623eca6c06c
+Status: Image is up to date for aquasec/trivy:0.76.1
+docker.io/aquasec/trivy:0.76.1

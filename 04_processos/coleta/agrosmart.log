@@ -1,0 +1,136 @@
+2026-11-18T02:33:23.577+00:00 INFO    http servidor iniciado versao=7.0.0 host=127.0.0.1 porta=35561 log_arquivo=sim
+2026-11-18T02:33:23.713+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/pronto HTTP/1.1" 200 -
+2026-11-18T02:33:23.715+00:00 INFO    operacao execucao_continua iniciada intervalo_s=5.0 eventos_por_ciclo=3
+2026-11-18T02:33:23.715+00:00 INFO    http requisicao cliente=127.0.0.1 "POST /api/operacao/iniciar HTTP/1.1" 200 -
+2026-11-18T02:33:23.739+00:00 INFO    operacao ciclo=1 case_id=RUN-20261118T023323Z-2c93e668 resultado=sucesso duracao_ms=23.828 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=147
+2026-11-18T02:33:23.761+00:00 INFO    http requisicao cliente=127.0.0.1 "POST /api/simular HTTP/1.1" 200 -
+2026-11-18T02:33:25.288+00:00 INFO    http requisicao cliente=127.0.0.1 "POST /api/simular HTTP/1.1" 200 -
+2026-11-18T02:33:26.812+00:00 INFO    http requisicao cliente=127.0.0.1 "POST /api/simular HTTP/1.1" 200 -
+2026-11-18T02:33:28.337+00:00 INFO    http requisicao cliente=127.0.0.1 "POST /api/simular HTTP/1.1" 200 -
+2026-11-18T02:33:28.770+00:00 INFO    operacao ciclo=2 case_id=RUN-20261118T023328Z-8fc55db6 resultado=sucesso duracao_ms=30.32 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=162
+2026-11-18T02:33:29.864+00:00 INFO    http requisicao cliente=127.0.0.1 "POST /api/simular HTTP/1.1" 200 -
+2026-11-18T02:33:31.366+00:00 INFO    http requisicao cliente=127.0.0.1 "POST /api/simular HTTP/1.1" 400 -
+2026-11-18T02:33:31.368+00:00 INFO    http requisicao cliente=127.0.0.1 "POST /api/simular HTTP/1.1" 400 -
+2026-11-18T02:33:31.370+00:00 INFO    http requisicao cliente=127.0.0.1 "POST /api/simular HTTP/1.1" 400 -
+2026-11-18T02:33:31.393+00:00 INFO    http requisicao cliente=127.0.0.1 "POST /api/importar-observacoes HTTP/1.1" 200 -
+2026-11-18T02:33:31.395+00:00 INFO    http requisicao cliente=127.0.0.1 "POST /api/importar-observacoes HTTP/1.1" 400 -
+2026-11-18T02:33:31.397+00:00 INFO    http requisicao cliente=127.0.0.1 "POST /api/importar-observacoes HTTP/1.1" 400 -
+2026-11-18T02:33:31.430+00:00 INFO    http requisicao cliente=127.0.0.1 "POST /api/simular HTTP/1.1" 200 -
+2026-11-18T02:33:31.452+00:00 INFO    http requisicao cliente=127.0.0.1 "POST /api/simular HTTP/1.1" 200 -
+2026-11-18T02:33:31.475+00:00 INFO    http requisicao cliente=127.0.0.1 "POST /api/simular HTTP/1.1" 200 -
+2026-11-18T02:33:31.497+00:00 INFO    http requisicao cliente=127.0.0.1 "POST /api/simular HTTP/1.1" 200 -
+2026-11-18T02:33:31.520+00:00 INFO    http requisicao cliente=127.0.0.1 "POST /api/simular HTTP/1.1" 200 -
+2026-11-18T02:33:31.546+00:00 INFO    http requisicao cliente=127.0.0.1 "POST /api/simular HTTP/1.1" 200 -
+2026-11-18T02:33:31.549+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:32.552+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:33.556+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:33.794+00:00 INFO    operacao ciclo=3 case_id=RUN-20261118T023333Z-6c3ee662 resultado=sucesso duracao_ms=23.265 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=179
+2026-11-18T02:33:34.559+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:35.562+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:36.568+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:37.571+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:38.574+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:38.824+00:00 INFO    operacao ciclo=4 case_id=RUN-20261118T023338Z-2e0934f8 resultado=sucesso duracao_ms=29.375 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=182
+2026-11-18T02:33:39.578+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:40.581+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:41.585+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:42.588+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:43.591+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:43.850+00:00 INFO    operacao ciclo=5 case_id=RUN-20261118T023343Z-7dd7bccd resultado=sucesso duracao_ms=25.616 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=185
+2026-11-18T02:33:44.597+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:45.602+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:46.605+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:47.608+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:48.613+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:48.873+00:00 INFO    operacao ciclo=6 case_id=RUN-20261118T023348Z-dec30292 resultado=sucesso duracao_ms=22.231 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=188
+2026-11-18T02:33:49.617+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:50.620+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:51.624+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:52.628+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:53.631+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:53.899+00:00 INFO    operacao ciclo=7 case_id=RUN-20261118T023353Z-6865137b resultado=sucesso duracao_ms=25.546 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=191
+2026-11-18T02:33:54.634+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:55.638+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:56.642+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:57.646+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:58.650+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:33:58.923+00:00 INFO    operacao ciclo=8 case_id=RUN-20261118T023358Z-fcf4712f resultado=sucesso duracao_ms=22.892 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=194
+2026-11-18T02:33:59.653+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:00.656+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:01.660+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:02.664+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:03.667+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:03.948+00:00 INFO    operacao ciclo=9 case_id=RUN-20261118T023403Z-86c2ded4 resultado=sucesso duracao_ms=25.175 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=197
+2026-11-18T02:34:04.673+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:05.677+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:06.682+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:07.686+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:08.690+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:08.975+00:00 INFO    operacao ciclo=10 case_id=RUN-20261118T023408Z-25bba299 resultado=sucesso duracao_ms=26.604 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=200
+2026-11-18T02:34:09.693+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:10.697+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:11.701+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:12.704+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:13.708+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:13.999+00:00 INFO    operacao ciclo=11 case_id=RUN-20261118T023413Z-a08026c7 resultado=sucesso duracao_ms=22.635 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=203
+2026-11-18T02:34:14.711+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:15.715+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:16.718+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:17.722+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:18.725+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:19.023+00:00 INFO    operacao ciclo=12 case_id=RUN-20261118T023418Z-9ca119f2 resultado=sucesso duracao_ms=24.345 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=206
+2026-11-18T02:34:19.732+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:20.736+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:21.740+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:22.743+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:23.747+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:24.049+00:00 INFO    operacao ciclo=13 case_id=RUN-20261118T023424Z-1a5b3306 resultado=sucesso duracao_ms=25.564 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=209
+2026-11-18T02:34:24.750+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:25.753+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:26.757+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:27.760+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:28.764+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:29.074+00:00 INFO    operacao ciclo=14 case_id=RUN-20261118T023429Z-40a352a9 resultado=sucesso duracao_ms=23.96 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=212
+2026-11-18T02:34:29.768+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:30.776+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:31.779+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:32.783+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:33.786+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:34.110+00:00 INFO    operacao ciclo=15 case_id=RUN-20261118T023434Z-5563b5f2 resultado=sucesso duracao_ms=35.185 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=215
+2026-11-18T02:34:34.791+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:35.795+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:36.799+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:37.803+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:38.807+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:39.140+00:00 INFO    operacao ciclo=16 case_id=RUN-20261118T023439Z-80cd9b0d resultado=sucesso duracao_ms=28.879 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=218
+2026-11-18T02:34:39.810+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:40.814+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:41.819+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:42.823+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:43.826+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:44.167+00:00 INFO    operacao ciclo=17 case_id=RUN-20261118T023444Z-6c548369 resultado=sucesso duracao_ms=26.263 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=221
+2026-11-18T02:34:44.830+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:45.834+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:46.837+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:47.841+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:48.845+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:49.193+00:00 INFO    operacao ciclo=18 case_id=RUN-20261118T023449Z-3bcd4c39 resultado=sucesso duracao_ms=25.233 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=224
+2026-11-18T02:34:49.848+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:50.852+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:51.856+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:52.860+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:53.863+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:54.218+00:00 INFO    operacao ciclo=19 case_id=RUN-20261118T023454Z-03fd621f resultado=sucesso duracao_ms=25.409 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=227
+2026-11-18T02:34:54.867+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:55.870+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:56.874+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:57.877+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:58.882+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:59.244+00:00 INFO    operacao ciclo=20 case_id=RUN-20261118T023459Z-09b3239d resultado=sucesso duracao_ms=25.316 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=230
+2026-11-18T02:34:59.886+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:59.888+00:00 INFO    operacao execucao_continua parada motivo=solicitado pela interface/API ciclos_total=20
+2026-11-18T02:34:59.888+00:00 INFO    http requisicao cliente=127.0.0.1 "POST /api/operacao/parar HTTP/1.1" 200 -
+2026-11-18T02:34:59.890+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:34:59.891+00:00 INFO    http sinal recebido sinal=SIGTERM; encerrando
+2026-11-18T02:35:00.391+00:00 INFO    operacao execucao_continua parada motivo=encerramento do servidor ciclos_total=20
+2026-11-18T02:35:00.392+00:00 INFO    http servidor encerrado ciclos_total=20

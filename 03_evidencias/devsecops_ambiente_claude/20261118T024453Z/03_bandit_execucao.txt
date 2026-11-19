@@ -1,0 +1,15 @@
+$ /home/claude/fase7/FASE_7_AGROSMART/02_plataforma/.venv-devsecops/bin/python -m bandit -c pyproject.toml -r agrosmart main.py -f json -o /home/claude/fase7/FASE_7_AGROSMART/02_plataforma/relatorios/20261118T024453Z/03_bandit.json
+# exit_code=1
+
+
+[main]	INFO	profile include tests: None
+[main]	INFO	profile exclude tests: None
+[main]	INFO	cli include tests: None
+[main]	INFO	cli exclude tests: None
+[manager]	WARNING	Test in comment: esquema is not a test name or id, ignoring
+[manager]	WARNING	Test in comment: restrito is not a test name or id, ignoring
+[manager]	WARNING	Test in comment: a is not a test name or id, ignoring
+[manager]	WARNING	Test in comment: http is not a test name or id, ignoring
+[manager]	WARNING	Test in comment: https is not a test name or id, ignoring
+[manager]	WARNING	Test in comment: acima is not a test name or id, ignoring
+[json]	INFO	JSON output written to file: /home/claude/fase7/FASE_7_AGROSMART/02_plataforma/relatorios/20261118T024453Z/03_bandit.json

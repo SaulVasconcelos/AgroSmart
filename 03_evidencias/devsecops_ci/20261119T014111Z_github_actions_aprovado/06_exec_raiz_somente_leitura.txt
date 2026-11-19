@@ -1,0 +1,9 @@
+$ docker exec agrosmart-pipeline-20261119t014111z python -c import pathlib
+try:
+ pathlib.Path('/app/teste').write_text('x')
+ print('GRAVOU')
+except OSError as e:
+ print('NEGADO', type(e).__name__)
+# exit_code=0
+
+NEGADO OSError

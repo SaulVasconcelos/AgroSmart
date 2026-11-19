@@ -1,0 +1,21 @@
+$ docker run --rm -v agrosmart-trivy-cache:/root/.cache/ -v /home/runner/work/AgroSmart/AgroSmart/02_plataforma/relatorios/20261119T014111Z:/work aquasec/trivy:0.76.1 image --input /work/imagem_agrosmart.tar --scanners vuln --format json --output /work/07_trivy_imagem.json
+# exit_code=0
+
+
+2026-11-19T01:41:52Z	INFO	[vulndb] Need to update DB
+2026-11-19T01:41:52Z	INFO	[vulndb] Downloading vulnerability DB...
+2026-11-19T01:41:52Z	INFO	[vulndb] Downloading artifact...	repo="mirror.gcr.io/aquasec/trivy-db:2"
+30.91 MiB / 134.53 MiB [------------->______________________________________________] 22.97% ? p/s ?71.25 MiB / 134.53 MiB [------------------------------->____________________________] 52.96% ? p/s ?121.82 MiB / 134.53 MiB [----------------------------------------------------->_____] 90.55% ? p/s ?134.53 MiB / 134.53 MiB [------------------------------------------->] 100.00% 172.61 MiB p/s ETA 0s134.53 MiB / 134.53 MiB [------------------------------------------->] 100.00% 172.61 MiB p/s ETA 0s134.53 MiB / 134.53 MiB [------------------------------------------->] 100.00% 172.61 MiB p/s ETA 0s134.53 MiB / 134.53 MiB [------------------------------------------->] 100.00% 161.47 MiB p/s ETA 0s134.53 MiB / 134.53 MiB [------------------------------------------->] 100.00% 161.47 MiB p/s ETA 0s134.53 MiB / 134.53 MiB [------------------------------------------->] 100.00% 161.47 MiB p/s ETA 0s134.53 MiB / 134.53 MiB [------------------------------------------->] 100.00% 151.06 MiB p/s ETA 0s134.53 MiB / 134.53 MiB [------------------------------------------->] 100.00% 151.06 MiB p/s ETA 0s134.53 MiB / 134.53 MiB [------------------------------------------->] 100.00% 151.06 MiB p/s ETA 0s134.53 MiB / 134.53 MiB [------------------------------------------->] 100.00% 141.31 MiB p/s ETA 0s134.53 MiB / 134.53 MiB [------------------------------------------->] 100.00% 141.31 MiB p/s ETA 0s134.53 MiB / 134.53 MiB [------------------------------------------->] 100.00% 141.31 MiB p/s ETA 0s134.53 MiB / 134.53 MiB [------------------------------------------->] 100.00% 132.19 MiB p/s ETA 0s134.53 MiB / 134.53 MiB [-----------------------------------------------] 100.00% 43.10 MiB p/s 3.3s2026-11-19T01:41:57Z	INFO	[vulndb] Artifact successfully downloaded	repo="mirror.gcr.io/aquasec/trivy-db:2"
+2026-11-19T01:41:57Z	INFO	[vuln] Vulnerability scanning is enabled
+2026-11-19T01:41:57Z	WARN	Third-party SBOM may lead to inaccurate vulnerability detection
+2026-11-19T01:41:57Z	WARN	Recommend using Trivy to generate SBOMs
+2026-11-19T01:41:58Z	INFO	Detected OS	family="debian" version="13.7"
+2026-11-19T01:41:58Z	INFO	[debian] Detecting vulnerabilities...	os_version="13" pkg_num=87
+2026-11-19T01:41:58Z	INFO	Number of language-specific files	num=0
+2026-11-19T01:41:58Z	WARN	Using severities from other vendors for some vulnerabilities. Read https://trivy.dev/docs/v0.76/guide/scanner/vulnerability#severity-selection for details.
+
+📣 [34mNotices:[0m
+  - Version 0.76.2 of Trivy is now available, current version is 0.76.1
+
+To suppress version checks, run Trivy scans with the --skip-version-check flag
+

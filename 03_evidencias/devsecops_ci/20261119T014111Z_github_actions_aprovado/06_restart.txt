@@ -1,0 +1,4 @@
+$ docker restart -t 15 agrosmart-pipeline-20261119t014111z
+# exit_code=0
+
+agrosmart-pipeline-20261119t014111z

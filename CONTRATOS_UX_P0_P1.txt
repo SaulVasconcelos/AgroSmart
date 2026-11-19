@@ -1,0 +1,67 @@
+CONTRATOS UX P0/P1 — APENAS CONSULTAS ADICIONAIS
+10/10/2026. Python stdlib, leitura dos arquivos Refined existentes.
+
+CONTRATOS EXISTENTES
+GET /api/health e GET /api/estado continuam disponíveis. POST /api/simular e
+POST /api/importar-observacoes mantêm payloads, resultados e limites anteriores.
+GET /api/estado ganha somente o campo aditivo ultimas_por_talhao: lista de registros
+Refined da última leitura de cada área dentro do talhão/período aplicado. Preserva
+todos os campos e limites antigos, incluindo 120 alertas e 120 últimas leituras.
+A nova tela de alertas utiliza o novo GET integral; não ordena uma lista truncada.
+
+GET /api/alertas
+Parâmetros opcionais:
+talhao: vazio ou Talhao A, Talhao B, Talhao C (valores originais, sem acento).
+inicio / fim: datas inclusivas AAAA-MM-DD, calendário válido, inicio <= fim.
+severidade: vazio, Crítica, Alta ou Média. Não inclui R7 ou ND.
+ordem: prioridade (padrão) ou recencia.
+pagina: inteiro de 1 a 1000000, padrão 1.
+tamanho: inteiro de 1 a 100, padrão 20.
+
+Resposta 200:
+itens: registros completos Refined desta página, sem reclassificação;
+total: quantidade após todos os filtros;
+severidades: contagens após todos os filtros, inclusive severidade;
+pagina, paginas, tamanho: página efetiva, quantidade e tamanho solicitado;
+inicio_exibido, fim_exibido: faixa 1-base; 0/0 quando vazia;
+filtros, escopo: contexto aplicado e explicação histórica.
+Ordena todos os registros antes de paginar. Prioridade: Crítica > Alta > Média;
+empates por data/hora decrescente, talhão e sensor decrescentes, de modo estável.
+Recência: data/hora decrescente com os mesmos desempates. Página acima da última
+disponível retorna a última página válida; resultado vazio tem página 1 de 1.
+
+Exemplos (com o servidor iniciado):
+  /api/alertas?pagina=1&tamanho=20
+  /api/alertas?severidade=Cr%C3%ADtica&talhao=Talhao%20B
+  /api/alertas?inicio=2026-10-01&fim=2026-10-02&ordem=recencia
+Baseline: total 109, 6 páginas de 20; última página 101–109.
+Severidades sem filtro: 8 Crítica, 61 Alta, 40 Média.
+
+GET /api/talhao
+talhao obrigatório. inicio / fim opcionais, mesma validação acima.
+data_hora e sensor_id opcionais, informados juntos. Identificam exatamente a leitura
+no talhão e período. O instante deve ser parseável e coincidir com o valor original.
+Resposta 200:
+talhao, cultura: cadastro existente;
+resumo: indicadores do estado_dashboard filtrado, ou null sem leituras;
+ultima_leitura: registro mais recente dentro do filtro, ou null;
+leitura_selecionada: registro identificado pelo par, ou null quando não solicitado;
+serie: médias diárias somente da área/período;
+avaliacoes: contagens dos valores de avaliação originais;
+observacoes_ausentes: registros cuja origem_observacao é Ausente;
+filtros, escopo: contexto aplicado.
+Nenhum diagnóstico por imagem é vinculado a essa resposta.
+
+Exemplos:
+  /api/talhao?talhao=Talhao%20A
+  /api/talhao?talhao=Talhao%20B&sensor_id=S-002&data_hora=2026-10-06T12%3A00%3A00
+No segundo exemplo, a leitura selecionada é R1 de 06/10; a última é R3 de 08/10.
+
+ERROS E EFEITOS
+400: parâmetro desconhecido/repetido, formato/valor inválido ou talhão obrigatório
+ausente. 404: leitura solicitada fora do contexto ou rota/método indisponível.
+Corpo de erro JSON: {"erro": "mensagem"}. POST nesses novos caminhos retorna 404.
+As consultas não gravam arquivos, não avaliam regras novamente e não alteram dados.
+O servidor usa a trava existente para manter a consulta consistente com operações.
+Somente /icons.svg foi acrescido à lista fechada de assets servidos; arquivos
+arbitrários continuam indisponíveis. O host padrão continua 127.0.0.1.

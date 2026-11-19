@@ -1,0 +1,17 @@
+flowchart TD
+  E(["Entrada recebida<br/>(ciclo contínuo · POST · CLI)"]) --> VR{"Validar requisição<br/>(somente API)"}
+  VR -->|inválida| RE["Resposta entregue · HTTP 400"] --> X(["Entrada rejeitada"])
+  VR -->|válida| G["Gerar leituras simuladas<br/>(quando o gatilho simula)"]
+  E -->|ciclo contínuo| G
+  G --> VD{"Validar dados de entrada"}
+  E -->|importação| VD
+  VD -->|"inválidos (na API, após resposta HTTP 400)"| X
+  VD -->|válidos| T["Aguardar trava de escrita<br/>(somente no servidor)"]
+  T --> R["Persistir Raw"]
+  R --> PT["Publicar Trusted<br/>validação + deduplicação"]
+  PT -.->|se houver| D["Descartar duplicatas"]
+  PT --> AR["Aplicar regras R1–R7"]
+  D -.-> AR
+  AR --> PR["Publicar Refined"]
+  PR -->|API| OK["Resposta entregue · HTTP 200"] --> C(["Execução concluída"])
+  PR -->|ciclo contínuo / CLI| C

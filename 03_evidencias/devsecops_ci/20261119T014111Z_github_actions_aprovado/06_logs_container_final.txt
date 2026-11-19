@@ -1,0 +1,38 @@
+$ docker logs agrosmart-pipeline-20261119t014111z
+# exit_code=0
+
+inicializacao_dados semeado=True motivo=pasta vazia inicializada com a amostra determinística
+2026-11-19T01:41:40.402+00:00 INFO    http servidor iniciado versao=7.0.0 host=0.0.0.0 porta=8501 log_arquivo=sim
+AgroSmart/AgroMonitor em http://0.0.0.0:8501 (CTRL+C encerra)
+2026-11-19T01:41:41.105+00:00 INFO    http requisicao cliente=172.17.0.1 "GET /api/pronto HTTP/1.1" 200 -
+2026-11-19T01:41:41.106+00:00 INFO    http requisicao cliente=172.17.0.1 "GET /api/health HTTP/1.1" 200 -
+2026-11-19T01:41:41.114+00:00 INFO    http requisicao cliente=172.17.0.1 "GET /api/estado HTTP/1.1" 200 -
+2026-11-19T01:41:41.117+00:00 INFO    http requisicao cliente=172.17.0.1 "GET /api/alertas HTTP/1.1" 200 -
+2026-11-19T01:41:41.135+00:00 INFO    http requisicao cliente=172.17.0.1 "POST /api/simular HTTP/1.1" 200 -
+2026-11-19T01:41:41.136+00:00 INFO    http requisicao cliente=172.17.0.1 "POST /api/simular HTTP/1.1" 400 -
+2026-11-19T01:41:41.137+00:00 INFO    operacao execucao_continua iniciada intervalo_s=5.0 eventos_por_ciclo=3
+2026-11-19T01:41:41.138+00:00 INFO    http requisicao cliente=172.17.0.1 "POST /api/operacao/iniciar HTTP/1.1" 200 -
+2026-11-19T01:41:41.140+00:00 INFO    http requisicao cliente=172.17.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-19T01:41:41.156+00:00 INFO    operacao ciclo=1 case_id=RUN-20261119T014141Z-902fb593 resultado=sucesso duracao_ms=18.772 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=148
+2026-11-19T01:41:42.143+00:00 INFO    http requisicao cliente=172.17.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-19T01:41:43.146+00:00 INFO    http requisicao cliente=172.17.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-19T01:41:44.149+00:00 INFO    http requisicao cliente=172.17.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-19T01:41:45.151+00:00 INFO    http requisicao cliente=172.17.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-19T01:41:45.276+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/pronto HTTP/1.1" 200 -
+2026-11-19T01:41:46.154+00:00 INFO    http requisicao cliente=172.17.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-19T01:41:46.173+00:00 INFO    operacao ciclo=2 case_id=RUN-20261119T014146Z-2b4283b8 resultado=sucesso duracao_ms=16.979 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=151
+2026-11-19T01:41:47.157+00:00 INFO    http requisicao cliente=172.17.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-19T01:41:47.159+00:00 INFO    http requisicao cliente=172.17.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-19T01:41:47.542+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/pronto HTTP/1.1" 200 -
+2026-11-19T01:41:47.566+00:00 INFO    http requisicao cliente=172.17.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-19T01:41:47.581+00:00 INFO    http sinal recebido sinal=SIGTERM; encerrando
+2026-11-19T01:41:48.067+00:00 INFO    operacao execucao_continua parada motivo=encerramento do servidor ciclos_total=2
+2026-11-19T01:41:48.067+00:00 INFO    http servidor encerrado ciclos_total=2
+inicializacao_dados semeado=False motivo=pasta de dados com conteúdo existente; preservada
+2026-11-19T01:41:48.547+00:00 INFO    http servidor iniciado versao=7.0.0 host=0.0.0.0 porta=8501 log_arquivo=sim
+AgroSmart/AgroMonitor em http://0.0.0.0:8501 (CTRL+C encerra)
+2026-11-19T01:41:49.234+00:00 INFO    http requisicao cliente=172.17.0.1 "GET /api/pronto HTTP/1.1" 200 -
+2026-11-19T01:41:49.237+00:00 INFO    http requisicao cliente=172.17.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-19T01:41:49.264+00:00 INFO    http sinal recebido sinal=SIGTERM; encerrando
+2026-11-19T01:41:49.736+00:00 INFO    operacao execucao_continua parada motivo=encerramento do servidor ciclos_total=0
+2026-11-19T01:41:49.736+00:00 INFO    http servidor encerrado ciclos_total=0

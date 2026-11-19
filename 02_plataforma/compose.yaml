@@ -1,0 +1,36 @@
+# AgroSmart / AgroMonitor — execução containerizada local (Fase 7).
+# Uso: docker compose up -d --build   → http://127.0.0.1:8517
+name: agrosmart
+
+services:
+  agrosmart:
+    build:
+      context: .
+    image: agrosmart:fase7
+    ports:
+      # Publicação somente no loopback do host; o processo escuta 0.0.0.0 dentro do container.
+      - "127.0.0.1:8517:8501"
+    environment:
+      AGROSMART_EXECUCAO_CONTINUA: "1"   # gera leituras simuladas automaticamente
+      AGROSMART_INTERVALO_S: "30"        # parâmetro de demonstração (5–3600 s)
+      AGROSMART_EVENTOS_POR_CICLO: "3"
+      AGROSMART_LIMITE_LEITURAS: "10000" # a execução contínua para ao atingir este total no Raw
+    volumes:
+      - agrosmart-dados:/data            # dados, logs, histórico de ciclos e event log
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    restart: unless-stopped
+    stop_grace_period: 15s
+    logging:
+      driver: json-file
+      options:
+        max-size: "5m"
+        max-file: "3"
+
+volumes:
+  agrosmart-dados:

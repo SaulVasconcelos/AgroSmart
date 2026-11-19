@@ -1,0 +1,29 @@
+$ node --test tests/test_frontend.cjs
+# exit_code=0
+
+✔ no readings show missing averages (346.997057ms)
+✔ measured zero remains a valid measurement (1.492317ms)
+✔ diagnostics and pipeline use their full scope (2.386486ms)
+✔ alert counts distinguish displayed and total and escape content (2.05202ms)
+✔ aggregate chart and latest date have explicit context (0.897087ms)
+✔ old responses cannot replace the latest filter response (1.271526ms)
+✔ invalid interval and HTTP failure hide old results and allow retry (1.994224ms)
+✔ simulation preserves filters and separates mutation and refresh outcomes (0.975834ms)
+✔ import disables resubmission and preserves context (1.424676ms)
+✔ server import rejection releases buttons and preserves context (0.896126ms)
+✔ reading evidence uses actual schema and ND stays undetermined (0.870966ms)
+✔ context URLs preserve period severity page and exact reading (0.804296ms)
+✔ new alert API receives filters and can return its actual page (1.130953ms)
+✔ plot lookup failure hides prior detail and reports available retry (0.857685ms)
+✔ operation panel shows active worker, data age and cycle history (1.00113ms)
+✔ stopped worker explains reason and re-enables start (0.769264ms)
+✔ operation status failure hides previous status instead of showing stale data (0.906144ms)
+✔ server without operation data does not crash the tools page (1.396476ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 427.317684

@@ -1,0 +1,15 @@
+$ docker run --rm -v agrosmart-trivy-cache:/root/.cache/ -v C:\Users\vvasc\Downloads\transferencia_fase7\FASE_7_AGROSMART\02_plataforma\relatorios\20261118T234945Z:/work aquasec/trivy:0.76.1 image --input /work/imagem_agrosmart.tar --scanners vuln --format json --output /work/07_trivy_imagem.json
+# exit_code=0
+
+
+2026-11-18T23:50:30Z	INFO	[vuln] Vulnerability scanning is enabled
+2026-11-18T23:50:45Z	INFO	Detected OS	family="debian" version="13.7"
+2026-11-18T23:50:45Z	INFO	[debian] Detecting vulnerabilities...	os_version="13" pkg_num=87
+2026-11-18T23:50:45Z	INFO	Number of language-specific files	num=0
+2026-11-18T23:50:45Z	WARN	Using severities from other vendors for some vulnerabilities. Read https://trivy.dev/docs/v0.76/guide/scanner/vulnerability#severity-selection for details.
+
+📣 [34mNotices:[0m
+  - Version 0.76.2 of Trivy is now available, current version is 0.76.1
+
+To suppress version checks, run Trivy scans with the --skip-version-check flag
+

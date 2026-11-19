@@ -1,0 +1,28 @@
+{
+  "origem": "POST /api/simular acionado pelo botao real no Chrome",
+  "payload": {
+    "talhao": "Talhao A",
+    "quantidade": 1
+  },
+  "data_hora_evento": "2026-10-10T20:01:47.857222",
+  "antes": {
+    "leituras": 144,
+    "talhoes": 3,
+    "alertas": 109,
+    "criticos": 8,
+    "umidade_media": 44.0,
+    "temperatura_media": 30.2,
+    "cobertura_campo_pct": 100.0
+  },
+  "apos": {
+    "leituras": 145,
+    "talhoes": 3,
+    "alertas": 109,
+    "criticos": 8,
+    "umidade_media": 44.2,
+    "temperatura_media": 30.2,
+    "cobertura_campo_pct": 99.3
+  },
+  "persistencia": "copia temporaria; envelope e CSVs extraidos antes da limpeza",
+  "camadas_validadas": true
+}

@@ -1,0 +1,59 @@
+{
+  "linhas": [
+    {
+      "raw_sensores": 144,
+      "repeticoes": 3,
+      "Publicar Trusted mediana_ms": 13.18,
+      "Aplicar regras R1–R7 mediana_ms": 0.65,
+      "Publicar Refined mediana_ms": 6.36,
+      "soma_medianas_ms": 20.19
+    },
+    {
+      "raw_sensores": 500,
+      "repeticoes": 3,
+      "Publicar Trusted mediana_ms": 17.01,
+      "Aplicar regras R1–R7 mediana_ms": 1.79,
+      "Publicar Refined mediana_ms": 9.62,
+      "soma_medianas_ms": 28.41
+    },
+    {
+      "raw_sensores": 1000,
+      "repeticoes": 3,
+      "Publicar Trusted mediana_ms": 22.11,
+      "Aplicar regras R1–R7 mediana_ms": 3.43,
+      "Publicar Refined mediana_ms": 15.93,
+      "soma_medianas_ms": 41.47
+    },
+    {
+      "raw_sensores": 2000,
+      "repeticoes": 3,
+      "Publicar Trusted mediana_ms": 32.38,
+      "Aplicar regras R1–R7 mediana_ms": 7.06,
+      "Publicar Refined mediana_ms": 27.7,
+      "soma_medianas_ms": 67.13
+    },
+    {
+      "raw_sensores": 4000,
+      "repeticoes": 3,
+      "Publicar Trusted mediana_ms": 54.8,
+      "Aplicar regras R1–R7 mediana_ms": 14.02,
+      "Publicar Refined mediana_ms": 52.99,
+      "soma_medianas_ms": 121.81
+    },
+    {
+      "raw_sensores": 8000,
+      "repeticoes": 3,
+      "Publicar Trusted mediana_ms": 97.28,
+      "Aplicar regras R1–R7 mediana_ms": 25.86,
+      "Publicar Refined mediana_ms": 95.99,
+      "soma_medianas_ms": 219.13
+    }
+  ],
+  "regressao_linear": {
+    "ms_por_1000_registros": 25.5,
+    "intercepto_ms": 16.53,
+    "pearson_r": 0.9998,
+    "n_tamanhos": 6
+  },
+  "metodo": "mediana de N repetições por tamanho; tempos medidos por perf_counter dentro de processar(); mesma máquina; sem carga concorrente"
+}
