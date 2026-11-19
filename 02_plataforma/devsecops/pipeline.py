@@ -101,12 +101,25 @@ def _so_versao(nome: str, texto: str) -> str:
 
 
 def _contar_js(saida: str) -> str:
-    """Node 18 aninha os cenários num subteste por arquivo; Node 20+ lista cada um no topo."""
-    aninhados = [ln for ln in saida.splitlines() if re.match(r"^\s+ok \d+ - ", ln)]
-    falhos = [ln for ln in saida.splitlines() if re.match(r"^\s*not ok \d+ - ", ln)]
+    """Conta os cenários do `node --test` nos dois formatos de saída.
+
+    Node 18/20 sem terminal usam TAP: o Node 18 aninha os cenários num subteste por arquivo
+    (`    ok 1 - ...`) e o resumo vem como `# pass N`. Do Node 23 em diante o padrão é o
+    reporter `spec`, cujo resumo vem como `ℹ pass N` / `ℹ fail N`.
+    """
+    linhas = saida.splitlines()
+    aninhados = [ln for ln in linhas if re.match(r"^\s+ok \d+ - ", ln)]
+    falhos = [ln for ln in linhas if re.match(r"^\s*not ok \d+ - ", ln)]
     if aninhados:
         return f"{len(aninhados)} cenários aprovados ({len(falhos)} reprovados)"
-    return next((f"{ln.split()[2]} cenários aprovados" for ln in saida.splitlines() if ln.startswith("# pass")), "?")
+    resumo = {}
+    for ln in linhas:
+        m = re.match(r"^(?:#|ℹ)\s+(pass|fail)\s+(\d+)\s*$", ln.strip())
+        if m:
+            resumo[m.group(1)] = int(m.group(2))
+    if "pass" in resumo:
+        return f"{resumo['pass']} cenários aprovados ({resumo.get('fail', 0)} reprovados)"
+    return "?"
 
 
 # --------------------------------------------------------------------------- etapas

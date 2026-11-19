@@ -8,3 +8,5 @@ __pycache__/
 02_plataforma/data/processos/
 02_plataforma/data/operacao/
 *.tmp
+# Zip de artefato baixado do GitHub Actions (o conteúdo vai para 03_evidencias/devsecops_ci/)
+relatorios-devsecops-*.zip

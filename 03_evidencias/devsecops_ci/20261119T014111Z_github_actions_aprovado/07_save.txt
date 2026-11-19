@@ -1,0 +1,3 @@
+$ docker save -o /home/runner/work/AgroSmart/AgroSmart/02_plataforma/relatorios/20261119T014111Z/imagem_agrosmart.tar agrosmart:fase7-pipeline
+# exit_code=0
+

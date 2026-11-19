@@ -1,6 +1,6 @@
 # Pipeline DevSecOps — AgroSmart Fase 7
 
-Um único script, [`devsecops/pipeline.py`](../devsecops/pipeline.py), roda igual na máquina local (Windows, Linux ou macOS com Docker) e no GitHub Actions (`.github/workflows/devsecops.yml`; na pasta entregue, o arquivo está em `WORKFLOW_GITHUB_devsecops.yml` e deve ser movido para esse caminho antes do push). Ferramentas de CI ficam fora da imagem de runtime.
+Um único script, [`devsecops/pipeline.py`](../devsecops/pipeline.py), roda igual na máquina local (Windows, Linux ou macOS com Docker) e no GitHub Actions ([`.github/workflows/devsecops.yml`](../../.github/workflows/devsecops.yml)). Ferramentas de CI ficam fora da imagem de runtime.
 
 ## Etapas e gates
 
@@ -44,6 +44,8 @@ O Dockerfile passou a fazer duas coisas: (1) rodar `apt-get -y upgrade` no build
 Na segunda execução, o Trivy foi **aprovado** (0 bloqueantes), e a terceira execução foi **aprovada em todas as etapas**. Em compensação, os testes revelaram uma falha intermitente no Windows (`WinError 10053`): o servidor respondia erros sem ler o corpo da requisição. O servidor foi corrigido, o teste que falhou não foi alterado, e um teste novo cobre o caso. Detalhes no mesmo LEIA_ME.
 
 Consequência: o `apt-get upgrade` torna o build dependente do momento em que roda, porque aplica as correções publicadas até aquele dia. Por isso o relatório registra o digest da base e o resultado do Trivy da imagem efetivamente construída.
+
+No **GitHub Actions** (run 44438716927, disparado pelo PR #1, 19/11/2026 01:41 UTC), o pipeline foi **aprovado em todas as etapas**, com a mesma base e o mesmo scanner fixados por digest, em Linux com Docker 28.0.4 e Node 24. O run revelou um defeito só de relatório: o Node 24 imprime o resumo dos testes no formato `spec` (`ℹ pass 18`), e o resumo mostrava `?` em vez de 18. A função `_contar_js` passou a reconhecer os dois formatos. Detalhes em [03_evidencias/devsecops_ci/LEIA_ME.md](../../03_evidencias/devsecops_ci/LEIA_ME.md).
 
 ## Exceções escopadas (com justificativa)
 

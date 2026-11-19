@@ -1,0 +1,115 @@
+$ docker build --build-arg PYTHON_IMAGE=python:3.13-slim --label agrosmart.pipeline.execucao=20261119T014111Z -t agrosmart:fase7-pipeline .
+# exit_code=0
+
+
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 3.12kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.13-slim
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 322B done
+#3 DONE 0.0s
+
+#4 [ 1/10] FROM docker.io/library/python:3.13-slim
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 570.53kB done
+#5 DONE 0.0s
+
+#6 [ 2/10] WORKDIR /app
+#6 DONE 0.1s
+
+#7 [ 3/10] RUN set -eux;     export DEBIAN_FRONTEND=noninteractive;     apt-get update;     apt-get -y upgrade;     apt-get clean;     rm -rf /var/lib/apt/lists/*;     if python -m pip --version >/dev/null 2>&1; then python -m pip uninstall -y pip; fi;     rm -rf /usr/local/bin/pip /usr/local/bin/pip3* /root/.cache;     python -c "import importlib.util, sys; sys.exit(importlib.util.find_spec('pip') is not None)"
+#7 0.148 + export DEBIAN_FRONTEND=noninteractive
+#7 0.148 + apt-get update
+#7 0.188 Hit:1 http://deb.debian.org/debian trixie InRelease
+#7 0.191 Get:2 http://deb.debian.org/debian trixie-updates InRelease [47.3 kB]
+#7 0.206 Get:3 http://deb.debian.org/debian-security trixie-security InRelease [43.4 kB]
+#7 0.218 Get:4 http://deb.debian.org/debian trixie/main amd64 Packages [9678 kB]
+#7 0.282 Get:5 http://deb.debian.org/debian trixie-updates/main amd64 Packages [1108 B]
+#7 0.291 Get:6 http://deb.debian.org/debian-security trixie-security/main amd64 Packages [325 kB]
+#7 0.881 Fetched 10.1 MB in 1s (14.0 MB/s)
+#7 0.881 Reading package lists...
+#7 1.290 + apt-get -y upgrade
+#7 1.295 Reading package lists...
+#7 1.707 Building dependency tree...
+#7 1.799 Reading state information...
+#7 1.833 Calculating upgrade...
+#7 1.982 The following packages will be upgraded:
+#7 1.982   zlib1g
+#7 2.015 1 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+#7 2.015 Need to get 88.7 kB of archives.
+#7 2.015 After this operation, 1024 B disk space will be freed.
+#7 2.015 Get:1 http://deb.debian.org/debian-security trixie-security/main amd64 zlib1g amd64 1:1.3.dfsg+really1.3.1-1+deb13u1 [88.7 kB]
+#7 2.512 Fetched 88.7 kB in 0s (2763 kB/s)
+#7 2.521 (Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 5658 files and directories currently installed.)
+#7 2.524 Preparing to unpack .../zlib1g_1%3a1.3.dfsg+really1.3.1-1+deb13u1_amd64.deb ...
+#7 2.526 Unpacking zlib1g:amd64 (1:1.3.dfsg+really1.3.1-1+deb13u1) over (1:1.3.dfsg+really1.3.1-1+b1) ...
+#7 2.538 Setting up zlib1g:amd64 (1:1.3.dfsg+really1.3.1-1+deb13u1) ...
+#7 2.544 Processing triggers for libc-bin (2.41-12+deb13u4) ...
+#7 2.555 + apt-get clean
+#7 2.559 + rm -rf /var/lib/apt/lists/auxfiles /var/lib/apt/lists/deb.debian.org_debian-security_dists_trixie-security_InRelease /var/lib/apt/lists/deb.debian.org_debian-security_dists_trixie-security_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/deb.debian.org_debian_dists_trixie-updates_InRelease /var/lib/apt/lists/deb.debian.org_debian_dists_trixie-updates_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/deb.debian.org_debian_dists_trixie_InRelease /var/lib/apt/lists/deb.debian.org_debian_dists_trixie_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/lock /var/lib/apt/lists/partial
+#7 2.561 + python -m pip --version
+#7 3.065 + python -m pip uninstall -y pip
+#7 3.835 Found existing installation: pip 26.2.2
+#7 3.855 Uninstalling pip-26.2.2:
+#7 3.893   Successfully uninstalled pip-26.2.2
+#7 3.900 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#7 3.942 + rm -rf /usr/local/bin/pip /usr/local/bin/pip3* /root/.cache
+#7 3.942 + python -c import importlib.util, sys; sys.exit(importlib.util.find_spec('pip') is not None)
+#7 DONE 4.0s
+
+#8 [ 4/10] RUN groupadd --system --gid 10001 agrosmart  && useradd --system --uid 10001 --gid agrosmart --no-create-home --home-dir /nonexistent --shell /usr/sbin/nologin agrosmart  && mkdir -p /data  && chown agrosmart:agrosmart /data
+#8 0.127 useradd warning: agrosmart's uid 10001 is greater than SYS_UID_MAX 999
+#8 DONE 0.1s
+
+#9 [ 5/10] COPY main.py ./
+#9 DONE 0.0s
+
+#10 [ 6/10] COPY agrosmart/ ./agrosmart/
+#10 DONE 0.0s
+
+#11 [ 7/10] COPY web/ ./web/
+#11 DONE 0.0s
+
+#12 [ 8/10] COPY data/raw/ ./semente/raw/
+#12 DONE 0.0s
+
+#13 [ 9/10] COPY data/trusted/ ./semente/trusted/
+#13 DONE 0.0s
+
+#14 [10/10] COPY data/refined/ ./semente/refined/
+#14 DONE 0.0s
+
+#15 exporting to image
+#15 exporting layers 0.0s done
+#15 writing image sha256:284852c4b926676ea14c3cc7ab9f1f85bac40f3929505f02ca7c06f36047743f done
+#15 naming to docker.io/library/agrosmart:fase7-pipeline done
+#15 DONE 0.0s

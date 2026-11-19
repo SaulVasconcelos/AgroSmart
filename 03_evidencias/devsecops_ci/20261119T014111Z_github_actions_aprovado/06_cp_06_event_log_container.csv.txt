@@ -1,0 +1,3 @@
+$ docker cp agrosmart-pipeline-20261119t014111z:/data/processos/event_log.csv /home/runner/work/AgroSmart/AgroSmart/02_plataforma/relatorios/20261119T014111Z/06_event_log_container.csv
+# exit_code=0
+

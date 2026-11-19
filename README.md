@@ -23,11 +23,7 @@ python devsecops/pipeline.py      # pipeline DevSecOps completo, com relatórios
 
 Sem Docker: `python main.py web --porta 8517 --execucao-continua`.
 
-**Antes do primeiro push para o GitHub:** mova `WORKFLOW_GITHUB_devsecops.yml` para `.github/workflows/devsecops.yml`. A cópia na raiz existe porque a ferramenta de transferência para o seu computador não grava em pastas `.github`.
-
-No Windows: `mkdir .github\workflows` e depois `move WORKFLOW_GITHUB_devsecops.yml .github\workflows\devsecops.yml`.
-
-O conteúdo é idêntico ao do workflow descrito em [DEVSECOPS.md](02_plataforma/docs/DEVSECOPS.md). Detalhes em [02_plataforma/README_EXECUCAO.md](02_plataforma/README_EXECUCAO.md).
+No GitHub, o mesmo pipeline roda pelo workflow [.github/workflows/devsecops.yml](.github/workflows/devsecops.yml) a cada `push` em `main` e a cada pull request ([DEVSECOPS.md](02_plataforma/docs/DEVSECOPS.md)). Detalhes de execução em [02_plataforma/README_EXECUCAO.md](02_plataforma/README_EXECUCAO.md).
 
 ## Onde está cada coisa
 
@@ -37,27 +33,26 @@ O conteúdo é idêntico ao do workflow descrito em [DEVSECOPS.md](02_plataforma
 | Arquitetura final, componentes e fluxo de dados | [01_arquitetura/descricao_componentes.md](01_arquitetura/descricao_componentes.md), [diagrama SVG](01_arquitetura/arquitetura_final.svg) / [PNG](01_arquitetura/arquitetura_final.png) |
 | Plataforma (código, testes, Docker) | [02_plataforma/](02_plataforma/README_EXECUCAO.md) |
 | Monitoramento e execução contínua | [02_plataforma/docs/MONITORAMENTO.md](02_plataforma/docs/MONITORAMENTO.md) |
-| DevSecOps | [02_plataforma/docs/DEVSECOPS.md](02_plataforma/docs/DEVSECOPS.md), workflow `.github/workflows/devsecops.yml` (entregue como [WORKFLOW_GITHUB_devsecops.yml](WORKFLOW_GITHUB_devsecops.yml)) |
+| DevSecOps | [02_plataforma/docs/DEVSECOPS.md](02_plataforma/docs/DEVSECOPS.md), workflow [.github/workflows/devsecops.yml](.github/workflows/devsecops.yml) |
 | Evidências de execução | [03_evidencias/LEIA_ME.md](03_evidencias/LEIA_ME.md) |
 | Event log e mineração de processos | [04_processos/ANALISE_PROCESSO.md](04_processos/ANALISE_PROCESSO.md), [contrato](04_processos/contrato_event_log.md) |
 | Pitch, slides e vídeos | [05_apresentacao/LEIA_ME.md](05_apresentacao/LEIA_ME.md) |
 | Contratos de API da Fase 6 (vigentes) | [CONTRATOS_UX_P0_P1.txt](CONTRATOS_UX_P0_P1.txt) |
 | Protótipo de classificação de imagens (fases anteriores) | [historico/classificador_imagens/](historico/classificador_imagens/LEIA_ME.md) |
 
-## Situação atual (18/11/2026)
+## Situação atual (18/11/2026, horário de Brasília)
 
 **Implementado e executado:**
 
 - plataforma, execução contínua, monitoramento e event log;
 - 45 testes Python e 18 cenários JS;
-- pipeline DevSecOps completo aprovado no PC da equipe (`03_evidencias/devsecops_equipe/`);
+- pipeline DevSecOps completo **aprovado em dois ambientes**: no PC da equipe ([devsecops_equipe](03_evidencias/devsecops_equipe/LEIA_ME.md)) e no **GitHub Actions** ([devsecops_ci](03_evidencias/devsecops_ci/LEIA_ME.md), run 44438716927, PR #1);
 - Ruff e Bandit;
-- build e container ponta a ponta, com a imagem oficial no PC da equipe;
+- build e container ponta a ponta com a imagem oficial `python:3.13-slim`, e Trivy sem bloqueantes, nos dois ambientes;
 - análise de processo.
 
 **Pendente:**
 
-- run do pipeline no **GitHub Actions**. No PC da equipe, o pipeline completo, com a imagem oficial e o Trivy, já foi **aprovado em todas as etapas** em 19/11/2026;
 - slides e roteiros;
 - os **dois vídeos**, a gravar pela equipe: o final técnico de 5–8 min e o pitch de até 5 min.
 

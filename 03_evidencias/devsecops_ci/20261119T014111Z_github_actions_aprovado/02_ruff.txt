@@ -1,0 +1,4 @@
+$ /home/runner/work/AgroSmart/AgroSmart/02_plataforma/.venv-devsecops/bin/python -m ruff check --config pyproject.toml --no-cache --output-format concise . ../04_processos
+# exit_code=0
+
+All checks passed!

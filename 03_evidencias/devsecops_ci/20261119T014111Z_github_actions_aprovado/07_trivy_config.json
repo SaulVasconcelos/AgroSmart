@@ -1,0 +1,21 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.76.1"
+  },
+  "ReportID": "01a1f177-d9f9-7bd2-9666-9b54fda71c57",
+  "CreatedAt": "2026-11-19T01:42:06.073776953Z",
+  "ArtifactName": "/src/Dockerfile",
+  "ArtifactType": "filesystem",
+  "Results": [
+    {
+      "Target": "Dockerfile",
+      "Class": "config",
+      "Type": "dockerfile",
+      "MisconfSummary": {
+        "Successes": 27,
+        "Failures": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,532 @@
+{
+  "execucao": "20261119T014111Z",
+  "gerado_em_utc": "2026-11-19T01:42:06+00:00",
+  "resultado_geral": "APROVADO",
+  "etapas_selecionadas": [
+    "ambiente",
+    "ferramentas",
+    "qualidade",
+    "seguranca",
+    "testes",
+    "build",
+    "container",
+    "vulnerabilidades"
+  ],
+  "etapas_nao_executadas": [],
+  "contexto": {
+    "modo": "ci",
+    "sistema": "Linux-7.0.0-1014-aws-x86_64-with-glibc2.39",
+    "python": "3.13.18",
+    "node": "v24.22.2",
+    "docker": "28.0.4",
+    "git_commit": "c164eece16b0db0de1f1d790a25d14198a50b2f3",
+    "arvore_com_alteracoes": false,
+    "github_run": "SaulVasconcelos/AgroSmart#44438716927",
+    "ferramentas": {
+      "ruff": "ruff 0.17.5",
+      "bandit": "bandit 1.9.4",
+      "requisitos": "requirements-dev.txt"
+    },
+    "imagem": {
+      "imagem": "agrosmart:fase7-pipeline",
+      "id": "sha256:284852c4b926676ea14c3cc7ab9f1f85bac40f3929505f02ca7c06f36047743f",
+      "tamanho_mb": 120.3,
+      "usuario": "agrosmart:agrosmart",
+      "base": "python:3.13-slim",
+      "base_digest": [
+        "python@sha256:e48f59cdba69a3cbd9ed2cf0f348d90d45a8d350d98134cf1070bc106ee9ed90"
+      ],
+      "conteudo_app": [
+        "agrosmart",
+        "main.py",
+        "semente",
+        "web"
+      ],
+      "conteudo_esperado": [
+        "agrosmart",
+        "main.py",
+        "semente",
+        "web"
+      ],
+      "pip_ausente_no_runtime": true
+    }
+  },
+  "etapas": [
+    {
+      "etapa": "ambiente",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "modo": "ci",
+        "sistema": "Linux-7.0.0-1014-aws-x86_64-with-glibc2.39",
+        "python": "3.13.18",
+        "node": "v24.22.2",
+        "docker": "28.0.4",
+        "git_commit": "c164eece16b0db0de1f1d790a25d14198a50b2f3",
+        "arvore_com_alteracoes": false,
+        "github_run": "SaulVasconcelos/AgroSmart#44438716927"
+      },
+      "comandos": []
+    },
+    {
+      "etapa": "ferramentas",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "ruff": "ruff 0.17.5",
+        "bandit": "bandit 1.9.4",
+        "requisitos": "requirements-dev.txt"
+      },
+      "comandos": [
+        {
+          "comando": "/home/runner/work/AgroSmart/AgroSmart/02_plataforma/.venv-devsecops/bin/python -m pip install --disable-pip-version-check -r /home/runner/work/AgroSmart/AgroSmart/02_plataforma/devsecops/requirements-dev.txt",
+          "inicio_utc": "2026-11-19T01:41:16+00:00",
+          "arquivo": "01_ferramentas_pip.txt",
+          "fim_utc": "2026-11-19T01:41:19+00:00",
+          "duracao_s": 2.54,
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "etapa": "qualidade",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "ferramenta": "ruff 0.17.5",
+        "achados": 0,
+        "exit_code": 0,
+        "alvos": [
+          ".",
+          "../04_processos"
+        ],
+        "politica": "zero achados nas regras E4,E7,E9,F,B (exceções escopadas em pyproject.toml)"
+      },
+      "comandos": [
+        {
+          "comando": "/home/runner/work/AgroSmart/AgroSmart/02_plataforma/.venv-devsecops/bin/python -m ruff check --config pyproject.toml --no-cache --output-format json --output-file /home/runner/work/AgroSmart/AgroSmart/02_plataforma/relatorios/20261119T014111Z/02_ruff.json . ../04_processos",
+          "inicio_utc": "2026-11-19T01:41:19+00:00",
+          "arquivo": "02_ruff_execucao.txt",
+          "fim_utc": "2026-11-19T01:41:19+00:00",
+          "duracao_s": 0.03,
+          "exit_code": 0
+        },
+        {
+          "comando": "/home/runner/work/AgroSmart/AgroSmart/02_plataforma/.venv-devsecops/bin/python -m ruff check --config pyproject.toml --no-cache --output-format concise . ../04_processos",
+          "inicio_utc": "2026-11-19T01:41:19+00:00",
+          "arquivo": "02_ruff.txt",
+          "fim_utc": "2026-11-19T01:41:19+00:00",
+          "duracao_s": 0.02,
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "etapa": "seguranca",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "achados_por_regra": {
+          "B311/LOW": 4
+        },
+        "bloqueantes": 0,
+        "erros_da_ferramenta": 0,
+        "exit_code_bandit": 1,
+        "linhas_analisadas": 1374,
+        "politica": "reprova severidade E confiança >= MEDIUM; LOW é reportado"
+      },
+      "comandos": [
+        {
+          "comando": "/home/runner/work/AgroSmart/AgroSmart/02_plataforma/.venv-devsecops/bin/python -m bandit -c pyproject.toml -r agrosmart main.py -f json -o /home/runner/work/AgroSmart/AgroSmart/02_plataforma/relatorios/20261119T014111Z/03_bandit.json",
+          "inicio_utc": "2026-11-19T01:41:19+00:00",
+          "arquivo": "03_bandit_execucao.txt",
+          "fim_utc": "2026-11-19T01:41:20+00:00",
+          "duracao_s": 0.26,
+          "exit_code": 1
+        },
+        {
+          "comando": "/home/runner/work/AgroSmart/AgroSmart/02_plataforma/.venv-devsecops/bin/python -m bandit -c pyproject.toml -r agrosmart main.py",
+          "inicio_utc": "2026-11-19T01:41:20+00:00",
+          "arquivo": "03_bandit.txt",
+          "fim_utc": "2026-11-19T01:41:20+00:00",
+          "duracao_s": 0.27,
+          "exit_code": 1
+        }
+      ]
+    },
+    {
+      "etapa": "testes",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "python": {
+          "testes": "45",
+          "exit_code": 0
+        },
+        "javascript": {
+          "aprovados": "?",
+          "exit_code": 0,
+          "node": "v24.22.2"
+        },
+        "node_check_exit": 0
+      },
+      "comandos": [
+        {
+          "comando": "/opt/hostedtoolcache/Python/3.13.18/x64/bin/python -m unittest discover -s tests -v",
+          "inicio_utc": "2026-11-19T01:41:20+00:00",
+          "arquivo": "04_testes_python.txt",
+          "fim_utc": "2026-11-19T01:41:27+00:00",
+          "duracao_s": 6.71,
+          "exit_code": 0
+        },
+        {
+          "comando": "node --check web/app.js",
+          "inicio_utc": "2026-11-19T01:41:27+00:00",
+          "arquivo": "04_node_check.txt",
+          "fim_utc": "2026-11-19T01:41:27+00:00",
+          "duracao_s": 0.02,
+          "exit_code": 0
+        },
+        {
+          "comando": "node --test tests/test_frontend.cjs",
+          "inicio_utc": "2026-11-19T01:41:27+00:00",
+          "arquivo": "04_testes_js.txt",
+          "fim_utc": "2026-11-19T01:41:27+00:00",
+          "duracao_s": 0.46,
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "etapa": "build",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "imagem": "agrosmart:fase7-pipeline",
+        "id": "sha256:284852c4b926676ea14c3cc7ab9f1f85bac40f3929505f02ca7c06f36047743f",
+        "tamanho_mb": 120.3,
+        "usuario": "agrosmart:agrosmart",
+        "base": "python:3.13-slim",
+        "base_digest": [
+          "python@sha256:e48f59cdba69a3cbd9ed2cf0f348d90d45a8d350d98134cf1070bc106ee9ed90"
+        ],
+        "conteudo_app": [
+          "agrosmart",
+          "main.py",
+          "semente",
+          "web"
+        ],
+        "conteudo_esperado": [
+          "agrosmart",
+          "main.py",
+          "semente",
+          "web"
+        ],
+        "pip_ausente_no_runtime": true
+      },
+      "comandos": [
+        {
+          "comando": "docker pull python:3.13-slim",
+          "inicio_utc": "2026-11-19T01:41:27+00:00",
+          "arquivo": "05_pull_base.txt",
+          "fim_utc": "2026-11-19T01:41:30+00:00",
+          "duracao_s": 2.53,
+          "exit_code": 0
+        },
+        {
+          "comando": "docker build --build-arg PYTHON_IMAGE=python:3.13-slim --label agrosmart.pipeline.execucao=20261119T014111Z -t agrosmart:fase7-pipeline .",
+          "inicio_utc": "2026-11-19T01:41:30+00:00",
+          "arquivo": "05_build.txt",
+          "fim_utc": "2026-11-19T01:41:38+00:00",
+          "duracao_s": 8.89,
+          "exit_code": 0
+        },
+        {
+          "comando": "docker image inspect agrosmart:fase7-pipeline --format {{.Id}} {{.Size}} {{.Config.User}}",
+          "inicio_utc": "2026-11-19T01:41:38+00:00",
+          "arquivo": "05_imagem_inspect.txt",
+          "fim_utc": "2026-11-19T01:41:38+00:00",
+          "duracao_s": 0.01,
+          "exit_code": 0
+        },
+        {
+          "comando": "docker run --rm --entrypoint python agrosmart:fase7-pipeline -c import os,json;print(json.dumps(sorted(os.listdir('/app'))))",
+          "inicio_utc": "2026-11-19T01:41:38+00:00",
+          "arquivo": "05_conteudo_app.txt",
+          "fim_utc": "2026-11-19T01:41:39+00:00",
+          "duracao_s": 0.71,
+          "exit_code": 0
+        },
+        {
+          "comando": "docker run --rm --entrypoint python agrosmart:fase7-pipeline -c import importlib.util;print('pip_ausente' if importlib.util.find_spec('pip') is None else 'pip_presente')",
+          "inicio_utc": "2026-11-19T01:41:39+00:00",
+          "arquivo": "05_pip_ausente.txt",
+          "fim_utc": "2026-11-19T01:41:39+00:00",
+          "duracao_s": 0.14,
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "etapa": "container",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "porta_host": 49943,
+        "verificacoes": {
+          "http_host_pronto": {
+            "obtido": true,
+            "aprovado": true
+          },
+          "health_legado_200": {
+            "obtido": 200,
+            "aprovado": true
+          },
+          "semente_144_leituras": {
+            "obtido": 144,
+            "aprovado": true
+          },
+          "alertas_109": {
+            "obtido": 109,
+            "aprovado": true
+          },
+          "post_simular_145": {
+            "obtido": 145,
+            "aprovado": true
+          },
+          "entrada_invalida_400": {
+            "obtido": 400,
+            "aprovado": true
+          },
+          "execucao_continua_iniciada": {
+            "obtido": 200,
+            "aprovado": true
+          },
+          "ciclos_reais_ge_2": {
+            "obtido": true,
+            "aprovado": true
+          },
+          "estado_funcional_atualizado": {
+            "obtido": "atualizado",
+            "aprovado": true
+          },
+          "operacao_snapshot": {
+            "obtido": {
+              "ciclos_total": 2,
+              "ciclos_sucesso": 2,
+              "falhas_total": 0,
+              "intervalo_s": 5.0
+            },
+            "aprovado": true
+          },
+          "processo_sem_root": {
+            "obtido": "10001",
+            "aprovado": true
+          },
+          "fuso_america_sao_paulo": {
+            "obtido": "-0300",
+            "aprovado": true
+          },
+          "raiz_somente_leitura": {
+            "obtido": true,
+            "aprovado": true
+          },
+          "http_dentro_do_container": {
+            "obtido": "200",
+            "aprovado": true
+          },
+          "healthcheck_docker_healthy": {
+            "obtido": true,
+            "aprovado": true
+          },
+          "restart_segundos": {
+            "obtido": 0.66,
+            "aprovado": true
+          },
+          "pronto_apos_restart": {
+            "obtido": true,
+            "aprovado": true
+          },
+          "dados_persistidos_apos_restart": {
+            "obtido": 151,
+            "aprovado": true
+          },
+          "encerramento_limpo_no_restart": {
+            "obtido": true,
+            "aprovado": true
+          },
+          "volume_existente_preservado": {
+            "obtido": true,
+            "aprovado": true
+          },
+          "stop_exit_code_0": {
+            "obtido": "0",
+            "aprovado": true
+          },
+          "stop_segundos": {
+            "obtido": 0.59,
+            "aprovado": true
+          }
+        }
+      },
+      "comandos": [
+        {
+          "comando": "docker run -d --name agrosmart-pipeline-20261119t014111z -p 127.0.0.1:49943:8501 -v agrosmart-pipeline-20261119t014111z:/data --read-only --tmpfs /tmp --cap-drop ALL --security-opt no-new-privileges:true -e AGROSMART_EXECUCAO_CONTINUA=0 agrosmart:fase7-pipeline",
+          "inicio_utc": "2026-11-19T01:41:39+00:00",
+          "arquivo": "06_container_run.txt",
+          "fim_utc": "2026-11-19T01:41:40+00:00",
+          "duracao_s": 0.28,
+          "exit_code": 0
+        },
+        {
+          "comando": "docker exec agrosmart-pipeline-20261119t014111z id -u",
+          "inicio_utc": "2026-11-19T01:41:47+00:00",
+          "arquivo": "06_exec_uid.txt",
+          "fim_utc": "2026-11-19T01:41:47+00:00",
+          "duracao_s": 0.04,
+          "exit_code": 0
+        },
+        {
+          "comando": "docker exec agrosmart-pipeline-20261119t014111z python -c import time;print(time.strftime('%z'))",
+          "inicio_utc": "2026-11-19T01:41:47+00:00",
+          "arquivo": "06_exec_fuso.txt",
+          "fim_utc": "2026-11-19T01:41:47+00:00",
+          "duracao_s": 0.05,
+          "exit_code": 0
+        },
+        {
+          "comando": "docker exec agrosmart-pipeline-20261119t014111z python -c import pathlib\ntry:\n pathlib.Path('/app/teste').write_text('x')\n print('GRAVOU')\nexcept OSError as e:\n print('NEGADO', type(e).__name__)",
+          "inicio_utc": "2026-11-19T01:41:47+00:00",
+          "arquivo": "06_exec_raiz_somente_leitura.txt",
+          "fim_utc": "2026-11-19T01:41:47+00:00",
+          "duracao_s": 0.1,
+          "exit_code": 0
+        },
+        {
+          "comando": "docker exec agrosmart-pipeline-20261119t014111z python -c import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8501/api/pronto',timeout=5).status)",
+          "inicio_utc": "2026-11-19T01:41:47+00:00",
+          "arquivo": "06_exec_http_interno.txt",
+          "fim_utc": "2026-11-19T01:41:47+00:00",
+          "duracao_s": 0.21,
+          "exit_code": 0
+        },
+        {
+          "comando": "docker restart -t 15 agrosmart-pipeline-20261119t014111z",
+          "inicio_utc": "2026-11-19T01:41:47+00:00",
+          "arquivo": "06_restart.txt",
+          "fim_utc": "2026-11-19T01:41:48+00:00",
+          "duracao_s": 0.66,
+          "exit_code": 0
+        },
+        {
+          "comando": "docker logs agrosmart-pipeline-20261119t014111z",
+          "inicio_utc": "2026-11-19T01:41:49+00:00",
+          "arquivo": "06_logs_container.txt",
+          "fim_utc": "2026-11-19T01:41:49+00:00",
+          "duracao_s": 0.01,
+          "exit_code": 0
+        },
+        {
+          "comando": "docker stop -t 15 agrosmart-pipeline-20261119t014111z",
+          "inicio_utc": "2026-11-19T01:41:49+00:00",
+          "arquivo": "06_stop.txt",
+          "fim_utc": "2026-11-19T01:41:49+00:00",
+          "duracao_s": 0.59,
+          "exit_code": 0
+        },
+        {
+          "comando": "docker cp agrosmart-pipeline-20261119t014111z:/data/processos/event_log.csv /home/runner/work/AgroSmart/AgroSmart/02_plataforma/relatorios/20261119T014111Z/06_event_log_container.csv",
+          "inicio_utc": "2026-11-19T01:41:49+00:00",
+          "arquivo": "06_cp_06_event_log_container.csv.txt",
+          "fim_utc": "2026-11-19T01:41:49+00:00",
+          "duracao_s": 0.01,
+          "exit_code": 0
+        },
+        {
+          "comando": "docker cp agrosmart-pipeline-20261119t014111z:/data/logs/agrosmart.log /home/runner/work/AgroSmart/AgroSmart/02_plataforma/relatorios/20261119T014111Z/06_agrosmart_container.log",
+          "inicio_utc": "2026-11-19T01:41:49+00:00",
+          "arquivo": "06_cp_06_agrosmart_container.log.txt",
+          "fim_utc": "2026-11-19T01:41:49+00:00",
+          "duracao_s": 0.01,
+          "exit_code": 0
+        },
+        {
+          "comando": "docker cp agrosmart-pipeline-20261119t014111z:/data/operacao/ciclos.jsonl /home/runner/work/AgroSmart/AgroSmart/02_plataforma/relatorios/20261119T014111Z/06_ciclos_container.jsonl",
+          "inicio_utc": "2026-11-19T01:41:49+00:00",
+          "arquivo": "06_cp_06_ciclos_container.jsonl.txt",
+          "fim_utc": "2026-11-19T01:41:49+00:00",
+          "duracao_s": 0.01,
+          "exit_code": 0
+        },
+        {
+          "comando": "docker logs agrosmart-pipeline-20261119t014111z",
+          "inicio_utc": "2026-11-19T01:41:49+00:00",
+          "arquivo": "06_logs_container_final.txt",
+          "fim_utc": "2026-11-19T01:41:49+00:00",
+          "duracao_s": 0.01,
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "etapa": "vulnerabilidades",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "scanner": "aquasec/trivy:0.76.1",
+        "scanner_digest": [
+          "aquasec/trivy@sha256:790fd66d1697395d8693d1acaa1ea702406a20f109b6fc7bac8db623eca6c06c"
+        ],
+        "exit_code_trivy": 0,
+        "os_detectado": {
+          "Family": "debian",
+          "Name": "13.7"
+        },
+        "contagem": {
+          "LOW/sem_correcao": 67,
+          "HIGH/sem_correcao": 47,
+          "MEDIUM/sem_correcao": 103,
+          "UNKNOWN/sem_correcao": 10
+        },
+        "bloqueantes": [],
+        "total_bloqueantes": 0,
+        "dockerfile_falhas": [],
+        "politica": "reprova CRITICAL/HIGH com versão corrigida disponível; demais são reportadas; Dockerfile reprova misconfig HIGH/CRITICAL"
+      },
+      "comandos": [
+        {
+          "comando": "docker pull aquasec/trivy:0.76.1",
+          "inicio_utc": "2026-11-19T01:41:49+00:00",
+          "arquivo": "07_pull_trivy.txt",
+          "fim_utc": "2026-11-19T01:41:52+00:00",
+          "duracao_s": 2.1,
+          "exit_code": 0
+        },
+        {
+          "comando": "docker save -o /home/runner/work/AgroSmart/AgroSmart/02_plataforma/relatorios/20261119T014111Z/imagem_agrosmart.tar agrosmart:fase7-pipeline",
+          "inicio_utc": "2026-11-19T01:41:52+00:00",
+          "arquivo": "07_save.txt",
+          "fim_utc": "2026-11-19T01:41:52+00:00",
+          "duracao_s": 0.46,
+          "exit_code": 0
+        },
+        {
+          "comando": "docker run --rm -v agrosmart-trivy-cache:/root/.cache/ -v /home/runner/work/AgroSmart/AgroSmart/02_plataforma/relatorios/20261119T014111Z:/work aquasec/trivy:0.76.1 image --input /work/imagem_agrosmart.tar --scanners vuln --format json --output /work/07_trivy_imagem.json",
+          "inicio_utc": "2026-11-19T01:41:52+00:00",
+          "arquivo": "07_trivy_execucao.txt",
+          "fim_utc": "2026-11-19T01:42:03+00:00",
+          "duracao_s": 11.45,
+          "exit_code": 0
+        },
+        {
+          "comando": "docker run --rm -v agrosmart-trivy-cache:/root/.cache/ -v /home/runner/work/AgroSmart/AgroSmart/02_plataforma/relatorios/20261119T014111Z:/work aquasec/trivy:0.76.1 image --input /work/imagem_agrosmart.tar --scanners vuln --skip-db-update",
+          "inicio_utc": "2026-11-19T01:42:03+00:00",
+          "arquivo": "07_trivy_imagem.txt",
+          "fim_utc": "2026-11-19T01:42:04+00:00",
+          "duracao_s": 0.26,
+          "exit_code": 0
+        },
+        {
+          "comando": "docker run --rm -v agrosmart-trivy-cache:/root/.cache/ -v /home/runner/work/AgroSmart/AgroSmart/02_plataforma:/src:ro -v /home/runner/work/AgroSmart/AgroSmart/02_plataforma/relatorios/20261119T014111Z:/work aquasec/trivy:0.76.1 config --format json --output /work/07_trivy_config.json /src/Dockerfile",
+          "inicio_utc": "2026-11-19T01:42:04+00:00",
+          "arquivo": "07_trivy_config_execucao.txt",
+          "fim_utc": "2026-11-19T01:42:06+00:00",
+          "duracao_s": 1.94,
+          "exit_code": 0
+        }
+      ]
+    }
+  ]
+}
