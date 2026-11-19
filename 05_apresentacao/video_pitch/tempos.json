@@ -1,0 +1,350 @@
+{
+  "velocidade_pct": 100,
+  "duracao_total_s": 279.5,
+  "limite_s": 300,
+  "slides": [
+    {
+      "slide": 1,
+      "id": "capa",
+      "inicio_s": 0.0,
+      "duracao_s": 10.967,
+      "frases": [
+        {
+          "inicio_s": 0.6,
+          "fim_s": 2.933,
+          "voz": "Olá, somos a equipe do Agro Smart."
+        },
+        {
+          "inicio_s": 3.253,
+          "fim_s": 10.262,
+          "voz": "Vamos apresentar o Agro Monitor, o módulo que ajuda quem cuida da lavoura a saber onde olhar primeiro, e por quê."
+        }
+      ]
+    },
+    {
+      "slide": 2,
+      "id": "problema",
+      "inicio_s": 10.967,
+      "duracao_s": 29.567,
+      "frases": [
+        {
+          "inicio_s": 11.567,
+          "fim_s": 14.481,
+          "voz": "Uma lavoura monitorada produz muitos dados."
+        },
+        {
+          "inicio_s": 14.801,
+          "fim_s": 21.343,
+          "voz": "Os sensores medem umidade e temperatura o tempo todo, e quem anda pelo campo anota o que vê nas plantas."
+        },
+        {
+          "inicio_s": 21.663,
+          "fim_s": 26.936,
+          "voz": "O problema é que essas informações ficam separadas e não dizem onde está a urgência."
+        },
+        {
+          "inicio_s": 27.256,
+          "fim_s": 31.406,
+          "voz": "Quando chega um alerta sem explicação, é difícil confiar nele."
+        },
+        {
+          "inicio_s": 31.726,
+          "fim_s": 39.8,
+          "voz": "E existe um risco silencioso: quando falta informação, o sistema pode tratar a situação como se estivesse tudo normal."
+        }
+      ]
+    },
+    {
+      "slide": 3,
+      "id": "publico",
+      "inicio_s": 40.533,
+      "duracao_s": 24.233,
+      "frases": [
+        {
+          "inicio_s": 41.133,
+          "fim_s": 42.861,
+          "voz": "Pensamos em três perfis."
+        },
+        {
+          "inicio_s": 43.181,
+          "fim_s": 47.662,
+          "voz": "O produtor rural, que quer saber o que merece atenção hoje e em qual talhão."
+        },
+        {
+          "inicio_s": 47.982,
+          "fim_s": 53.33,
+          "voz": "O agrônomo ou consultor, que precisa ver a evidência por trás de cada recomendação."
+        },
+        {
+          "inicio_s": 53.65,
+          "fim_s": 59.073,
+          "voz": "E o gestor da operação, que acompanha onde as ocorrências se concentram ao longo do tempo."
+        },
+        {
+          "inicio_s": 59.393,
+          "fim_s": 64.055,
+          "voz": "São hipóteses de produto, que ainda precisam ser validadas com usuários."
+        }
+      ]
+    },
+    {
+      "slide": 4,
+      "id": "solucao",
+      "inicio_s": 64.767,
+      "duracao_s": 28.033,
+      "frases": [
+        {
+          "inicio_s": 65.367,
+          "fim_s": 67.555,
+          "voz": "A nossa solução é o Agro Monitor."
+        },
+        {
+          "inicio_s": 67.875,
+          "fim_s": 74.49,
+          "voz": "Ele cruza as leituras dos sensores com as observações de campo e devolve uma lista de prioridades por talhão."
+        },
+        {
+          "inicio_s": 74.81,
+          "fim_s": 78.236,
+          "voz": "Esta é a tela real do produto, com dados simulados."
+        },
+        {
+          "inicio_s": 78.556,
+          "fim_s": 83.177,
+          "voz": "O Talhão B, de milho, está com prioridade alta por alerta de infestação."
+        },
+        {
+          "inicio_s": 83.497,
+          "fim_s": 87.491,
+          "voz": "O Talhão C, de café, com prioridade alta por estresse hídrico."
+        },
+        {
+          "inicio_s": 87.811,
+          "fim_s": 92.097,
+          "voz": "E o Talhão A, de soja, está indeterminado, porque faltam dados."
+        }
+      ]
+    },
+    {
+      "slide": 5,
+      "id": "fluxo",
+      "inicio_s": 92.8,
+      "duracao_s": 32.133,
+      "frases": [
+        {
+          "inicio_s": 93.4,
+          "fim_s": 95.35,
+          "voz": "Por dentro são quatro passos."
+        },
+        {
+          "inicio_s": 95.67,
+          "fim_s": 99.935,
+          "voz": "As leituras e as observações entram e são validadas antes de gravar."
+        },
+        {
+          "inicio_s": 100.255,
+          "fim_s": 105.855,
+          "voz": "Depois são tratadas: duplicatas removidas, e o que é inválido vai para quarentena."
+        },
+        {
+          "inicio_s": 106.175,
+          "fim_s": 112.589,
+          "voz": "Em seguida, sete regras definem prioridade, alerta e orientação, e vale a primeira que se aplica."
+        },
+        {
+          "inicio_s": 112.909,
+          "fim_s": 119.98,
+          "voz": "Por exemplo, pouca umidade com temperatura alta indica estresse hídrico, e a orientação é priorizar a irrigação."
+        },
+        {
+          "inicio_s": 120.3,
+          "fim_s": 124.214,
+          "voz": "A saída é o painel, e a decisão final é sempre de uma pessoa."
+        }
+      ]
+    },
+    {
+      "slide": 6,
+      "id": "exemplo",
+      "inicio_s": 124.933,
+      "duracao_s": 35.333,
+      "frases": [
+        {
+          "inicio_s": 125.533,
+          "fim_s": 126.585,
+          "voz": "Um exemplo real."
+        },
+        {
+          "inicio_s": 126.905,
+          "fim_s": 131.904,
+          "voz": "O sensor do Talhão B mediu cinquenta por cento de umidade e trinta e três graus."
+        },
+        {
+          "inicio_s": 132.224,
+          "fim_s": 138.856,
+          "voz": "Sem observação de campo, o Agro Monitor responde indeterminada, e pede o registro da observação."
+        },
+        {
+          "inicio_s": 139.176,
+          "fim_s": 140.994,
+          "voz": "Ele não diz que está tudo bem."
+        },
+        {
+          "inicio_s": 141.314,
+          "fim_s": 154.804,
+          "voz": "Quando registramos a observação, com trinta e quatro por cento de folhas afetadas e lagarta há quatro dias, a mesma leitura passa a prioridade alta, pela regra érre dois, com orientação de inspeção técnica."
+        },
+        {
+          "inicio_s": 155.124,
+          "fim_s": 156.988,
+          "voz": "A leitura do sensor não mudou."
+        },
+        {
+          "inicio_s": 157.308,
+          "fim_s": 159.559,
+          "voz": "O que mudou foi a evidência disponível."
+        }
+      ]
+    },
+    {
+      "slide": 7,
+      "id": "diferencial",
+      "inicio_s": 160.267,
+      "duracao_s": 29.0,
+      "frases": [
+        {
+          "inicio_s": 160.867,
+          "fim_s": 163.627,
+          "voz": "O nosso diferencial está em quatro pontos."
+        },
+        {
+          "inicio_s": 163.947,
+          "fim_s": 169.279,
+          "voz": "É explicável: toda prioridade mostra a regra, a evidência e a justificativa."
+        },
+        {
+          "inicio_s": 169.599,
+          "fim_s": 175.607,
+          "voz": "É honesto com a incerteza: sem dado de campo, a resposta é indeterminada, nunca normal."
+        },
+        {
+          "inicio_s": 175.927,
+          "fim_s": 180.299,
+          "voz": "É rastreável: cada execução fica registrada do começo ao fim."
+        },
+        {
+          "inicio_s": 180.619,
+          "fim_s": 184.849,
+          "voz": "E é leve: roda em um único contêiner, sem depender de nuvem."
+        },
+        {
+          "inicio_s": 185.169,
+          "fim_s": 188.538,
+          "voz": "São diferenciais que demonstramos no próprio produto."
+        }
+      ]
+    },
+    {
+      "slide": 8,
+      "id": "valor",
+      "inicio_s": 189.267,
+      "duracao_s": 16.0,
+      "frases": [
+        {
+          "inicio_s": 189.867,
+          "fim_s": 195.893,
+          "voz": "A nossa proposta de valor cabe em uma frase: saber onde olhar primeiro na lavoura, e por quê."
+        },
+        {
+          "inicio_s": 196.213,
+          "fim_s": 204.547,
+          "voz": "Para produtores, consultores e gestores, os dados viram prioridades de investigação, com regras explicáveis e evidência por talhão."
+        }
+      ]
+    },
+    {
+      "slide": 9,
+      "id": "prova",
+      "inicio_s": 205.267,
+      "duracao_s": 37.733,
+      "frases": [
+        {
+          "inicio_s": 205.867,
+          "fim_s": 208.353,
+          "voz": "E o produto se sustenta tecnicamente."
+        },
+        {
+          "inicio_s": 208.673,
+          "fim_s": 212.312,
+          "voz": "São sessenta e três testes automatizados aprovados."
+        },
+        {
+          "inicio_s": 212.632,
+          "fim_s": 217.429,
+          "voz": "A aplicação em contêiner passa em vinte e duas de vinte e duas verificações."
+        },
+        {
+          "inicio_s": 217.749,
+          "fim_s": 224.053,
+          "voz": "A análise de vulnerabilidades não encontrou nenhuma falha crítica ou alta que tenha correção disponível."
+        },
+        {
+          "inicio_s": 224.373,
+          "fim_s": 233.147,
+          "voz": "E a mesma esteira de verificação foi aprovada em dois ambientes: no nosso computador e no serviço de integração contínua do repositório."
+        },
+        {
+          "inicio_s": 233.467,
+          "fim_s": 242.269,
+          "voz": "Isso não significa zero vulnerabilidades: quarenta e sete de severidade alta, ainda sem correção publicada, continuam no relatório."
+        }
+      ]
+    },
+    {
+      "slide": 10,
+      "id": "escopo",
+      "inicio_s": 243.0,
+      "duracao_s": 28.433,
+      "frases": [
+        {
+          "inicio_s": 243.6,
+          "fim_s": 246.456,
+          "voz": "Para sermos claros sobre o estágio do produto."
+        },
+        {
+          "inicio_s": 246.776,
+          "fim_s": 255.918,
+          "voz": "O motor de regras, o painel, a execução contínua, o contêiner, a esteira de verificação e a análise de processo estão entregues e testados."
+        },
+        {
+          "inicio_s": 256.238,
+          "fim_s": 259.271,
+          "voz": "Os dados de sensores e de campo são simulados."
+        },
+        {
+          "inicio_s": 259.591,
+          "fim_s": 270.719,
+          "voz": "E o que ainda não existe está no plano de evolução: sensores físicos, autenticação de usuários, notificações, processamento incremental e a validação com produtores."
+        }
+      ]
+    },
+    {
+      "slide": 11,
+      "id": "fim",
+      "inicio_s": 271.433,
+      "duracao_s": 8.067,
+      "frases": [
+        {
+          "inicio_s": 272.033,
+          "fim_s": 276.281,
+          "voz": "O código, as evidências e a documentação estão no nosso repositório."
+        },
+        {
+          "inicio_s": 276.601,
+          "fim_s": 277.267,
+          "voz": "Obrigado."
+        }
+      ]
+    }
+  ]
+}

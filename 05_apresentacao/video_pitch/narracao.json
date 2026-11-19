@@ -1,0 +1,68 @@
+{
+  "voz": "Leticia-F123 (RHVoice 1.8.0, português do Brasil, voz sintética)",
+  "observacao": "Texto falado no vídeo do pitch. Segue roteiro_video_pitch.md; o campo 'voz' escreve números por extenso e evita termos em inglês para reduzir erros de pronúncia; o campo 'legenda' é o que aparece no arquivo .srt.",
+  "slides": [
+    {"id": "capa", "frases": [
+      {"voz": "Olá, somos a equipe do Agro Smart.", "legenda": "Olá, somos a equipe do AgroSmart."},
+      {"voz": "Vamos apresentar o Agro Monitor, o módulo que ajuda quem cuida da lavoura a saber onde olhar primeiro, e por quê.", "legenda": "Vamos apresentar o AgroMonitor, o módulo que ajuda quem cuida da lavoura a saber onde olhar primeiro, e por quê."}]},
+    {"id": "problema", "frases": [
+      {"voz": "Uma lavoura monitorada produz muitos dados."},
+      {"voz": "Os sensores medem umidade e temperatura o tempo todo, e quem anda pelo campo anota o que vê nas plantas."},
+      {"voz": "O problema é que essas informações ficam separadas e não dizem onde está a urgência."},
+      {"voz": "Quando chega um alerta sem explicação, é difícil confiar nele."},
+      {"voz": "E existe um risco silencioso: quando falta informação, o sistema pode tratar a situação como se estivesse tudo normal."}]},
+    {"id": "publico", "frases": [
+      {"voz": "Pensamos em três perfis."},
+      {"voz": "O produtor rural, que quer saber o que merece atenção hoje e em qual talhão."},
+      {"voz": "O agrônomo ou consultor, que precisa ver a evidência por trás de cada recomendação."},
+      {"voz": "E o gestor da operação, que acompanha onde as ocorrências se concentram ao longo do tempo."},
+      {"voz": "São hipóteses de produto, que ainda precisam ser validadas com usuários."}]},
+    {"id": "solucao", "frases": [
+      {"voz": "A nossa solução é o Agro Monitor.", "legenda": "A nossa solução é o AgroMonitor."},
+      {"voz": "Ele cruza as leituras dos sensores com as observações de campo e devolve uma lista de prioridades por talhão."},
+      {"voz": "Esta é a tela real do produto, com dados simulados."},
+      {"voz": "O Talhão B, de milho, está com prioridade alta por alerta de infestação."},
+      {"voz": "O Talhão C, de café, com prioridade alta por estresse hídrico."},
+      {"voz": "E o Talhão A, de soja, está indeterminado, porque faltam dados."}]},
+    {"id": "fluxo", "frases": [
+      {"voz": "Por dentro são quatro passos."},
+      {"voz": "As leituras e as observações entram e são validadas antes de gravar."},
+      {"voz": "Depois são tratadas: duplicatas removidas, e o que é inválido vai para quarentena."},
+      {"voz": "Em seguida, sete regras definem prioridade, alerta e orientação, e vale a primeira que se aplica."},
+      {"voz": "Por exemplo, pouca umidade com temperatura alta indica estresse hídrico, e a orientação é priorizar a irrigação."},
+      {"voz": "A saída é o painel, e a decisão final é sempre de uma pessoa."}]},
+    {"id": "exemplo", "frases": [
+      {"voz": "Um exemplo real."},
+      {"voz": "O sensor do Talhão B mediu cinquenta por cento de umidade e trinta e três graus.", "legenda": "O sensor do Talhão B mediu 50% de umidade e 33 graus."},
+      {"voz": "Sem observação de campo, o Agro Monitor responde indeterminada, e pede o registro da observação.", "legenda": "Sem observação de campo, o AgroMonitor responde “indeterminada” e pede o registro da observação."},
+      {"voz": "Ele não diz que está tudo bem."},
+      {"voz": "Quando registramos a observação, com trinta e quatro por cento de folhas afetadas e lagarta há quatro dias, a mesma leitura passa a prioridade alta, pela regra érre dois, com orientação de inspeção técnica.", "legenda": "Quando registramos a observação, com 34% de folhas afetadas e lagarta há quatro dias, a mesma leitura passa a prioridade alta, pela regra R2, com orientação de inspeção técnica."},
+      {"voz": "A leitura do sensor não mudou."},
+      {"voz": "O que mudou foi a evidência disponível."}]},
+    {"id": "diferencial", "frases": [
+      {"voz": "O nosso diferencial está em quatro pontos."},
+      {"voz": "É explicável: toda prioridade mostra a regra, a evidência e a justificativa."},
+      {"voz": "É honesto com a incerteza: sem dado de campo, a resposta é indeterminada, nunca normal.", "legenda": "É honesto com a incerteza: sem dado de campo, a resposta é “indeterminada”, nunca “normal”."},
+      {"voz": "É rastreável: cada execução fica registrada do começo ao fim."},
+      {"voz": "E é leve: roda em um único contêiner, sem depender de nuvem."},
+      {"voz": "São diferenciais que demonstramos no próprio produto."}]},
+    {"id": "valor", "frases": [
+      {"voz": "A nossa proposta de valor cabe em uma frase: saber onde olhar primeiro na lavoura, e por quê."},
+      {"voz": "Para produtores, consultores e gestores, os dados viram prioridades de investigação, com regras explicáveis e evidência por talhão."}]},
+    {"id": "prova", "frases": [
+      {"voz": "E o produto se sustenta tecnicamente."},
+      {"voz": "São sessenta e três testes automatizados aprovados.", "legenda": "São 63 testes automatizados aprovados."},
+      {"voz": "A aplicação em contêiner passa em vinte e duas de vinte e duas verificações.", "legenda": "A aplicação em contêiner passa em 22 de 22 verificações."},
+      {"voz": "A análise de vulnerabilidades não encontrou nenhuma falha crítica ou alta que tenha correção disponível."},
+      {"voz": "E a mesma esteira de verificação foi aprovada em dois ambientes: no nosso computador e no serviço de integração contínua do repositório."},
+      {"voz": "Isso não significa zero vulnerabilidades: quarenta e sete de severidade alta, ainda sem correção publicada, continuam no relatório.", "legenda": "Isso não significa zero vulnerabilidades: 47 de severidade alta, ainda sem correção publicada, continuam no relatório."}]},
+    {"id": "escopo", "frases": [
+      {"voz": "Para sermos claros sobre o estágio do produto."},
+      {"voz": "O motor de regras, o painel, a execução contínua, o contêiner, a esteira de verificação e a análise de processo estão entregues e testados."},
+      {"voz": "Os dados de sensores e de campo são simulados."},
+      {"voz": "E o que ainda não existe está no plano de evolução: sensores físicos, autenticação de usuários, notificações, processamento incremental e a validação com produtores."}]},
+    {"id": "fim", "frases": [
+      {"voz": "O código, as evidências e a documentação estão no nosso repositório."},
+      {"voz": "Obrigado."}]}
+  ]
+}

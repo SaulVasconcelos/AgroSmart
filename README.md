@@ -53,8 +53,9 @@ No GitHub, o mesmo pipeline roda pelo workflow [.github/workflows/devsecops.yml]
 
 **Pendente:**
 
-- slides e roteiros;
-- os **dois vídeos**, a gravar pela equipe: o final técnico de 5–8 min e o pitch de até 5 min.
+- slides do pitch: prontos e revisados; falta exportar o arquivo para `05_apresentacao/`;
+- vídeo final técnico de 5–8 min: a gravar pela equipe, com o roteiro de [05_apresentacao/](05_apresentacao/LEIA_ME.md);
+- vídeo pitch de até 5 min: gerado com voz sintética (4 min 39,5 s); falta a equipe assistir e aprovar.
 
 A Fase 7 **ainda não está integralmente concluída**.
 

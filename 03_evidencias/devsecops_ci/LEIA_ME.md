@@ -30,6 +30,15 @@
 - **Contagem de testes JS mostrada como `?` no relatório.** O Node 24 usa por padrão o reporter `spec` (`ℹ pass 18`), e o pipeline só reconhecia o formato TAP (`# pass 18`). Os testes passaram (exit code 0, 18/18 na saída bruta). Só a contagem no resumo falhou. Isso foi corrigido em `devsecops/pipeline.py` (`_contar_js`), conferido com as saídas do Node 18 (PC), do Node 22 (ambiente do Claude) e do Node 24 (este run).
 - **Aviso do Trivy sobre a versão 0.76.2.** O scanner continua fixado em 0.76.1 por digest, de propósito (ver [DEVSECOPS.md](../../02_plataforma/docs/DEVSECOPS.md), incidente de cadeia de suprimentos de março de 2026). Uma atualização deve ser uma decisão explícita, com o novo digest conferido.
 
+## Runs seguintes
+
+| Run | Gatilho | Commit | Resultado |
+|---|---|---|---|
+| [#2, 44440403415](https://github.com/SaulVasconcelos/AgroSmart/actions/runs/44440403415) | `pull_request` (PR #1, depois do commit com esta evidência e a correção da contagem JS) | `3705e6d` | **Success**, 1 min 0 s |
+| [#3, 44440765313](https://github.com/SaulVasconcelos/AgroSmart/actions/runs/44440765313) | `push` em `main` (merge do PR #1) | `f8732f5` | **Success**, 1 min 22 s |
+
+Destes dois runs, só o status foi lido na página pública do GitHub em 19/11/2026. Os artefatos (`relatorios-devsecops-<run>`, 171 KB cada) não foram baixados nem versionados aqui. Como o workflow só termina com sucesso quando o pipeline devolve APROVADO, o status indica que todas as etapas passaram, mas os números de cada etapa estão apenas nos artefatos do GitHub, guardados por 30 dias.
+
 ### Como reproduzir
 
 O workflow roda sozinho a cada `push` em `main`, a cada `pull_request` e manualmente (**Actions → devsecops → Run workflow**). Os relatórios ficam como artefato do run por 30 dias. Para guardá-los no repositório, baixe o zip e descompacte numa nova pasta aqui.

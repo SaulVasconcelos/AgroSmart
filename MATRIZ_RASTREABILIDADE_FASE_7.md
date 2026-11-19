@@ -28,9 +28,9 @@ Situação em 18/11/2026 (horário de Brasília). As colunas são independentes:
 | 5 | Exemplo de event log | [rastreio.py](02_plataforma/agrosmart/rastreio.py), [contrato](04_processos/contrato_event_log.md) | Sim | [event_log.csv](04_processos/coleta/event_log.csv) (600 eventos / 40 casos) | — |
 | 5 | Representação do processo | [analisar_event_log.py](04_processos/analisar_event_log.py) | Sim | [processo_observado.svg](04_processos/resultado/processo_observado.svg), [processo_esperado.svg](04_processos/resultado/processo_esperado.svg) | — |
 | 5 | Análise com insights (gargalos, variações, melhorias) | [ANALISE_PROCESSO.md](04_processos/ANALISE_PROCESSO.md) | Sim, incluindo o experimento de escala | [metricas_processo.md](04_processos/resultado/metricas_processo.md), [escala_pipeline.csv](04_processos/resultado/escala_pipeline.csv) | — |
-| 5 | Vídeo final de 5–8 min | — | — | — | **PENDENTE: roteiro (Claude) e gravação (equipe)** |
-| 6 | Apresentação (slides): problema, solução, diferencial, público, proposta de valor | — | — | — | **PENDENTE: próxima etapa** |
-| 6 | Vídeo pitch de até 5 min | — | — | — | **PENDENTE: roteiro (Claude) e gravação (equipe)** |
+| 5 | Vídeo final de 5–8 min | Roteiro cena a cena: [roteiro_video_tecnico.md](05_apresentacao/roteiro_video_tecnico.md) | Passos da interface ensaiados na versão final | — | **PENDENTE: gravação pela equipe** |
+| 6 | Apresentação (slides): problema, solução, diferencial, público, proposta de valor | Deck de 11 slides ([05_apresentacao/LEIA_ME.md](05_apresentacao/LEIA_ME.md)), com a origem de cada afirmação | Telas capturadas da versão final | [capturas_pitch/](05_apresentacao/capturas_pitch/registro.json) | **PENDENTE: exportação do arquivo (.pptx ou .pdf) para `05_apresentacao/`** |
+| 6 | Vídeo pitch de até 5 min | Roteiro por slide: [roteiro_video_pitch.md](05_apresentacao/roteiro_video_pitch.md); montagem: [montar_video_pitch.py](05_apresentacao/video_pitch/montar_video_pitch.py) | Sim: vídeo gerado com voz sintética, 4 min 39,5 s | [video_pitch.mp4](05_apresentacao/video_pitch/video_pitch.mp4), [tempos.json](05_apresentacao/video_pitch/tempos.json) | **PENDENTE: a equipe assistir e aprovar (pronúncia não conferida por audição) e confirmar se a disciplina aceita voz sintética** |
 
 ## Regressão e UX preservadas
 
