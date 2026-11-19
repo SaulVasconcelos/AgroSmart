@@ -1,0 +1,204 @@
+1
+00:00:00,600 --> 00:00:02,933
+Olá, somos a equipe do AgroSmart.
+
+2
+00:00:03,253 --> 00:00:10,262
+Vamos apresentar o AgroMonitor, o módulo que ajuda quem cuida da lavoura a saber onde olhar primeiro, e por quê.
+
+3
+00:00:11,567 --> 00:00:14,481
+Uma lavoura monitorada produz muitos dados.
+
+4
+00:00:14,801 --> 00:00:21,343
+Os sensores medem umidade e temperatura o tempo todo, e quem anda pelo campo anota o que vê nas plantas.
+
+5
+00:00:21,663 --> 00:00:26,936
+O problema é que essas informações ficam separadas e não dizem onde está a urgência.
+
+6
+00:00:27,256 --> 00:00:31,406
+Quando chega um alerta sem explicação, é difícil confiar nele.
+
+7
+00:00:31,726 --> 00:00:39,800
+E existe um risco silencioso: quando falta informação, o sistema pode tratar a situação como se estivesse tudo normal.
+
+8
+00:00:41,133 --> 00:00:42,861
+Pensamos em três perfis.
+
+9
+00:00:43,181 --> 00:00:47,662
+O produtor rural, que quer saber o que merece atenção hoje e em qual talhão.
+
+10
+00:00:47,982 --> 00:00:53,330
+O agrônomo ou consultor, que precisa ver a evidência por trás de cada recomendação.
+
+11
+00:00:53,650 --> 00:00:59,073
+E o gestor da operação, que acompanha onde as ocorrências se concentram ao longo do tempo.
+
+12
+00:00:59,393 --> 00:01:04,055
+São hipóteses de produto, que ainda precisam ser validadas com usuários.
+
+13
+00:01:05,367 --> 00:01:07,555
+A nossa solução é o AgroMonitor.
+
+14
+00:01:07,875 --> 00:01:14,490
+Ele cruza as leituras dos sensores com as observações de campo e devolve uma lista de prioridades por talhão.
+
+15
+00:01:14,810 --> 00:01:18,236
+Esta é a tela real do produto, com dados simulados.
+
+16
+00:01:18,556 --> 00:01:23,177
+O Talhão B, de milho, está com prioridade alta por alerta de infestação.
+
+17
+00:01:23,497 --> 00:01:27,491
+O Talhão C, de café, com prioridade alta por estresse hídrico.
+
+18
+00:01:27,811 --> 00:01:32,097
+E o Talhão A, de soja, está indeterminado, porque faltam dados.
+
+19
+00:01:33,400 --> 00:01:35,350
+Por dentro são quatro passos.
+
+20
+00:01:35,670 --> 00:01:39,935
+As leituras e as observações entram e são validadas antes de gravar.
+
+21
+00:01:40,255 --> 00:01:45,855
+Depois são tratadas: duplicatas removidas, e o que é inválido vai para quarentena.
+
+22
+00:01:46,175 --> 00:01:52,589
+Em seguida, sete regras definem prioridade, alerta e orientação, e vale a primeira que se aplica.
+
+23
+00:01:52,909 --> 00:01:59,980
+Por exemplo, pouca umidade com temperatura alta indica estresse hídrico, e a orientação é priorizar a irrigação.
+
+24
+00:02:00,300 --> 00:02:04,214
+A saída é o painel, e a decisão final é sempre de uma pessoa.
+
+25
+00:02:05,533 --> 00:02:06,585
+Um exemplo real.
+
+26
+00:02:06,905 --> 00:02:11,904
+O sensor do Talhão B mediu 50% de umidade e 33 graus.
+
+27
+00:02:12,224 --> 00:02:18,856
+Sem observação de campo, o AgroMonitor responde “indeterminada” e pede o registro da observação.
+
+28
+00:02:19,176 --> 00:02:20,994
+Ele não diz que está tudo bem.
+
+29
+00:02:21,314 --> 00:02:34,804
+Quando registramos a observação, com 34% de folhas afetadas e lagarta há quatro dias, a mesma leitura passa a prioridade alta, pela regra R2, com orientação de inspeção técnica.
+
+30
+00:02:35,124 --> 00:02:36,988
+A leitura do sensor não mudou.
+
+31
+00:02:37,308 --> 00:02:39,559
+O que mudou foi a evidência disponível.
+
+32
+00:02:40,867 --> 00:02:43,627
+O nosso diferencial está em quatro pontos.
+
+33
+00:02:43,947 --> 00:02:49,278
+É explicável: toda prioridade mostra a regra, a evidência e a justificativa.
+
+34
+00:02:49,598 --> 00:02:55,607
+É honesto com a incerteza: sem dado de campo, a resposta é “indeterminada”, nunca “normal”.
+
+35
+00:02:55,927 --> 00:03:00,299
+É rastreável: cada execução fica registrada do começo ao fim.
+
+36
+00:03:00,619 --> 00:03:04,849
+E é leve: roda em um único contêiner, sem depender de nuvem.
+
+37
+00:03:05,169 --> 00:03:08,538
+São diferenciais que demonstramos no próprio produto.
+
+38
+00:03:09,867 --> 00:03:15,893
+A nossa proposta de valor cabe em uma frase: saber onde olhar primeiro na lavoura, e por quê.
+
+39
+00:03:16,213 --> 00:03:24,547
+Para produtores, consultores e gestores, os dados viram prioridades de investigação, com regras explicáveis e evidência por talhão.
+
+40
+00:03:25,867 --> 00:03:28,353
+E o produto se sustenta tecnicamente.
+
+41
+00:03:28,673 --> 00:03:32,312
+São 63 testes automatizados aprovados.
+
+42
+00:03:32,632 --> 00:03:37,429
+A aplicação em contêiner passa em 22 de 22 verificações.
+
+43
+00:03:37,749 --> 00:03:44,053
+A análise de vulnerabilidades não encontrou nenhuma falha crítica ou alta que tenha correção disponível.
+
+44
+00:03:44,373 --> 00:03:53,147
+E a mesma esteira de verificação foi aprovada em dois ambientes: no nosso computador e no serviço de integração contínua do repositório.
+
+45
+00:03:53,467 --> 00:04:02,269
+Isso não significa zero vulnerabilidades: 47 de severidade alta, ainda sem correção publicada, continuam no relatório.
+
+46
+00:04:03,600 --> 00:04:06,456
+Para sermos claros sobre o estágio do produto.
+
+47
+00:04:06,776 --> 00:04:15,918
+O motor de regras, o painel, a execução contínua, o contêiner, a esteira de verificação e a análise de processo estão entregues e testados.
+
+48
+00:04:16,238 --> 00:04:19,271
+Os dados de sensores e de campo são simulados.
+
+49
+00:04:19,591 --> 00:04:30,719
+E o que ainda não existe está no plano de evolução: sensores físicos, autenticação de usuários, notificações, processamento incremental e a validação com produtores.
+
+50
+00:04:32,033 --> 00:04:36,281
+O código, as evidências e a documentação estão no nosso repositório.
+
+51
+00:04:36,601 --> 00:04:37,267
+Obrigado.
+

@@ -10,3 +10,5 @@ __pycache__/
 *.tmp
 # Zip de artefato baixado do GitHub Actions (o conteúdo vai para 03_evidencias/devsecops_ci/)
 relatorios-devsecops-*.zip
+# Arquivo gerado no dia da gravação por 05_apresentacao/gerar_observacao_demo.py
+05_apresentacao/observacao_demo.csv

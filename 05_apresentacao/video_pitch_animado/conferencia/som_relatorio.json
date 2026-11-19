@@ -1,0 +1,528 @@
+{
+ "total_s": 133.567,
+ "cenas": [
+  {
+   "cena": "s01",
+   "cena_de_s": 0.0,
+   "cena_ate_s": 27.1,
+   "fala_de_s": 1.467,
+   "fala_ate_s": 25.927,
+   "folga_no_fim_s": 1.173
+  },
+  {
+   "cena": "s02",
+   "cena_de_s": 27.1,
+   "cena_ate_s": 32.9,
+   "fala_de_s": 27.6,
+   "fala_ate_s": 31.0,
+   "folga_no_fim_s": 1.9
+  },
+  {
+   "cena": "s03",
+   "cena_de_s": 32.9,
+   "cena_ate_s": 40.633,
+   "fala_de_s": 33.267,
+   "fala_ate_s": 39.057,
+   "folga_no_fim_s": 1.577
+  },
+  {
+   "cena": "s04",
+   "cena_de_s": 40.633,
+   "cena_ate_s": 48.4,
+   "fala_de_s": 41.033,
+   "fala_ate_s": 46.233,
+   "folga_no_fim_s": 2.167
+  },
+  {
+   "cena": "s05",
+   "cena_de_s": 48.4,
+   "cena_ate_s": 54.2,
+   "fala_de_s": 48.767,
+   "fala_ate_s": 53.287,
+   "folga_no_fim_s": 0.913
+  },
+  {
+   "cena": "s06",
+   "cena_de_s": 54.2,
+   "cena_ate_s": 56.133,
+   "fala_de_s": 54.5,
+   "fala_ate_s": 55.38,
+   "folga_no_fim_s": 0.753
+  },
+  {
+   "cena": "s07",
+   "cena_de_s": 56.133,
+   "cena_ate_s": 65.8,
+   "fala_de_s": 56.433,
+   "fala_ate_s": 65.373,
+   "folga_no_fim_s": 0.427
+  },
+  {
+   "cena": "s08",
+   "cena_de_s": 65.8,
+   "cena_ate_s": 73.533,
+   "fala_de_s": 66.1,
+   "fala_ate_s": 72.42,
+   "folga_no_fim_s": 1.113
+  },
+  {
+   "cena": "s09",
+   "cena_de_s": 73.533,
+   "cena_ate_s": 81.3,
+   "fala_de_s": 73.9,
+   "fala_ate_s": 79.83,
+   "folga_no_fim_s": 1.47
+  },
+  {
+   "cena": "s10",
+   "cena_de_s": 81.3,
+   "cena_ate_s": 83.233,
+   "fala_de_s": 81.6,
+   "fala_ate_s": 82.57,
+   "folga_no_fim_s": 0.663
+  },
+  {
+   "cena": "s11",
+   "cena_de_s": 83.233,
+   "cena_ate_s": 90.967,
+   "fala_de_s": 83.533,
+   "fala_ate_s": 89.793,
+   "folga_no_fim_s": 1.173
+  },
+  {
+   "cena": "s12",
+   "cena_de_s": 90.967,
+   "cena_ate_s": 102.567,
+   "fala_de_s": 91.333,
+   "fala_ate_s": 101.713,
+   "folga_no_fim_s": 0.853
+  },
+  {
+   "cena": "s13",
+   "cena_de_s": 102.567,
+   "cena_ate_s": 112.267,
+   "fala_de_s": 102.933,
+   "fala_ate_s": 110.703,
+   "folga_no_fim_s": 1.563
+  },
+  {
+   "cena": "s14",
+   "cena_de_s": 112.267,
+   "cena_ate_s": 121.933,
+   "fala_de_s": 112.567,
+   "fala_ate_s": 117.487,
+   "folga_no_fim_s": 4.447
+  },
+  {
+   "cena": "s15",
+   "cena_de_s": 121.933,
+   "cena_ate_s": 133.567,
+   "fala_de_s": 123.233,
+   "fala_ate_s": 128.103,
+   "folga_no_fim_s": 5.463
+  }
+ ],
+ "efeitos": [
+  {
+   "pico_em_s": 27.167,
+   "quadro": 815,
+   "cena": "s02",
+   "arquivo": "transition-soft.mp3",
+   "volume": 0.3,
+   "inicio_do_arquivo_em_s": 26.713,
+   "acao": "entrada no palco da marca",
+   "pico_do_efeito_dbfs": -11.4,
+   "trilha_no_momento_db": -26.9,
+   "fala_no_momento_db": -180.0
+  },
+  {
+   "pico_em_s": 29.367,
+   "quadro": 881,
+   "cena": "s02",
+   "arquivo": "sparkle.mp3",
+   "volume": 0.55,
+   "inicio_do_arquivo_em_s": 27.891,
+   "acao": "a palavra AGROMONITOR fecha",
+   "pico_do_efeito_dbfs": -12.3,
+   "trilha_no_momento_db": -34.3,
+   "fala_no_momento_db": -64.5
+  },
+  {
+   "pico_em_s": 35.667,
+   "quadro": 1070,
+   "cena": "s03",
+   "arquivo": "pop.mp3",
+   "volume": 0.26,
+   "inicio_do_arquivo_em_s": 35.63,
+   "acao": "etiqueta: o produtor rural",
+   "pico_do_efeito_dbfs": -13.7,
+   "trilha_no_momento_db": -32.7,
+   "fala_no_momento_db": -29.4
+  },
+  {
+   "pico_em_s": 36.8,
+   "quadro": 1104,
+   "cena": "s03",
+   "arquivo": "pop.mp3",
+   "volume": 0.23,
+   "inicio_do_arquivo_em_s": 36.763,
+   "acao": "etiqueta: o agrônomo",
+   "pico_do_efeito_dbfs": -14.8,
+   "trilha_no_momento_db": -32.7,
+   "fala_no_momento_db": -42.5
+  },
+  {
+   "pico_em_s": 37.533,
+   "quadro": 1126,
+   "cena": "s03",
+   "arquivo": "pop.mp3",
+   "volume": 0.2,
+   "inicio_do_arquivo_em_s": 37.497,
+   "acao": "etiqueta: o gestor da operação",
+   "pico_do_efeito_dbfs": -16.0,
+   "trilha_no_momento_db": -34.4,
+   "fala_no_momento_db": -23.4
+  },
+  {
+   "pico_em_s": 41.5,
+   "quadro": 1245,
+   "cena": "s04",
+   "arquivo": "whoosh-big.mp3",
+   "volume": 0.26,
+   "inicio_do_arquivo_em_s": 40.781,
+   "acao": "a câmera sobe (trecho mais rápido)",
+   "pico_do_efeito_dbfs": -13.2,
+   "trilha_no_momento_db": -35.5,
+   "fala_no_momento_db": -18.1
+  },
+  {
+   "pico_em_s": 49.733,
+   "quadro": 1492,
+   "cena": "s05",
+   "arquivo": "whoosh-fast.mp3",
+   "volume": 0.26,
+   "inicio_do_arquivo_em_s": 49.008,
+   "acao": "aproximação lateral",
+   "pico_do_efeito_dbfs": -12.7,
+   "trilha_no_momento_db": -34.2,
+   "fala_no_momento_db": -20.1
+  },
+  {
+   "pico_em_s": 50.6,
+   "quadro": 1518,
+   "cena": "s05",
+   "arquivo": "sparkle.mp3",
+   "volume": 0.5,
+   "inicio_do_arquivo_em_s": 49.124,
+   "acao": "feixe no contorno da linha",
+   "pico_do_efeito_dbfs": -13.1,
+   "trilha_no_momento_db": -35.8,
+   "fala_no_momento_db": -26.4
+  },
+  {
+   "pico_em_s": 52.667,
+   "quadro": 1580,
+   "cena": "s05",
+   "arquivo": "transition-snap.mp3",
+   "volume": 0.32,
+   "inicio_do_arquivo_em_s": 52.553,
+   "acao": "a linha volta ao lugar",
+   "pico_do_efeito_dbfs": -13.9,
+   "trilha_no_momento_db": -36.7,
+   "fala_no_momento_db": -19.1
+  },
+  {
+   "pico_em_s": 54.467,
+   "quadro": 1634,
+   "cena": "s06",
+   "arquivo": "swoosh-quick.mp3",
+   "volume": 0.2,
+   "inicio_do_arquivo_em_s": 54.13,
+   "acao": "cartão de texto",
+   "pico_do_efeito_dbfs": -14.1,
+   "trilha_no_momento_db": -28.7,
+   "fala_no_momento_db": -26.7
+  },
+  {
+   "pico_em_s": 61.567,
+   "quadro": 1847,
+   "cena": "s07",
+   "arquivo": "whoosh-fast.mp3",
+   "volume": 0.3,
+   "inicio_do_arquivo_em_s": 60.842,
+   "acao": "arremesso da barra",
+   "pico_do_efeito_dbfs": -11.4,
+   "trilha_no_momento_db": -34.1,
+   "fala_no_momento_db": -17.0
+  },
+  {
+   "pico_em_s": 62.2,
+   "quadro": 1866,
+   "cena": "s07",
+   "arquivo": "transition-snap.mp3",
+   "volume": 0.2,
+   "inicio_do_arquivo_em_s": 62.086,
+   "acao": "a barra assenta em 70%",
+   "pico_do_efeito_dbfs": -18.0,
+   "trilha_no_momento_db": -35.2,
+   "fala_no_momento_db": -22.8
+  },
+  {
+   "pico_em_s": 68.7,
+   "quadro": 2061,
+   "cena": "s08",
+   "arquivo": "click-camera.mp3",
+   "volume": 0.7,
+   "inicio_do_arquivo_em_s": 68.506,
+   "acao": "moldura fecha: a regra",
+   "pico_do_efeito_dbfs": -9.1,
+   "trilha_no_momento_db": -33.8,
+   "fala_no_momento_db": -16.7
+  },
+  {
+   "pico_em_s": 69.8,
+   "quadro": 2094,
+   "cena": "s08",
+   "arquivo": "click-camera.mp3",
+   "volume": 0.7,
+   "inicio_do_arquivo_em_s": 69.606,
+   "acao": "moldura fecha: a evidência",
+   "pico_do_efeito_dbfs": -9.1,
+   "trilha_no_momento_db": -33.5,
+   "fala_no_momento_db": -20.8
+  },
+  {
+   "pico_em_s": 71.067,
+   "quadro": 2132,
+   "cena": "s08",
+   "arquivo": "click-camera.mp3",
+   "volume": 0.7,
+   "inicio_do_arquivo_em_s": 70.873,
+   "acao": "moldura fecha: a orientação",
+   "pico_do_efeito_dbfs": -9.1,
+   "trilha_no_momento_db": -31.4,
+   "fala_no_momento_db": -22.7
+  },
+  {
+   "pico_em_s": 77.833,
+   "quadro": 2335,
+   "cena": "s09",
+   "arquivo": "whoosh-fast.mp3",
+   "volume": 0.26,
+   "inicio_do_arquivo_em_s": 77.108,
+   "acao": "a câmera corre pela régua (trecho mais rápido)",
+   "pico_do_efeito_dbfs": -12.7,
+   "trilha_no_momento_db": -33.6,
+   "fala_no_momento_db": -23.2
+  },
+  {
+   "pico_em_s": 79.4,
+   "quadro": 2382,
+   "cena": "s09",
+   "arquivo": "transition-snap.mp3",
+   "volume": 0.36,
+   "inicio_do_arquivo_em_s": 79.286,
+   "acao": "freada na última etapa",
+   "pico_do_efeito_dbfs": -12.9,
+   "trilha_no_momento_db": -32.9,
+   "fala_no_momento_db": -22.3
+  },
+  {
+   "pico_em_s": 81.567,
+   "quadro": 2447,
+   "cena": "s10",
+   "arquivo": "swoosh-quick.mp3",
+   "volume": 0.2,
+   "inicio_do_arquivo_em_s": 81.23,
+   "acao": "cartão de texto",
+   "pico_do_efeito_dbfs": -14.1,
+   "trilha_no_momento_db": -27.2,
+   "fala_no_momento_db": -22.0
+  },
+  {
+   "pico_em_s": 83.567,
+   "quadro": 2507,
+   "cena": "s11",
+   "arquivo": "keyboard.mp3",
+   "volume": 0.45,
+   "inicio_do_arquivo_em_s": 83.567,
+   "acao": "digitação do comando",
+   "pico_do_efeito_dbfs": -8.4,
+   "trilha_no_momento_db": -29.3,
+   "fala_no_momento_db": -17.8
+  },
+  {
+   "pico_em_s": 85.433,
+   "quadro": 2563,
+   "cena": "s11",
+   "arquivo": "whoosh-fast.mp3",
+   "volume": 0.32,
+   "inicio_do_arquivo_em_s": 84.708,
+   "acao": "Enter: avanço para a tela real",
+   "pico_do_efeito_dbfs": -10.9,
+   "trilha_no_momento_db": -32.5,
+   "fala_no_momento_db": -22.5
+  },
+  {
+   "pico_em_s": 85.533,
+   "quadro": 2566,
+   "cena": "s11",
+   "arquivo": "transition-snap.mp3",
+   "volume": 0.28,
+   "inicio_do_arquivo_em_s": 85.419,
+   "acao": "corte e assentamento do painel",
+   "pico_do_efeito_dbfs": -15.1,
+   "trilha_no_momento_db": -32.8,
+   "fala_no_momento_db": -23.2
+  },
+  {
+   "pico_em_s": 92.367,
+   "quadro": 2771,
+   "cena": "s12",
+   "arquivo": "click-camera.mp3",
+   "volume": 0.6,
+   "inicio_do_arquivo_em_s": 92.173,
+   "acao": "dígito 6 trava",
+   "pico_do_efeito_dbfs": -10.4,
+   "trilha_no_momento_db": -32.6,
+   "fala_no_momento_db": -23.0
+  },
+  {
+   "pico_em_s": 92.6,
+   "quadro": 2778,
+   "cena": "s12",
+   "arquivo": "click-camera.mp3",
+   "volume": 0.7,
+   "inicio_do_arquivo_em_s": 92.406,
+   "acao": "dígito 3 trava",
+   "pico_do_efeito_dbfs": -9.1,
+   "trilha_no_momento_db": -33.4,
+   "fala_no_momento_db": -20.8
+  },
+  {
+   "pico_em_s": 94.833,
+   "quadro": 2845,
+   "cena": "s12",
+   "arquivo": "pop.mp3",
+   "volume": 0.22,
+   "inicio_do_arquivo_em_s": 94.797,
+   "acao": "linha: 22 de 22",
+   "pico_do_efeito_dbfs": -15.1,
+   "trilha_no_momento_db": -30.3,
+   "fala_no_momento_db": -20.7
+  },
+  {
+   "pico_em_s": 97.833,
+   "quadro": 2935,
+   "cena": "s12",
+   "arquivo": "pop.mp3",
+   "volume": 0.2,
+   "inicio_do_arquivo_em_s": 97.797,
+   "acao": "linha: 0 vulnerabilidades",
+   "pico_do_efeito_dbfs": -16.0,
+   "trilha_no_momento_db": -29.9,
+   "fala_no_momento_db": -23.2
+  },
+  {
+   "pico_em_s": 103.333,
+   "quadro": 3100,
+   "cena": "s13",
+   "arquivo": "swoosh-quick.mp3",
+   "volume": 0.2,
+   "inicio_do_arquivo_em_s": 102.997,
+   "acao": "vira: Entregue",
+   "pico_do_efeito_dbfs": -14.1,
+   "trilha_no_momento_db": -32.4,
+   "fala_no_momento_db": -17.3
+  },
+  {
+   "pico_em_s": 105.533,
+   "quadro": 3166,
+   "cena": "s13",
+   "arquivo": "swoosh-quick.mp3",
+   "volume": 0.18,
+   "inicio_do_arquivo_em_s": 105.197,
+   "acao": "vira: Simulado",
+   "pico_do_efeito_dbfs": -15.0,
+   "trilha_no_momento_db": -34.7,
+   "fala_no_momento_db": -15.8
+  },
+  {
+   "pico_em_s": 107.3,
+   "quadro": 3219,
+   "cena": "s13",
+   "arquivo": "swoosh-quick.mp3",
+   "volume": 0.16,
+   "inicio_do_arquivo_em_s": 106.964,
+   "acao": "vira: Roadmap",
+   "pico_do_efeito_dbfs": -16.0,
+   "trilha_no_momento_db": -34.3,
+   "fala_no_momento_db": -20.4
+  },
+  {
+   "pico_em_s": 114.867,
+   "quadro": 3446,
+   "cena": "s14",
+   "arquivo": "whoosh-fast.mp3",
+   "volume": 0.24,
+   "inicio_do_arquivo_em_s": 114.142,
+   "acao": "a palavra recua e a frase se monta",
+   "pico_do_efeito_dbfs": -13.4,
+   "trilha_no_momento_db": -34.5,
+   "fala_no_momento_db": -23.1
+  },
+  {
+   "pico_em_s": 123.033,
+   "quadro": 3691,
+   "cena": "s15",
+   "arquivo": "riser-cine.mp3",
+   "volume": 0.11,
+   "inicio_do_arquivo_em_s": 121.866,
+   "acao": "preparação para a entrada do nome",
+   "pico_do_efeito_dbfs": -15.5,
+   "trilha_no_momento_db": -27.4,
+   "fala_no_momento_db": -180.0
+  },
+  {
+   "pico_em_s": 123.433,
+   "quadro": 3703,
+   "cena": "s15",
+   "arquivo": "impact-deep-whoosh.mp3",
+   "volume": 0.34,
+   "inicio_do_arquivo_em_s": 122.801,
+   "acao": "o nome AgroSmart entra",
+   "pico_do_efeito_dbfs": -8.5,
+   "trilha_no_momento_db": -33.8,
+   "fala_no_momento_db": -18.2
+  },
+  {
+   "pico_em_s": 124.067,
+   "quadro": 3722,
+   "cena": "s15",
+   "arquivo": "sparkle.mp3",
+   "volume": 0.5,
+   "inicio_do_arquivo_em_s": 122.591,
+   "acao": "traço sob o nome",
+   "pico_do_efeito_dbfs": -12.7,
+   "trilha_no_momento_db": -32.1,
+   "fala_no_momento_db": -63.8
+  }
+ ],
+ "niveis": {
+  "fala_lufs": -17.5,
+  "trilha_lufs_ja_abaixada": -31.7,
+  "com_trilha": {
+   "lufs": -16.2,
+   "pico_dbfs": -1.5
+  },
+  "sem_trilha": {
+   "lufs": -16.1,
+   "pico_dbfs": -1.6
+  }
+ },
+ "trilha": {
+  "arquivo": "bgm-tech-house.mp3",
+  "inicio_na_faixa_s": 96.5549,
+  "bpm": 123.998
+ }
+}

@@ -1,0 +1,39 @@
+{
+  "natureza": "Execução real do software (main f8732f5), em 18/11/2026 23:04 (horário de Brasília); leitura e observação de campo SIMULADAS.",
+  "evento": {
+    "data_hora": "2026-11-18T23:04:46.868856",
+    "sensor_id": "S-002",
+    "talhao": "Talhao B",
+    "cultura": "Milho",
+    "umidade_solo": 50,
+    "temperatura": 33,
+    "probabilidade_praga": 21,
+    "alerta": "Normal",
+    "recomendacao": "Manter monitoramento."
+  },
+  "http_simular": 200,
+  "http_importar": 200,
+  "antes": {
+    "regra": "ND",
+    "severidade": "Indeterminada",
+    "alerta": "Observação de campo ausente",
+    "acao": "Registrar observação de campo para avaliar todas as regras R1–R7",
+    "justificativa": "Sensores não comprovam ausência de infestação.",
+    "avaliacao": "Parcial",
+    "percentual_folhas_doentes": "",
+    "praga_detectada": "",
+    "dias_mesma_praga": ""
+  },
+  "depois": {
+    "regra": "R2",
+    "severidade": "Alta",
+    "alerta": "Alerta de infestação",
+    "acao": "Realizar inspeção técnica",
+    "justificativa": "Percentual de folhas doentes superior a 30%.",
+    "avaliacao": "Completa",
+    "percentual_folhas_doentes": "34.0",
+    "praga_detectada": "Lagarta",
+    "dias_mesma_praga": "4"
+  },
+  "erros_js": []
+}

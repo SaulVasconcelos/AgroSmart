@@ -1,0 +1,59 @@
+{
+  "natureza": "Execução real do software; leitura e observação de campo SIMULADAS.",
+  "capturado_em": "2026-11-19T02:52:08-0300",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "escala": 2,
+  "evento": {
+    "data_hora": "2026-11-19T02:51:44.745215",
+    "sensor_id": "S-002",
+    "talhao": "Talhao B",
+    "cultura": "Milho",
+    "umidade_solo": 40,
+    "temperatura": 26,
+    "probabilidade_praga": 17,
+    "alerta": "Normal",
+    "recomendacao": "Manter monitoramento."
+  },
+  "http_simular": 200,
+  "http_importar": 200,
+  "antes": {
+    "regra": "ND",
+    "severidade": "Indeterminada",
+    "alerta": "Observação de campo ausente",
+    "acao": "Registrar observação de campo para avaliar todas as regras R1–R7",
+    "justificativa": "Sensores não comprovam ausência de infestação.",
+    "avaliacao": "Parcial",
+    "percentual_folhas_doentes": "",
+    "praga_detectada": "",
+    "dias_mesma_praga": "",
+    "umidade_solo": "40.0",
+    "temperatura": "26.0"
+  },
+  "depois": {
+    "regra": "R2",
+    "severidade": "Alta",
+    "alerta": "Alerta de infestação",
+    "acao": "Realizar inspeção técnica",
+    "justificativa": "Percentual de folhas doentes superior a 30%.",
+    "avaliacao": "Completa",
+    "percentual_folhas_doentes": "34.0",
+    "praga_detectada": "Lagarta",
+    "dias_mesma_praga": "4",
+    "umidade_solo": "40.0",
+    "temperatura": "26.0"
+  },
+  "textos_nas_telas": {
+    "cartao_antes_nd": "Ocorrência selecionada\nIndeterminada\n\n19/11/2026 · 02:51 · ND · Observação de campo ausente\n\nUmidade do solo\n40%\nTemperatura\n26°C\nAvaliação dos dados\nParcial\n\nND: sem evidência suficiente para determinar a condição; não significa risco baixo.\n\nEvidências de campo\nFolhas afetadas\nNão informado\nPraga detectada\nNão informado\nDuração\nNão informado\nOrientação sugerida · ND\nRegistrar observação de campo para avaliar todas as regras R1–R7\n\nAvaliação e decisão humana; nenhuma intervenção é executada pelo sistema.\n\nSensores não comprovam ausência de infestação.\n\nJustificativa e origem · ND · Parcial",
+    "cartao_depois_r2": "Ocorrência selecionada\nAlta\n\n19/11/2026 · 02:51 · R2 · Alerta de infestação\n\nUmidade do solo\n40%\nTemperatura\n26°C\nAvaliação dos dados\nCompleta\n\nObservação de campo disponível para esta leitura.\n\nEvidências de campo\nFolhas afetadas\n34%\nPraga detectada\nLagarta\nDuração\n4 dia(s)\nOrientação sugerida · R2\nRealizar inspeção técnica\n\nAvaliação e decisão humana; nenhuma intervenção é executada pelo sistema.\n\nPercentual de folhas doentes superior a 30%.\n\nJustificativa e origem · R2 · Completa",
+    "kpis": "Leituras no período\n157\nDados de sensores\nTalhões no período\n3\nÁreas com leituras\nOcorrências históricas\n116\nRegras R1–R6\nCríticas históricas\n11\nRegra R1",
+    "linha_b": "Talhão B\nMilho\nAlta\nAlerta de infestação\n62% umidade · 30°C\n19/11/2026 · 02:51\nR2\nVer talhão",
+    "prioridades": "TALHÃO\nCULTURA\nPRIORIDADE\nPRINCIPAL INDÍCIO\nÚLTIMA LEITURA NO FILTRO\nREGRA\nTalhão B\nMilho\nAlta\nAlerta de infestação\n62% umidade · 30°C\n19/11/2026 · 02:51\nR2\nVer talhão\nTalhão A\nSoja\nIndeterminada\nDados insuficientes\n53% umidade · 25°C\n19/11/2026 · 02:51\nND\nVer talhão\nTalhão C\nCafé\nIndeterminada\nDados insuficientes\n36% umidade · 36°C\n19/11/2026 · 02:51\nND\nVer talhão",
+    "painel_operacao": "Execução contínua e monitoramento\n\nGera leituras simuladas em intervalo configurável e mostra o estado da operação local.\n\nIntervalo entre ciclos\n15 segundos\n30 segundos\n1 minuto\n2 minutos\nLeituras por ciclo\n1 leitura\n3 leituras\n6 leituras\nIniciar execução contínua\nParar\nAtualizar estado\n\nExecução contínua ativa. Estado consultado agora; atualização automática a cada 10 s nesta tela.\n\nExecução contínua\nAtiva\nSituação dos dados\nDados sendo atualizados no intervalo esperado\nIntervalo / leituras por ciclo\n5 s · 3\nCiclos executados (sucesso)\n5 (5)\nFalhas (consecutivas)\n0 (0)\nÚltimo ciclo\nSucesso · 21,3 ms\nLeitura mais recente\n19/11/2026 · 02:52 · há 1 s\nLeituras na base (Raw)\n160\nServidor no ar há\n21 s\nÚltimos ciclos\nCICLO\tINÍCIO (UTC)\tDURAÇÃO\tRESULTADO\tACEITAS\n5\t05:52:04\t21,3 ms\tsucesso\t3\n4\t05:51:59\t21,5 ms\tsucesso\t3\n3\t05:51:54\t25,2 ms\tsucesso\t3\n2\t05:51:49\t19,8 ms\tsucesso\t3\n1\t05:51:44\t18,9 ms\tsucesso\t3\n\nIntervalo é parâmetro de demonstração, não frequência de sensor físico. Cada ciclo reprocessa as camadas e aplica as regras R1–R7; nenhuma ação é executada no campo."
+  },
+  "erros_js": [],
+  "tentativa": 1,
+  "criterio": "A leitura do simulador é sorteada. A captura é repetida até a leitura do Talhão B cair no caso contado no roteiro: ND sem observação de campo, R2 com ela, e Talhão B com prioridade Alta (R2) na Visão Geral. Nenhum valor é digitado nem editado."
+}

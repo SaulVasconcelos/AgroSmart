@@ -40,7 +40,7 @@ No GitHub, o mesmo pipeline roda pelo workflow [.github/workflows/devsecops.yml]
 | Contratos de API da Fase 6 (vigentes) | [CONTRATOS_UX_P0_P1.txt](CONTRATOS_UX_P0_P1.txt) |
 | Protótipo de classificação de imagens (fases anteriores) | [historico/classificador_imagens/](historico/classificador_imagens/LEIA_ME.md) |
 
-## Situação atual (18/11/2026, horário de Brasília)
+## Situação atual (19/11/2026, horário de Brasília)
 
 **Implementado e executado:**
 
@@ -49,12 +49,13 @@ No GitHub, o mesmo pipeline roda pelo workflow [.github/workflows/devsecops.yml]
 - pipeline DevSecOps completo **aprovado em dois ambientes**: no PC da equipe ([devsecops_equipe](03_evidencias/devsecops_equipe/LEIA_ME.md)) e no **GitHub Actions** ([devsecops_ci](03_evidencias/devsecops_ci/LEIA_ME.md), run 44438716927, PR #1);
 - Ruff e Bandit;
 - build e container ponta a ponta com a imagem oficial `python:3.13-slim`, e Trivy sem bloqueantes, nos dois ambientes;
-- análise de processo.
+- análise de processo;
+- vídeo pitch de até 5 min: filme animado de 2 min 14 s, em [05_apresentacao/video_pitch_animado/](05_apresentacao/video_pitch_animado/LEIA_ME.md), com voz e imagens de abertura feitas por IA; a equipe assistiu ao vídeo pronto e o aprovou em 19/11/2026.
 
 **Pendente:**
 
-- slides e roteiros;
-- os **dois vídeos**, a gravar pela equipe: o final técnico de 5–8 min e o pitch de até 5 min.
+- slides do pitch: prontos e revisados; falta exportar o arquivo para `05_apresentacao/`;
+- vídeo final técnico de 5–8 min: a gravar pela equipe, com o roteiro de [05_apresentacao/](05_apresentacao/LEIA_ME.md).
 
 A Fase 7 **ainda não está integralmente concluída**.
 
