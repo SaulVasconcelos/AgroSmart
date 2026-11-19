@@ -1,0 +1,58 @@
+$ docker build --build-arg PYTHON_IMAGE=local/base-substituta:ubuntu24-python3 --label agrosmart.pipeline.execucao=20261118T024453Z -t agrosmart:fase7-pipeline .
+# exit_code=0
+
+
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 2.15kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/local/base-substituta:ubuntu24-python3
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 322B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 1.49kB done
+#4 DONE 0.0s
+
+#5 [1/9] FROM docker.io/local/base-substituta:ubuntu24-python3@sha256:3d30aab63eee66928f8cce62d910cf30e25eee41bdbd84648da2313f38746daf
+#5 resolve docker.io/local/base-substituta:ubuntu24-python3@sha256:3d30aab63eee66928f8cce62d910cf30e25eee41bdbd84648da2313f38746daf done
+#5 DONE 0.0s
+
+#6 [6/9] COPY web/ ./web/
+#6 CACHED
+
+#7 [8/9] COPY data/trusted/ ./semente/trusted/
+#7 CACHED
+
+#8 [5/9] COPY agrosmart/ ./agrosmart/
+#8 CACHED
+
+#9 [4/9] COPY main.py ./
+#9 CACHED
+
+#10 [3/9] RUN groupadd --system --gid 10001 agrosmart  && useradd --system --uid 10001 --gid agrosmart --no-create-home --home-dir /nonexistent --shell /usr/sbin/nologin agrosmart  && mkdir -p /data  && chown agrosmart:agrosmart /data
+#10 CACHED
+
+#11 [2/9] WORKDIR /app
+#11 CACHED
+
+#12 [7/9] COPY data/raw/ ./semente/raw/
+#12 CACHED
+
+#13 [9/9] COPY data/refined/ ./semente/refined/
+#13 CACHED
+
+#14 exporting to image
+#14 exporting layers done
+#14 exporting manifest sha256:d98f656fc339f68a064ed524d0e8edc76c2703669e5ed6bf60994ff0e41d4b7f done
+#14 exporting config sha256:aa11ca15fa12eeee9c371171c5fe5703117a3fb33b2c46112d49b8a2f7bfa812 done
+#14 exporting attestation manifest sha256:5a2419aee8ef58625b35cfd9f5be98a7251d92c19ac4fc2536a65fb1b86066ca done
+#14 exporting manifest list sha256:740d9478e79b8616e556dbe5258fa767e10e7b870c984a644969980960ed8574 done
+#14 naming to docker.io/library/agrosmart:fase7-pipeline done
+#14 unpacking to docker.io/library/agrosmart:fase7-pipeline done
+#14 DONE 0.1s

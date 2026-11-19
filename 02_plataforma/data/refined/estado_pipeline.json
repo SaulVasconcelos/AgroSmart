@@ -1,0 +1,20 @@
+{
+  "raw_sensores": 144,
+  "trusted_sensores": 144,
+  "duplicados_removidos": 0,
+  "observacoes_campo": 36,
+  "diagnosticos_historicos": 766,
+  "monitoramento_refinado": 144,
+  "alertas": 109,
+  "rejeitados": 0,
+  "regras": {
+    "R2": 28,
+    "R7": 35,
+    "R1": 8,
+    "R4": 9,
+    "R5": 12,
+    "R6": 28,
+    "R3": 24
+  },
+  "modo": "Simulação acadêmica / processamento local"
+}

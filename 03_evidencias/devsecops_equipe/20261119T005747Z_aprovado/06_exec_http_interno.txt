@@ -1,0 +1,4 @@
+$ docker exec agrosmart-pipeline-20261119t005747z python -c import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8501/api/pronto',timeout=5).status)
+# exit_code=0
+
+200

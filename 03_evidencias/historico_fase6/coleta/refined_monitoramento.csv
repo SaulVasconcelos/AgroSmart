@@ -1,0 +1,2 @@
+﻿data_hora;sensor_id;talhao;cultura;umidade_solo;temperatura;probabilidade_praga;alerta_origem;recomendacao_origem;percentual_folhas_doentes;praga_detectada;dias_mesma_praga;origem_observacao;regra;severidade;alerta;acao;justificativa;avaliacao;origem_sensor
+2026-10-10T20:01:47.857222;S-001;Talhao A;Soja;63.0;34.0;43.0;Normal;Manter monitoramento.;;;;Ausente;ND;Indeterminada;Observação de campo ausente;Registrar observação de campo para avaliar todas as regras R1–R7;Sensores não comprovam ausência de infestação.;Parcial;simulador_local

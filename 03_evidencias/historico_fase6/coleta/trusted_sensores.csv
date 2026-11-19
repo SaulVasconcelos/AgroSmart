@@ -1,0 +1,2 @@
+﻿data_hora;sensor_id;talhao;cultura;umidade_solo;temperatura;probabilidade_praga;alerta;recomendacao;origem_sensor
+2026-10-10T20:01:47.857222;S-001;Talhao A;Soja;63.0;34.0;43.0;Normal;Manter monitoramento.;simulador_local

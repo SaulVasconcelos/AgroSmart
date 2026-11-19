@@ -1,0 +1,11 @@
+{
+  "data_hora": "2026-10-10T20:01:47.857222",
+  "sensor_id": "S-001",
+  "talhao": "Talhao A",
+  "cultura": "Soja",
+  "umidade_solo": 63,
+  "temperatura": 34,
+  "probabilidade_praga": 43,
+  "alerta": "Normal",
+  "recomendacao": "Manter monitoramento."
+}

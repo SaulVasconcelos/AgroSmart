@@ -1,0 +1,39 @@
+{
+  "metadados": {
+    "projeto": "AgroSmart",
+    "modulo": "AgroMonitor",
+    "origem": "Dados simulados para fins acadêmicos",
+    "ultimo_registro": "2026-10-10T20:01:47.857222",
+    "filtro_talhao": ""
+  },
+  "kpis": {
+    "leituras": 145,
+    "talhoes": 3,
+    "alertas": 109,
+    "criticos": 8,
+    "umidade_media": 44.2,
+    "temperatura_media": 30.2,
+    "cobertura_campo_pct": 99.3
+  },
+  "pipeline": {
+    "raw_sensores": 145,
+    "trusted_sensores": 145,
+    "duplicados_removidos": 0,
+    "observacoes_campo": 36,
+    "diagnosticos_historicos": 766,
+    "monitoramento_refinado": 145,
+    "alertas": 109,
+    "rejeitados": 0,
+    "regras": {
+      "R2": 28,
+      "R7": 35,
+      "R1": 8,
+      "R4": 9,
+      "R5": 12,
+      "R6": 28,
+      "R3": 24,
+      "ND": 1
+    },
+    "modo": "Simulação acadêmica / processamento local"
+  }
+}

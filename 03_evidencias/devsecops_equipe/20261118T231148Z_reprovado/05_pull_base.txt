@@ -1,0 +1,7 @@
+$ docker pull python:3.13-slim
+# exit_code=0
+
+3.13-slim: Pulling from library/python
+Digest: sha256:e48f59cdba69a3cbd9ed2cf0f348d90d45a8d350d98134cf1070bc106ee9ed90
+Status: Downloaded newer image for python:3.13-slim
+docker.io/library/python:3.13-slim

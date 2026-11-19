@@ -1,0 +1,4 @@
+$ docker run -d --name agrosmart-pipeline-20261118t024453z -p 127.0.0.1:36509:8501 -v agrosmart-pipeline-20261118t024453z:/data --read-only --tmpfs /tmp --cap-drop ALL --security-opt no-new-privileges:true -e AGROSMART_EXECUCAO_CONTINUA=0 agrosmart:fase7-pipeline
+# exit_code=0
+
+92b44d2429ab071df9479177c91c86b96138199620b23f7310ead3cbbf8a9017

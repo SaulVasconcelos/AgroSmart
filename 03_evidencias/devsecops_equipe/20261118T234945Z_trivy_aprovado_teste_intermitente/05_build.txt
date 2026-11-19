@@ -1,0 +1,124 @@
+$ docker build --build-arg PYTHON_IMAGE=python:3.13-slim --label agrosmart.pipeline.execucao=20261118T234945Z -t agrosmart:fase7-pipeline .
+# exit_code=0
+
+
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 3.12kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.13-slim
+#2 DONE 0.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 322B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 1.49kB 0.0s done
+#4 DONE 0.1s
+
+#5 [ 1/10] FROM docker.io/library/python:3.13-slim@sha256:e48f59cdba69a3cbd9ed2cf0f348d90d45a8d350d98134cf1070bc106ee9ed90
+#5 resolve docker.io/library/python:3.13-slim@sha256:e48f59cdba69a3cbd9ed2cf0f348d90d45a8d350d98134cf1070bc106ee9ed90
+#5 resolve docker.io/library/python:3.13-slim@sha256:e48f59cdba69a3cbd9ed2cf0f348d90d45a8d350d98134cf1070bc106ee9ed90 0.1s done
+#5 DONE 0.2s
+
+#6 [ 2/10] WORKDIR /app
+#6 CACHED
+
+#7 [ 3/10] RUN set -eux;     export DEBIAN_FRONTEND=noninteractive;     apt-get update;     apt-get -y upgrade;     apt-get clean;     rm -rf /var/lib/apt/lists/*;     if python -m pip --version >/dev/null 2>&1; then python -m pip uninstall -y pip; fi;     rm -rf /usr/local/bin/pip /usr/local/bin/pip3* /root/.cache;     python -c "import importlib.util, sys; sys.exit(importlib.util.find_spec('pip') is not None)"
+#7 0.427 + export DEBIAN_FRONTEND=noninteractive
+#7 0.427 + apt-get update
+#7 0.716 Hit:1 http://deb.debian.org/debian trixie InRelease
+#7 0.716 Get:2 http://deb.debian.org/debian trixie-updates InRelease [47.3 kB]
+#7 0.746 Get:3 http://deb.debian.org/debian-security trixie-security InRelease [43.4 kB]
+#7 0.821 Get:4 http://deb.debian.org/debian trixie/main amd64 Packages [9678 kB]
+#7 1.981 Get:5 http://deb.debian.org/debian trixie-updates/main amd64 Packages [1108 B]
+#7 1.993 Get:6 http://deb.debian.org/debian-security trixie-security/main amd64 Packages [325 kB]
+#7 2.666 Fetched 10.1 MB in 2s (4716 kB/s)
+#7 2.666 Reading package lists...
+#7 3.256 + apt-get -y upgrade
+#7 3.264 Reading package lists...
+#7 3.843 Building dependency tree...
+#7 4.005 Reading state information...
+#7 4.087 Calculating upgrade...
+#7 4.403 The following packages will be upgraded:
+#7 4.403   zlib1g
+#7 4.471 1 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+#7 4.471 Need to get 88.7 kB of archives.
+#7 4.471 After this operation, 1024 B disk space will be freed.
+#7 4.471 Get:1 http://deb.debian.org/debian-security trixie-security/main amd64 zlib1g amd64 1:1.3.dfsg+really1.3.1-1+deb13u1 [88.7 kB]
+#7 5.398 Fetched 88.7 kB in 0s (921 kB/s)
+#7 5.497 (Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 5658 files and directories currently installed.)
+#7 5.529 Preparing to unpack .../zlib1g_1%3a1.3.dfsg+really1.3.1-1+deb13u1_amd64.deb ...
+#7 5.633 Unpacking zlib1g:amd64 (1:1.3.dfsg+really1.3.1-1+deb13u1) over (1:1.3.dfsg+really1.3.1-1+b1) ...
+#7 5.896 Setting up zlib1g:amd64 (1:1.3.dfsg+really1.3.1-1+deb13u1) ...
+#7 6.004 Processing triggers for libc-bin (2.41-12+deb13u4) ...
+#7 6.148 + apt-get clean
+#7 6.155 + rm -rf /var/lib/apt/lists/auxfiles /var/lib/apt/lists/deb.debian.org_debian-security_dists_trixie-security_InRelease /var/lib/apt/lists/deb.debian.org_debian-security_dists_trixie-security_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/deb.debian.org_debian_dists_trixie-updates_InRelease /var/lib/apt/lists/deb.debian.org_debian_dists_trixie-updates_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/deb.debian.org_debian_dists_trixie_InRelease /var/lib/apt/lists/deb.debian.org_debian_dists_trixie_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/lock /var/lib/apt/lists/partial
+#7 6.159 + python -m pip --version
+#7 7.042 + python -m pip uninstall -y pip
+#7 8.171 Found existing installation: pip 26.2.2
+#7 8.236 Uninstalling pip-26.2.2:
+#7 8.444   Successfully uninstalled pip-26.2.2
+#7 8.457 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#7 8.513 + rm -rf /usr/local/bin/pip /usr/local/bin/pip3* /root/.cache
+#7 8.514 + python -c import importlib.util, sys; sys.exit(importlib.util.find_spec('pip') is not None)
+#7 DONE 8.6s
+
+#8 [ 4/10] RUN groupadd --system --gid 10001 agrosmart  && useradd --system --uid 10001 --gid agrosmart --no-create-home --home-dir /nonexistent --shell /usr/sbin/nologin agrosmart  && mkdir -p /data  && chown agrosmart:agrosmart /data
+#8 0.464 useradd warning: agrosmart's uid 10001 is greater than SYS_UID_MAX 999
+#8 DONE 0.6s
+
+#9 [ 5/10] COPY main.py ./
+#9 DONE 0.2s
+
+#10 [ 6/10] COPY agrosmart/ ./agrosmart/
+#10 DONE 0.2s
+
+#11 [ 7/10] COPY web/ ./web/
+#11 DONE 0.1s
+
+#12 [ 8/10] COPY data/raw/ ./semente/raw/
+#12 DONE 0.1s
+
+#13 [ 9/10] COPY data/trusted/ ./semente/trusted/
+#13 DONE 0.2s
+
+#14 [10/10] COPY data/refined/ ./semente/refined/
+#14 DONE 0.2s
+
+#15 exporting to image
+#15 exporting layers
+#15 exporting layers 2.2s done
+#15 exporting manifest sha256:865a03e6f27468323f84a4bb971e0d7b04ed016e372da576c78d141baf6934df 0.1s done
+#15 exporting config sha256:3c5a25d2d2bbc35e38b04f429a480e8d4674717ba66cd1f7e31b5f3eb311b295 0.1s done
+#15 exporting attestation manifest sha256:0d48e8e626f8968e0bfe9498bfe3a5e3a6f4c5090fc722f61b0b9e82f2211491 0.1s done
+#15 exporting manifest list sha256:24fa0bf5ede17729936cb3c81ad80393d25c44c13304bd2c17db0f628b67d4d7
+#15 exporting manifest list sha256:24fa0bf5ede17729936cb3c81ad80393d25c44c13304bd2c17db0f628b67d4d7 0.1s done
+#15 naming to docker.io/library/agrosmart:fase7-pipeline 0.0s done
+#15 unpacking to docker.io/library/agrosmart:fase7-pipeline
+#15 unpacking to docker.io/library/agrosmart:fase7-pipeline 0.6s done
+#15 DONE 3.2s

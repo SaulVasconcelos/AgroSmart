@@ -1,0 +1,4 @@
+$ docker image inspect agrosmart:fase7-pipeline --format {{.Id}} {{.Size}} {{.Config.User}}
+# exit_code=0
+
+sha256:24fa0bf5ede17729936cb3c81ad80393d25c44c13304bd2c17db0f628b67d4d7 177851350 agrosmart:agrosmart

@@ -1,0 +1,5 @@
+Phosphor Icons / core
+Commit: 2b75f3ad12b420c9504ef05df8d2564a28f8500e
+Fonte: https://github.com/phosphor-icons/core/tree/2b75f3ad12b420c9504ef05df8d2564a28f8500e/assets/regular
+Ícones: house, plant, warning-circle, files, gear, funnel, arrow-clockwise, list, arrow-left, arrow-right, drop, thermometer, bug, leaf, database, caret-down
+Licença MIT em LICENSE_PHOSPHOR.txt. Sprite sem alteração de geometria.

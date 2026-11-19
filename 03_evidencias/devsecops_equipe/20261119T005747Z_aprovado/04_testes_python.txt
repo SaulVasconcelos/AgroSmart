@@ -1,0 +1,67 @@
+$ C:\Users\vvasc\AppData\Local\Python\pythoncore-3.14-64\python.exe -m unittest discover -s tests -v
+# exit_code=0
+
+
+teste_campo_aditivo_ultima_leitura_respeita_talhao_periodo (test_consultas.TestarConsultas.teste_campo_aditivo_ultima_leitura_respeita_talhao_periodo) ... ok
+teste_critica_antiga_fora_do_limite_120_permanece_primeira (test_consultas.TestarConsultas.teste_critica_antiga_fora_do_limite_120_permanece_primeira) ... ok
+teste_detalhe_separa_ocorrencia_e_ultima_leitura (test_consultas.TestarConsultas.teste_detalhe_separa_ocorrencia_e_ultima_leitura) ... ok
+teste_filtros_recencia_e_pagina_fora_intervalo (test_consultas.TestarConsultas.teste_filtros_recencia_e_pagina_fora_intervalo) ... ok
+teste_nd_e_avaliacao_parcial_nao_sao_reclassificados (test_consultas.TestarConsultas.teste_nd_e_avaliacao_parcial_nao_sao_reclassificados) ... ok
+teste_paginas_completas_sem_repeticao_e_prioridade (test_consultas.TestarConsultas.teste_paginas_completas_sem_repeticao_e_prioridade) ... ok
+teste_parametros_invalidos (test_consultas.TestarConsultas.teste_parametros_invalidos) ... ok
+teste_vazio_nao_inventa_ultima_leitura (test_consultas.TestarConsultas.teste_vazio_nao_inventa_ultima_leitura) ... ok
+teste_analise_recalcula_metricas_a_partir_do_log (test_fase7_event_log.TestarEventLog.teste_analise_recalcula_metricas_a_partir_do_log) ... ok
+teste_duplicata_gera_variante_observada (test_fase7_event_log.TestarEventLog.teste_duplicata_gera_variante_observada) ... ok
+teste_estrutura_ordem_e_duracoes_de_um_caso (test_fase7_event_log.TestarEventLog.teste_estrutura_ordem_e_duracoes_de_um_caso) ... ok
+teste_processar_sem_caso_nao_grava_event_log (test_fase7_event_log.TestarEventLog.teste_processar_sem_caso_nao_grava_event_log) ... ok
+teste_rejeicao_e_falha_tem_status_tecnico_distinto (test_fase7_event_log.TestarEventLog.teste_rejeicao_e_falha_tem_status_tecnico_distinto) ... ok
+teste_validador_detecta_linhas_invalidas (test_fase7_event_log.TestarEventLog.teste_validador_detecta_linhas_invalidas) ... ok
+teste_sigterm_encerra_com_codigo_zero_e_preserva_dados (test_fase7_http.TestarEncerramentoPorSinal.teste_sigterm_encerra_com_codigo_zero_e_preserva_dados) ... skipped 'sem�ntica de SIGTERM validada em Linux/container'
+teste_controle_da_execucao_continua (test_fase7_http.TestarHTTPFase7.teste_controle_da_execucao_continua) ... C:\Users\vvasc\AppData\Local\Python\pythoncore-3.14-64\Lib\tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 400: 'Bad Request'>
+  _warnings.warn(self.warn_message, ResourceWarning)
+ok
+teste_health_legado_inalterado (test_fase7_http.TestarHTTPFase7.teste_health_legado_inalterado) ... ok
+teste_importacao_valida_antes_de_gravar (test_fase7_http.TestarHTTPFase7.teste_importacao_valida_antes_de_gravar) ... ok
+teste_operacao_sem_caminhos_internos_e_prontidao (test_fase7_http.TestarHTTPFase7.teste_operacao_sem_caminhos_internos_e_prontidao) ... C:\Users\vvasc\AppData\Local\Python\pythoncore-3.14-64\Lib\tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 503: 'Service Unavailable'>
+  _warnings.warn(self.warn_message, ResourceWarning)
+ok
+teste_post_simular_registra_caso_completo_e_rejeicao (test_fase7_http.TestarHTTPFase7.teste_post_simular_registra_caso_completo_e_rejeicao) ... ok
+teste_respostas_de_erro_consomem_o_corpo_antes_de_fechar (test_fase7_http.TestarHTTPFase7.teste_respostas_de_erro_consomem_o_corpo_antes_de_fechar)
+Regress�o do WinError 10053 visto no Windows: 404/400 sem ler o corpo abortava a conex�o. ... C:\Users\vvasc\AppData\Local\Python\pythoncore-3.14-64\Lib\tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 404: 'Not Found'>
+  _warnings.warn(self.warn_message, ResourceWarning)
+ok
+teste_rotas_desconhecidas (test_fase7_http.TestarHTTPFase7.teste_rotas_desconhecidas) ... ok
+teste_semeia_somente_pasta_vazia (test_fase7_http.TestarInicializacaoVolume.teste_semeia_somente_pasta_vazia) ... ok
+teste_amostra_historica_preservada_por_registro (test_fase7_operacao.TestarExecucaoContinua.teste_amostra_historica_preservada_por_registro) ... ok
+teste_falha_controlada_e_parada_por_falhas_consecutivas (test_fase7_operacao.TestarExecucaoContinua.teste_falha_controlada_e_parada_por_falhas_consecutivas) ... ciclo=1 case_id=RUN-20261119T005757Z-c13b0f7b resultado=falha erro=OSError: disco indispon�vel
+ciclo=2 case_id=RUN-20261119T005757Z-6a5c3ca5 resultado=falha erro=OSError: disco indispon�vel
+execucao_continua encerrada estado=interrompida_por_falhas motivo=2 falhas consecutivas
+ok
+teste_limite_de_leituras_para_sem_gravar (test_fase7_operacao.TestarExecucaoContinua.teste_limite_de_leituras_para_sem_gravar) ... execucao_continua encerrada estado=limite_atingido motivo=limite de 144 leituras Raw atingido
+ok
+teste_multiplos_ciclos_reais_sem_sobreposicao (test_fase7_operacao.TestarExecucaoContinua.teste_multiplos_ciclos_reais_sem_sobreposicao) ... execucao_continua encerrada estado=concluida motivo=max_ciclos=4
+ok
+teste_parametros_invalidos (test_fase7_operacao.TestarExecucaoContinua.teste_parametros_invalidos) ... ok
+teste_parar_interrompe_a_espera_e_reinicia (test_fase7_operacao.TestarExecucaoContinua.teste_parar_interrompe_a_espera_e_reinicia) ... ok
+teste_worker_e_posts_concorrentes_com_mesma_trava (test_fase7_operacao.TestarExecucaoContinua.teste_worker_e_posts_concorrentes_com_mesma_trava) ... execucao_continua encerrada estado=concluida motivo=max_ciclos=6
+ok
+teste_diagnosticos_equivalentes (test_integracao.TestarQualidade.teste_diagnosticos_equivalentes) ... ok
+teste_observacao_invalida (test_integracao.TestarQualidade.teste_observacao_invalida) ... ok
+teste_sensor_original_preservado (test_integracao.TestarQualidade.teste_sensor_original_preservado) ... ok
+teste_sensor_proba_fora_escala (test_integracao.TestarQualidade.teste_sensor_proba_fora_escala) ... ok
+teste_sensor_talhao_cultura_incompativeis (test_integracao.TestarQualidade.teste_sensor_talhao_cultura_incompativeis) ... ok
+teste_R6_parenteses (test_integracao.TestarRegras.teste_R6_parenteses) ... ok
+teste_cada_regra (test_integracao.TestarRegras.teste_cada_regra) ... ok
+teste_falta_campo_nao_afirma_normal (test_integracao.TestarRegras.teste_falta_campo_nao_afirma_normal) ... ok
+teste_limites_exatos (test_integracao.TestarRegras.teste_limites_exatos) ... ok
+teste_prioridade_R1_sobre_R2 (test_integracao.TestarRegras.teste_prioridade_R1_sobre_R2) ... ok
+teste_registro_invalido_foi_quarentenado (test_pipeline.TestarPipeline.teste_registro_invalido_foi_quarentenado) ... ok
+teste_reprocessamento_deduplicacao_e_ausencia_campo (test_pipeline.TestarPipeline.teste_reprocessamento_deduplicacao_e_ausencia_campo) ... ok
+teste_demo_preserva_resultados_por_registro (test_regressao_demo.TestarRegressaoDemo.teste_demo_preserva_resultados_por_registro) ... ok
+teste_filtros_e_diagnosticos_independentes (test_regressao_demo.TestarRegressaoDemo.teste_filtros_e_diagnosticos_independentes) ... ok
+teste_importacao_atomica_valida_invalida_e_reprocessamento (test_regressao_demo.TestarRegressaoDemo.teste_importacao_atomica_valida_invalida_e_reprocessamento) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 7.647s
+
+OK (skipped=1)

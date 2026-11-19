@@ -1,0 +1,136 @@
+[
+  {
+    "instante_utc": "2026-11-18T02:33:23.714+00:00",
+    "cenario": "servidor_pronto",
+    "porta": 35561
+  },
+  {
+    "instante_utc": "2026-11-18T02:33:23.716+00:00",
+    "cenario": "execucao_continua_iniciada",
+    "http": 200,
+    "intervalo_s": 5.0
+  },
+  {
+    "instante_utc": "2026-11-18T02:33:23.761+00:00",
+    "cenario": "post_simular_valido",
+    "http": 200,
+    "quantidade": 1,
+    "raw": 148
+  },
+  {
+    "instante_utc": "2026-11-18T02:33:25.289+00:00",
+    "cenario": "post_simular_valido",
+    "http": 200,
+    "quantidade": 3,
+    "raw": 151
+  },
+  {
+    "instante_utc": "2026-11-18T02:33:26.813+00:00",
+    "cenario": "post_simular_valido",
+    "http": 200,
+    "quantidade": 6,
+    "raw": 157
+  },
+  {
+    "instante_utc": "2026-11-18T02:33:28.338+00:00",
+    "cenario": "post_simular_valido",
+    "http": 200,
+    "quantidade": 2,
+    "raw": 159
+  },
+  {
+    "instante_utc": "2026-11-18T02:33:29.864+00:00",
+    "cenario": "post_simular_valido",
+    "http": 200,
+    "quantidade": 8,
+    "raw": 170
+  },
+  {
+    "instante_utc": "2026-11-18T02:33:31.367+00:00",
+    "cenario": "post_simular_invalido",
+    "motivo": "quantidade_fora_do_limite",
+    "http": 400,
+    "erro": "Quantidade entre 1 e 8"
+  },
+  {
+    "instante_utc": "2026-11-18T02:33:31.369+00:00",
+    "cenario": "post_simular_invalido",
+    "motivo": "talhao_inexistente",
+    "http": 400,
+    "erro": "Talhão não cadastrado"
+  },
+  {
+    "instante_utc": "2026-11-18T02:33:31.370+00:00",
+    "cenario": "post_simular_invalido",
+    "motivo": "json_malformado",
+    "http": 400,
+    "erro": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+  },
+  {
+    "instante_utc": "2026-11-18T02:33:31.394+00:00",
+    "cenario": "importar_observacoes_valido",
+    "http": 200,
+    "importadas": 2
+  },
+  {
+    "instante_utc": "2026-11-18T02:33:31.396+00:00",
+    "cenario": "importar_observacoes_invalido",
+    "http": 400,
+    "erro": "folhas: fora do intervalo [0;100]"
+  },
+  {
+    "instante_utc": "2026-11-18T02:33:31.398+00:00",
+    "cenario": "importar_observacoes_invalido",
+    "http": 400,
+    "erro": "CSV deve conter colunas: data, talhao, cultura, percentual_folhas_doentes, praga_detectada, dias_mesma_praga"
+  },
+  {
+    "instante_utc": "2026-11-18T02:33:31.547+00:00",
+    "cenario": "rajada_concorrente",
+    "requisicoes": 6,
+    "http": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ]
+  },
+  {
+    "instante_utc": "2026-11-18T02:34:59.888+00:00",
+    "cenario": "execucao_continua_parada",
+    "http": 200,
+    "ciclos": 20,
+    "falhas": 0
+  },
+  {
+    "instante_utc": "2026-11-18T02:35:00.458+00:00",
+    "cenario": "servidor_encerrado",
+    "exit_code": 0
+  },
+  {
+    "instante_utc": "2026-11-18T02:35:00.555+00:00",
+    "cenario": "cli_importar_sensores_com_duplicata",
+    "exit_code": 0,
+    "saida": [
+      "}"
+    ]
+  },
+  {
+    "instante_utc": "2026-11-18T02:35:00.622+00:00",
+    "cenario": "cli_importar_sensores_invalido",
+    "exit_code": 2,
+    "saida": [
+      "Importação rejeitada (nada foi gravado): linha 1: umidade_solo: fora do intervalo [0;100]"
+    ]
+  },
+  {
+    "instante_utc": "2026-11-18T02:35:00.710+00:00",
+    "cenario": "cli_processar",
+    "exit_code": 0,
+    "saida": [
+      "}"
+    ]
+  }
+]

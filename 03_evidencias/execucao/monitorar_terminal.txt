@@ -1,0 +1,7 @@
+$ python main.py monitorar --url <servidor> --intervalo 5 --vezes 6
+2026-11-17T23:42:43 estado=atualizado execucao=ativa ciclos=1 falhas=0 ultimo_ciclo=sucesso/19.94ms raw=148 alertas=112 idade_dado_s=0.2 http={'total': 5, '2xx': 5, '3xx': 0, '4xx': 0, '5xx': 0}
+2026-11-17T23:42:48 estado=atualizado execucao=ativa ciclos=2 falhas=0 ultimo_ciclo=sucesso/23.035ms raw=151 alertas=113 idade_dado_s=0.3 http={'total': 6, '2xx': 6, '3xx': 0, '4xx': 0, '5xx': 0}
+2026-11-17T23:42:53 estado=atualizado execucao=ativa ciclos=3 falhas=0 ultimo_ciclo=sucesso/27.981ms raw=154 alertas=114 idade_dado_s=0.2 http={'total': 7, '2xx': 7, '3xx': 0, '4xx': 0, '5xx': 0}
+2026-11-17T23:42:58 estado=atualizado execucao=ativa ciclos=4 falhas=0 ultimo_ciclo=sucesso/32.376ms raw=157 alertas=115 idade_dado_s=0.2 http={'total': 8, '2xx': 8, '3xx': 0, '4xx': 0, '5xx': 0}
+2026-11-17T23:43:03 estado=atualizado execucao=ativa ciclos=5 falhas=0 ultimo_ciclo=sucesso/23.99ms raw=160 alertas=117 idade_dado_s=0.2 http={'total': 9, '2xx': 9, '3xx': 0, '4xx': 0, '5xx': 0}
+2026-11-17T23:43:08 estado=atualizado execucao=ativa ciclos=6 falhas=0 ultimo_ciclo=sucesso/21.653ms raw=163 alertas=118 idade_dado_s=0.2 http={'total': 10, '2xx': 10, '3xx': 0, '4xx': 0, '5xx': 0}

@@ -1,0 +1,50 @@
+2026-11-18T02:42:43.178+00:00 INFO    http servidor iniciado versao=7.0.0 host=127.0.0.1 porta=46771 log_arquivo=sim
+2026-11-18T02:42:43.179+00:00 INFO    operacao execucao_continua iniciada intervalo_s=5.0 eventos_por_ciclo=3
+2026-11-18T02:42:43.199+00:00 INFO    operacao ciclo=1 case_id=RUN-20261118T024243Z-e135c707 resultado=sucesso duracao_ms=19.94 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=147
+2026-11-18T02:42:43.299+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/pronto HTTP/1.1" 200 -
+2026-11-18T02:42:43.326+00:00 INFO    http requisicao cliente=127.0.0.1 "POST /api/simular HTTP/1.1" 200 -
+2026-11-18T02:42:43.337+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/talhao?talhao=Talhao+B&sensor_id=S-002&data_hora=2026-11-17T23%3A42%3A43.301932 HTTP/1.1" 200 -
+2026-11-18T02:42:43.361+00:00 INFO    http requisicao cliente=127.0.0.1 "POST /api/importar-observacoes HTTP/1.1" 200 -
+2026-11-18T02:42:43.369+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/talhao?talhao=Talhao+B&sensor_id=S-002&data_hora=2026-11-17T23%3A42%3A43.301932 HTTP/1.1" 200 -
+2026-11-18T02:42:43.466+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:42:48.223+00:00 INFO    operacao ciclo=2 case_id=RUN-20261118T024248Z-5fe22e67 resultado=sucesso duracao_ms=23.035 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=151
+2026-11-18T02:42:48.470+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:42:53.251+00:00 INFO    operacao ciclo=3 case_id=RUN-20261118T024253Z-2dc98b23 resultado=sucesso duracao_ms=27.981 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=154
+2026-11-18T02:42:53.473+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:42:58.284+00:00 INFO    operacao ciclo=4 case_id=RUN-20261118T024258Z-4ee81c17 resultado=sucesso duracao_ms=32.376 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=157
+2026-11-18T02:42:58.477+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:43:03.308+00:00 INFO    operacao ciclo=5 case_id=RUN-20261118T024303Z-313a2ca1 resultado=sucesso duracao_ms=23.99 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=160
+2026-11-18T02:43:03.480+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:43:08.331+00:00 INFO    operacao ciclo=6 case_id=RUN-20261118T024308Z-1bf0576f resultado=sucesso duracao_ms=21.653 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=163
+2026-11-18T02:43:08.484+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:43:08.506+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:43:08.508+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/pronto HTTP/1.1" 200 -
+2026-11-18T02:43:08.510+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/health HTTP/1.1" 200 -
+2026-11-18T02:43:08.924+00:00 INFO    http requisicao cliente=127.0.0.1 "GET / HTTP/1.1" 200 -
+2026-11-18T02:43:08.947+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /styles.css HTTP/1.1" 200 -
+2026-11-18T02:43:08.949+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /app.js HTTP/1.1" 200 -
+2026-11-18T02:43:08.958+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /icons.svg HTTP/1.1" 200 -
+2026-11-18T02:43:09.024+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/estado HTTP/1.1" 200 -
+2026-11-18T02:43:09.040+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:43:12.014+00:00 INFO    http requisicao cliente=127.0.0.1 "GET / HTTP/1.1" 200 -
+2026-11-18T02:43:12.031+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /styles.css HTTP/1.1" 200 -
+2026-11-18T02:43:12.032+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /app.js HTTP/1.1" 200 -
+2026-11-18T02:43:12.033+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /icons.svg HTTP/1.1" 200 -
+2026-11-18T02:43:12.092+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/estado HTTP/1.1" 200 -
+2026-11-18T02:43:12.100+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/operacao HTTP/1.1" 200 -
+2026-11-18T02:43:13.355+00:00 INFO    operacao ciclo=7 case_id=RUN-20261118T024313Z-3564c54a resultado=sucesso duracao_ms=23.366 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=166
+2026-11-18T02:43:15.054+00:00 INFO    http requisicao cliente=127.0.0.1 "GET / HTTP/1.1" 200 -
+2026-11-18T02:43:15.067+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /styles.css HTTP/1.1" 200 -
+2026-11-18T02:43:15.075+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /app.js HTTP/1.1" 200 -
+2026-11-18T02:43:15.076+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /icons.svg HTTP/1.1" 200 -
+2026-11-18T02:43:15.125+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/estado HTTP/1.1" 200 -
+2026-11-18T02:43:17.807+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /?talhao=Talhao+B&data_hora=2026-11-17T23%3A42%3A43.301932&sensor_id=S-002 HTTP/1.1" 200 -
+2026-11-18T02:43:17.823+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /styles.css HTTP/1.1" 200 -
+2026-11-18T02:43:17.824+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /app.js HTTP/1.1" 200 -
+2026-11-18T02:43:17.824+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /icons.svg HTTP/1.1" 200 -
+2026-11-18T02:43:17.868+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/talhao?talhao=Talhao+B&data_hora=2026-11-17T23%3A42%3A43.301932&sensor_id=S-002 HTTP/1.1" 200 -
+2026-11-18T02:43:17.882+00:00 INFO    http requisicao cliente=127.0.0.1 "GET /api/estado?talhao=Talhao+B HTTP/1.1" 200 -
+2026-11-18T02:43:18.379+00:00 INFO    operacao ciclo=8 case_id=RUN-20261118T024318Z-b7759d3d resultado=sucesso duracao_ms=24.001 recebidos=3 aceitos=3 duplicados=0 rejeitados=0 raw_total=169
+2026-11-18T02:43:20.653+00:00 INFO    http sinal recebido sinal=SIGTERM; encerrando
+2026-11-18T02:43:20.867+00:00 INFO    operacao execucao_continua parada motivo=encerramento do servidor ciclos_total=8
+2026-11-18T02:43:20.868+00:00 INFO    http servidor encerrado ciclos_total=8

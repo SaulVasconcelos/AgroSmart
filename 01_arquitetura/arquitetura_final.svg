@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1330" viewBox="0 0 1800 1330" font-family="Arial, Helvetica, sans-serif" role="img" aria-labelledby="t d" xmlns:c2pa="http://c2pa.org/manifest">
+<title id="t">AgroSmart Fase 7 — arquitetura final integrada</title>
+<desc id="d">Entradas, ingestão com trava única de escrita, camadas Raw/Trusted/Refined, motor de regras R1–R7, APIs, dashboard e decisão humana, dentro de um container Docker com volume /data; observabilidade (logs, ciclos, event log, estado funcional); pipeline DevSecOps fora do runtime.</desc>
+<defs><marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b7a66"/></marker><marker id="seta2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8a8f89"/></marker></defs>
+<rect width="1800" height="1330" fill="#f7f9f6"/>
+<rect x="40" y="38" width="8" height="70" rx="3" fill="#2f6b4a"/>
+<text x="66" y="78" font-size="34" font-weight="700" fill="#183d2b" letter-spacing="1">AGROSMART / FASE 7</text>
+<text x="66" y="104" font-size="17" fill="#4b5a50">Arquitetura final integrada: runtime agrícola containerizado, execução contínua, observabilidade, processo e DevSecOps</text>
+<path d="M48,132 L1752,132 Q1770,132 1770,150 L1770,850 L1046,850 L1046,978 Q1046,996 1028,996 L48,996 Q30,996 30,978 L30,150 Q30,132 48,132 Z" fill="none" stroke="#2f6b4a" stroke-width="2.5" stroke-dasharray="12 7"/>
+<rect x="31" y="133" width="1738" height="38" rx="17" fill="#2f6b4a" opacity="0.10"/>
+<text x="52" y="158" font-size="14.5" font-weight="700" fill="#1f4a33">CONTAINER DOCKER agrosmart:fase7</text>
+<text x="330" y="158" font-size="13.5" fill="#2e4d3a">usuário 10001 · raiz somente leitura · volume /data · host 127.0.0.1:8517 → 8501 · HEALTHCHECK /api/pronto · SIGTERM → encerramento limpo · também roda nativo: python main.py web</text>
+<text x="60" y="198" font-size="13" font-weight="700" fill="#2f6b4a" letter-spacing="1.5">01 ENTRADAS</text>
+<rect x="60" y="208" width="238" height="104" rx="12" fill="#e6f0e4" stroke="#9cc4a2" stroke-width="2"/>
+<text x="76" y="232" font-size="12" font-weight="700" fill="#2f6b4a" letter-spacing="1.2">EXECUTÁVEL · NOVO</text>
+<text x="76" y="258" font-size="19" font-weight="700" fill="#1d3326">Execução contínua</text>
+<text x="76" y="280" font-size="13.5" fill="#4a5a4f">worker no servidor; intervalo</text>
+<text x="76" y="298" font-size="13.5" fill="#4a5a4f">configurável; simulador.py</text>
+<rect x="312" y="208" width="238" height="104" rx="12" fill="#e6f0e4" stroke="#9cc4a2" stroke-width="2"/>
+<text x="328" y="232" font-size="12" font-weight="700" fill="#2f6b4a" letter-spacing="1.2">API + INTERFACE</text>
+<text x="328" y="258" font-size="19" font-weight="700" fill="#1d3326">POST /api/simular</text>
+<text x="328" y="280" font-size="13.5" fill="#4a5a4f">botão Gerar leituras;</text>
+<text x="328" y="298" font-size="13.5" fill="#4a5a4f">1–8 leituras simuladas</text>
+<rect x="564" y="208" width="238" height="104" rx="12" fill="#e6f0e4" stroke="#9cc4a2" stroke-width="2"/>
+<text x="580" y="232" font-size="12" font-weight="700" fill="#2f6b4a" letter-spacing="1.2">API + CLI</text>
+<text x="580" y="258" font-size="19" font-weight="700" fill="#1d3326">Observações de campo</text>
+<text x="580" y="280" font-size="13.5" fill="#4a5a4f">CSV ; (folhas, praga, dias)</text>
+<text x="580" y="298" font-size="13.5" fill="#4a5a4f">POST importar-observacoes</text>
+<rect x="816" y="208" width="238" height="104" rx="12" fill="#e6f0e4" stroke="#9cc4a2" stroke-width="2"/>
+<text x="832" y="232" font-size="12" font-weight="700" fill="#2f6b4a" letter-spacing="1.2">CLI</text>
+<text x="832" y="258" font-size="19" font-weight="700" fill="#1d3326">Sensores JSONL</text>
+<text x="832" y="280" font-size="13.5" fill="#4a5a4f">importar-sensores;</text>
+<text x="832" y="298" font-size="13.5" fill="#4a5a4f">valida tudo antes de gravar</text>
+<rect x="1068" y="208" width="238" height="104" rx="12" fill="#fff3db" stroke="#e5c27c" stroke-width="2"/>
+<text x="1084" y="232" font-size="12" font-weight="700" fill="#8a6417" letter-spacing="1.2">BASE HISTÓRICA</text>
+<text x="1084" y="258" font-size="19" font-weight="700" fill="#1d3326">Diagnósticos (imagem)</text>
+<text x="1084" y="280" font-size="13.5" fill="#4a5a4f">CSV do protótipo, 766 linhas;</text>
+<text x="1084" y="298" font-size="13.5" fill="#4a5a4f">sem vínculo com talhão</text>
+<text x="60" y="342" font-size="13" font-weight="700" fill="#2f6b4a" letter-spacing="1.5">02 INGESTÃO</text>
+<rect x="60" y="352" width="640" height="92" rx="12" fill="#dff0f1" stroke="#9cccd0" stroke-width="2"/>
+<text x="76" y="376" font-size="12" font-weight="700" fill="#2f6b72" letter-spacing="1.2">VALIDAÇÃO ANTES DE GRAVAR</text>
+<text x="76" y="402" font-size="19" font-weight="700" fill="#1d3326">Validar requisição e dados de entrada</text>
+<text x="76" y="424" font-size="13.5" fill="#4a5a4f">inválido → HTTP 400 ou CLI exit 2; nada é gravado (event log: Entrada rejeitada)</text>
+<rect x="730" y="352" width="576" height="92" rx="12" fill="#fbeae7" stroke="#e0aaa2" stroke-width="2"/>
+<text x="746" y="376" font-size="12" font-weight="700" fill="#8a3b31" letter-spacing="1.2">AUTORIDADE ÚNICA DE ESCRITA</text>
+<text x="746" y="402" font-size="19" font-weight="700" fill="#1d3326">Trava RLock compartilhada</text>
+<text x="746" y="424" font-size="13.5" fill="#4a5a4f">worker e POSTs no mesmo processo; ciclos sem sobreposição</text>
+<path d="M179,312 L179,350" fill="none" stroke="#5b7a66" stroke-width="2.2" marker-end="url(#seta)"/>
+<path d="M431,312 L431,350" fill="none" stroke="#5b7a66" stroke-width="2.2" marker-end="url(#seta)"/>
+<path d="M683,312 L683,350" fill="none" stroke="#5b7a66" stroke-width="2.2" marker-end="url(#seta)"/>
+<path d="M935,312 L935,350" fill="none" stroke="#5b7a66" stroke-width="2.2" marker-end="url(#seta)"/>
+<path d="M700,398 L728,398" fill="none" stroke="#5b7a66" stroke-width="2.2" marker-end="url(#seta)"/>
+<text x="60" y="472" font-size="13" font-weight="700" fill="#2f6b4a" letter-spacing="1.5">03 PROCESSAMENTO — CAMADAS (pasta /data no volume)</text>
+<rect x="60" y="482" width="1246" height="86" rx="12" fill="#e9eff8" stroke="#a9bfe0" stroke-width="2"/>
+<text x="76" y="506" font-size="12" font-weight="700" fill="#35558a" letter-spacing="1.2">RAW</text>
+<text x="76" y="532" font-size="19" font-weight="700" fill="#1d3326">Bruta: preservação do recebido</text>
+<text x="76" y="554" font-size="13.5" fill="#4a5a4f">sensores.jsonl (recebido_em_utc + origem + evento) · observacoes_campo.csv · diagnosticos_historicos.csv</text>
+<path d="M1018,444 L1018,480" fill="none" stroke="#5b7a66" stroke-width="2.2" marker-end="url(#seta)"/>
+<path d="M1187,312 L1187,330 L1322,330 L1322,470 L1296,470 L1296,480" fill="none" stroke="#5b7a66" stroke-width="2.2" marker-end="url(#seta)"/>
+<rect x="60" y="600" width="600" height="104" rx="12" fill="#dff0f1" stroke="#9cccd0" stroke-width="2"/>
+<text x="76" y="624" font-size="12" font-weight="700" fill="#2f6b72" letter-spacing="1.2">TRUSTED</text>
+<text x="76" y="650" font-size="19" font-weight="700" fill="#1d3326">Confiável</text>
+<text x="76" y="672" font-size="13.5" fill="#4a5a4f">tipagem, timestamp normalizado, deduplicação</text>
+<text x="76" y="690" font-size="13.5" fill="#4a5a4f">(1º válido vence), quarentena rejeitados.csv</text>
+<rect x="706" y="600" width="600" height="104" rx="12" fill="#fff3db" stroke="#e5c27c" stroke-width="2"/>
+<text x="722" y="624" font-size="12" font-weight="700" fill="#8a6417" letter-spacing="1.2">MOTOR DETERMINÍSTICO (INALTERADO)</text>
+<text x="722" y="650" font-size="19" font-weight="700" fill="#1d3326">Regras R1–R7 / ND</text>
+<text x="722" y="672" font-size="13.5" fill="#4a5a4f">precedência R1 → R7; ND sem observação de campo;</text>
+<text x="722" y="690" font-size="13.5" fill="#4a5a4f">severidade, alerta, ação e justificativa</text>
+<path d="M360,568 L360,598" fill="none" stroke="#5b7a66" stroke-width="2.2" marker-end="url(#seta)"/>
+<path d="M660,652 L704,652" fill="none" stroke="#5b7a66" stroke-width="2.2" marker-end="url(#seta)"/>
+<rect x="60" y="736" width="1246" height="86" rx="12" fill="#e9eff8" stroke="#a9bfe0" stroke-width="2"/>
+<text x="76" y="760" font-size="12" font-weight="700" fill="#35558a" letter-spacing="1.2">REFINED</text>
+<text x="76" y="786" font-size="19" font-weight="700" fill="#1d3326">Refinada: saída analítica</text>
+<text x="76" y="808" font-size="13.5" fill="#4a5a4f">monitoramento · alertas · indicadores_talhoes · serie_temporal · diagnosticos · estado_pipeline.json (gravação atômica)</text>
+<path d="M1006,704 L1006,734" fill="none" stroke="#5b7a66" stroke-width="2.2" marker-end="url(#seta)"/>
+<text x="60" y="852" font-size="13" font-weight="700" fill="#2f6b4a" letter-spacing="1.5">04 SAÍDAS E DECISÃO</text>
+<rect x="60" y="862" width="470" height="112" rx="12" fill="#e6f0e4" stroke="#9cc4a2" stroke-width="2"/>
+<text x="76" y="886" font-size="12" font-weight="700" fill="#2f6b4a" letter-spacing="1.2">BACKEND HTTP (stdlib)</text>
+<text x="76" y="912" font-size="19" font-weight="700" fill="#1d3326">APIs</text>
+<text x="76" y="934" font-size="13.5" fill="#4a5a4f">/api/estado · alertas · talhao (Fase 6)</text>
+<text x="76" y="952" font-size="13.5" fill="#4a5a4f">/api/operacao · /api/pronto · /api/health</text>
+<text x="76" y="970" font-size="13.5" fill="#4a5a4f">POST operacao/iniciar e parar (novos)</text>
+<rect x="560" y="862" width="470" height="112" rx="12" fill="#e6f0e4" stroke="#9cc4a2" stroke-width="2"/>
+<text x="576" y="886" font-size="12" font-weight="700" fill="#2f6b4a" letter-spacing="1.2">INTERFACE (UX P0/P1 PRESERVADA)</text>
+<text x="576" y="912" font-size="19" font-weight="700" fill="#1d3326">Dashboard AgroMonitor</text>
+<text x="576" y="934" font-size="13.5" fill="#4a5a4f">Visão Geral · Talhões · Central de Alertas</text>
+<text x="576" y="952" font-size="13.5" fill="#4a5a4f">Diagnósticos · Ferramentas + painel de</text>
+<text x="576" y="970" font-size="13.5" fill="#4a5a4f">execução contínua e monitoramento (novo)</text>
+<rect x="1066" y="862" width="240" height="112" rx="12" fill="#f1f2f0" stroke="#b9bfb7" stroke-width="2"/>
+<text x="1082" y="886" font-size="12" font-weight="700" fill="#4b524c" letter-spacing="1.2">FORA DO SISTEMA</text>
+<text x="1082" y="912" font-size="19" font-weight="700" fill="#1d3326">Decisão humana</text>
+<text x="1082" y="934" font-size="13.5" fill="#4a5a4f">produtor, agrônomo, gestor;</text>
+<text x="1082" y="952" font-size="13.5" fill="#4a5a4f">o sistema orienta e</text>
+<text x="1082" y="970" font-size="13.5" fill="#4a5a4f">não aciona o campo</text>
+<path d="M300,822 L300,860" fill="none" stroke="#5b7a66" stroke-width="2.2" marker-end="url(#seta)"/>
+<path d="M530,918 L558,918" fill="none" stroke="#5b7a66" stroke-width="2.2" marker-end="url(#seta)"/>
+<path d="M1030,918 L1064,918" fill="none" stroke="#5b7a66" stroke-width="2.2" marker-end="url(#seta)"/>
+<text x="1352" y="198" font-size="13" font-weight="700" fill="#8a3b31" letter-spacing="1.5">OBSERVABILIDADE E PROCESSO (NOVO)</text>
+<rect x="1340" y="208" width="404" height="104" rx="12" fill="#fbeae7" stroke="#e0aaa2" stroke-width="2"/>
+<text x="1356" y="232" font-size="12" font-weight="700" fill="#8a3b31" letter-spacing="1.2">LOGS</text>
+<text x="1356" y="258" font-size="19" font-weight="700" fill="#1d3326">Logs chave=valor</text>
+<text x="1356" y="280" font-size="13.5" fill="#4a5a4f">stdout (docker compose logs) +</text>
+<text x="1356" y="298" font-size="13.5" fill="#4a5a4f">/data/logs/agrosmart.log, rotação 2 MB × 5</text>
+<rect x="1340" y="352" width="404" height="92" rx="12" fill="#fbeae7" stroke="#e0aaa2" stroke-width="2"/>
+<text x="1356" y="376" font-size="12" font-weight="700" fill="#8a3b31" letter-spacing="1.2">OPERAÇÃO</text>
+<text x="1356" y="402" font-size="19" font-weight="700" fill="#1d3326">Histórico de ciclos</text>
+<text x="1356" y="424" font-size="13.5" fill="#4a5a4f">/data/operacao/ciclos.jsonl: UTC, duração,</text>
+<text x="1356" y="442" font-size="13.5" fill="#4a5a4f">resultado, aceitos/duplicados/rejeitados</text>
+<rect x="1340" y="482" width="404" height="108" rx="12" fill="#fbeae7" stroke="#e0aaa2" stroke-width="2"/>
+<text x="1356" y="506" font-size="12" font-weight="700" fill="#8a3b31" letter-spacing="1.2">MINERAÇÃO DE PROCESSOS</text>
+<text x="1356" y="532" font-size="19" font-weight="700" fill="#1d3326">Event log de execução</text>
+<text x="1356" y="554" font-size="13.5" fill="#4a5a4f">case_id = 1 execução da cadeia; registrado</text>
+<text x="1356" y="572" font-size="13.5" fill="#4a5a4f">pelas etapas (start/complete, duration_ms)</text>
+<text x="1356" y="590" font-size="13.5" fill="#4a5a4f">/data/processos/event_log.csv</text>
+<rect x="1340" y="620" width="404" height="104" rx="12" fill="#fbeae7" stroke="#e0aaa2" stroke-width="2"/>
+<text x="1356" y="644" font-size="12" font-weight="700" fill="#8a3b31" letter-spacing="1.2">SINAIS VERDADEIROS</text>
+<text x="1356" y="670" font-size="19" font-weight="700" fill="#1d3326">Estado funcional</text>
+<text x="1356" y="692" font-size="13.5" fill="#4a5a4f">liveness /api/health · prontidão /api/pronto</text>
+<text x="1356" y="710" font-size="13.5" fill="#4a5a4f">idade do dado, ciclos, falhas, HTTP 2xx/4xx/5xx</text>
+<rect x="1340" y="862" width="404" height="112" rx="12" fill="#f1f2f0" stroke="#b9bfb7" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1356" y="886" font-size="12" font-weight="700" fill="#4b524c" letter-spacing="1.2">FORA DO CONTAINER (OFFLINE)</text>
+<text x="1356" y="912" font-size="19" font-weight="700" fill="#1d3326">Análise de processo</text>
+<text x="1356" y="934" font-size="13.5" fill="#4a5a4f">04_processos: log exportado (compose cp);</text>
+<text x="1356" y="952" font-size="13.5" fill="#4a5a4f">variantes, DFG observado × esperado,</text>
+<text x="1356" y="970" font-size="13.5" fill="#4a5a4f">gargalos, experimento de escala</text>
+<path d="M1306,525 L1338,525" fill="none" stroke="#5b7a66" stroke-width="2.2" stroke-dasharray="6 5" marker-end="url(#seta)"/>
+<path d="M1542,590 L1542,618" fill="none" stroke="#5b7a66" stroke-width="2.2" marker-end="url(#seta)"/>
+<path d="M1340,700 L1322,700 L1322,836 L900,836 L900,860" fill="none" stroke="#5b7a66" stroke-width="2.2" stroke-dasharray="6 5" marker-end="url(#seta)"/>
+<text x="1100" y="830" font-size="12" fill="#8a3b31" font-style="italic">GET /api/operacao → painel</text>
+<path d="M1744,560 L1760,560 L1760,918 L1746,918" fill="none" stroke="#8a8f89" stroke-width="2.2" stroke-dasharray="6 5" marker-end="url(#seta2)"/>
+<rect x="30" y="1028" width="1740" height="290" rx="18" fill="#eef0ec" stroke="#b9bfb7" stroke-width="2"/>
+<text x="52" y="1060" font-size="14.5" font-weight="700" fill="#3f4741" letter-spacing="1">ENGENHARIA — PIPELINE DEVSECOPS (FORA DO RUNTIME AGRÍCOLA)</text>
+<text x="52" y="1082" font-size="13.5" fill="#4b524c">Mesmo script local (devsecops/pipeline.py) e no GitHub Actions; relatórios com versões, comandos, exit codes e digests.</text>
+<rect x="52" y="1104" width="215" height="100" rx="12" fill="#f1f2f0" stroke="#b9bfb7" stroke-width="2"/>
+<text x="68" y="1128" font-size="12" font-weight="700" fill="#4b524c" letter-spacing="1.2">QUALIDADE</text>
+<text x="68" y="1154" font-size="19" font-weight="700" fill="#1d3326">Ruff 0.17.5</text>
+<text x="68" y="1176" font-size="13.5" fill="#4a5a4f">E4/E7/E9/F/B</text>
+<rect x="297" y="1104" width="215" height="100" rx="12" fill="#f1f2f0" stroke="#b9bfb7" stroke-width="2"/>
+<text x="313" y="1128" font-size="12" font-weight="700" fill="#4b524c" letter-spacing="1.2">SAST</text>
+<text x="313" y="1154" font-size="19" font-weight="700" fill="#1d3326">Bandit 1.9.4</text>
+<text x="313" y="1176" font-size="13.5" fill="#4a5a4f">gate ≥ MEDIUM</text>
+<path d="M267,1154 L295,1154" fill="none" stroke="#8a8f89" stroke-width="2.2" marker-end="url(#seta2)"/>
+<rect x="542" y="1104" width="215" height="100" rx="12" fill="#f1f2f0" stroke="#b9bfb7" stroke-width="2"/>
+<text x="558" y="1128" font-size="12" font-weight="700" fill="#4b524c" letter-spacing="1.2">TESTES</text>
+<text x="558" y="1154" font-size="19" font-weight="700" fill="#1d3326">45 Py + 18 JS</text>
+<text x="558" y="1176" font-size="13.5" fill="#4a5a4f">regressão R1–R7</text>
+<path d="M512,1154 L540,1154" fill="none" stroke="#8a8f89" stroke-width="2.2" marker-end="url(#seta2)"/>
+<rect x="787" y="1104" width="215" height="100" rx="12" fill="#f1f2f0" stroke="#b9bfb7" stroke-width="2"/>
+<text x="803" y="1128" font-size="12" font-weight="700" fill="#4b524c" letter-spacing="1.2">BUILD</text>
+<text x="803" y="1154" font-size="19" font-weight="700" fill="#1d3326">Imagem Docker</text>
+<text x="803" y="1176" font-size="13.5" fill="#4a5a4f">python:3.13-slim</text>
+<path d="M757,1154 L785,1154" fill="none" stroke="#8a8f89" stroke-width="2.2" marker-end="url(#seta2)"/>
+<rect x="1032" y="1104" width="215" height="100" rx="12" fill="#f1f2f0" stroke="#b9bfb7" stroke-width="2"/>
+<text x="1048" y="1128" font-size="12" font-weight="700" fill="#4b524c" letter-spacing="1.2">E2E</text>
+<text x="1048" y="1154" font-size="19" font-weight="700" fill="#1d3326">Container real</text>
+<text x="1048" y="1176" font-size="13.5" fill="#4a5a4f">volume, restart, stop</text>
+<path d="M1002,1154 L1030,1154" fill="none" stroke="#8a8f89" stroke-width="2.2" marker-end="url(#seta2)"/>
+<rect x="1277" y="1104" width="215" height="100" rx="12" fill="#f1f2f0" stroke="#b9bfb7" stroke-width="2"/>
+<text x="1293" y="1128" font-size="12" font-weight="700" fill="#4b524c" letter-spacing="1.2">VULNERABILIDADES</text>
+<text x="1293" y="1154" font-size="19" font-weight="700" fill="#1d3326">Trivy 0.76.1</text>
+<text x="1293" y="1176" font-size="13.5" fill="#4a5a4f">imagem + Dockerfile</text>
+<path d="M1247,1154 L1275,1154" fill="none" stroke="#8a8f89" stroke-width="2.2" marker-end="url(#seta2)"/>
+<rect x="1522" y="1104" width="215" height="100" rx="12" fill="#f1f2f0" stroke="#b9bfb7" stroke-width="2"/>
+<text x="1538" y="1128" font-size="12" font-weight="700" fill="#4b524c" letter-spacing="1.2">EVIDÊNCIA</text>
+<text x="1538" y="1154" font-size="19" font-weight="700" fill="#1d3326">Relatórios</text>
+<text x="1538" y="1176" font-size="13.5" fill="#4a5a4f">artefato do run</text>
+<path d="M1492,1154 L1520,1154" fill="none" stroke="#8a8f89" stroke-width="2.2" marker-end="url(#seta2)"/>
+<path d="M894,1104 L894,1000" fill="none" stroke="#8a8f89" stroke-width="2.2" stroke-dasharray="6 5" marker-end="url(#seta2)"/>
+<text x="904" y="1092" font-size="12.5" fill="#5b6b60" font-style="italic">produz a imagem testada</text>
+<text x="52" y="1246" font-size="12.5" fill="#5f665f">Dados de sensores e de campo são SIMULADOS; o processamento, as regras, os logs e o event log são execuções reais do software.</text>
+<text x="52" y="1266" font-size="12.5" fill="#5f665f">Sem Kafka, nuvem, banco externo, autenticação ou acionamento físico. Diagrama da Fase 6 preservado como histórico na pasta da Fase 6.</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpkYWY4ZWZjOC04NDA3LTQ4ZGQtOWNlNy1jNzk0ODljN2Q5OWIAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaErk5qz897Q3Onrc1WZbyLYAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo4Y2E0NmNjYi1iOThjLTRlYTQtYjk3MS04YTJlNjlhNTZiY2JscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNokU7jKwH7MCbRAP/4NKD7eQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgg1PTXOPk/6VZ6Bk+O8Zx346RwSI5Sv7xI4bPgMD2IKD6kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaCaLLF8bMMULZ2MZf7Ggtd4AAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIJwsqywMJQVDtLUEUprjysnsEeiF+ZPxFvYkzZPjZuuLZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GUsaZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmRhZjhlZmM4LTg0MDctNDhkZC05Y2U3LWM3OTQ4OWM3ZDk5Yi9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjM5MDllNWFmLTc3ODUtNDJiNi1iNWM5LThkOTIwNGZiY2FlZHJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDU9Nc4+T/pVnoGT47xnHfjpHBIjlK/vEjhs+AwPYgoPqJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFgg4R3VW4RjjZyLAh8uJU0lrQYa3H4LCLvdqSt9hXtS/bGiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggLmbxTa/6unFLHQtm8kp7YqTEPqr8m7I/8JzJr3QsSjZ0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQIDB83bCQMYWQHGf+eDSFGGEzbAgYXpv9uLPDWM3CsaF96DWC7xt5E6AUl8lxdqkwoRqRtAS78d70ALIwQl5MfA=</c2pa:manifest></metadata></svg>

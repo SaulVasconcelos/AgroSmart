@@ -1,0 +1,108 @@
+$ node --test tests/test_frontend.cjs
+# exit_code=0
+
+TAP version 13
+# Subtest: C:\\Users\\vvasc\\Downloads\\transferencia_fase7\\FASE_7_AGROSMART\\02_plataforma\\tests\\test_frontend.cjs
+    # Subtest: no readings show missing averages
+    ok 1 - no readings show missing averages
+      ---
+      duration_ms: 95.4881
+      ...
+    # Subtest: measured zero remains a valid measurement
+    ok 2 - measured zero remains a valid measurement
+      ---
+      duration_ms: 9.1726
+      ...
+    # Subtest: diagnostics and pipeline use their full scope
+    ok 3 - diagnostics and pipeline use their full scope
+      ---
+      duration_ms: 4.9383
+      ...
+    # Subtest: alert counts distinguish displayed and total and escape content
+    ok 4 - alert counts distinguish displayed and total and escape content
+      ---
+      duration_ms: 6.7396
+      ...
+    # Subtest: aggregate chart and latest date have explicit context
+    ok 5 - aggregate chart and latest date have explicit context
+      ---
+      duration_ms: 3.6214
+      ...
+    # Subtest: old responses cannot replace the latest filter response
+    ok 6 - old responses cannot replace the latest filter response
+      ---
+      duration_ms: 4.2904
+      ...
+    # Subtest: invalid interval and HTTP failure hide old results and allow retry
+    ok 7 - invalid interval and HTTP failure hide old results and allow retry
+      ---
+      duration_ms: 2.9348
+      ...
+    # Subtest: simulation preserves filters and separates mutation and refresh outcomes
+    ok 8 - simulation preserves filters and separates mutation and refresh outcomes
+      ---
+      duration_ms: 2.7236
+      ...
+    # Subtest: import disables resubmission and preserves context
+    ok 9 - import disables resubmission and preserves context
+      ---
+      duration_ms: 3.8264
+      ...
+    # Subtest: server import rejection releases buttons and preserves context
+    ok 10 - server import rejection releases buttons and preserves context
+      ---
+      duration_ms: 2.435
+      ...
+    # Subtest: reading evidence uses actual schema and ND stays undetermined
+    ok 11 - reading evidence uses actual schema and ND stays undetermined
+      ---
+      duration_ms: 1.7534
+      ...
+    # Subtest: context URLs preserve period severity page and exact reading
+    ok 12 - context URLs preserve period severity page and exact reading
+      ---
+      duration_ms: 1.672
+      ...
+    # Subtest: new alert API receives filters and can return its actual page
+    ok 13 - new alert API receives filters and can return its actual page
+      ---
+      duration_ms: 3.1092
+      ...
+    # Subtest: plot lookup failure hides prior detail and reports available retry
+    ok 14 - plot lookup failure hides prior detail and reports available retry
+      ---
+      duration_ms: 2.5029
+      ...
+    # Subtest: operation panel shows active worker, data age and cycle history
+    ok 15 - operation panel shows active worker, data age and cycle history
+      ---
+      duration_ms: 2.6529
+      ...
+    # Subtest: stopped worker explains reason and re-enables start
+    ok 16 - stopped worker explains reason and re-enables start
+      ---
+      duration_ms: 2.1702
+      ...
+    # Subtest: operation status failure hides previous status instead of showing stale data
+    ok 17 - operation status failure hides previous status instead of showing stale data
+      ---
+      duration_ms: 2.5164
+      ...
+    # Subtest: server without operation data does not crash the tools page
+    ok 18 - server without operation data does not crash the tools page
+      ---
+      duration_ms: 1.6569
+      ...
+    1..18
+ok 1 - C:\\Users\\vvasc\\Downloads\\transferencia_fase7\\FASE_7_AGROSMART\\02_plataforma\\tests\\test_frontend.cjs
+  ---
+  duration_ms: 249.2757
+  ...
+1..1
+# tests 1
+# pass 1
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 252.2147

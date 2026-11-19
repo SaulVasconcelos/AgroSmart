@@ -1,0 +1,13 @@
+# Contexto de build mínimo: tudo é ignorado e só o necessário ao runtime é liberado.
+# O Dockerfile copia apenas data/raw, data/trusted e data/refined (amostra-semente).
+*
+!main.py
+!agrosmart
+!web
+!data
+**/__pycache__
+**/*.pyc
+**/*.tmp
+data/logs
+data/processos
+data/operacao

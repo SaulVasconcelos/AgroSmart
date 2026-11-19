@@ -1,0 +1,14 @@
+$ docker run --rm -v agrosmart-trivy-cache:/root/.cache/ -v C:\Users\vvasc\Downloads\transferencia_fase7\FASE_7_AGROSMART\02_plataforma:/src:ro -v C:\Users\vvasc\Downloads\transferencia_fase7\FASE_7_AGROSMART\02_plataforma\relatorios\20261118T231148Z:/work aquasec/trivy:0.76.1 config --format json --output /work/07_trivy_config.json /src/Dockerfile
+# exit_code=0
+
+
+2026-11-18T23:14:23Z	INFO	[misconfig] Misconfiguration scanning is enabled
+2026-11-18T23:14:23Z	INFO	[checks-client] Need to update the checks bundle
+2026-11-18T23:14:23Z	INFO	[checks-client] Downloading the checks bundle...
+234.57 KiB / 234.57 KiB [--------------------------------------------------------->] 100.00% ? p/s ?234.57 KiB / 234.57 KiB [-----------------------------------------------] 100.00% 5.07 MiB p/s 200ms2026-11-18T23:14:27Z	INFO	Detected config files	num=1
+
+📣 [34mNotices:[0m
+  - Version 0.76.2 of Trivy is now available, current version is 0.76.1
+
+To suppress version checks, run Trivy scans with the --skip-version-check flag
+

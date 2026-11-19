@@ -1,0 +1,4 @@
+$ docker run --rm --entrypoint python agrosmart:fase7-pipeline -c import os,json;print(json.dumps(sorted(os.listdir('/app'))))
+# exit_code=0
+
+["agrosmart", "main.py", "semente", "web"]

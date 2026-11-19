@@ -1,0 +1,3 @@
+$ docker save -o C:\Users\vvasc\Downloads\transferencia_fase7\FASE_7_AGROSMART\02_plataforma\relatorios\20261119T005747Z\imagem_agrosmart.tar agrosmart:fase7-pipeline
+# exit_code=0
+

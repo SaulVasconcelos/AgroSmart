@@ -1,0 +1,7 @@
+{
+  "pronto": true,
+  "verificacoes": {
+    "pasta_dados_gravavel": true,
+    "refined_disponivel": true
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "servidor": {
+    "status": "ok",
+    "versao": "7.0.0",
+    "iniciado_em_utc": "2026-11-18T02:42:43+00:00",
+    "uptime_s": 25.3,
+    "requisicoes": {
+      "total": 11,
+      "2xx": 11,
+      "3xx": 0,
+      "4xx": 0,
+      "5xx": 0
+    }
+  },
+  "prontidao": {
+    "pronto": true,
+    "verificacoes": {
+      "pasta_dados_gravavel": true,
+      "refined_disponivel": true
+    }
+  },
+  "estado_funcional": "atualizado",
+  "execucao_continua": {
+    "ativa": true,
+    "estado": "ativa",
+    "motivo_parada": "",
+    "iniciada_em_utc": "2026-11-18T02:42:43.178+00:00",
+    "intervalo_s": 5.0,
+    "eventos_por_ciclo": 3,
+    "ciclos_total": 6,
+    "ciclos_sucesso": 6,
+    "falhas_total": 0,
+    "falhas_consecutivas": 0,
+    "max_falhas_consecutivas": 5,
+    "limite_leituras": 10000,
+    "ultimo_ciclo": {
+      "ciclo": 6,
+      "case_id": "RUN-20261118T024308Z-1bf0576f",
+      "inicio_utc": "2026-11-18T02:43:08.309+00:00",
+      "fim_utc": "2026-11-18T02:43:08.331+00:00",
+      "duracao_ms": 21.653,
+      "resultado": "sucesso",
+      "recebidos": 3,
+      "aceitos": 3,
+      "duplicados": 0,
+      "rejeitados": 0,
+      "raw_total": 163,
+      "erro": ""
+    },
+    "ultimo_sucesso_utc": "2026-11-18T02:43:08.331+00:00",
+    "segundos_desde_ultimo_sucesso": 0.2,
+    "historico": [
+      {
+        "ciclo": 6,
+        "case_id": "RUN-20261118T024308Z-1bf0576f",
+        "inicio_utc": "2026-11-18T02:43:08.309+00:00",
+        "fim_utc": "2026-11-18T02:43:08.331+00:00",
+        "duracao_ms": 21.653,
+        "resultado": "sucesso",
+        "recebidos": 3,
+        "aceitos": 3,
+        "duplicados": 0,
+        "rejeitados": 0,
+        "raw_total": 163,
+        "erro": ""
+      },
+      {
+        "ciclo": 5,
+        "case_id": "RUN-20261118T024303Z-313a2ca1",
+        "inicio_utc": "2026-11-18T02:43:03.284+00:00",
+        "fim_utc": "2026-11-18T02:43:03.308+00:00",
+        "duracao_ms": 23.99,
+        "resultado": "sucesso",
+        "recebidos": 3,
+        "aceitos": 3,
+        "duplicados": 0,
+        "rejeitados": 0,
+        "raw_total": 160,
+        "erro": ""
+      },
+      {
+        "ciclo": 4,
+        "case_id": "RUN-20261118T024258Z-4ee81c17",
+        "inicio_utc": "2026-11-18T02:42:58.252+00:00",
+        "fim_utc": "2026-11-18T02:42:58.284+00:00",
+        "duracao_ms": 32.376,
+        "resultado": "sucesso",
+        "recebidos": 3,
+        "aceitos": 3,
+        "duplicados": 0,
+        "rejeitados": 0,
+        "raw_total": 157,
+        "erro": ""
+      },
+      {
+        "ciclo": 3,
+        "case_id": "RUN-20261118T024253Z-2dc98b23",
+        "inicio_utc": "2026-11-18T02:42:53.223+00:00",
+        "fim_utc": "2026-11-18T02:42:53.251+00:00",
+        "duracao_ms": 27.981,
+        "resultado": "sucesso",
+        "recebidos": 3,
+        "aceitos": 3,
+        "duplicados": 0,
+        "rejeitados": 0,
+        "raw_total": 154,
+        "erro": ""
+      },
+      {
+        "ciclo": 2,
+        "case_id": "RUN-20261118T024248Z-5fe22e67",
+        "inicio_utc": "2026-11-18T02:42:48.199+00:00",
+        "fim_utc": "2026-11-18T02:42:48.222+00:00",
+        "duracao_ms": 23.035,
+        "resultado": "sucesso",
+        "recebidos": 3,
+        "aceitos": 3,
+        "duplicados": 0,
+        "rejeitados": 0,
+        "raw_total": 151,
+        "erro": ""
+      },
+      {
+        "ciclo": 1,
+        "case_id": "RUN-20261118T024243Z-e135c707",
+        "inicio_utc": "2026-11-18T02:42:43.179+00:00",
+        "fim_utc": "2026-11-18T02:42:43.199+00:00",
+        "duracao_ms": 19.94,
+        "resultado": "sucesso",
+        "recebidos": 3,
+        "aceitos": 3,
+        "duplicados": 0,
+        "rejeitados": 0,
+        "raw_total": 147,
+        "erro": ""
+      }
+    ]
+  },
+  "dados": {
+    "ultimo_registro": "2026-11-17T23:43:08.309948",
+    "idade_ultimo_registro_s": 0.2,
+    "por_talhao": [
+      {
+        "talhao": "Talhao A",
+        "ultima_leitura": "2026-11-17T23:43:08.309929",
+        "idade_s": 0.2
+      },
+      {
+        "talhao": "Talhao B",
+        "ultima_leitura": "2026-11-17T23:43:08.309944",
+        "idade_s": 0.2
+      },
+      {
+        "talhao": "Talhao C",
+        "ultima_leitura": "2026-11-17T23:43:08.309948",
+        "idade_s": 0.2
+      }
+    ],
+    "raw_sensores": 163,
+    "trusted_sensores": 163,
+    "duplicados_removidos": 0,
+    "rejeitados": 0,
+    "alertas": 118,
+    "relogio_local": "2026-11-17T23:43:08",
+    "fuso_utc_offset": "-0300"
+  },
+  "event_log": {
+    "eventos_gravados": 132,
+    "falhas_gravacao": 0
+  },
+  "escopo": "Ambiente acadêmico local; leituras simuladas. Estado do processo atual, não de equipamento de campo."
+}

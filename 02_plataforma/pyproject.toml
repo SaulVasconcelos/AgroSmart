@@ -1,0 +1,25 @@
+# Configuração das ferramentas de qualidade/segurança (DevSecOps Fase 7).
+# Não há dependências de runtime: a aplicação usa somente a biblioteca padrão do Python.
+
+[tool.ruff]
+target-version = "py310"
+extend-exclude = ["data", "relatorios", ".venv-devsecops"]
+
+[tool.ruff.lint]
+# E4/E7/E9/F = conjunto padrão do Ruff; B = flake8-bugbear (erros prováveis de lógica).
+select = ["E4", "E7", "E9", "F", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# Exceção ESCOPADA e justificada (ver 02_plataforma/docs/DEVSECOPS.md):
+# estilo compacto herdado da Fase 6 (várias instruções por linha) nesses arquivos.
+# Não altera comportamento; reformatar o legado ampliaria o diff de regras/pipeline já
+# validados por regressão. Módulos novos da Fase 7 não recebem a exceção.
+"agrosmart/pipeline.py" = ["E701", "E702"]
+"agrosmart/web_server.py" = ["E701", "E702"]
+"main.py" = ["E701", "E702"]
+"tests/test_integracao.py" = ["E701", "E702"]
+"tests/test_pipeline.py" = ["E701", "E702"]
+
+[tool.bandit]
+# Alvo do gate: código de runtime da aplicação (agrosmart/ e main.py). Testes ficam fora.
+exclude_dirs = ["tests", "data", "relatorios", "devsecops", ".venv-devsecops"]

@@ -1,0 +1,226 @@
+{
+  "origem": "Base de demonstração SIMULADA da versão P0/P1; reprocessamento real em cópia temporária",
+  "chave": {
+    "data_hora": "2026-10-06T12:00:00",
+    "sensor_id": "S-002",
+    "talhao": "Talhao B"
+  },
+  "referencias": {
+    "raw": "02_plataforma/data/raw/sensores.jsonl",
+    "linha_raw": 116,
+    "trusted": "02_plataforma/data/trusted/sensores.csv",
+    "campo": "02_plataforma/data/trusted/observacoes_campo.csv",
+    "refined": "02_plataforma/data/refined/monitoramento.csv",
+    "api": "GET /api/talhao?talhao=Talhao+B&sensor_id=S-002&data_hora=2026-10-06T12%3A00%3A00"
+  },
+  "raw": {
+    "recebido_em_utc": "2026-10-10T19:48:17.079125+00:00",
+    "origem": "simulacao_historica_fase6",
+    "evento": {
+      "data_hora": "2026-10-06T12:00:00.000000",
+      "sensor_id": "S-002",
+      "talhao": "Talhao B",
+      "cultura": "Milho",
+      "umidade_solo": 24,
+      "temperatura": 31,
+      "probabilidade_praga": 57,
+      "alerta": "Alerta de irrigacao",
+      "recomendacao": "Verificar irrigacao do talhao."
+    }
+  },
+  "trusted": {
+    "data_hora": "2026-10-06T12:00:00",
+    "sensor_id": "S-002",
+    "talhao": "Talhao B",
+    "cultura": "Milho",
+    "umidade_solo": "24.0",
+    "temperatura": "31.0",
+    "probabilidade_praga": "57.0",
+    "alerta": "Alerta de irrigacao",
+    "recomendacao": "Verificar irrigacao do talhao.",
+    "origem_sensor": "simulacao_historica_fase6"
+  },
+  "observacao_campo": {
+    "data": "2026-10-06",
+    "talhao": "Talhao B",
+    "cultura": "Milho",
+    "percentual_folhas_doentes": "35.0",
+    "praga_detectada": "Lagarta",
+    "dias_mesma_praga": "4",
+    "origem_dados": "SIMULADO - observacao de campo"
+  },
+  "refined": {
+    "data_hora": "2026-10-06T12:00:00",
+    "sensor_id": "S-002",
+    "talhao": "Talhao B",
+    "cultura": "Milho",
+    "umidade_solo": "24.0",
+    "temperatura": "31.0",
+    "probabilidade_praga": "57.0",
+    "alerta_origem": "Alerta de irrigacao",
+    "recomendacao_origem": "Verificar irrigacao do talhao.",
+    "percentual_folhas_doentes": "35.0",
+    "praga_detectada": "Lagarta",
+    "dias_mesma_praga": "4",
+    "origem_observacao": "SIMULADO - observacao de campo",
+    "regra": "R1",
+    "severidade": "Crítica",
+    "alerta": "Alerta crítico",
+    "acao": "Intervenção imediata, controle de praga e irrigação prioritária",
+    "justificativa": "Folhas doentes acima de 30%, praga recorrente e umidade abaixo de 35%.",
+    "avaliacao": "Completa",
+    "origem_sensor": "simulacao_historica_fase6"
+  },
+  "decisao_motor": {
+    "regra": "R1",
+    "severidade": "Crítica",
+    "alerta": "Alerta crítico",
+    "acao": "Intervenção imediata, controle de praga e irrigação prioritária",
+    "justificativa": "Folhas doentes acima de 30%, praga recorrente e umidade abaixo de 35%.",
+    "avaliacao": "Completa"
+  },
+  "resposta_api": {
+    "talhao": "Talhao B",
+    "cultura": "Milho",
+    "resumo": {
+      "talhao": "Talhao B",
+      "cultura": "Milho",
+      "leituras": 48,
+      "umidade_media": 45.4,
+      "temperatura_media": 30.1,
+      "alertas": 34,
+      "criticos": 3,
+      "regra_atual": "R3",
+      "severidade_atual": "Alta",
+      "ultima_leitura": "2026-10-08T18:00:00"
+    },
+    "ultima_leitura": {
+      "data_hora": "2026-10-08T18:00:00",
+      "sensor_id": "S-002",
+      "talhao": "Talhao B",
+      "cultura": "Milho",
+      "umidade_solo": "35.0",
+      "temperatura": "24.0",
+      "probabilidade_praga": "45.0",
+      "alerta_origem": "Normal",
+      "recomendacao_origem": "Manter monitoramento.",
+      "percentual_folhas_doentes": "25.0",
+      "praga_detectada": "Lagarta",
+      "dias_mesma_praga": "4",
+      "origem_observacao": "SIMULADO - observacao de campo",
+      "regra": "R3",
+      "severidade": "Alta",
+      "alerta": "Praga recorrente",
+      "acao": "Acionar plano de controle de praga",
+      "justificativa": "Praga persistente por três dias ou mais com folhas doentes acima de 20%.",
+      "avaliacao": "Completa",
+      "origem_sensor": "simulacao_historica_fase6"
+    },
+    "serie": [
+      {
+        "data": "2026-09-27",
+        "umidade_media": 46.5,
+        "temperatura_media": 33.2,
+        "alertas": 1
+      },
+      {
+        "data": "2026-09-28",
+        "umidade_media": 49.0,
+        "temperatura_media": 30.8,
+        "alertas": 4
+      },
+      {
+        "data": "2026-09-29",
+        "umidade_media": 54.2,
+        "temperatura_media": 25.0,
+        "alertas": 4
+      },
+      {
+        "data": "2026-09-30",
+        "umidade_media": 45.2,
+        "temperatura_media": 27.8,
+        "alertas": 1
+      },
+      {
+        "data": "2026-10-01",
+        "umidade_media": 35.8,
+        "temperatura_media": 33.0,
+        "alertas": 4
+      },
+      {
+        "data": "2026-10-02",
+        "umidade_media": 43.5,
+        "temperatura_media": 31.5,
+        "alertas": 4
+      },
+      {
+        "data": "2026-10-03",
+        "umidade_media": 50.8,
+        "temperatura_media": 29.5,
+        "alertas": 0
+      },
+      {
+        "data": "2026-10-04",
+        "umidade_media": 46.0,
+        "temperatura_media": 30.2,
+        "alertas": 0
+      },
+      {
+        "data": "2026-10-05",
+        "umidade_media": 44.0,
+        "temperatura_media": 28.2,
+        "alertas": 4
+      },
+      {
+        "data": "2026-10-06",
+        "umidade_media": 42.5,
+        "temperatura_media": 34.8,
+        "alertas": 4
+      },
+      {
+        "data": "2026-10-07",
+        "umidade_media": 45.5,
+        "temperatura_media": 28.2,
+        "alertas": 4
+      },
+      {
+        "data": "2026-10-08",
+        "umidade_media": 42.2,
+        "temperatura_media": 29.2,
+        "alertas": 4
+      }
+    ],
+    "avaliacoes": {
+      "Completa": 48
+    },
+    "observacoes_ausentes": 0,
+    "leitura_selecionada": {
+      "data_hora": "2026-10-06T12:00:00",
+      "sensor_id": "S-002",
+      "talhao": "Talhao B",
+      "cultura": "Milho",
+      "umidade_solo": "24.0",
+      "temperatura": "31.0",
+      "probabilidade_praga": "57.0",
+      "alerta_origem": "Alerta de irrigacao",
+      "recomendacao_origem": "Verificar irrigacao do talhao.",
+      "percentual_folhas_doentes": "35.0",
+      "praga_detectada": "Lagarta",
+      "dias_mesma_praga": "4",
+      "origem_observacao": "SIMULADO - observacao de campo",
+      "regra": "R1",
+      "severidade": "Crítica",
+      "alerta": "Alerta crítico",
+      "acao": "Intervenção imediata, controle de praga e irrigação prioritária",
+      "justificativa": "Folhas doentes acima de 30%, praga recorrente e umidade abaixo de 35%.",
+      "avaliacao": "Completa",
+      "origem_sensor": "simulacao_historica_fase6"
+    },
+    "filtros": {
+      "talhao": "Talhao B",
+      "inicio": "",
+      "fim": ""
+    },
+    "escopo": "Última leitura no período selecionado; diagnósticos de imagem independentes"
+  }
+}

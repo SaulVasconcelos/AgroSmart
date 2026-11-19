@@ -1,0 +1,767 @@
+Data_Hora;Nome_Imagem;Diagnostico;Confianca;Fonte_Imagem
+2026-03-05 22:47:51;captura_agro_20260305_224751.jpg;Doenca_Detectada (Ex: Ferrugem/Mancha);99.90%;Upload Local
+2026-03-06 20:51:02;captura_agro_20260306_205102.jpg;Folha_Saudável;99.79%;Upload Local
+2026-03-11 20:04:14;captura_agro_20260311_200414.jpg;Folha_Saudavel;99.79%;Upload Local
+2026-03-11 20:07:29;captura_agro_20260311_200729.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);99.90%;Upload Local
+2026-03-11 20:07:46;captura_agro_20260311_200746.jpg;Outro_Patogeno;95.65%;Upload Local
+2026-03-12 19:22:12;captura_agro_20260312_192212.jpg;Folha_Saudavel;99.79%;Upload Local
+2026-03-12 19:22:29;captura_agro_20260312_192229.jpg;Outro_Patogeno;95.65%;Upload Local
+2026-03-12 19:22:44;captura_agro_20260312_192244.jpg;Doenca_Detectada (Ex: Ferrugem/Mancha);99.90%;Upload Local
+2026-03-12 19:35:50;captura_agro_20260312_193550.jpg;Folha_Saudavel;99.79%;Upload Local
+2026-03-12 19:36:11;captura_agro_20260312_193611.jpg;Outro_Patogeno;95.65%;Upload Local
+2026-03-12 19:36:23;captura_agro_20260312_193623.jpg;Doenca_Detectada (Ex: Ferrugem/Mancha);99.90%;Upload Local
+2026-03-12 19:44:11;captura_agro_20260312_194411.jpg;Outro_Patogeno;95.65%;Upload Local
+2026-03-12 19:44:34;captura_agro_20260312_194434.jpg;Folha_Saudavel;99.79%;Upload Local
+2026-03-12 19:44:46;captura_agro_20260312_194446.jpg;Doenca_Detectada (Ex: Ferrugem/Mancha);99.90%;Upload Local
+2026-03-12 19:51:02;captura_agro_20260312_195102.jpg;Folha_Saudavel;99.79%;Upload Local
+2026-03-12 19:51:13;captura_agro_20260312_195113.jpg;Outro_Patogeno;95.65%;Upload Local
+2026-03-12 19:51:33;captura_agro_20260312_195133.jpg;Doenca_Detectada (Ex: Ferrugem/Mancha);99.90%;Upload Local
+2026-03-12 19:58:03;captura_agro_20260312_195803.jpg;Folha_Saudavel;99.79%;Upload Local
+2026-03-12 19:58:32;captura_agro_20260312_195832.jpg;Outro_Patogeno;95.65%;Upload Local
+2026-03-12 19:58:44;captura_agro_20260312_195844.jpg;Doenca_Detectada (Ex: Ferrugem/Mancha);99.90%;Upload Local
+2026-03-19 09:32:07;simulado_d0_617.jpg;Folha_Saudavel;88.75%;Webcam
+2026-03-19 14:03:07;simulado_d0_664.jpg;Folha_Saudavel;94.82%;Upload Local
+2026-03-19 11:48:07;simulado_d0_796.jpg;Folha_Saudavel;96.53%;Webcam
+2026-03-19 16:19:07;simulado_d0_222.jpg;Folha_Saudavel;93.11%;Upload Local
+2026-03-19 10:23:07;simulado_d0_561.jpg;Folha_Saudavel;91.89%;Webcam
+2026-03-19 12:05:07;simulado_d0_489.jpg;Outro_Patogeno;81.98%;Upload Local
+2026-03-19 17:00:07;simulado_d0_680.jpg;Folha_Saudavel;98.45%;Upload Local
+2026-03-19 11:13:07;simulado_d0_657.jpg;Folha_Saudavel;93.89%;Upload Local
+2026-03-19 11:55:07;simulado_d0_672.jpg;Folha_Saudavel;98.87%;Webcam
+2026-03-19 11:11:07;simulado_d0_560.jpg;Folha_Saudavel;92.59%;Webcam
+2026-03-19 10:12:07;simulado_d0_913.jpg;Folha_Saudavel;91.62%;Upload Local
+2026-03-19 16:52:07;simulado_d0_509.jpg;Folha_Saudavel;98.7%;Upload Local
+2026-03-19 09:32:07;simulado_d0_466.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);82.15%;Webcam
+2026-03-19 11:53:07;simulado_d0_940.jpg;Folha_Saudavel;93.67%;Webcam
+2026-03-19 09:48:07;simulado_d0_429.jpg;Folha_Saudavel;90.21%;Upload Local
+2026-03-19 12:19:07;simulado_d0_474.jpg;Outro_Patogeno;91.66%;Webcam
+2026-03-19 15:13:07;simulado_d0_602.jpg;Folha_Saudavel;97.21%;Upload Local
+2026-03-19 15:29:07;simulado_d0_866.jpg;Folha_Saudavel;88.57%;Webcam
+2026-03-19 08:50:07;simulado_d0_400.jpg;Folha_Saudavel;93.17%;Upload Local
+2026-03-19 09:52:07;simulado_d0_570.jpg;Folha_Saudavel;92.95%;Webcam
+2026-03-19 16:37:07;simulado_d0_997.jpg;Folha_Saudavel;96.29%;Webcam
+2026-03-19 14:27:07;simulado_d0_476.jpg;Folha_Saudavel;96.41%;Webcam
+2026-03-19 13:13:07;simulado_d0_491.jpg;Folha_Saudavel;88.27%;Webcam
+2026-03-19 14:24:07;simulado_d0_741.jpg;Folha_Saudavel;92.32%;Upload Local
+2026-03-19 15:30:07;simulado_d0_226.jpg;Folha_Saudavel;92.57%;Upload Local
+2026-03-19 13:11:07;simulado_d0_573.jpg;Folha_Saudavel;97.36%;Upload Local
+2026-03-19 15:51:07;simulado_d0_818.jpg;Folha_Saudavel;93.94%;Upload Local
+2026-03-19 12:38:07;simulado_d0_409.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);74.23%;Webcam
+2026-03-19 11:06:07;simulado_d0_532.jpg;Folha_Saudavel;88.23%;Upload Local
+2026-03-19 09:20:07;simulado_d0_468.jpg;Folha_Saudavel;90.17%;Webcam
+2026-03-19 12:26:07;simulado_d0_950.jpg;Folha_Saudavel;89.87%;Upload Local
+2026-03-19 16:38:07;simulado_d0_797.jpg;Folha_Saudavel;96.78%;Webcam
+2026-03-19 12:16:07;simulado_d0_307.jpg;Folha_Saudavel;94.41%;Webcam
+2026-03-20 10:30:07;simulado_d1_857.jpg;Folha_Saudavel;98.04%;Webcam
+2026-03-20 10:21:07;simulado_d1_170.jpg;Folha_Saudavel;97.68%;Upload Local
+2026-03-20 12:19:07;simulado_d1_896.jpg;Folha_Saudavel;88.21%;Webcam
+2026-03-20 14:13:07;simulado_d1_869.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);86.87%;Upload Local
+2026-03-20 15:16:07;simulado_d1_773.jpg;Folha_Saudavel;97.34%;Upload Local
+2026-03-20 16:02:07;simulado_d1_494.jpg;Folha_Saudavel;93.68%;Webcam
+2026-03-20 13:04:07;simulado_d1_298.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);79.52%;Webcam
+2026-03-20 17:00:07;simulado_d1_714.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);76.84%;Webcam
+2026-03-20 12:24:07;simulado_d1_621.jpg;Folha_Saudavel;95.65%;Upload Local
+2026-03-20 08:56:07;simulado_d1_255.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);74.04%;Upload Local
+2026-03-20 09:35:07;simulado_d1_376.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);72.66%;Webcam
+2026-03-20 13:47:07;simulado_d1_402.jpg;Folha_Saudavel;92.04%;Upload Local
+2026-03-20 17:07:07;simulado_d1_325.jpg;Folha_Saudavel;94.65%;Upload Local
+2026-03-20 12:20:07;simulado_d1_699.jpg;Folha_Saudavel;93.79%;Upload Local
+2026-03-20 09:29:07;simulado_d1_198.jpg;Folha_Saudavel;95.1%;Upload Local
+2026-03-20 17:43:07;simulado_d1_122.jpg;Folha_Saudavel;92.93%;Upload Local
+2026-03-20 10:10:07;simulado_d1_746.jpg;Outro_Patogeno;93.85%;Webcam
+2026-03-20 09:40:07;simulado_d1_362.jpg;Folha_Saudavel;99.45%;Upload Local
+2026-03-20 14:17:07;simulado_d1_872.jpg;Folha_Saudavel;92.57%;Upload Local
+2026-03-20 12:07:07;simulado_d1_794.jpg;Folha_Saudavel;97.23%;Upload Local
+2026-03-20 08:31:07;simulado_d1_203.jpg;Folha_Saudavel;89.03%;Upload Local
+2026-03-20 15:17:07;simulado_d1_308.jpg;Outro_Patogeno;92.69%;Webcam
+2026-03-20 16:43:07;simulado_d1_791.jpg;Folha_Saudavel;98.53%;Webcam
+2026-03-20 11:28:07;simulado_d1_921.jpg;Folha_Saudavel;92.04%;Webcam
+2026-03-20 13:48:07;simulado_d1_469.jpg;Outro_Patogeno;77.39%;Webcam
+2026-03-20 15:55:07;simulado_d1_688.jpg;Folha_Saudavel;92.71%;Upload Local
+2026-03-21 15:58:07;simulado_d2_921.jpg;Folha_Saudavel;91.03%;Webcam
+2026-03-21 09:04:07;simulado_d2_921.jpg;Folha_Saudavel;97.15%;Webcam
+2026-03-21 13:43:07;simulado_d2_460.jpg;Folha_Saudavel;91.41%;Webcam
+2026-03-21 14:08:07;simulado_d2_993.jpg;Folha_Saudavel;97.58%;Upload Local
+2026-03-21 15:34:07;simulado_d2_819.jpg;Folha_Saudavel;92.47%;Upload Local
+2026-03-21 14:03:07;simulado_d2_977.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);84.24%;Upload Local
+2026-03-21 15:32:07;simulado_d2_804.jpg;Folha_Saudavel;99.01%;Webcam
+2026-03-21 09:49:07;simulado_d2_776.jpg;Folha_Saudavel;99.68%;Upload Local
+2026-03-21 13:37:07;simulado_d2_376.jpg;Folha_Saudavel;92.08%;Webcam
+2026-03-21 12:47:07;simulado_d2_714.jpg;Folha_Saudavel;98.97%;Webcam
+2026-03-21 14:21:07;simulado_d2_886.jpg;Folha_Saudavel;91.77%;Upload Local
+2026-03-21 11:51:07;simulado_d2_467.jpg;Folha_Saudavel;99.65%;Webcam
+2026-03-21 14:01:07;simulado_d2_268.jpg;Folha_Saudavel;95.92%;Webcam
+2026-03-21 15:35:07;simulado_d2_725.jpg;Folha_Saudavel;93.53%;Upload Local
+2026-03-21 10:31:07;simulado_d2_461.jpg;Folha_Saudavel;95.85%;Upload Local
+2026-03-21 17:30:07;simulado_d2_719.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);81.29%;Upload Local
+2026-03-21 13:25:07;simulado_d2_867.jpg;Folha_Saudavel;89.1%;Upload Local
+2026-03-21 08:47:07;simulado_d2_573.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);78.46%;Webcam
+2026-03-21 10:59:07;simulado_d2_772.jpg;Folha_Saudavel;93.24%;Upload Local
+2026-03-21 12:55:07;simulado_d2_956.jpg;Folha_Saudavel;92.83%;Webcam
+2026-03-21 13:29:07;simulado_d2_331.jpg;Folha_Saudavel;97.67%;Webcam
+2026-03-21 12:33:07;simulado_d2_132.jpg;Folha_Saudavel;92.28%;Upload Local
+2026-03-21 11:09:07;simulado_d2_424.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);77.65%;Upload Local
+2026-03-21 11:53:07;simulado_d2_532.jpg;Folha_Saudavel;99.48%;Webcam
+2026-03-21 14:17:07;simulado_d2_147.jpg;Folha_Saudavel;91.42%;Upload Local
+2026-03-21 14:29:07;simulado_d2_228.jpg;Folha_Saudavel;99.79%;Webcam
+2026-03-21 16:37:07;simulado_d2_651.jpg;Folha_Saudavel;97.48%;Upload Local
+2026-03-21 13:18:07;simulado_d2_755.jpg;Folha_Saudavel;93.56%;Webcam
+2026-03-22 09:13:07;simulado_d3_555.jpg;Folha_Saudavel;90.73%;Webcam
+2026-03-22 14:44:07;simulado_d3_489.jpg;Folha_Saudavel;90.3%;Webcam
+2026-03-22 11:04:07;simulado_d3_473.jpg;Folha_Saudavel;97.86%;Webcam
+2026-03-22 14:48:07;simulado_d3_283.jpg;Folha_Saudavel;99.88%;Upload Local
+2026-03-22 13:56:07;simulado_d3_422.jpg;Folha_Saudavel;96.52%;Upload Local
+2026-03-22 12:48:07;simulado_d3_297.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);78.08%;Webcam
+2026-03-22 13:16:07;simulado_d3_551.jpg;Folha_Saudavel;94.08%;Webcam
+2026-03-22 17:57:07;simulado_d3_986.jpg;Folha_Saudavel;97.55%;Webcam
+2026-03-22 14:25:07;simulado_d3_977.jpg;Folha_Saudavel;95.13%;Upload Local
+2026-03-22 11:36:07;simulado_d3_989.jpg;Folha_Saudavel;96.4%;Upload Local
+2026-03-22 10:36:07;simulado_d3_677.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);90.92%;Webcam
+2026-03-22 15:13:07;simulado_d3_793.jpg;Folha_Saudavel;94.13%;Webcam
+2026-03-22 11:23:07;simulado_d3_254.jpg;Folha_Saudavel;99.03%;Upload Local
+2026-03-22 15:32:07;simulado_d3_566.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);73.86%;Webcam
+2026-03-22 09:16:07;simulado_d3_290.jpg;Folha_Saudavel;92.74%;Upload Local
+2026-03-22 10:36:07;simulado_d3_826.jpg;Folha_Saudavel;91.31%;Upload Local
+2026-03-22 11:34:07;simulado_d3_764.jpg;Folha_Saudavel;92.85%;Upload Local
+2026-03-22 11:35:07;simulado_d3_893.jpg;Folha_Saudavel;92.31%;Upload Local
+2026-03-22 11:16:07;simulado_d3_684.jpg;Folha_Saudavel;92.51%;Upload Local
+2026-03-22 10:39:07;simulado_d3_637.jpg;Folha_Saudavel;95.53%;Upload Local
+2026-03-22 11:26:07;simulado_d3_125.jpg;Outro_Patogeno;79.55%;Upload Local
+2026-03-22 09:34:07;simulado_d3_440.jpg;Folha_Saudavel;92.38%;Upload Local
+2026-03-22 13:34:07;simulado_d3_497.jpg;Folha_Saudavel;92.71%;Webcam
+2026-03-23 08:13:07;simulado_d4_693.jpg;Folha_Saudavel;89.73%;Upload Local
+2026-03-23 16:45:07;simulado_d4_699.jpg;Folha_Saudavel;93.58%;Upload Local
+2026-03-23 12:51:07;simulado_d4_433.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);72.65%;Upload Local
+2026-03-23 09:10:07;simulado_d4_349.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);88.88%;Upload Local
+2026-03-23 10:01:07;simulado_d4_741.jpg;Folha_Saudavel;88.65%;Upload Local
+2026-03-23 13:06:07;simulado_d4_674.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);88.09%;Upload Local
+2026-03-23 11:24:07;simulado_d4_734.jpg;Folha_Saudavel;90.18%;Webcam
+2026-03-23 17:57:07;simulado_d4_872.jpg;Folha_Saudavel;95.28%;Upload Local
+2026-03-23 14:01:07;simulado_d4_119.jpg;Folha_Saudavel;90.17%;Webcam
+2026-03-23 17:06:07;simulado_d4_700.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);93.63%;Webcam
+2026-03-23 17:15:07;simulado_d4_648.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);93.02%;Upload Local
+2026-03-23 15:36:07;simulado_d4_519.jpg;Folha_Saudavel;94.99%;Webcam
+2026-03-23 14:57:07;simulado_d4_853.jpg;Folha_Saudavel;97.83%;Upload Local
+2026-03-23 11:00:07;simulado_d4_866.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);91.44%;Upload Local
+2026-03-23 14:08:07;simulado_d4_706.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);87.93%;Webcam
+2026-03-23 08:23:07;simulado_d4_946.jpg;Folha_Saudavel;98.55%;Upload Local
+2026-03-23 16:04:07;simulado_d4_559.jpg;Folha_Saudavel;96.43%;Upload Local
+2026-03-23 15:10:07;simulado_d4_215.jpg;Folha_Saudavel;88.62%;Webcam
+2026-03-23 17:12:07;simulado_d4_584.jpg;Folha_Saudavel;94.55%;Webcam
+2026-03-23 14:23:07;simulado_d4_857.jpg;Folha_Saudavel;94.53%;Upload Local
+2026-03-23 11:10:07;simulado_d4_618.jpg;Folha_Saudavel;89.67%;Upload Local
+2026-03-23 16:19:07;simulado_d4_101.jpg;Folha_Saudavel;97.61%;Webcam
+2026-03-23 08:31:07;simulado_d4_465.jpg;Folha_Saudavel;97.48%;Upload Local
+2026-03-23 15:50:07;simulado_d4_904.jpg;Folha_Saudavel;97.46%;Webcam
+2026-03-23 09:35:07;simulado_d4_391.jpg;Folha_Saudavel;93.15%;Webcam
+2026-03-23 14:14:07;simulado_d4_405.jpg;Folha_Saudavel;88.77%;Webcam
+2026-03-23 11:13:07;simulado_d4_811.jpg;Folha_Saudavel;88.98%;Upload Local
+2026-03-23 11:01:07;simulado_d4_198.jpg;Folha_Saudavel;96.77%;Upload Local
+2026-03-23 17:43:07;simulado_d4_550.jpg;Folha_Saudavel;99.03%;Webcam
+2026-03-23 15:16:07;simulado_d4_742.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);91.49%;Webcam
+2026-03-23 10:24:07;simulado_d4_728.jpg;Folha_Saudavel;92.1%;Upload Local
+2026-03-24 14:57:07;simulado_d5_304.jpg;Folha_Saudavel;93.88%;Upload Local
+2026-03-24 14:40:07;simulado_d5_560.jpg;Folha_Saudavel;95.95%;Webcam
+2026-03-24 16:05:07;simulado_d5_162.jpg;Folha_Saudavel;89.63%;Webcam
+2026-03-24 15:34:07;simulado_d5_721.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);74.92%;Upload Local
+2026-03-24 17:20:07;simulado_d5_580.jpg;Folha_Saudavel;95.61%;Webcam
+2026-03-24 17:06:07;simulado_d5_585.jpg;Folha_Saudavel;91.83%;Webcam
+2026-03-24 11:35:07;simulado_d5_814.jpg;Folha_Saudavel;96.23%;Webcam
+2026-03-24 15:12:07;simulado_d5_588.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);78.94%;Webcam
+2026-03-24 13:22:07;simulado_d5_666.jpg;Folha_Saudavel;89.73%;Upload Local
+2026-03-24 11:34:07;simulado_d5_625.jpg;Folha_Saudavel;97.95%;Upload Local
+2026-03-24 08:19:07;simulado_d5_813.jpg;Folha_Saudavel;96.76%;Upload Local
+2026-03-24 13:16:07;simulado_d5_919.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);88.88%;Upload Local
+2026-03-24 14:12:07;simulado_d5_791.jpg;Outro_Patogeno;80.27%;Upload Local
+2026-03-24 13:45:07;simulado_d5_697.jpg;Folha_Saudavel;90.4%;Upload Local
+2026-03-24 16:42:07;simulado_d5_522.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);82.03%;Upload Local
+2026-03-24 13:23:07;simulado_d5_492.jpg;Folha_Saudavel;90.63%;Upload Local
+2026-03-24 14:15:07;simulado_d5_150.jpg;Folha_Saudavel;92.73%;Upload Local
+2026-03-24 12:24:07;simulado_d5_975.jpg;Folha_Saudavel;97.13%;Webcam
+2026-03-24 10:34:07;simulado_d5_824.jpg;Outro_Patogeno;75.07%;Webcam
+2026-03-24 08:11:07;simulado_d5_534.jpg;Folha_Saudavel;99.5%;Upload Local
+2026-03-24 11:53:07;simulado_d5_747.jpg;Folha_Saudavel;91.58%;Upload Local
+2026-03-24 08:19:07;simulado_d5_187.jpg;Folha_Saudavel;89.85%;Webcam
+2026-03-24 11:55:07;simulado_d5_734.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);79.64%;Webcam
+2026-03-25 12:08:07;simulado_d6_743.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);90.48%;Upload Local
+2026-03-25 14:59:07;simulado_d6_767.jpg;Folha_Saudavel;92.04%;Webcam
+2026-03-25 11:42:07;simulado_d6_238.jpg;Folha_Saudavel;95.37%;Upload Local
+2026-03-25 16:59:07;simulado_d6_177.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);90.2%;Webcam
+2026-03-25 13:12:07;simulado_d6_314.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);85.54%;Webcam
+2026-03-25 08:59:07;simulado_d6_644.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);85.89%;Webcam
+2026-03-25 09:28:07;simulado_d6_313.jpg;Folha_Saudavel;95.73%;Webcam
+2026-03-25 12:47:07;simulado_d6_764.jpg;Folha_Saudavel;98.19%;Webcam
+2026-03-25 11:24:07;simulado_d6_985.jpg;Folha_Saudavel;90.83%;Upload Local
+2026-03-25 17:49:07;simulado_d6_101.jpg;Folha_Saudavel;94.21%;Upload Local
+2026-03-25 12:31:07;simulado_d6_388.jpg;Folha_Saudavel;98.84%;Webcam
+2026-03-25 12:32:07;simulado_d6_612.jpg;Folha_Saudavel;88.39%;Webcam
+2026-03-25 11:12:07;simulado_d6_122.jpg;Folha_Saudavel;95.81%;Webcam
+2026-03-25 09:59:07;simulado_d6_699.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);82.34%;Webcam
+2026-03-25 17:52:07;simulado_d6_341.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);72.04%;Webcam
+2026-03-26 15:31:07;simulado_d7_309.jpg;Outro_Patogeno;91.2%;Upload Local
+2026-03-26 12:34:07;simulado_d7_761.jpg;Folha_Saudavel;98.84%;Webcam
+2026-03-26 08:14:07;simulado_d7_955.jpg;Folha_Saudavel;98.24%;Webcam
+2026-03-26 11:26:07;simulado_d7_750.jpg;Folha_Saudavel;97.53%;Webcam
+2026-03-26 11:24:07;simulado_d7_781.jpg;Folha_Saudavel;89.39%;Webcam
+2026-03-26 15:44:07;simulado_d7_821.jpg;Outro_Patogeno;93.31%;Upload Local
+2026-03-26 08:01:07;simulado_d7_351.jpg;Folha_Saudavel;96.59%;Webcam
+2026-03-26 15:52:07;simulado_d7_540.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);91.15%;Upload Local
+2026-03-26 13:10:07;simulado_d7_645.jpg;Folha_Saudavel;94.17%;Upload Local
+2026-03-26 17:19:07;simulado_d7_215.jpg;Folha_Saudavel;97.25%;Upload Local
+2026-03-26 12:57:07;simulado_d7_968.jpg;Folha_Saudavel;99.45%;Upload Local
+2026-03-26 13:19:07;simulado_d7_570.jpg;Folha_Saudavel;88.47%;Webcam
+2026-03-26 15:01:07;simulado_d7_882.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);72.26%;Webcam
+2026-03-26 15:03:07;simulado_d7_447.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);78.74%;Upload Local
+2026-03-26 17:19:07;simulado_d7_464.jpg;Folha_Saudavel;98.5%;Upload Local
+2026-03-26 15:55:07;simulado_d7_968.jpg;Outro_Patogeno;78.75%;Webcam
+2026-03-26 08:15:07;simulado_d7_860.jpg;Folha_Saudavel;90.27%;Upload Local
+2026-03-27 08:39:07;simulado_d8_505.jpg;Folha_Saudavel;92.79%;Webcam
+2026-03-27 15:43:07;simulado_d8_910.jpg;Folha_Saudavel;95.0%;Upload Local
+2026-03-27 12:26:07;simulado_d8_841.jpg;Outro_Patogeno;93.6%;Webcam
+2026-03-27 10:59:07;simulado_d8_553.jpg;Folha_Saudavel;88.12%;Webcam
+2026-03-27 11:55:07;simulado_d8_959.jpg;Folha_Saudavel;97.68%;Webcam
+2026-03-27 11:06:07;simulado_d8_957.jpg;Folha_Saudavel;91.5%;Webcam
+2026-03-27 13:34:07;simulado_d8_849.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);82.98%;Upload Local
+2026-03-27 15:51:07;simulado_d8_727.jpg;Folha_Saudavel;89.15%;Webcam
+2026-03-27 11:10:07;simulado_d8_176.jpg;Folha_Saudavel;95.95%;Upload Local
+2026-03-27 13:21:07;simulado_d8_647.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);91.74%;Webcam
+2026-03-27 14:57:07;simulado_d8_851.jpg;Folha_Saudavel;97.83%;Upload Local
+2026-03-27 10:46:07;simulado_d8_462.jpg;Folha_Saudavel;88.01%;Upload Local
+2026-03-27 16:04:07;simulado_d8_960.jpg;Folha_Saudavel;89.55%;Webcam
+2026-03-27 10:58:07;simulado_d8_398.jpg;Folha_Saudavel;95.61%;Upload Local
+2026-03-27 11:33:07;simulado_d8_818.jpg;Folha_Saudavel;99.77%;Upload Local
+2026-03-28 15:36:07;simulado_d9_595.jpg;Folha_Saudavel;97.4%;Webcam
+2026-03-28 17:59:07;simulado_d9_852.jpg;Folha_Saudavel;92.54%;Webcam
+2026-03-28 10:14:07;simulado_d9_992.jpg;Folha_Saudavel;93.2%;Upload Local
+2026-03-28 09:12:07;simulado_d9_914.jpg;Folha_Saudavel;92.93%;Webcam
+2026-03-28 15:29:07;simulado_d9_867.jpg;Folha_Saudavel;93.7%;Upload Local
+2026-03-28 14:35:07;simulado_d9_881.jpg;Folha_Saudavel;98.18%;Webcam
+2026-03-28 11:04:07;simulado_d9_669.jpg;Folha_Saudavel;99.26%;Webcam
+2026-03-28 16:00:07;simulado_d9_464.jpg;Folha_Saudavel;90.24%;Webcam
+2026-03-28 12:13:07;simulado_d9_233.jpg;Folha_Saudavel;89.96%;Webcam
+2026-03-28 15:47:07;simulado_d9_421.jpg;Folha_Saudavel;97.37%;Upload Local
+2026-03-28 09:22:07;simulado_d9_739.jpg;Folha_Saudavel;91.2%;Webcam
+2026-03-28 14:03:07;simulado_d9_646.jpg;Folha_Saudavel;95.64%;Upload Local
+2026-03-28 09:57:07;simulado_d9_858.jpg;Folha_Saudavel;92.15%;Upload Local
+2026-03-28 13:04:07;simulado_d9_155.jpg;Folha_Saudavel;99.27%;Webcam
+2026-03-28 15:39:07;simulado_d9_194.jpg;Folha_Saudavel;97.1%;Upload Local
+2026-03-28 11:34:07;simulado_d9_756.jpg;Folha_Saudavel;97.05%;Webcam
+2026-03-28 10:05:07;simulado_d9_502.jpg;Folha_Saudavel;93.64%;Webcam
+2026-03-28 15:18:07;simulado_d9_590.jpg;Folha_Saudavel;97.4%;Upload Local
+2026-03-28 17:11:07;simulado_d9_514.jpg;Folha_Saudavel;89.05%;Upload Local
+2026-03-28 15:43:07;simulado_d9_512.jpg;Folha_Saudavel;98.91%;Webcam
+2026-03-28 17:31:07;simulado_d9_809.jpg;Folha_Saudavel;98.58%;Webcam
+2026-03-28 16:34:07;simulado_d9_207.jpg;Folha_Saudavel;90.84%;Webcam
+2026-03-28 14:04:07;simulado_d9_742.jpg;Folha_Saudavel;89.46%;Upload Local
+2026-03-28 08:25:07;simulado_d9_322.jpg;Folha_Saudavel;92.71%;Webcam
+2026-03-28 16:33:07;simulado_d9_358.jpg;Folha_Saudavel;91.7%;Upload Local
+2026-03-28 13:17:07;simulado_d9_370.jpg;Folha_Saudavel;96.37%;Webcam
+2026-03-28 14:03:07;simulado_d9_389.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);77.81%;Webcam
+2026-03-28 08:40:07;simulado_d9_453.jpg;Folha_Saudavel;94.39%;Webcam
+2026-03-28 16:22:07;simulado_d9_649.jpg;Folha_Saudavel;88.01%;Upload Local
+2026-03-28 14:54:07;simulado_d9_401.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);92.03%;Webcam
+2026-03-28 11:45:07;simulado_d9_611.jpg;Folha_Saudavel;91.62%;Upload Local
+2026-03-28 17:13:07;simulado_d9_897.jpg;Folha_Saudavel;88.78%;Webcam
+2026-03-29 12:28:07;simulado_d10_480.jpg;Folha_Saudavel;89.13%;Upload Local
+2026-03-29 08:46:07;simulado_d10_829.jpg;Folha_Saudavel;97.07%;Webcam
+2026-03-29 17:25:07;simulado_d10_346.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);85.74%;Upload Local
+2026-03-29 17:30:07;simulado_d10_937.jpg;Folha_Saudavel;98.72%;Upload Local
+2026-03-29 11:40:07;simulado_d10_700.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);75.04%;Webcam
+2026-03-29 16:19:07;simulado_d10_961.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);74.54%;Upload Local
+2026-03-29 17:46:07;simulado_d10_875.jpg;Outro_Patogeno;90.61%;Upload Local
+2026-03-29 10:31:07;simulado_d10_325.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);79.91%;Upload Local
+2026-03-29 16:06:07;simulado_d10_890.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);88.11%;Webcam
+2026-03-29 14:00:07;simulado_d10_919.jpg;Outro_Patogeno;84.75%;Upload Local
+2026-03-29 17:44:07;simulado_d10_530.jpg;Outro_Patogeno;89.92%;Upload Local
+2026-03-29 13:53:07;simulado_d10_192.jpg;Folha_Saudavel;88.33%;Upload Local
+2026-03-29 10:32:07;simulado_d10_898.jpg;Folha_Saudavel;97.57%;Webcam
+2026-03-29 12:05:07;simulado_d10_654.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);83.6%;Upload Local
+2026-03-29 14:25:07;simulado_d10_646.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);84.9%;Webcam
+2026-03-29 10:41:07;simulado_d10_129.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);91.53%;Upload Local
+2026-03-29 10:24:07;simulado_d10_902.jpg;Folha_Saudavel;88.18%;Upload Local
+2026-03-29 10:18:07;simulado_d10_215.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);82.15%;Webcam
+2026-03-29 17:19:07;simulado_d10_815.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);80.02%;Webcam
+2026-03-29 09:08:07;simulado_d10_870.jpg;Folha_Saudavel;97.9%;Webcam
+2026-03-29 09:37:07;simulado_d10_176.jpg;Folha_Saudavel;95.67%;Webcam
+2026-03-29 12:28:07;simulado_d10_647.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);93.36%;Webcam
+2026-03-29 12:31:07;simulado_d10_546.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);81.59%;Upload Local
+2026-03-29 15:54:07;simulado_d10_963.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);82.72%;Upload Local
+2026-03-29 10:16:07;simulado_d10_619.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);86.59%;Webcam
+2026-03-29 09:54:07;simulado_d10_438.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);82.96%;Upload Local
+2026-03-29 15:52:07;simulado_d10_292.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);78.07%;Upload Local
+2026-03-29 11:27:07;simulado_d10_367.jpg;Folha_Saudavel;96.06%;Webcam
+2026-03-29 14:58:07;simulado_d10_910.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);88.61%;Webcam
+2026-03-29 12:32:07;simulado_d10_151.jpg;Outro_Patogeno;79.41%;Upload Local
+2026-03-29 11:20:07;simulado_d10_729.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);84.44%;Webcam
+2026-03-29 14:47:07;simulado_d10_132.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);90.15%;Upload Local
+2026-03-29 09:32:07;simulado_d10_947.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);84.94%;Webcam
+2026-03-29 16:01:07;simulado_d10_437.jpg;Folha_Saudavel;91.07%;Upload Local
+2026-03-30 11:40:07;simulado_d11_731.jpg;Folha_Saudavel;97.33%;Upload Local
+2026-03-30 15:48:07;simulado_d11_858.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);79.61%;Upload Local
+2026-03-30 16:59:07;simulado_d11_155.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);82.05%;Upload Local
+2026-03-30 10:15:07;simulado_d11_107.jpg;Outro_Patogeno;85.81%;Upload Local
+2026-03-30 15:51:07;simulado_d11_820.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);85.51%;Webcam
+2026-03-30 11:26:07;simulado_d11_758.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);74.14%;Upload Local
+2026-03-30 17:14:07;simulado_d11_774.jpg;Folha_Saudavel;94.19%;Webcam
+2026-03-30 17:38:07;simulado_d11_740.jpg;Folha_Saudavel;92.17%;Upload Local
+2026-03-30 12:05:07;simulado_d11_693.jpg;Outro_Patogeno;76.44%;Webcam
+2026-03-30 16:09:07;simulado_d11_881.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);91.15%;Upload Local
+2026-03-30 14:54:07;simulado_d11_260.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);91.46%;Upload Local
+2026-03-30 10:37:07;simulado_d11_455.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);78.32%;Webcam
+2026-03-30 17:09:07;simulado_d11_191.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);84.85%;Webcam
+2026-03-30 10:15:07;simulado_d11_836.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);91.13%;Webcam
+2026-03-30 17:54:07;simulado_d11_370.jpg;Folha_Saudavel;94.19%;Webcam
+2026-03-30 13:21:07;simulado_d11_543.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);83.57%;Webcam
+2026-03-30 11:23:07;simulado_d11_979.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);88.29%;Webcam
+2026-03-30 08:07:07;simulado_d11_224.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);74.97%;Upload Local
+2026-03-30 16:55:07;simulado_d11_142.jpg;Folha_Saudavel;97.61%;Webcam
+2026-03-30 08:14:07;simulado_d11_174.jpg;Folha_Saudavel;88.49%;Webcam
+2026-03-30 08:11:07;simulado_d11_340.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);78.44%;Upload Local
+2026-03-30 12:59:07;simulado_d11_354.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);85.15%;Upload Local
+2026-03-30 09:54:07;simulado_d11_175.jpg;Outro_Patogeno;74.97%;Upload Local
+2026-03-30 10:31:07;simulado_d11_538.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);88.36%;Upload Local
+2026-03-30 11:02:07;simulado_d11_189.jpg;Folha_Saudavel;95.24%;Upload Local
+2026-03-30 14:14:07;simulado_d11_278.jpg;Folha_Saudavel;94.07%;Webcam
+2026-03-30 09:25:07;simulado_d11_406.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);81.84%;Webcam
+2026-03-30 12:30:07;simulado_d11_848.jpg;Outro_Patogeno;89.12%;Upload Local
+2026-03-30 17:15:07;simulado_d11_308.jpg;Folha_Saudavel;91.24%;Webcam
+2026-03-30 17:48:07;simulado_d11_256.jpg;Outro_Patogeno;92.47%;Upload Local
+2026-03-30 10:00:07;simulado_d11_843.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);85.42%;Upload Local
+2026-03-30 12:58:07;simulado_d11_239.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);86.57%;Webcam
+2026-03-31 16:06:07;simulado_d12_891.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);87.39%;Webcam
+2026-03-31 08:35:07;simulado_d12_115.jpg;Outro_Patogeno;74.97%;Webcam
+2026-03-31 08:52:07;simulado_d12_437.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);82.47%;Webcam
+2026-03-31 08:37:07;simulado_d12_958.jpg;Folha_Saudavel;89.57%;Webcam
+2026-03-31 08:55:07;simulado_d12_577.jpg;Folha_Saudavel;91.06%;Webcam
+2026-03-31 11:33:07;simulado_d12_653.jpg;Folha_Saudavel;96.45%;Upload Local
+2026-03-31 10:23:07;simulado_d12_219.jpg;Folha_Saudavel;97.59%;Webcam
+2026-03-31 15:46:07;simulado_d12_357.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);88.03%;Upload Local
+2026-03-31 10:04:07;simulado_d12_589.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);89.78%;Upload Local
+2026-03-31 13:59:07;simulado_d12_995.jpg;Outro_Patogeno;92.84%;Upload Local
+2026-03-31 12:56:07;simulado_d12_913.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);92.55%;Upload Local
+2026-03-31 09:56:07;simulado_d12_488.jpg;Folha_Saudavel;95.34%;Upload Local
+2026-03-31 12:14:07;simulado_d12_664.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);82.36%;Upload Local
+2026-03-31 13:54:07;simulado_d12_484.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);82.11%;Upload Local
+2026-03-31 15:32:07;simulado_d12_688.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);73.32%;Upload Local
+2026-03-31 13:02:07;simulado_d12_412.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);78.54%;Webcam
+2026-03-31 12:13:07;simulado_d12_638.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);93.41%;Webcam
+2026-03-31 14:48:07;simulado_d12_529.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);84.29%;Webcam
+2026-03-31 16:33:07;simulado_d12_187.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);90.05%;Webcam
+2026-03-31 10:17:07;simulado_d12_947.jpg;Outro_Patogeno;89.59%;Upload Local
+2026-03-31 17:39:07;simulado_d12_444.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);93.56%;Webcam
+2026-03-31 10:46:07;simulado_d12_577.jpg;Outro_Patogeno;93.99%;Webcam
+2026-03-31 12:17:07;simulado_d12_296.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);93.5%;Webcam
+2026-04-01 10:34:07;simulado_d13_774.jpg;Outro_Patogeno;92.15%;Upload Local
+2026-04-01 09:15:07;simulado_d13_503.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);80.37%;Webcam
+2026-04-01 14:05:07;simulado_d13_942.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);79.17%;Upload Local
+2026-04-01 17:24:07;simulado_d13_317.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);84.62%;Upload Local
+2026-04-01 08:05:07;simulado_d13_681.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);75.42%;Webcam
+2026-04-01 14:10:07;simulado_d13_511.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);75.01%;Upload Local
+2026-04-01 17:40:07;simulado_d13_221.jpg;Folha_Saudavel;94.45%;Upload Local
+2026-04-01 09:22:07;simulado_d13_818.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);91.28%;Webcam
+2026-04-01 17:09:07;simulado_d13_844.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);76.08%;Webcam
+2026-04-01 09:26:07;simulado_d13_184.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);77.54%;Upload Local
+2026-04-01 09:25:07;simulado_d13_843.jpg;Folha_Saudavel;96.5%;Webcam
+2026-04-01 16:51:07;simulado_d13_958.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);85.22%;Upload Local
+2026-04-01 11:43:07;simulado_d13_981.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);76.1%;Upload Local
+2026-04-01 11:04:07;simulado_d13_571.jpg;Folha_Saudavel;95.48%;Webcam
+2026-04-01 11:34:07;simulado_d13_172.jpg;Folha_Saudavel;91.86%;Webcam
+2026-04-01 08:45:07;simulado_d13_865.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);88.16%;Webcam
+2026-04-01 11:28:07;simulado_d13_806.jpg;Outro_Patogeno;80.5%;Webcam
+2026-04-01 11:12:07;simulado_d13_920.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);92.49%;Webcam
+2026-04-01 15:09:07;simulado_d13_973.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);90.85%;Upload Local
+2026-04-02 14:22:07;simulado_d14_782.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);86.88%;Webcam
+2026-04-02 13:00:07;simulado_d14_990.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);81.54%;Webcam
+2026-04-02 13:11:07;simulado_d14_865.jpg;Folha_Saudavel;97.18%;Webcam
+2026-04-02 16:16:07;simulado_d14_394.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);89.99%;Webcam
+2026-04-02 14:04:07;simulado_d14_722.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);93.43%;Upload Local
+2026-04-02 14:15:07;simulado_d14_381.jpg;Outro_Patogeno;84.44%;Webcam
+2026-04-02 11:41:07;simulado_d14_269.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);91.62%;Webcam
+2026-04-02 15:30:07;simulado_d14_368.jpg;Outro_Patogeno;78.98%;Webcam
+2026-04-02 14:19:07;simulado_d14_202.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);82.04%;Webcam
+2026-04-02 12:22:07;simulado_d14_579.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);89.52%;Webcam
+2026-04-02 14:02:07;simulado_d14_101.jpg;Folha_Saudavel;91.01%;Webcam
+2026-04-02 13:32:07;simulado_d14_937.jpg;Folha_Saudavel;91.15%;Webcam
+2026-04-02 09:50:07;simulado_d14_377.jpg;Folha_Saudavel;89.5%;Webcam
+2026-04-02 09:23:07;simulado_d14_399.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);90.84%;Webcam
+2026-04-02 08:45:07;simulado_d14_471.jpg;Folha_Saudavel;96.48%;Webcam
+2026-04-02 09:43:07;simulado_d14_485.jpg;Folha_Saudavel;94.26%;Webcam
+2026-04-02 12:50:07;simulado_d14_167.jpg;Outro_Patogeno;74.93%;Upload Local
+2026-04-02 11:49:07;simulado_d14_252.jpg;Folha_Saudavel;99.83%;Upload Local
+2026-04-02 10:01:07;simulado_d14_548.jpg;Folha_Saudavel;96.42%;Upload Local
+2026-04-02 12:08:07;simulado_d14_737.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);84.66%;Webcam
+2026-04-02 16:16:07;simulado_d14_341.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);81.7%;Webcam
+2026-04-03 15:27:07;simulado_d15_176.jpg;Outro_Patogeno;82.64%;Upload Local
+2026-04-03 08:04:07;simulado_d15_995.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);89.4%;Upload Local
+2026-04-03 10:40:07;simulado_d15_489.jpg;Folha_Saudavel;97.58%;Webcam
+2026-04-03 16:25:07;simulado_d15_132.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);80.46%;Upload Local
+2026-04-03 08:20:07;simulado_d15_178.jpg;Folha_Saudavel;93.79%;Upload Local
+2026-04-03 13:09:07;simulado_d15_276.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);75.53%;Upload Local
+2026-04-03 15:56:07;simulado_d15_278.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);87.18%;Upload Local
+2026-04-03 11:49:07;simulado_d15_982.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);72.14%;Upload Local
+2026-04-03 16:54:07;simulado_d15_381.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);74.89%;Webcam
+2026-04-03 17:43:07;simulado_d15_103.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);76.46%;Webcam
+2026-04-03 16:19:07;simulado_d15_298.jpg;Folha_Saudavel;96.65%;Upload Local
+2026-04-03 15:48:07;simulado_d15_799.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);76.53%;Webcam
+2026-04-03 10:48:07;simulado_d15_310.jpg;Folha_Saudavel;91.62%;Webcam
+2026-04-03 15:51:07;simulado_d15_379.jpg;Folha_Saudavel;99.63%;Webcam
+2026-04-03 17:42:07;simulado_d15_689.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);77.26%;Upload Local
+2026-04-03 13:50:07;simulado_d15_595.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);72.37%;Webcam
+2026-04-03 16:00:07;simulado_d15_924.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);90.93%;Webcam
+2026-04-03 11:42:07;simulado_d15_903.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);76.17%;Upload Local
+2026-04-03 13:37:07;simulado_d15_264.jpg;Folha_Saudavel;94.03%;Upload Local
+2026-04-03 14:48:07;simulado_d15_910.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);88.81%;Upload Local
+2026-04-03 08:09:07;simulado_d15_884.jpg;Folha_Saudavel;88.95%;Webcam
+2026-04-03 12:29:07;simulado_d15_134.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);77.23%;Webcam
+2026-04-03 10:59:07;simulado_d15_748.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);88.85%;Webcam
+2026-04-03 17:40:07;simulado_d15_504.jpg;Folha_Saudavel;90.09%;Webcam
+2026-04-03 13:27:07;simulado_d15_532.jpg;Outro_Patogeno;90.36%;Webcam
+2026-04-03 10:35:07;simulado_d15_969.jpg;Outro_Patogeno;78.76%;Upload Local
+2026-04-03 09:17:07;simulado_d15_117.jpg;Outro_Patogeno;85.67%;Webcam
+2026-04-03 08:13:07;simulado_d15_588.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);75.89%;Webcam
+2026-04-03 08:36:07;simulado_d15_267.jpg;Outro_Patogeno;77.94%;Upload Local
+2026-04-03 15:51:07;simulado_d15_389.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);83.7%;Upload Local
+2026-04-03 09:49:07;simulado_d15_458.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);76.56%;Upload Local
+2026-04-04 14:03:07;simulado_d16_841.jpg;Folha_Saudavel;94.51%;Webcam
+2026-04-04 17:50:07;simulado_d16_275.jpg;Folha_Saudavel;95.06%;Upload Local
+2026-04-04 08:06:07;simulado_d16_746.jpg;Folha_Saudavel;88.57%;Upload Local
+2026-04-04 11:28:07;simulado_d16_895.jpg;Folha_Saudavel;96.28%;Webcam
+2026-04-04 15:38:07;simulado_d16_215.jpg;Folha_Saudavel;90.34%;Upload Local
+2026-04-04 12:48:07;simulado_d16_802.jpg;Folha_Saudavel;90.64%;Upload Local
+2026-04-04 14:58:07;simulado_d16_629.jpg;Folha_Saudavel;93.84%;Webcam
+2026-04-04 09:43:07;simulado_d16_309.jpg;Folha_Saudavel;96.19%;Webcam
+2026-04-04 09:06:07;simulado_d16_362.jpg;Folha_Saudavel;96.64%;Upload Local
+2026-04-04 11:58:07;simulado_d16_312.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);86.62%;Upload Local
+2026-04-04 10:06:07;simulado_d16_632.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);75.18%;Webcam
+2026-04-04 09:23:07;simulado_d16_358.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);93.67%;Upload Local
+2026-04-04 17:37:07;simulado_d16_852.jpg;Folha_Saudavel;92.68%;Webcam
+2026-04-04 16:07:07;simulado_d16_555.jpg;Folha_Saudavel;89.64%;Upload Local
+2026-04-04 08:18:07;simulado_d16_837.jpg;Folha_Saudavel;96.16%;Webcam
+2026-04-04 08:59:07;simulado_d16_200.jpg;Folha_Saudavel;92.94%;Upload Local
+2026-04-04 16:28:07;simulado_d16_772.jpg;Folha_Saudavel;89.3%;Webcam
+2026-04-04 14:18:07;simulado_d16_596.jpg;Folha_Saudavel;89.33%;Webcam
+2026-04-04 08:02:07;simulado_d16_656.jpg;Folha_Saudavel;89.7%;Webcam
+2026-04-04 16:15:07;simulado_d16_173.jpg;Folha_Saudavel;96.84%;Upload Local
+2026-04-04 15:09:07;simulado_d16_414.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);89.41%;Upload Local
+2026-04-04 12:47:07;simulado_d16_320.jpg;Folha_Saudavel;93.84%;Upload Local
+2026-04-04 11:24:07;simulado_d16_522.jpg;Folha_Saudavel;95.5%;Webcam
+2026-04-04 09:39:07;simulado_d16_903.jpg;Folha_Saudavel;95.98%;Webcam
+2026-04-04 17:29:07;simulado_d16_924.jpg;Folha_Saudavel;90.34%;Upload Local
+2026-04-04 09:05:07;simulado_d16_509.jpg;Folha_Saudavel;99.77%;Webcam
+2026-04-04 14:02:07;simulado_d16_936.jpg;Folha_Saudavel;88.2%;Upload Local
+2026-04-05 17:08:07;simulado_d17_601.jpg;Folha_Saudavel;89.65%;Webcam
+2026-04-05 10:01:07;simulado_d17_202.jpg;Folha_Saudavel;96.63%;Upload Local
+2026-04-05 09:42:07;simulado_d17_272.jpg;Folha_Saudavel;97.1%;Webcam
+2026-04-05 15:09:07;simulado_d17_596.jpg;Folha_Saudavel;94.35%;Upload Local
+2026-04-05 12:32:07;simulado_d17_352.jpg;Folha_Saudavel;94.5%;Upload Local
+2026-04-05 16:03:07;simulado_d17_223.jpg;Folha_Saudavel;98.74%;Webcam
+2026-04-05 10:46:07;simulado_d17_474.jpg;Folha_Saudavel;92.61%;Upload Local
+2026-04-05 12:58:07;simulado_d17_862.jpg;Folha_Saudavel;94.44%;Webcam
+2026-04-05 17:14:07;simulado_d17_571.jpg;Folha_Saudavel;99.15%;Webcam
+2026-04-05 10:48:07;simulado_d17_514.jpg;Folha_Saudavel;95.66%;Webcam
+2026-04-05 09:28:07;simulado_d17_872.jpg;Folha_Saudavel;88.07%;Upload Local
+2026-04-05 12:39:07;simulado_d17_457.jpg;Folha_Saudavel;91.05%;Upload Local
+2026-04-05 09:30:07;simulado_d17_567.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);91.98%;Webcam
+2026-04-05 08:47:07;simulado_d17_848.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);74.83%;Webcam
+2026-04-05 09:49:07;simulado_d17_797.jpg;Folha_Saudavel;88.61%;Webcam
+2026-04-06 17:02:07;simulado_d18_545.jpg;Folha_Saudavel;93.01%;Upload Local
+2026-04-06 16:26:07;simulado_d18_117.jpg;Folha_Saudavel;96.52%;Upload Local
+2026-04-06 10:25:07;simulado_d18_154.jpg;Folha_Saudavel;98.38%;Upload Local
+2026-04-06 11:58:07;simulado_d18_146.jpg;Folha_Saudavel;98.23%;Webcam
+2026-04-06 09:59:07;simulado_d18_290.jpg;Outro_Patogeno;86.62%;Webcam
+2026-04-06 12:15:07;simulado_d18_852.jpg;Folha_Saudavel;89.68%;Webcam
+2026-04-06 09:32:07;simulado_d18_968.jpg;Folha_Saudavel;98.47%;Webcam
+2026-04-06 09:51:07;simulado_d18_740.jpg;Outro_Patogeno;79.39%;Webcam
+2026-04-06 10:24:07;simulado_d18_257.jpg;Folha_Saudavel;94.72%;Upload Local
+2026-04-06 09:28:07;simulado_d18_452.jpg;Folha_Saudavel;89.81%;Upload Local
+2026-04-06 15:33:07;simulado_d18_684.jpg;Folha_Saudavel;93.38%;Upload Local
+2026-04-06 15:33:07;simulado_d18_383.jpg;Folha_Saudavel;93.88%;Webcam
+2026-04-06 08:23:07;simulado_d18_607.jpg;Folha_Saudavel;92.96%;Webcam
+2026-04-06 15:12:07;simulado_d18_668.jpg;Folha_Saudavel;93.88%;Upload Local
+2026-04-06 14:28:07;simulado_d18_471.jpg;Folha_Saudavel;94.34%;Webcam
+2026-04-06 16:23:07;simulado_d18_281.jpg;Folha_Saudavel;94.13%;Upload Local
+2026-04-06 11:47:07;simulado_d18_860.jpg;Folha_Saudavel;93.05%;Webcam
+2026-04-06 09:39:07;simulado_d18_607.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);92.43%;Webcam
+2026-04-06 10:18:07;simulado_d18_185.jpg;Folha_Saudavel;94.64%;Upload Local
+2026-04-06 12:06:07;simulado_d18_102.jpg;Folha_Saudavel;95.5%;Webcam
+2026-04-06 10:43:07;simulado_d18_909.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);75.92%;Webcam
+2026-04-06 17:37:07;simulado_d18_726.jpg;Folha_Saudavel;90.68%;Upload Local
+2026-04-06 14:42:07;simulado_d18_912.jpg;Folha_Saudavel;93.2%;Upload Local
+2026-04-06 15:37:07;simulado_d18_584.jpg;Folha_Saudavel;95.22%;Webcam
+2026-04-06 17:08:07;simulado_d18_999.jpg;Folha_Saudavel;99.8%;Upload Local
+2026-04-06 17:34:07;simulado_d18_869.jpg;Folha_Saudavel;96.03%;Upload Local
+2026-04-06 11:34:07;simulado_d18_350.jpg;Folha_Saudavel;89.14%;Upload Local
+2026-04-06 13:08:07;simulado_d18_821.jpg;Folha_Saudavel;96.3%;Upload Local
+2026-04-06 08:52:07;simulado_d18_451.jpg;Folha_Saudavel;89.03%;Upload Local
+2026-04-06 13:46:07;simulado_d18_427.jpg;Folha_Saudavel;99.73%;Upload Local
+2026-04-06 15:24:07;simulado_d18_926.jpg;Folha_Saudavel;93.07%;Upload Local
+2026-04-06 14:22:07;simulado_d18_436.jpg;Folha_Saudavel;97.65%;Webcam
+2026-04-06 16:21:07;simulado_d18_611.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);89.89%;Webcam
+2026-04-06 15:54:07;simulado_d18_579.jpg;Outro_Patogeno;85.39%;Upload Local
+2026-04-06 13:01:07;simulado_d18_362.jpg;Folha_Saudavel;95.02%;Upload Local
+2026-04-07 16:21:07;simulado_d19_162.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);73.24%;Webcam
+2026-04-07 16:03:07;simulado_d19_427.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);76.56%;Webcam
+2026-04-07 13:32:07;simulado_d19_961.jpg;Folha_Saudavel;98.75%;Upload Local
+2026-04-07 17:43:07;simulado_d19_543.jpg;Folha_Saudavel;95.33%;Webcam
+2026-04-07 08:50:07;simulado_d19_533.jpg;Folha_Saudavel;98.63%;Webcam
+2026-04-07 16:30:07;simulado_d19_202.jpg;Folha_Saudavel;95.13%;Webcam
+2026-04-07 08:32:07;simulado_d19_353.jpg;Folha_Saudavel;90.7%;Webcam
+2026-04-07 14:16:07;simulado_d19_144.jpg;Folha_Saudavel;96.91%;Webcam
+2026-04-07 08:49:07;simulado_d19_563.jpg;Folha_Saudavel;90.57%;Upload Local
+2026-04-07 11:22:07;simulado_d19_167.jpg;Folha_Saudavel;92.31%;Webcam
+2026-04-07 17:38:07;simulado_d19_836.jpg;Folha_Saudavel;92.83%;Upload Local
+2026-04-07 17:16:07;simulado_d19_336.jpg;Folha_Saudavel;94.29%;Upload Local
+2026-04-07 17:38:07;simulado_d19_638.jpg;Folha_Saudavel;91.19%;Webcam
+2026-04-07 12:58:07;simulado_d19_619.jpg;Folha_Saudavel;88.93%;Webcam
+2026-04-07 14:52:07;simulado_d19_669.jpg;Folha_Saudavel;91.3%;Webcam
+2026-04-08 09:03:07;simulado_d20_487.jpg;Outro_Patogeno;77.3%;Webcam
+2026-04-08 11:25:07;simulado_d20_587.jpg;Folha_Saudavel;98.13%;Upload Local
+2026-04-08 17:10:07;simulado_d20_510.jpg;Folha_Saudavel;92.25%;Webcam
+2026-04-08 12:00:07;simulado_d20_976.jpg;Folha_Saudavel;90.65%;Webcam
+2026-04-08 12:40:07;simulado_d20_434.jpg;Folha_Saudavel;96.92%;Webcam
+2026-04-08 16:02:07;simulado_d20_334.jpg;Folha_Saudavel;99.19%;Webcam
+2026-04-08 17:24:07;simulado_d20_620.jpg;Folha_Saudavel;96.66%;Webcam
+2026-04-08 11:07:07;simulado_d20_260.jpg;Folha_Saudavel;91.37%;Webcam
+2026-04-08 09:54:07;simulado_d20_358.jpg;Outro_Patogeno;88.32%;Upload Local
+2026-04-08 13:51:07;simulado_d20_290.jpg;Folha_Saudavel;91.03%;Upload Local
+2026-04-08 15:43:07;simulado_d20_855.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);77.7%;Upload Local
+2026-04-08 08:09:07;simulado_d20_367.jpg;Folha_Saudavel;91.44%;Upload Local
+2026-04-08 08:58:07;simulado_d20_353.jpg;Folha_Saudavel;98.74%;Webcam
+2026-04-08 13:05:07;simulado_d20_111.jpg;Folha_Saudavel;93.55%;Upload Local
+2026-04-08 09:59:07;simulado_d20_420.jpg;Folha_Saudavel;95.07%;Upload Local
+2026-04-08 15:04:07;simulado_d20_153.jpg;Folha_Saudavel;89.77%;Upload Local
+2026-04-08 14:38:07;simulado_d20_798.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);78.34%;Webcam
+2026-04-08 17:43:07;simulado_d20_611.jpg;Folha_Saudavel;99.53%;Upload Local
+2026-04-08 11:57:07;simulado_d20_824.jpg;Folha_Saudavel;92.19%;Upload Local
+2026-04-08 13:46:07;simulado_d20_478.jpg;Folha_Saudavel;93.78%;Upload Local
+2026-04-08 10:57:07;simulado_d20_878.jpg;Folha_Saudavel;95.08%;Upload Local
+2026-04-09 12:50:07;simulado_d21_739.jpg;Folha_Saudavel;97.74%;Upload Local
+2026-04-09 15:00:07;simulado_d21_651.jpg;Folha_Saudavel;89.93%;Upload Local
+2026-04-09 12:11:07;simulado_d21_333.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);85.45%;Webcam
+2026-04-09 13:49:07;simulado_d21_946.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);76.62%;Webcam
+2026-04-09 14:07:07;simulado_d21_768.jpg;Folha_Saudavel;95.18%;Webcam
+2026-04-09 10:09:07;simulado_d21_700.jpg;Folha_Saudavel;91.76%;Webcam
+2026-04-09 08:57:07;simulado_d21_527.jpg;Folha_Saudavel;97.22%;Webcam
+2026-04-09 12:26:07;simulado_d21_717.jpg;Folha_Saudavel;89.6%;Webcam
+2026-04-09 17:36:07;simulado_d21_715.jpg;Folha_Saudavel;92.01%;Upload Local
+2026-04-09 15:39:07;simulado_d21_135.jpg;Folha_Saudavel;93.36%;Webcam
+2026-04-09 10:32:07;simulado_d21_910.jpg;Folha_Saudavel;98.25%;Upload Local
+2026-04-09 12:38:07;simulado_d21_851.jpg;Folha_Saudavel;93.28%;Webcam
+2026-04-09 10:11:07;simulado_d21_835.jpg;Folha_Saudavel;91.01%;Webcam
+2026-04-09 08:40:07;simulado_d21_105.jpg;Folha_Saudavel;99.09%;Webcam
+2026-04-09 12:37:07;simulado_d21_356.jpg;Folha_Saudavel;93.81%;Upload Local
+2026-04-09 14:57:07;simulado_d21_386.jpg;Folha_Saudavel;88.83%;Upload Local
+2026-04-09 15:39:07;simulado_d21_630.jpg;Folha_Saudavel;95.81%;Upload Local
+2026-04-09 12:24:07;simulado_d21_630.jpg;Outro_Patogeno;73.18%;Upload Local
+2026-04-09 08:44:07;simulado_d21_448.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);90.88%;Webcam
+2026-04-09 16:08:07;simulado_d21_332.jpg;Folha_Saudavel;92.55%;Upload Local
+2026-04-09 13:38:07;simulado_d21_310.jpg;Folha_Saudavel;98.59%;Webcam
+2026-04-09 09:51:07;simulado_d21_834.jpg;Folha_Saudavel;89.68%;Webcam
+2026-04-09 10:08:07;simulado_d21_991.jpg;Folha_Saudavel;97.51%;Upload Local
+2026-04-09 17:05:07;simulado_d21_953.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);81.19%;Upload Local
+2026-04-09 17:20:07;simulado_d21_255.jpg;Folha_Saudavel;95.24%;Webcam
+2026-04-09 15:54:07;simulado_d21_960.jpg;Outro_Patogeno;77.16%;Webcam
+2026-04-09 09:24:07;simulado_d21_862.jpg;Folha_Saudavel;90.91%;Upload Local
+2026-04-09 08:03:07;simulado_d21_261.jpg;Folha_Saudavel;98.92%;Webcam
+2026-04-09 10:58:07;simulado_d21_883.jpg;Folha_Saudavel;90.5%;Upload Local
+2026-04-09 12:46:07;simulado_d21_559.jpg;Folha_Saudavel;90.03%;Upload Local
+2026-04-09 12:20:07;simulado_d21_174.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);85.99%;Webcam
+2026-04-10 14:17:07;simulado_d22_264.jpg;Folha_Saudavel;93.23%;Upload Local
+2026-04-10 13:45:07;simulado_d22_878.jpg;Folha_Saudavel;92.78%;Upload Local
+2026-04-10 17:55:07;simulado_d22_808.jpg;Folha_Saudavel;95.58%;Webcam
+2026-04-10 12:05:07;simulado_d22_565.jpg;Folha_Saudavel;92.02%;Webcam
+2026-04-10 13:21:07;simulado_d22_945.jpg;Folha_Saudavel;95.51%;Upload Local
+2026-04-10 14:30:07;simulado_d22_916.jpg;Folha_Saudavel;98.19%;Webcam
+2026-04-10 09:40:07;simulado_d22_710.jpg;Folha_Saudavel;88.14%;Upload Local
+2026-04-10 13:22:07;simulado_d22_593.jpg;Folha_Saudavel;94.61%;Upload Local
+2026-04-10 09:17:07;simulado_d22_841.jpg;Folha_Saudavel;91.34%;Upload Local
+2026-04-10 17:26:07;simulado_d22_197.jpg;Outro_Patogeno;83.22%;Upload Local
+2026-04-10 10:43:07;simulado_d22_678.jpg;Folha_Saudavel;97.85%;Upload Local
+2026-04-10 16:47:07;simulado_d22_318.jpg;Folha_Saudavel;99.25%;Webcam
+2026-04-10 17:54:07;simulado_d22_977.jpg;Folha_Saudavel;97.65%;Webcam
+2026-04-10 10:20:07;simulado_d22_183.jpg;Folha_Saudavel;93.95%;Upload Local
+2026-04-10 09:11:07;simulado_d22_980.jpg;Folha_Saudavel;92.95%;Webcam
+2026-04-10 16:12:07;simulado_d22_579.jpg;Folha_Saudavel;91.85%;Webcam
+2026-04-10 11:09:07;simulado_d22_654.jpg;Folha_Saudavel;92.96%;Upload Local
+2026-04-10 09:40:07;simulado_d22_433.jpg;Folha_Saudavel;88.06%;Upload Local
+2026-04-10 10:17:07;simulado_d22_610.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);75.03%;Upload Local
+2026-04-10 15:15:07;simulado_d22_357.jpg;Folha_Saudavel;89.49%;Upload Local
+2026-04-10 09:56:07;simulado_d22_566.jpg;Folha_Saudavel;88.49%;Upload Local
+2026-04-10 13:09:07;simulado_d22_265.jpg;Folha_Saudavel;91.16%;Webcam
+2026-04-10 09:49:07;simulado_d22_105.jpg;Folha_Saudavel;92.94%;Upload Local
+2026-04-10 10:57:07;simulado_d22_311.jpg;Folha_Saudavel;98.88%;Webcam
+2026-04-10 14:38:07;simulado_d22_979.jpg;Folha_Saudavel;92.85%;Upload Local
+2026-04-10 17:55:07;simulado_d22_473.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);78.98%;Webcam
+2026-04-10 17:55:07;simulado_d22_642.jpg;Folha_Saudavel;95.81%;Webcam
+2026-04-10 16:53:07;simulado_d22_833.jpg;Folha_Saudavel;96.41%;Upload Local
+2026-04-10 10:30:07;simulado_d22_941.jpg;Folha_Saudavel;98.07%;Webcam
+2026-04-10 16:48:07;simulado_d22_834.jpg;Folha_Saudavel;95.05%;Upload Local
+2026-04-11 12:28:07;simulado_d23_515.jpg;Folha_Saudavel;99.52%;Upload Local
+2026-04-11 09:11:07;simulado_d23_496.jpg;Folha_Saudavel;89.24%;Upload Local
+2026-04-11 09:19:07;simulado_d23_108.jpg;Folha_Saudavel;91.17%;Webcam
+2026-04-11 13:23:07;simulado_d23_970.jpg;Folha_Saudavel;96.58%;Webcam
+2026-04-11 14:25:07;simulado_d23_180.jpg;Folha_Saudavel;95.68%;Upload Local
+2026-04-11 15:05:07;simulado_d23_563.jpg;Folha_Saudavel;94.96%;Webcam
+2026-04-11 13:05:07;simulado_d23_454.jpg;Folha_Saudavel;94.37%;Webcam
+2026-04-11 12:35:07;simulado_d23_615.jpg;Folha_Saudavel;98.77%;Upload Local
+2026-04-11 14:50:07;simulado_d23_691.jpg;Folha_Saudavel;91.83%;Upload Local
+2026-04-11 17:09:07;simulado_d23_507.jpg;Folha_Saudavel;91.23%;Webcam
+2026-04-11 16:02:07;simulado_d23_566.jpg;Folha_Saudavel;89.76%;Webcam
+2026-04-11 11:50:07;simulado_d23_399.jpg;Folha_Saudavel;98.32%;Webcam
+2026-04-11 13:13:07;simulado_d23_547.jpg;Folha_Saudavel;96.2%;Webcam
+2026-04-11 16:22:07;simulado_d23_240.jpg;Folha_Saudavel;91.55%;Upload Local
+2026-04-11 15:19:07;simulado_d23_358.jpg;Folha_Saudavel;96.65%;Webcam
+2026-04-11 10:55:07;simulado_d23_644.jpg;Folha_Saudavel;98.62%;Upload Local
+2026-04-11 15:17:07;simulado_d23_927.jpg;Outro_Patogeno;75.43%;Upload Local
+2026-04-11 15:58:07;simulado_d23_581.jpg;Folha_Saudavel;98.6%;Upload Local
+2026-04-11 11:32:07;simulado_d23_601.jpg;Folha_Saudavel;89.17%;Upload Local
+2026-04-11 10:20:07;simulado_d23_776.jpg;Folha_Saudavel;97.16%;Webcam
+2026-04-11 14:48:07;simulado_d23_923.jpg;Folha_Saudavel;99.65%;Upload Local
+2026-04-12 13:04:07;simulado_d24_927.jpg;Folha_Saudavel;97.82%;Webcam
+2026-04-12 16:43:07;simulado_d24_985.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);85.95%;Upload Local
+2026-04-12 12:29:07;simulado_d24_437.jpg;Folha_Saudavel;98.74%;Upload Local
+2026-04-12 09:06:07;simulado_d24_837.jpg;Folha_Saudavel;92.9%;Webcam
+2026-04-12 12:03:07;simulado_d24_110.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);93.51%;Upload Local
+2026-04-12 12:10:07;simulado_d24_631.jpg;Outro_Patogeno;88.16%;Upload Local
+2026-04-12 11:05:07;simulado_d24_306.jpg;Folha_Saudavel;88.89%;Webcam
+2026-04-12 10:19:07;simulado_d24_834.jpg;Folha_Saudavel;94.87%;Webcam
+2026-04-12 15:46:07;simulado_d24_877.jpg;Folha_Saudavel;94.59%;Upload Local
+2026-04-12 11:51:07;simulado_d24_875.jpg;Folha_Saudavel;98.62%;Webcam
+2026-04-12 11:49:07;simulado_d24_104.jpg;Folha_Saudavel;91.14%;Upload Local
+2026-04-12 11:40:07;simulado_d24_425.jpg;Folha_Saudavel;97.26%;Webcam
+2026-04-12 15:03:07;simulado_d24_891.jpg;Folha_Saudavel;91.87%;Upload Local
+2026-04-12 15:03:07;simulado_d24_820.jpg;Folha_Saudavel;88.4%;Upload Local
+2026-04-12 17:05:07;simulado_d24_567.jpg;Folha_Saudavel;88.62%;Upload Local
+2026-04-12 08:23:07;simulado_d24_976.jpg;Folha_Saudavel;92.68%;Webcam
+2026-04-12 08:25:07;simulado_d24_587.jpg;Outro_Patogeno;77.36%;Webcam
+2026-04-12 15:53:07;simulado_d24_808.jpg;Folha_Saudavel;99.63%;Webcam
+2026-04-12 17:48:07;simulado_d24_646.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);78.97%;Webcam
+2026-04-12 10:17:07;simulado_d24_867.jpg;Folha_Saudavel;96.49%;Upload Local
+2026-04-12 15:36:07;simulado_d24_707.jpg;Folha_Saudavel;90.79%;Upload Local
+2026-04-12 15:39:07;simulado_d24_272.jpg;Folha_Saudavel;91.58%;Webcam
+2026-04-12 14:26:07;simulado_d24_928.jpg;Folha_Saudavel;91.59%;Webcam
+2026-04-12 14:05:07;simulado_d24_967.jpg;Folha_Saudavel;95.52%;Upload Local
+2026-04-12 13:37:07;simulado_d24_331.jpg;Folha_Saudavel;97.71%;Upload Local
+2026-04-12 10:38:07;simulado_d24_997.jpg;Folha_Saudavel;91.9%;Upload Local
+2026-04-13 11:33:07;simulado_d25_997.jpg;Folha_Saudavel;94.34%;Upload Local
+2026-04-13 17:34:07;simulado_d25_519.jpg;Outro_Patogeno;89.78%;Upload Local
+2026-04-13 12:47:07;simulado_d25_804.jpg;Folha_Saudavel;97.1%;Upload Local
+2026-04-13 17:48:07;simulado_d25_339.jpg;Folha_Saudavel;94.15%;Webcam
+2026-04-13 09:11:07;simulado_d25_348.jpg;Folha_Saudavel;96.76%;Upload Local
+2026-04-13 14:23:07;simulado_d25_796.jpg;Outro_Patogeno;91.17%;Webcam
+2026-04-13 15:12:07;simulado_d25_519.jpg;Folha_Saudavel;92.21%;Upload Local
+2026-04-13 14:38:07;simulado_d25_188.jpg;Folha_Saudavel;89.84%;Webcam
+2026-04-13 09:01:07;simulado_d25_838.jpg;Folha_Saudavel;98.95%;Webcam
+2026-04-13 14:05:07;simulado_d25_258.jpg;Folha_Saudavel;92.95%;Upload Local
+2026-04-13 16:25:07;simulado_d25_901.jpg;Folha_Saudavel;88.34%;Webcam
+2026-04-13 08:53:07;simulado_d25_444.jpg;Folha_Saudavel;91.6%;Webcam
+2026-04-13 14:29:07;simulado_d25_967.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);72.76%;Webcam
+2026-04-13 17:48:07;simulado_d25_874.jpg;Folha_Saudavel;89.43%;Webcam
+2026-04-13 09:15:07;simulado_d25_514.jpg;Folha_Saudavel;95.67%;Webcam
+2026-04-13 14:39:07;simulado_d25_662.jpg;Folha_Saudavel;99.87%;Upload Local
+2026-04-13 12:55:07;simulado_d25_280.jpg;Folha_Saudavel;97.4%;Upload Local
+2026-04-13 14:06:07;simulado_d25_882.jpg;Folha_Saudavel;95.84%;Webcam
+2026-04-13 11:55:07;simulado_d25_867.jpg;Folha_Saudavel;88.14%;Upload Local
+2026-04-14 17:16:07;simulado_d26_157.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);78.24%;Webcam
+2026-04-14 15:59:07;simulado_d26_819.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);87.43%;Webcam
+2026-04-14 08:58:07;simulado_d26_487.jpg;Folha_Saudavel;93.66%;Webcam
+2026-04-14 10:29:07;simulado_d26_609.jpg;Folha_Saudavel;95.94%;Webcam
+2026-04-14 12:34:07;simulado_d26_470.jpg;Folha_Saudavel;93.33%;Upload Local
+2026-04-14 17:50:07;simulado_d26_243.jpg;Folha_Saudavel;99.74%;Upload Local
+2026-04-14 11:43:07;simulado_d26_795.jpg;Folha_Saudavel;93.21%;Webcam
+2026-04-14 13:51:07;simulado_d26_161.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);84.5%;Webcam
+2026-04-14 12:44:07;simulado_d26_530.jpg;Outro_Patogeno;78.85%;Webcam
+2026-04-14 15:32:07;simulado_d26_664.jpg;Folha_Saudavel;99.73%;Upload Local
+2026-04-14 14:20:07;simulado_d26_895.jpg;Folha_Saudavel;94.77%;Upload Local
+2026-04-14 14:47:07;simulado_d26_935.jpg;Folha_Saudavel;96.28%;Upload Local
+2026-04-14 14:24:07;simulado_d26_211.jpg;Folha_Saudavel;88.25%;Webcam
+2026-04-14 09:46:07;simulado_d26_312.jpg;Folha_Saudavel;95.58%;Upload Local
+2026-04-14 10:46:07;simulado_d26_693.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);84.41%;Webcam
+2026-04-14 10:51:07;simulado_d26_867.jpg;Folha_Saudavel;93.42%;Webcam
+2026-04-14 16:51:07;simulado_d26_577.jpg;Folha_Saudavel;94.02%;Upload Local
+2026-04-14 08:33:07;simulado_d26_452.jpg;Folha_Saudavel;95.38%;Webcam
+2026-04-14 13:24:07;simulado_d26_908.jpg;Folha_Saudavel;89.92%;Webcam
+2026-04-14 11:30:07;simulado_d26_185.jpg;Folha_Saudavel;98.92%;Webcam
+2026-04-14 14:10:07;simulado_d26_614.jpg;Folha_Saudavel;97.91%;Upload Local
+2026-04-14 12:01:07;simulado_d26_810.jpg;Folha_Saudavel;93.88%;Webcam
+2026-04-14 12:58:07;simulado_d26_810.jpg;Folha_Saudavel;95.6%;Upload Local
+2026-04-14 14:47:07;simulado_d26_524.jpg;Folha_Saudavel;99.31%;Webcam
+2026-04-14 14:50:07;simulado_d26_747.jpg;Folha_Saudavel;94.19%;Upload Local
+2026-04-14 09:23:07;simulado_d26_580.jpg;Folha_Saudavel;94.84%;Webcam
+2026-04-14 08:18:07;simulado_d26_378.jpg;Folha_Saudavel;89.26%;Upload Local
+2026-04-14 12:35:07;simulado_d26_832.jpg;Folha_Saudavel;90.51%;Upload Local
+2026-04-14 10:11:07;simulado_d26_522.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);76.76%;Upload Local
+2026-04-14 11:28:07;simulado_d26_494.jpg;Folha_Saudavel;92.08%;Upload Local
+2026-04-14 14:46:07;simulado_d26_756.jpg;Folha_Saudavel;97.9%;Upload Local
+2026-04-15 11:50:07;simulado_d27_895.jpg;Folha_Saudavel;89.31%;Upload Local
+2026-04-15 10:00:07;simulado_d27_352.jpg;Folha_Saudavel;90.55%;Webcam
+2026-04-15 10:33:07;simulado_d27_204.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);88.37%;Upload Local
+2026-04-15 16:42:07;simulado_d27_232.jpg;Folha_Saudavel;98.16%;Upload Local
+2026-04-15 09:53:07;simulado_d27_870.jpg;Outro_Patogeno;76.18%;Webcam
+2026-04-15 09:02:07;simulado_d27_947.jpg;Folha_Saudavel;98.49%;Upload Local
+2026-04-15 12:58:07;simulado_d27_139.jpg;Folha_Saudavel;99.28%;Webcam
+2026-04-15 14:54:07;simulado_d27_498.jpg;Folha_Saudavel;88.39%;Upload Local
+2026-04-15 13:51:07;simulado_d27_734.jpg;Folha_Saudavel;89.1%;Webcam
+2026-04-15 16:16:07;simulado_d27_459.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);76.06%;Upload Local
+2026-04-15 16:24:07;simulado_d27_459.jpg;Folha_Saudavel;97.52%;Webcam
+2026-04-15 16:34:07;simulado_d27_949.jpg;Folha_Saudavel;93.14%;Upload Local
+2026-04-15 14:31:07;simulado_d27_396.jpg;Outro_Patogeno;77.76%;Upload Local
+2026-04-15 10:53:07;simulado_d27_735.jpg;Outro_Patogeno;83.53%;Webcam
+2026-04-15 10:00:07;simulado_d27_433.jpg;Folha_Saudavel;88.07%;Webcam
+2026-04-15 08:49:07;simulado_d27_598.jpg;Folha_Saudavel;97.93%;Upload Local
+2026-04-15 09:32:07;simulado_d27_318.jpg;Folha_Saudavel;99.78%;Upload Local
+2026-04-15 11:53:07;simulado_d27_854.jpg;Folha_Saudavel;97.88%;Upload Local
+2026-04-15 12:20:07;simulado_d27_942.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);88.43%;Webcam
+2026-04-15 08:41:07;simulado_d27_343.jpg;Folha_Saudavel;98.2%;Webcam
+2026-04-15 08:40:07;simulado_d27_140.jpg;Folha_Saudavel;88.99%;Webcam
+2026-04-15 10:53:07;simulado_d27_623.jpg;Folha_Saudavel;92.39%;Webcam
+2026-04-15 16:00:07;simulado_d27_576.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);74.6%;Webcam
+2026-04-15 08:36:07;simulado_d27_401.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);88.58%;Upload Local
+2026-04-15 15:30:07;simulado_d27_481.jpg;Folha_Saudavel;88.02%;Webcam
+2026-04-15 17:45:07;simulado_d27_345.jpg;Folha_Saudavel;97.33%;Upload Local
+2026-04-16 14:13:07;simulado_d28_717.jpg;Folha_Saudavel;94.01%;Upload Local
+2026-04-16 15:15:07;simulado_d28_723.jpg;Folha_Saudavel;91.99%;Webcam
+2026-04-16 16:49:07;simulado_d28_403.jpg;Folha_Saudavel;96.5%;Webcam
+2026-04-16 10:20:07;simulado_d28_558.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);87.62%;Upload Local
+2026-04-16 13:42:07;simulado_d28_119.jpg;Folha_Saudavel;89.01%;Webcam
+2026-04-16 16:42:07;simulado_d28_484.jpg;Folha_Saudavel;90.98%;Upload Local
+2026-04-16 11:16:07;simulado_d28_631.jpg;Folha_Saudavel;97.85%;Upload Local
+2026-04-16 12:23:07;simulado_d28_920.jpg;Outro_Patogeno;83.54%;Webcam
+2026-04-16 10:58:07;simulado_d28_423.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);78.9%;Upload Local
+2026-04-16 10:24:07;simulado_d28_655.jpg;Folha_Saudavel;91.93%;Upload Local
+2026-04-16 14:01:07;simulado_d28_393.jpg;Folha_Saudavel;92.84%;Webcam
+2026-04-16 13:47:07;simulado_d28_832.jpg;Folha_Saudavel;90.07%;Webcam
+2026-04-16 10:27:07;simulado_d28_878.jpg;Folha_Saudavel;98.39%;Upload Local
+2026-04-16 12:22:07;simulado_d28_820.jpg;Folha_Saudavel;99.71%;Upload Local
+2026-04-16 12:37:07;simulado_d28_145.jpg;Folha_Saudavel;91.8%;Webcam
+2026-04-16 12:53:07;simulado_d28_600.jpg;Folha_Saudavel;96.46%;Webcam
+2026-04-16 11:29:07;simulado_d28_486.jpg;Folha_Saudavel;93.71%;Webcam
+2026-04-16 14:13:07;simulado_d28_897.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);93.07%;Webcam
+2026-04-16 09:05:07;simulado_d28_849.jpg;Folha_Saudavel;88.2%;Webcam
+2026-04-16 08:12:07;simulado_d28_927.jpg;Folha_Saudavel;89.42%;Webcam
+2026-04-16 12:42:07;simulado_d28_102.jpg;Folha_Saudavel;89.53%;Upload Local
+2026-04-16 10:25:07;simulado_d28_541.jpg;Folha_Saudavel;91.74%;Webcam
+2026-04-17 17:16:07;simulado_d29_483.jpg;Outro_Patogeno;93.75%;Upload Local
+2026-04-17 09:48:07;simulado_d29_260.jpg;Folha_Saudavel;89.32%;Upload Local
+2026-04-17 12:10:07;simulado_d29_313.jpg;Folha_Saudavel;92.86%;Upload Local
+2026-04-17 14:40:07;simulado_d29_928.jpg;Folha_Saudavel;98.68%;Webcam
+2026-04-17 16:45:07;simulado_d29_584.jpg;Folha_Saudavel;96.49%;Upload Local
+2026-04-17 12:07:07;simulado_d29_151.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);77.65%;Webcam
+2026-04-17 09:01:07;simulado_d29_113.jpg;Folha_Saudavel;88.51%;Webcam
+2026-04-17 15:18:07;simulado_d29_239.jpg;Folha_Saudavel;99.02%;Webcam
+2026-04-17 14:25:07;simulado_d29_667.jpg;Folha_Saudavel;92.27%;Upload Local
+2026-04-17 11:08:07;simulado_d29_452.jpg;Folha_Saudavel;94.62%;Webcam
+2026-04-17 16:57:07;simulado_d29_464.jpg;Folha_Saudavel;96.29%;Upload Local
+2026-04-17 16:51:07;simulado_d29_509.jpg;Folha_Saudavel;90.02%;Upload Local
+2026-04-17 08:51:07;simulado_d29_360.jpg;Folha_Saudavel;95.52%;Upload Local
+2026-04-17 09:00:07;simulado_d29_779.jpg;Folha_Saudavel;96.44%;Upload Local
+2026-04-17 08:20:07;simulado_d29_838.jpg;Folha_Saudavel;98.11%;Upload Local
+2026-04-17 15:49:07;simulado_d29_159.jpg;Folha_Saudavel;90.6%;Webcam
+2026-04-17 08:39:07;simulado_d29_295.jpg;Outro_Patogeno;84.27%;Upload Local
+2026-04-17 09:39:07;simulado_d29_399.jpg;Folha_Saudavel;94.21%;Upload Local
+2026-04-17 15:46:07;simulado_d29_922.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);92.42%;Webcam
+2026-04-17 15:32:07;simulado_d29_423.jpg;Folha_Saudavel;94.51%;Webcam
+2026-04-17 14:30:07;simulado_d29_699.jpg;Folha_Saudavel;92.3%;Webcam
+2026-04-17 12:16:07;simulado_d29_484.jpg;Folha_Saudavel;93.68%;Webcam
+2026-04-17 13:09:07;simulado_d29_893.jpg;Folha_Saudavel;89.67%;Upload Local
+2026-04-17 11:54:07;simulado_d29_966.jpg;Doença_Detectada (Ex: Ferrugem/Mancha);87.76%;Upload Local
