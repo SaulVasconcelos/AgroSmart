@@ -1,6 +1,6 @@
 # Matriz de rastreabilidade — Fase 7
 
-Situação em 18/11/2026 (horário de Brasília). As colunas são independentes:
+Situação em 19/11/2026 (horário de Brasília). As colunas são independentes:
 
 - **Implementado:** existe no código ou em arquivo;
 - **Executado:** rodou de verdade;
@@ -28,8 +28,8 @@ Situação em 18/11/2026 (horário de Brasília). As colunas são independentes:
 | 5 | Exemplo de event log | [rastreio.py](02_plataforma/agrosmart/rastreio.py), [contrato](04_processos/contrato_event_log.md) | Sim | [event_log.csv](04_processos/coleta/event_log.csv) (600 eventos / 40 casos) | — |
 | 5 | Representação do processo | [analisar_event_log.py](04_processos/analisar_event_log.py) | Sim | [processo_observado.svg](04_processos/resultado/processo_observado.svg), [processo_esperado.svg](04_processos/resultado/processo_esperado.svg) | — |
 | 5 | Análise com insights (gargalos, variações, melhorias) | [ANALISE_PROCESSO.md](04_processos/ANALISE_PROCESSO.md) | Sim, incluindo o experimento de escala | [metricas_processo.md](04_processos/resultado/metricas_processo.md), [escala_pipeline.csv](04_processos/resultado/escala_pipeline.csv) | — |
-| 5 | Vídeo final de 5–8 min | Roteiro cena a cena: [roteiro_video_tecnico.md](05_apresentacao/roteiro_video_tecnico.md) | Passos da interface ensaiados na versão final | — | **PENDENTE: gravação pela equipe** |
-| 6 | Apresentação (slides): problema, solução, diferencial, público, proposta de valor | Deck de 11 slides ([05_apresentacao/LEIA_ME.md](05_apresentacao/LEIA_ME.md)), com a origem de cada afirmação | Telas capturadas da versão final | [capturas_pitch/](05_apresentacao/capturas_pitch/registro.json) | **PENDENTE: exportação do arquivo (.pptx ou .pdf) para `05_apresentacao/`** |
+| 5 | Vídeo final de 5–8 min | Roteiro cena a cena: [roteiro_video_tecnico.md](05_apresentacao/roteiro_video_tecnico.md); como foi gravado: [video_tecnico/LEIA_ME.md](05_apresentacao/video_tecnico/LEIA_ME.md) | Sim: gravação da plataforma em execução (container, navegador e terminal reais), com narração gerada por IA, dentro do limite de 5 a 8 min. O container da gravação usa a base substituta | [video_tecnico_agrosmart.mp4](05_apresentacao/video_tecnico/video_tecnico_agrosmart.mp4) | — |
+| 6 | Apresentação (slides): problema, solução, diferencial, público, proposta de valor | Deck de 11 slides, aprovado pela equipe, com a origem de cada afirmação em [05_apresentacao/LEIA_ME.md](05_apresentacao/LEIA_ME.md); arquivos do deck e gerador do PDF em [slides_fonte/](05_apresentacao/slides_fonte/) | Sim: PDF gerado e conferido página a página (11 páginas, texto igual ao do deck); telas capturadas da versão final | [slides_pitch_agrosmart.pdf](05_apresentacao/slides_pitch_agrosmart.pdf), [capturas_pitch/](05_apresentacao/capturas_pitch/registro.json) | — |
 | 6 | Vídeo pitch de até 5 min | Roteiro aprovado: [roteiro_video_pitch_animado.md](05_apresentacao/roteiro_video_pitch_animado.md); projeto do filme: [video_pitch_animado/projeto/](05_apresentacao/video_pitch_animado/projeto/) | Sim: filme animado de 2 min 14 s, com narração gerada por IA, telas reais e imagens de abertura geradas por IA; duração, cortes, presença da narração e volume medidos; **assistido e aprovado pela equipe em 19/11/2026** | [video_pitch_agrosmart.mp4](05_apresentacao/video_pitch_animado/video_pitch_agrosmart.mp4), [LEIA_ME.md](05_apresentacao/video_pitch_animado/LEIA_ME.md), [conferencia/](05_apresentacao/video_pitch_animado/conferencia/) | — (a primeira versão, com voz RHVoice, foi reprovada e fica como rascunho em [video_pitch/](05_apresentacao/video_pitch/)) |
 
 ## Regressão e UX preservadas

@@ -1,0 +1,194 @@
+[
+ {
+  "cena": "c1",
+  "fala": 0,
+  "ini": 0.24,
+  "frase": "Este é o vídeo final do AgroSmart, Fase 7."
+ },
+ {
+  "cena": "c1",
+  "fala": 0,
+  "ini": 3.23,
+  "frase": "Vamos mostrar a arquitetura, a plataforma funcionando de ponta a ponta em container, a execução contínua com monitoramento, o pipeline DevSecOps e a análise do processo."
+ },
+ {
+  "cena": "c1",
+  "fala": 0,
+  "ini": 13.64,
+  "frase": "Os dados de sensores e de campo são simulados; o software e as execuções são reais."
+ },
+ {
+  "cena": "c2",
+  "fala": 0,
+  "ini": 19.05,
+  "frase": "A solução é uma aplicação única em Python, que roda em um container."
+ },
+ {
+  "cena": "c2",
+  "fala": 0,
+  "ini": 23.11,
+  "frase": "No topo estão as entradas: leituras de sensores, que são simuladas, e observações de campo, importadas em CSV."
+ },
+ {
+  "cena": "c2",
+  "fala": 0,
+  "ini": 30.36,
+  "frase": "Toda entrada é validada antes de gravar, e uma trava única garante uma escrita por vez."
+ },
+ {
+  "cena": "c2",
+  "fala": 0,
+  "ini": 35.7,
+  "frase": "O dado bruto fica na camada Raw."
+ },
+ {
+  "cena": "c2",
+  "fala": 0,
+  "ini": 37.74,
+  "frase": "A camada Trusted confere os tipos, remove duplicatas e separa o que é inválido."
+ },
+ {
+  "cena": "c2",
+  "fala": 0,
+  "ini": 42.7,
+  "frase": "O motor de regras, de R1 a R7, define a prioridade de cada leitura, e a camada Refined publica o resultado."
+ },
+ {
+  "cena": "c2",
+  "fala": 0,
+  "ini": 49.75,
+  "frase": "A saída são as APIs e o painel AgroMonitor, e quem decide o que fazer no campo é sempre uma pessoa."
+ },
+ {
+  "cena": "c2",
+  "fala": 0,
+  "ini": 55.91,
+  "frase": "À direita, cada execução gera logs e um event log, usados na análise de processo."
+ },
+ {
+  "cena": "c2",
+  "fala": 0,
+  "ini": 61.34,
+  "frase": "Embaixo fica o pipeline DevSecOps."
+ },
+ {
+  "cena": "c3",
+  "fala": 0,
+  "ini": 63.89,
+  "frase": "A plataforma sobe com um comando, docker compose up."
+ },
+ {
+  "cena": "c3",
+  "fala": 0,
+  "ini": 67.25,
+  "frase": "O container roda com um usuário sem privilégios, com o sistema de arquivos somente leitura e um volume para os dados."
+ },
+ {
+  "cena": "c3",
+  "fala": 0,
+  "ini": 73.63,
+  "frase": "O healthcheck do Docker consulta a rota de prontidão da aplicação, e por isso o container aparece como healthy."
+ },
+ {
+  "cena": "c3",
+  "fala": 0,
+  "ini": 79.38,
+  "frase": "A porta fica exposta só nesta máquina."
+ },
+ {
+  "cena": "c3",
+  "fala": 1,
+  "ini": 81.9,
+  "frase": "Um aviso: esta gravação foi feita em um ambiente sem acesso ao Docker Hub, e por isso a imagem usa uma base substituta."
+ },
+ {
+  "cena": "c3",
+  "fala": 1,
+  "ini": 88.56,
+  "frase": "Com a base oficial, Python 3.13 slim, o mesmo container foi aprovado no computador da equipe e no GitHub Actions."
+ },
+ {
+  "cena": "c4",
+  "fala": 0,
+  "ini": 96.44,
+  "frase": "Esta é a Visão Geral do AgroMonitor."
+ },
+ {
+  "cena": "c4",
+  "fala": 0,
+  "ini": 98.57,
+  "frase": "Para cada talhão, a lista de prioridades mostra a última leitura e a regra aplicada."
+ },
+ {
+  "cena": "c4",
+  "fala": 1,
+  "ini": 103.39,
+  "frase": "A entrada de dados é simulada."
+ },
+ {
+  "cena": "c4",
+  "fala": 1,
+  "ini": 105.14,
+  "frase": "Quando geramos uma leitura, o evento em JSON é validado e gravado na camada Raw, e as camadas e as regras são reprocessadas."
+ },
+ {
+  "cena": "c4",
+  "fala": 1,
+  "ini": 112.27,
+  "frase": "A auditoria mostra as contagens de cada camada."
+ },
+ {
+  "cena": "c4",
+  "fala": 2,
+  "ini": 115.22,
+  "frase": "No Talhão B, a última leitura está como indeterminada."
+ },
+ {
+  "cena": "c4",
+  "fala": 2,
+  "ini": 118.28,
+  "frase": "Não há observação de campo para hoje e, só com os sensores, o sistema não afirma que está tudo normal."
+ },
+ {
+  "cena": "c4",
+  "fala": 2,
+  "ini": 124.57,
+  "frase": "A orientação é registrar a observação."
+ },
+ {
+  "cena": "c4",
+  "fala": 3,
+  "ini": 128.0,
+  "frase": "Agora importamos a observação de campo do dia: 34% de folhas afetadas e lagarta há quatro dias."
+ },
+ {
+  "cena": "c4",
+  "fala": 4,
+  "ini": 135.69,
+  "frase": "A mesma leitura foi reavaliada."
+ },
+ {
+  "cena": "c4",
+  "fala": 4,
+  "ini": 137.99,
+  "frase": "Com mais de 30% de folhas doentes, vale a regra R2: prioridade alta e orientação de inspeção técnica, com a evidência e a justificativa na tela."
+ },
+ {
+  "cena": "c4",
+  "fala": 4,
+  "ini": 148.77,
+  "frase": "Esta é a automação baseada em decisão."
+ },
+ {
+  "cena": "c4",
+  "fala": 4,
+  "ini": 151.45,
+  "frase": "O sistema recomenda, e nenhuma ação é executada no campo."
+ },
+ {
+  "cena": "c4",
+  "fala": 5,
+  "ini": 155.56,
+  "frase": "A ocorrência também entra na Central de Alertas."
+ }
+]

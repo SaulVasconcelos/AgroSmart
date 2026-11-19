@@ -1,0 +1,75 @@
+body { font-family: 'Inter', Arial, sans-serif; color: #122923; }
+
+section { background: #F6F8F6; color: #122923; padding: 128px; display: flex; flex-direction: column; gap: 36px; counter-increment: page; }
+section.foot-pad { padding: 128px 128px 160px; }
+section.dark { background: #0C3028; color: #F6F8F6; }
+section.accent { background: #F2C66D; color: #0C3028; justify-content: center; }
+
+.display { font-family: 'Space Grotesk', Arial, sans-serif; font-size: 120px; font-weight: 700; line-height: 1.05; letter-spacing: -2px; }
+.title { font-family: 'Space Grotesk', Arial, sans-serif; font-size: 72px; font-weight: 600; line-height: 1.1; letter-spacing: -1px; color: #0C3028; }
+.h3 { font-family: 'Space Grotesk', Arial, sans-serif; font-size: 44px; font-weight: 600; line-height: 1.15; color: #0C3028; }
+.lead { font-size: 44px; line-height: 1.25; color: #3E5449; }
+.body { font-size: 30px; line-height: 1.4; color: #3E5449; }
+.small { font-size: 24px; line-height: 1.4; color: #52695E; }
+.eyebrow { font-size: 24px; font-weight: 600; letter-spacing: 3px; color: #17633F; }
+.strong { font-weight: 600; color: #0C3028; }
+
+.dark .eyebrow { color: #F2C66D; }
+.dark .lead { color: #C9DCD1; }
+.dark .small { color: #C9DCD1; }
+.dark .link { color: #F2C66D; }
+.accent .eyebrow { color: #0C3028; }
+.accent .lead { color: #0C3028; }
+
+.spacer { flex: 1; }
+.rule { width: 120px; border-top: 6px solid #F2C66D; }
+
+.foot { position: absolute; left: 128px; bottom: 64px; width: 1440px; font-size: 24px; color: #52695E; }
+.pg { position: absolute; right: 128px; bottom: 64px; width: 120px; height: 34px; text-align: right; font-size: 24px; color: #52695E; }
+.pg::after { content: counter(page); }
+
+/* Matriz de três ou quatro colunas com fio no topo */
+.matrix3 { display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 48px; row-gap: 16px; }
+.matrix4 { display: grid; grid-template-columns: repeat(4, 1fr); column-gap: 32px; row-gap: 12px; }
+.topline { border-top: 4px solid #17633F; padding-top: 28px; }
+.num { font-family: 'Space Grotesk', Arial, sans-serif; font-size: 120px; font-weight: 700; line-height: 1.05; letter-spacing: -2px; color: #0C3028; border-top: 4px solid #17633F; padding-top: 20px; }
+.quote { font-size: 30px; line-height: 1.4; font-style: italic; color: #122923; }
+
+/* Cartões pintados */
+.row { display: flex; gap: 32px; }
+.card { flex: 1; background: #FDFEFD; border: 1px solid #D9E3DC; border-radius: 12px; padding: 36px 40px; display: flex; flex-direction: column; gap: 12px; }
+.grid2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
+.gcard { background: #FDFEFD; border: 1px solid #D9E3DC; border-radius: 12px; padding: 36px 40px; display: flex; flex-direction: column; gap: 12px; }
+
+/* Fluxo */
+.flow { display: flex; gap: 20px; align-items: stretch; }
+.step { flex: 1; background: #FDFEFD; border: 1px solid #D9E3DC; border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 12px; }
+.arrow { align-self: center; width: 48px; height: 24px; background: #17633F; }
+.rules { font-size: 24px; color: #122923; }
+.rules-head { background: #E4EEE7; }
+
+/* Exemplo antes/depois */
+.stack { display: flex; flex-direction: column; gap: 14px; }
+.pair { display: flex; gap: 48px; align-items: stretch; }
+.state { flex: 1; background: #FDFEFD; border: 1px solid #D9E3DC; border-radius: 12px; padding: 30px 32px; display: flex; flex-direction: column; gap: 12px; }
+.shot { border: 1px solid #C1D9CB; border-radius: 12px; box-shadow: 0 8px 24px rgba(12, 48, 40, 0.12); background: #FDFEFD; }
+.between { display: flex; gap: 16px; align-items: center; }
+.down { width: 22px; height: 40px; background: #17633F; }
+.between-text { font-size: 24px; font-weight: 600; color: #17633F; }
+.pill { font-size: 24px; font-weight: 600; padding: 6px 16px; border-radius: 8px; align-self: flex-start; }
+.pill-nd { background: #ECEFF0; color: #4D555A; }
+.pill-alta { background: #FBE2DF; color: #923D33; }
+
+/* Duas colunas com tela */
+.split { display: flex; gap: 64px; align-items: flex-start; }
+.col-text { width: 620px; display: flex; flex-direction: column; gap: 36px; }
+.col-shot { flex: 1; display: flex; flex-direction: column; gap: 14px; }
+.points { font-size: 30px; line-height: 1.4; color: #122923; }
+
+/* Escopo */
+.scope { flex: 1; background: #FDFEFD; border: 1px solid #D9E3DC; border-radius: 12px; padding: 36px 40px; display: flex; flex-direction: column; gap: 14px; }
+.scope-road { flex: 1; background: #EEF2EF; border: 1px dashed #9DB3A7; border-radius: 12px; padding: 36px 40px; display: flex; flex-direction: column; gap: 14px; }
+.tag { font-size: 24px; font-weight: 600; letter-spacing: 1px; color: #17633F; }
+.tag-sim { font-size: 24px; font-weight: 600; letter-spacing: 1px; color: #8A5A00; }
+.tag-road { font-size: 24px; font-weight: 600; letter-spacing: 1px; color: #4D555A; }
+.items { font-size: 30px; line-height: 1.4; color: #122923; }
