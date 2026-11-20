@@ -1,5 +1,7 @@
 # Roteiro — vídeo final técnico (5 a 8 minutos)
 
+> **O vídeo foi gravado em 19/11/2026** pelo Claude, a pedido da equipe, com narração do Gemini: [video_tecnico/](video_tecnico/LEIA_ME.md). O que mudou em relação a este roteiro (ambiente de gravação, base da imagem, comandos e duração) está no LEIA_ME daquela pasta. O texto abaixo é o roteiro original, escrito para a equipe gravar no próprio PC.
+
 Duração planejada: **7 minutos**. A exigência é ficar entre 5 e 8 minutos.
 
 O requisito 5 pede que o vídeo mostre quatro coisas. Cada uma tem sua cena:

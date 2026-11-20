@@ -1,0 +1,34 @@
+{
+ "estilo": "Narração de vídeo técnico de demonstração em português do Brasil, tom calmo, claro e confiante, ritmo natural, sem soar como propaganda.",
+ "voz": "Nika",
+ "cenas": [
+  {"id": "c1", "titulo": "Abertura", "falas": [
+   "Este é o vídeo final do AgroSmart, Fase 7. Vamos mostrar a arquitetura, a plataforma funcionando de ponta a ponta em container, a execução contínua com monitoramento, o pipeline DevSecOps e a análise do processo. Os dados de sensores e de campo são simulados; o software e as execuções são reais."]},
+  {"id": "c2", "titulo": "Arquitetura e fluxo de dados", "falas": [
+   "A solução é uma aplicação única em Python, que roda em um container. No topo estão as entradas: leituras de sensores, que são simuladas, e observações de campo, importadas em CSV. Toda entrada é validada antes de gravar, e uma trava única garante uma escrita por vez. O dado bruto fica na camada Raw. A camada Trusted confere os tipos, remove duplicatas e separa o que é inválido. O motor de regras, de R1 a R7, define a prioridade de cada leitura, e a camada Refined publica o resultado. A saída são as APIs e o painel AgroMonitor, e quem decide o que fazer no campo é sempre uma pessoa. À direita, cada execução gera logs e um event log, usados na análise de processo. Embaixo fica o pipeline DevSecOps."]},
+  {"id": "c3", "titulo": "Plataforma no ar, em container", "falas": [
+   "A plataforma sobe com um comando, docker compose up. O container roda com um usuário sem privilégios, com o sistema de arquivos somente leitura e um volume para os dados. O healthcheck do Docker consulta a rota de prontidão da aplicação, e por isso o container aparece como healthy. A porta fica exposta só nesta máquina.",
+   "Um aviso: esta gravação foi feita em um ambiente sem acesso ao Docker Hub, e por isso a imagem usa uma base substituta. Com a base oficial, Python 3.13 slim, o mesmo container foi aprovado no computador da equipe e no GitHub Actions."]},
+  {"id": "c4", "titulo": "Entrada, processamento e decisão", "falas": [
+   "Esta é a Visão Geral do AgroMonitor. Para cada talhão, a lista de prioridades mostra a última leitura e a regra aplicada.",
+   "A entrada de dados é simulada. Quando geramos uma leitura, o evento em JSON é validado e gravado na camada Raw, e as camadas e as regras são reprocessadas. A auditoria mostra as contagens de cada camada.",
+   "No Talhão B, a última leitura está como indeterminada. Não há observação de campo para hoje e, só com os sensores, o sistema não afirma que está tudo normal. A orientação é registrar a observação.",
+   "Agora importamos a observação de campo do dia: 34% de folhas afetadas e lagarta há quatro dias.",
+   "A mesma leitura foi reavaliada. Com mais de 30% de folhas doentes, vale a regra R2: prioridade alta e orientação de inspeção técnica, com a evidência e a justificativa na tela. Esta é a automação baseada em decisão. O sistema recomenda, e nenhuma ação é executada no campo.",
+   "A ocorrência também entra na Central de Alertas."]},
+  {"id": "c5", "titulo": "Execução contínua e monitoramento", "falas": [
+   "A plataforma também roda sozinha. Na execução contínua, cada ciclo gera leituras, reprocessa as camadas e aplica as regras, e um ciclo nunca se sobrepõe a outro. O painel mostra se a execução está ativa, a idade do dado mais recente e quantos ciclos tiveram sucesso ou falha.",
+   "Pelo terminal, o comando monitorar consulta o mesmo estado, e os logs do container registram cada ciclo. São sinais diferentes: uma rota diz se o processo está vivo, outra diz se a aplicação está pronta, e o estado da operação diz se os dados estão sendo atualizados."]},
+  {"id": "c6", "titulo": "Pipeline DevSecOps", "falas": [
+   "O pipeline DevSecOps é um único script, que roda igual no computador da equipe e no GitHub Actions. São oito etapas. Entre elas, a qualidade de código com Ruff, a segurança estática com Bandit, 45 testes em Python e 18 de interface, o build da imagem, um teste de ponta a ponta com o container rodando, com 22 verificações, e a análise de vulnerabilidades com Trivy.",
+   "O gate funcionou de verdade. A primeira execução foi reprovada: o Trivy encontrou seis vulnerabilidades altas que já tinham correção. Corrigimos aplicando as atualizações do Debian e removendo o pip da imagem, que a aplicação não usa. Hoje o pipeline está aprovado nos dois ambientes. Continuam no relatório 47 vulnerabilidades altas que ainda não têm correção publicada."]},
+  {"id": "c7", "titulo": "Análise de processo", "falas": [
+   "Cada execução vira um caso no event log, com as atividades, o horário, a duração e o resultado de cada uma. Para a análise, coletamos 40 casos e 600 eventos em cenários controlados: ciclos contínuos, chamadas válidas e inválidas e uma rajada de requisições simultâneas.",
+   "Este é o processo observado. Encontramos oito variantes. Os casos bem-sucedidos seguiram o fluxo esperado, e nenhuma das seis entradas rejeitadas chegou a ser gravada.",
+   "O gargalo não está nas regras, que usam menos de 3% do tempo. Quase 70% vai para republicar as camadas Trusted e Refined, porque cada execução reprocessa a base inteira. Medimos esse custo: ele cresce de forma linear, cerca de 25 milissegundos a cada mil leituras.",
+   "Na rajada, as requisições esperaram até 93 milissegundos pela trava de escrita. E 18 decisões ficaram indeterminadas por falta de observação de campo; gerar mais leituras não resolve isso.",
+   "As melhorias propostas são o processamento incremental, uma seção crítica mais curta e um lembrete de registro de campo por talhão."]},
+  {"id": "c8", "titulo": "Encerramento", "falas": [
+   "Resumindo: a plataforma roda de ponta a ponta em container, com execução contínua, monitoramento, pipeline aprovado e processo analisado. O que ainda não existe está declarado, como sensores físicos, login e notificações. A matriz de rastreabilidade, no repositório, liga cada requisito ao código e à evidência. Obrigado."]}
+ ]
+}

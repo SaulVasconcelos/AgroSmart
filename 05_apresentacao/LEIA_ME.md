@@ -2,10 +2,10 @@
 
 | Entregável | Situação |
 |---|---|
-| Slides do pitch (problema, solução, diferencial, público-alvo, proposta de valor) | **Prontos e revisados.** Deck editável: <https://claude.ai/artifact/KqJzpFu9JXSFy71Du9Eukv> (privado da conta que o criou, até ser compartilhado). **PENDENTE:** exportar o arquivo (PowerPoint ou PDF) para esta pasta |
+| Slides do pitch (problema, solução, diferencial, público-alvo, proposta de valor) | **Prontos e aprovados pela equipe:** [slides_pitch_agrosmart.pdf](slides_pitch_agrosmart.pdf), 11 páginas em 16:9, gerado em 19/11/2026 a partir dos arquivos do deck, que estão em [slides_fonte/](slides_fonte/). O deck editável continua em <https://claude.ai/artifact/KqJzpFu9JXSFy71Du9Eukv> (privado da conta que o criou, até ser compartilhado) |
 | Roteiro do vídeo final técnico (5–8 min) | **Pronto:** [roteiro_video_tecnico.md](roteiro_video_tecnico.md), 8 cenas, 7 minutos planejados. Os passos da interface foram ensaiados na versão final |
 | Roteiro do vídeo pitch (até 5 min) | **Aprovado pela equipe em 19/11/2026:** [roteiro_video_pitch_animado.md](roteiro_video_pitch_animado.md), filme animado narrado com voz gerada pelo Gemini, com imagens de lavoura do Gemini na abertura e telas reais animadas pelo plugin video-shotcraft. **Reserva:** [roteiro_video_pitch.md](roteiro_video_pitch.md), uma fala por slide, 4 min 40 s |
-| Vídeo final técnico (5–8 min) — MP4 | **PENDENTE** — gravação pela equipe |
+| Vídeo final técnico (5–8 min) — MP4 | **Gravado em 19/11/2026:** [video_tecnico/video_tecnico_agrosmart.mp4](video_tecnico/video_tecnico_agrosmart.mp4), 6 min 4 s, 1920 × 1080: gravação de tela da plataforma em execução (container, navegador e terminal), com narração gerada por IA e legendas à parte. Como foi feito e o que foi conferido: [video_tecnico/LEIA_ME.md](video_tecnico/LEIA_ME.md). **Falta a equipe assistir com som** |
 | Vídeo pitch (até 5 min) — MP4 | **Pronto e aprovado pela equipe em 19/11/2026:** [video_pitch_animado/video_pitch_agrosmart.mp4](video_pitch_animado/video_pitch_agrosmart.mp4), 2 min 14 s, 1920 × 1080, com versão sem trilha e legendas à parte. Como foi feito e o que foi medido: [video_pitch_animado/LEIA_ME.md](video_pitch_animado/LEIA_ME.md). O rascunho anterior, com voz RHVoice, foi reprovado (voz robótica) e continua em [video_pitch/](video_pitch/) |
 
 São dois vídeos separados. O MP4 prévio da Fase 6 é histórico e não atende aos requisitos da Fase 7.
@@ -29,6 +29,20 @@ São 11 slides, pensados para um pitch de até 5 minutos. O número de slides e 
 | 11 | Encerramento | Endereço do repositório | — |
 
 O deck não traz números de mercado, clientes, ganhos de produtividade nem economia, porque o projeto não tem dados para isso.
+
+### Como o PDF dos slides foi gerado
+
+O arquivo [slides_pitch_agrosmart.pdf](slides_pitch_agrosmart.pdf) foi gerado em 19/11/2026, no ambiente de trabalho do Claude, pelo script [slides_fonte/gerar_pdf_slides.py](slides_fonte/gerar_pdf_slides.py). O script desenha no Chromium os arquivos do deck ([slides_fonte/project/](slides_fonte/project/)), com as fontes do deck ([slides_fonte/fonts/](slides_fonte/fonts/)) e as telas de [capturas_pitch/](capturas_pitch/), e grava uma página de 1920 × 1080 px por slide. Os arquivos de `slides_fonte/project/` são cópia da versão do deck aprovada pela equipe, a mesma que estava no editor em 19/11/2026.
+
+Não é a exportação feita pela página do deck, então pequenos detalhes de desenho podem diferir do que o editor mostra. Foi conferido:
+
+- o PDF tem 11 páginas, na ordem do deck, em 16:9;
+- o texto de cada página é igual ao do slide correspondente;
+- as cinco fontes usadas (Inter e Space Grotesk) estão embutidas no arquivo;
+- o endereço do repositório, no último slide, é um link clicável;
+- cada página, comparada com o mesmo slide desenhado na tela, só difere na borda das letras.
+
+Para gerar de novo: `python 05_apresentacao/slides_fonte/gerar_pdf_slides.py` (requer Python 3 e Playwright com Chromium).
 
 ## Vídeo pitch animado
 

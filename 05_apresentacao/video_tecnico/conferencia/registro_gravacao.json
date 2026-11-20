@@ -1,0 +1,209 @@
+{
+ "atrasos": {
+  "c1": [],
+  "c2": [
+   [
+    "33.3",
+    0.42
+   ]
+  ],
+  "c3": [],
+  "c6": [],
+  "c7": [],
+  "c8": [],
+  "c4": [],
+  "c5": []
+ },
+ "falas": {
+  "c1": {
+   "0": 1.0
+  },
+  "c2": {
+   "0": 1.0
+  },
+  "c3": {
+   "0": 1.0,
+   "1": 19.38
+  },
+  "c6": {
+   "0": 1.0,
+   "1": 27.28
+  },
+  "c7": {
+   "0": 1.0,
+   "1": 20.15,
+   "2": 31.26,
+   "3": 50.55,
+   "4": 63.81
+  },
+  "c8": {
+   "0": 1.0
+  },
+  "c4": {
+   "0": 1.0,
+   "1": 8.9,
+   "2": 22.0,
+   "3": 35.6,
+   "4": 44.9,
+   "5": 65.6
+  },
+  "c5": {
+   "0": 1.0,
+   "1": 20.61
+  }
+ },
+ "duracao": {
+  "c1": 20.220000000000002,
+  "c2": 46.370000000000005,
+  "c3": 34.53,
+  "c6": 50.37,
+  "c7": 73.46000000000002,
+  "c8": 25.46999999999998,
+  "c4": 70.47999999999999,
+  "c5": 39.790000000000006
+ },
+ "observado": {
+  "mensagem_simulacao": "1 leitura(s) simulada(s) gerada(s) e processada(s). 148 leituras válidas na base. Filtros mantidos; novas leituras podem estar fora do período selecionado.",
+  "cartao_antes": "Última leitura no filtro\nIndeterminada\n\n19/11/2026 · 20:17 · ND · Observação de campo ausente\n\nUmidade do solo\n37%\nTemperatura\n26°C\nAvaliação dos dados\nParcial\n\nND: sem evidência suficiente para determinar a condição; não significa risco baixo.\n\nEvidências de campo\nFolhas afetadas\nNão informado\nPraga detectada\nNão informado\nDuração\nNão informado\nOrientação sugerida · ND\nRegistrar observação de campo para avaliar todas as regras R1–R7\n\nAvaliação e decisão humana; nenhuma intervenção é executada pelo sistema.\n\nSensores não comprovam ausência de infestação.\n\nJustificativa e origem · ND · Parcial",
+  "mensagem_importacao": "Importação concluída: 1 observação(ões) validadas. Filtros mantidos.",
+  "cartao_depois": "Última leitura no filtro\nAlta\n\n19/11/2026 · 20:17 · R2 · Alerta de infestação\n\nUmidade do solo\n37%\nTemperatura\n26°C\nAvaliação dos dados\nCompleta\n\nObservação de campo disponível para esta leitura.\n\nEvidências de campo\nFolhas afetadas\n34%\nPraga detectada\nLagarta\nDuração\n4 dia(s)\nOrientação sugerida · R2\nRealizar inspeção técnica\n\nAvaliação e decisão humana; nenhuma intervenção é executada pelo sistema.\n\nPercentual de folhas doentes superior a 30%.\n\nJustificativa e origem · R2 · Completa",
+  "ocorrencia_hoje": "Alta\nAlerta de infestação · R2\nTalhão B · Milho · 19/11/2026 · 20:17 · Completa\nUmidade do solo\n37%\nTemperatura\n26°C\nFolhas afetadas\n34%\nPraga detectada\nLagarta\nDuração\n4 dia(s)\nOrientação sugerida · R2\nRealizar inspeção técnica\n\nAvaliação e decisão humana; nenhuma intervenção é executada pelo sistema.\n\nJustificativa e origem · R2 · Completa\nVer talhão e esta leitura",
+  "leitura_antes": {
+   "data_hora": "2026-11-19T20:17:07.894116",
+   "sensor_id": "S-002",
+   "regra": "ND",
+   "severidade": "Indeterminada",
+   "alerta": "Observação de campo ausente",
+   "acao": "Registrar observação de campo para avaliar todas as regras R1–R7",
+   "avaliacao": "Parcial",
+   "umidade_solo": "37.0",
+   "temperatura": "26.0",
+   "percentual_folhas_doentes": "",
+   "praga_detectada": "",
+   "dias_mesma_praga": ""
+  },
+  "leitura_depois": {
+   "data_hora": "2026-11-19T20:17:07.894116",
+   "sensor_id": "S-002",
+   "regra": "R2",
+   "severidade": "Alta",
+   "alerta": "Alerta de infestação",
+   "acao": "Realizar inspeção técnica",
+   "avaliacao": "Completa",
+   "umidade_solo": "37.0",
+   "temperatura": "26.0",
+   "percentual_folhas_doentes": "34.0",
+   "praga_detectada": "Lagarta",
+   "dias_mesma_praga": "4"
+  },
+  "mensagem_operacao": "Execução contínua ativa. Estado consultado agora; atualização automática a cada 10 s nesta tela.",
+  "painel_operacao": "Execução contínua\nAtiva\nSituação dos dados\nDados sendo atualizados no intervalo esperado\nIntervalo / leituras por ciclo\n15 s · 3\nCiclos executados (sucesso)\n2 (2)\nFalhas (consecutivas)\n0 (0)\nÚltimo ciclo\nSucesso · 60,2 ms\nLeitura mais recente\n19/11/2026 · 20:19 · há 14 s\nLeituras na base (Raw)\n151\nServidor no ar há\n2 min 55 s",
+  "operacao_depois": {
+   "ativa": true,
+   "estado": "ativa",
+   "motivo_parada": "",
+   "iniciada_em_utc": "2026-11-19T23:19:49.085+00:00",
+   "intervalo_s": 15.0,
+   "eventos_por_ciclo": 3,
+   "ciclos_total": 5,
+   "ciclos_sucesso": 5,
+   "falhas_total": 0,
+   "falhas_consecutivas": 0,
+   "max_falhas_consecutivas": 5,
+   "limite_leituras": 10000,
+   "ultimo_ciclo": {
+    "ciclo": 5,
+    "case_id": "RUN-20261119T232034Z-494542de",
+    "inicio_utc": "2026-11-19T23:20:34.205+00:00",
+    "fim_utc": "2026-11-19T23:20:34.243+00:00",
+    "duracao_ms": 38.139,
+    "resultado": "sucesso",
+    "recebidos": 3,
+    "aceitos": 3,
+    "duplicados": 0,
+    "rejeitados": 0,
+    "raw_total": 160,
+    "erro": ""
+   },
+   "ultimo_sucesso_utc": "2026-11-19T23:20:34.243+00:00",
+   "segundos_desde_ultimo_sucesso": 2.1,
+   "historico": [
+    {
+     "ciclo": 5,
+     "case_id": "RUN-20261119T232034Z-494542de",
+     "inicio_utc": "2026-11-19T23:20:34.205+00:00",
+     "fim_utc": "2026-11-19T23:20:34.243+00:00",
+     "duracao_ms": 38.139,
+     "resultado": "sucesso",
+     "recebidos": 3,
+     "aceitos": 3,
+     "duplicados": 0,
+     "rejeitados": 0,
+     "raw_total": 160,
+     "erro": ""
+    },
+    {
+     "ciclo": 4,
+     "case_id": "RUN-20261119T232019Z-2de0d112",
+     "inicio_utc": "2026-11-19T23:20:19.180+00:00",
+     "fim_utc": "2026-11-19T23:20:19.205+00:00",
+     "duracao_ms": 24.847,
+     "resultado": "sucesso",
+     "recebidos": 3,
+     "aceitos": 3,
+     "duplicados": 0,
+     "rejeitados": 0,
+     "raw_total": 157,
+     "erro": ""
+    },
+    {
+     "ciclo": 3,
+     "case_id": "RUN-20261119T232004Z-51394b8e",
+     "inicio_utc": "2026-11-19T23:20:04.150+00:00",
+     "fim_utc": "2026-11-19T23:20:04.179+00:00",
+     "duracao_ms": 29.627,
+     "resultado": "sucesso",
+     "recebidos": 3,
+     "aceitos": 3,
+     "duplicados": 0,
+     "rejeitados": 0,
+     "raw_total": 154,
+     "erro": ""
+    },
+    {
+     "ciclo": 2,
+     "case_id": "RUN-20261119T231949Z-7f5dbe46",
+     "inicio_utc": "2026-11-19T23:19:49.089+00:00",
+     "fim_utc": "2026-11-19T23:19:49.149+00:00",
+     "duracao_ms": 60.156,
+     "resultado": "sucesso",
+     "recebidos": 3,
+     "aceitos": 3,
+     "duplicados": 0,
+     "rejeitados": 0,
+     "raw_total": 151,
+     "erro": ""
+    },
+    {
+     "ciclo": 1,
+     "case_id": "RUN-20261119T231707Z-e229040b",
+     "inicio_utc": "2026-11-19T23:17:07.893+00:00",
+     "fim_utc": "2026-11-19T23:17:07.915+00:00",
+     "duracao_ms": 22.645,
+     "resultado": "sucesso",
+     "recebidos": 3,
+     "aceitos": 3,
+     "duplicados": 0,
+     "rejeitados": 0,
+     "raw_total": 147,
+     "erro": ""
+    }
+   ]
+  }
+ },
+ "erros_js": [],
+ "gravado_em": "2026-11-19T20:20:36-0300",
+ "versoes": {
+  "docker": "Docker version 29.9.3, build 5457199"
+ }
+}

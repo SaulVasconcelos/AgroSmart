@@ -1,0 +1,316 @@
+1
+00:00:04,500 --> 00:00:07,410
+Este é o vídeo final do AgroSmart, Fase 7.
+
+2
+00:00:07,490 --> 00:00:12,574
+Vamos mostrar a arquitetura, a plataforma funcionando de ponta a ponta em container,
+
+3
+00:00:12,624 --> 00:00:17,820
+a execução contínua com monitoramento, o pipeline DevSecOps e a análise do processo.
+
+4
+00:00:17,900 --> 00:00:22,720
+Os dados de sensores e de campo são simulados; o software e as execuções são reais.
+
+5
+00:00:24,700 --> 00:00:28,680
+A solução é uma aplicação única em Python, que roda em um container.
+
+6
+00:00:28,760 --> 00:00:31,839
+No topo estão as entradas: leituras de sensores,
+
+7
+00:00:31,889 --> 00:00:35,930
+que são simuladas, e observações de campo, importadas em CSV.
+
+8
+00:00:36,010 --> 00:00:41,270
+Toda entrada é validada antes de gravar, e uma trava única garante uma escrita por vez.
+
+9
+00:00:41,350 --> 00:00:43,310
+O dado bruto fica na camada Raw.
+
+10
+00:00:43,390 --> 00:00:48,270
+A camada Trusted confere os tipos, remove duplicatas e separa o que é inválido.
+
+11
+00:00:48,350 --> 00:00:52,664
+O motor de regras, de R1 a R7, define a prioridade de cada leitura,
+
+12
+00:00:52,714 --> 00:00:55,320
+e a camada Refined publica o resultado.
+
+13
+00:00:55,400 --> 00:01:01,480
+A saída são as APIs e o painel AgroMonitor, e quem decide o que fazer no campo é sempre uma pessoa.
+
+14
+00:01:01,560 --> 00:01:06,910
+À direita, cada execução gera logs e um event log, usados na análise de processo.
+
+15
+00:01:06,990 --> 00:01:09,070
+Embaixo fica o pipeline DevSecOps.
+
+16
+00:01:11,067 --> 00:01:14,347
+A plataforma sobe com um comando, docker compose up.
+
+17
+00:01:14,427 --> 00:01:16,962
+O container roda com um usuário sem privilégios,
+
+18
+00:01:17,012 --> 00:01:20,727
+com o sistema de arquivos somente leitura e um volume para os dados.
+
+19
+00:01:20,807 --> 00:01:24,128
+O healthcheck do Docker consulta a rota de prontidão da aplicação,
+
+20
+00:01:24,178 --> 00:01:26,477
+e por isso o container aparece como healthy.
+
+21
+00:01:26,557 --> 00:01:28,547
+A porta fica exposta só nesta máquina.
+
+22
+00:01:29,447 --> 00:01:33,489
+Um aviso: esta gravação foi feita em um ambiente sem acesso ao Docker Hub,
+
+23
+00:01:33,539 --> 00:01:36,027
+e por isso a imagem usa uma base substituta.
+
+24
+00:01:36,107 --> 00:01:38,379
+Com a base oficial, Python 3.13 slim,
+
+25
+00:01:38,429 --> 00:01:43,197
+o mesmo container foi aprovado no computador da equipe e no GitHub Actions.
+
+26
+00:01:45,600 --> 00:01:47,650
+Esta é a Visão Geral do AgroMonitor.
+
+27
+00:01:47,730 --> 00:01:52,050
+Para cada talhão, a lista de prioridades mostra a última leitura e a regra aplicada.
+
+28
+00:01:53,500 --> 00:01:55,170
+A entrada de dados é simulada.
+
+29
+00:01:55,250 --> 00:01:59,748
+Quando geramos uma leitura, o evento em JSON é validado e gravado na camada Raw,
+
+30
+00:01:59,798 --> 00:02:02,300
+e as camadas e as regras são reprocessadas.
+
+31
+00:02:02,380 --> 00:02:04,760
+A auditoria mostra as contagens de cada camada.
+
+32
+00:02:06,600 --> 00:02:09,580
+No Talhão B, a última leitura está como indeterminada.
+
+33
+00:02:09,660 --> 00:02:15,870
+Não há observação de campo para hoje e, só com os sensores, o sistema não afirma que está tudo normal.
+
+34
+00:02:15,950 --> 00:02:18,570
+A orientação é registrar a observação.
+
+35
+00:02:20,200 --> 00:02:27,170
+Agora importamos a observação de campo do dia: 34% de folhas afetadas e lagarta há quatro dias.
+
+36
+00:02:29,500 --> 00:02:31,720
+A mesma leitura foi reavaliada.
+
+37
+00:02:31,800 --> 00:02:35,540
+Com mais de 30% de folhas doentes, vale a regra R2:
+
+38
+00:02:35,590 --> 00:02:42,500
+prioridade alta e orientação de inspeção técnica, com a evidência e a justificativa na tela.
+
+39
+00:02:42,580 --> 00:02:45,180
+Esta é a automação baseada em decisão.
+
+40
+00:02:45,260 --> 00:02:48,500
+O sistema recomenda, e nenhuma ação é executada no campo.
+
+41
+00:02:50,200 --> 00:02:52,680
+A ocorrência também entra na Central de Alertas.
+
+42
+00:02:56,067 --> 00:02:58,167
+A plataforma também roda sozinha.
+
+43
+00:02:58,247 --> 00:03:01,246
+Na execução contínua, cada ciclo gera leituras,
+
+44
+00:03:01,296 --> 00:03:06,487
+reprocessa as camadas e aplica as regras, e um ciclo nunca se sobrepõe a outro.
+
+45
+00:03:06,567 --> 00:03:09,206
+O painel mostra se a execução está ativa,
+
+46
+00:03:09,256 --> 00:03:13,977
+a idade do dado mais recente e quantos ciclos tiveram sucesso ou falha.
+
+47
+00:03:15,677 --> 00:03:22,247
+Pelo terminal, o comando monitorar consulta o mesmo estado, e os logs do container registram cada ciclo.
+
+48
+00:03:22,327 --> 00:03:27,921
+São sinais diferentes: uma rota diz se o processo está vivo, outra diz se a aplicação está pronta,
+
+49
+00:03:27,971 --> 00:03:31,657
+e o estado da operação diz se os dados estão sendo atualizados.
+
+50
+00:03:35,867 --> 00:03:42,587
+O pipeline DevSecOps é um único script, que roda igual no computador da equipe e no GitHub Actions.
+
+51
+00:03:42,667 --> 00:03:44,047
+São oito etapas.
+
+52
+00:03:44,127 --> 00:03:52,913
+Entre elas, a qualidade de código com Ruff, a segurança estática com Bandit, 45 testes em Python e 18 de interface, o build da imagem,
+
+53
+00:03:52,963 --> 00:04:00,547
+um teste de ponta a ponta com o container rodando, com 22 verificações, e a análise de vulnerabilidades com Trivy.
+
+54
+00:04:02,147 --> 00:04:04,007
+O gate funcionou de verdade.
+
+55
+00:04:04,087 --> 00:04:10,267
+A primeira execução foi reprovada: o Trivy encontrou seis vulnerabilidades altas que já tinham correção.
+
+56
+00:04:10,347 --> 00:04:15,877
+Corrigimos aplicando as atualizações do Debian e removendo o pip da imagem, que a aplicação não usa.
+
+57
+00:04:15,957 --> 00:04:18,887
+Hoje o pipeline está aprovado nos dois ambientes.
+
+58
+00:04:18,967 --> 00:04:24,037
+Continuam no relatório 47 vulnerabilidades altas que ainda não têm correção publicada.
+
+59
+00:04:26,233 --> 00:04:30,070
+Cada execução vira um caso no event log, com as atividades,
+
+60
+00:04:30,120 --> 00:04:33,283
+o horário, a duração e o resultado de cada uma.
+
+61
+00:04:33,363 --> 00:04:38,038
+Para a análise, coletamos 40 casos e 600 eventos em cenários controlados:
+
+62
+00:04:38,088 --> 00:04:43,783
+ciclos contínuos, chamadas válidas e inválidas e uma rajada de requisições simultâneas.
+
+63
+00:04:45,383 --> 00:04:47,013
+Este é o processo observado.
+
+64
+00:04:47,093 --> 00:04:48,963
+Encontramos oito variantes.
+
+65
+00:04:49,043 --> 00:04:51,554
+Os casos bem-sucedidos seguiram o fluxo esperado,
+
+66
+00:04:51,604 --> 00:04:54,793
+e nenhuma das seis entradas rejeitadas chegou a ser gravada.
+
+67
+00:04:56,493 --> 00:05:00,243
+O gargalo não está nas regras, que usam menos de 3% do tempo.
+
+68
+00:05:00,323 --> 00:05:04,386
+Quase 70% vai para republicar as camadas Trusted e Refined,
+
+69
+00:05:04,436 --> 00:05:07,783
+porque cada execução reprocessa a base inteira.
+
+70
+00:05:07,863 --> 00:05:15,083
+Medimos esse custo: ele cresce de forma linear, cerca de 25 milissegundos a cada mil leituras.
+
+71
+00:05:15,783 --> 00:05:21,413
+Na rajada, as requisições esperaram até 93 milissegundos pela trava de escrita.
+
+72
+00:05:21,493 --> 00:05:28,343
+E 18 decisões ficaram indeterminadas por falta de observação de campo; gerar mais leituras não resolve isso.
+
+73
+00:05:29,043 --> 00:05:32,457
+As melhorias propostas são o processamento incremental,
+
+74
+00:05:32,507 --> 00:05:37,293
+uma seção crítica mais curta e um lembrete de registro de campo por talhão.
+
+75
+00:05:39,700 --> 00:05:43,780
+Resumindo: a plataforma roda de ponta a ponta em container,
+
+76
+00:05:43,830 --> 00:05:49,290
+com execução contínua, monitoramento, pipeline aprovado e processo analisado.
+
+77
+00:05:49,370 --> 00:05:55,110
+O que ainda não existe está declarado, como sensores físicos, login e notificações.
+
+78
+00:05:55,190 --> 00:06:01,240
+A matriz de rastreabilidade, no repositório, liga cada requisito ao código e à evidência.
+
+79
+00:06:01,320 --> 00:06:01,970
+Obrigado.
+

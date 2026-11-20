@@ -50,14 +50,11 @@ No GitHub, o mesmo pipeline roda pelo workflow [.github/workflows/devsecops.yml]
 - Ruff e Bandit;
 - build e container ponta a ponta com a imagem oficial `python:3.13-slim`, e Trivy sem bloqueantes, nos dois ambientes;
 - análise de processo;
-- vídeo pitch de até 5 min: filme animado de 2 min 14 s, em [05_apresentacao/video_pitch_animado/](05_apresentacao/video_pitch_animado/LEIA_ME.md), com voz e imagens de abertura feitas por IA; a equipe assistiu ao vídeo pronto e o aprovou em 19/11/2026.
+- slides do pitch: 11 slides, aprovados pela equipe, em [05_apresentacao/slides_pitch_agrosmart.pdf](05_apresentacao/slides_pitch_agrosmart.pdf);
+- vídeo pitch de até 5 min: filme animado de 2 min 14 s, em [05_apresentacao/video_pitch_animado/](05_apresentacao/video_pitch_animado/LEIA_ME.md), com voz e imagens de abertura feitas por IA; a equipe assistiu ao vídeo pronto e o aprovou em 19/11/2026;
+- vídeo final técnico de 5–8 min: gravação da plataforma em execução (container, navegador e terminal reais), com narração gerada por IA, em [05_apresentacao/video_tecnico/](05_apresentacao/video_tecnico/LEIA_ME.md).
 
-**Pendente:**
-
-- slides do pitch: prontos e revisados; falta exportar o arquivo para `05_apresentacao/`;
-- vídeo final técnico de 5–8 min: a gravar pela equipe, com o roteiro de [05_apresentacao/](05_apresentacao/LEIA_ME.md).
-
-A Fase 7 **ainda não está integralmente concluída**.
+Os entregáveis dos seis requisitos da Fase 7 estão no repositório; a [matriz de rastreabilidade](MATRIZ_RASTREABILIDADE_FASE_7.md) liga cada um ao código e à evidência.
 
 **Não existe no produto:** sensores físicos, Kafka ativo, inferência de imagem ao vivo, LLM, autenticação, multiusuário, notificações externas ou acionamento físico.
 
