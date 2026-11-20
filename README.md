@@ -37,7 +37,7 @@ No GitHub, o mesmo pipeline roda pelo workflow [.github/workflows/devsecops.yml]
 | Evidências de execução | [03_evidencias/LEIA_ME.md](03_evidencias/LEIA_ME.md) |
 | Event log e mineração de processos | [04_processos/ANALISE_PROCESSO.md](04_processos/ANALISE_PROCESSO.md), [contrato](04_processos/contrato_event_log.md) |
 | Pitch, slides e vídeos | [05_apresentacao/LEIA_ME.md](05_apresentacao/LEIA_ME.md) |
-| Contratos de API da Fase 6 (vigentes) | [CONTRATOS_UX_P0_P1.txt](CONTRATOS_UX_P0_P1.txt) |
+| Contratos de API da Fase 6 (vigentes) | [CONTRATOS_UX.txt](CONTRATOS_UX.txt) |
 | Protótipo de classificação de imagens (fases anteriores) | [historico/classificador_imagens/](historico/classificador_imagens/LEIA_ME.md) |
 
 ## Situação atual (19/11/2026, horário de Brasília)
@@ -51,7 +51,7 @@ No GitHub, o mesmo pipeline roda pelo workflow [.github/workflows/devsecops.yml]
 - build e container ponta a ponta com a imagem oficial `python:3.13-slim`, e Trivy sem bloqueantes, nos dois ambientes;
 - análise de processo;
 - slides do pitch: 11 slides, aprovados pela equipe, em [05_apresentacao/slides_pitch_agrosmart.pdf](05_apresentacao/slides_pitch_agrosmart.pdf);
-- vídeo pitch de até 5 min: filme animado de 2 min 14 s, em [05_apresentacao/video_pitch_animado/](05_apresentacao/video_pitch_animado/LEIA_ME.md), com voz e imagens de abertura feitas por IA; a equipe assistiu ao vídeo pronto e o aprovou em 19/11/2026;
+- vídeo pitch de até 5 min: filme animado de 2 min 14 s, em [05_apresentacao/video_pitch/](05_apresentacao/video_pitch/LEIA_ME.md), com voz e imagens de abertura feitas por IA; a equipe assistiu ao vídeo pronto e o aprovou em 19/11/2026;
 - vídeo final técnico de 5–8 min: gravação da plataforma em execução (container, navegador e terminal reais), com narração gerada por IA, em [05_apresentacao/video_tecnico/](05_apresentacao/video_tecnico/LEIA_ME.md).
 
 Os entregáveis dos seis requisitos da Fase 7 estão no repositório; a [matriz de rastreabilidade](MATRIZ_RASTREABILIDADE_FASE_7.md) liga cada um ao código e à evidência.

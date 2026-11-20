@@ -55,7 +55,7 @@ Os formatos dos dados estão em [descricao_sensores_simulados.md](descricao_sens
 
 ## APIs
 
-- **Contratos da Fase 6, preservados:** `/api/health`, `/api/estado`, `/api/alertas`, `/api/talhao`, `POST /api/simular` e `POST /api/importar-observacoes`. Ver [../CONTRATOS_UX_P0_P1.txt](../CONTRATOS_UX_P0_P1.txt).
+- **Contratos da Fase 6, preservados:** `/api/health`, `/api/estado`, `/api/alertas`, `/api/talhao`, `POST /api/simular` e `POST /api/importar-observacoes`. Ver [../CONTRATOS_UX.txt](../CONTRATOS_UX.txt).
 - **Rotas novas da Fase 7:** `GET /api/operacao`, `GET /api/pronto`, `POST /api/operacao/iniciar` e `POST /api/operacao/parar`. Ver [docs/MONITORAMENTO.md](docs/MONITORAMENTO.md).
 
 ## Testes e pipeline

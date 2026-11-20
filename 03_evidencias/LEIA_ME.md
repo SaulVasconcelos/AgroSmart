@@ -6,7 +6,7 @@ Para cada item, a coluna Situação diz o que foi executado e o que ainda falta 
 
 | Evidência | Arquivo | Situação |
 |---|---|---|
-| Testes Python e JS, Ruff e Bandit | [devsecops_ambiente_claude/20261118T024453Z/](devsecops_ambiente_claude/20261118T024453Z/RELATORIO_PIPELINE.md): `04_testes_python.txt` (44 OK), `04_testes_js.txt` (18 OK), `02_ruff.json` (0 achados), `03_bandit.json` (0 bloqueantes; 4 B311/LOW) | Executado, commit `6cf04b4` |
+| Testes Python e JS, Ruff e Bandit | [devsecops_base_substituta/20261118T024453Z/](devsecops_base_substituta/20261118T024453Z/RELATORIO_PIPELINE.md): `04_testes_python.txt` (44 OK), `04_testes_js.txt` (18 OK), `02_ruff.json` (0 achados), `03_bandit.json` (0 bloqueantes; 4 B311/LOW) | Executado, commit `6cf04b4` |
 | Build e container ponta a ponta | mesma pasta, `05_*` e `06_*`: 22 verificações aprovadas (semente 144/109, POST, 400, ciclos contínuos, UID 10001, fuso −03:00, raiz somente leitura, healthcheck *healthy*, restart com dados preservados e sem nova semeadura, stop com código 0 em 0,66 s) | Executado **com base substituta** (ver nota 1) |
 | Pipeline completo com base oficial e Trivy (PC da equipe) | [devsecops_equipe/](devsecops_equipe/LEIA_ME.md):<br>• execução 1: **reprovada pelo gate** (6 HIGH com correção), resolvida com atualização do Debian e remoção do pip;<br>• execução 2: **Trivy aprovado** (0 bloqueantes), mas os testes acharam uma falha intermitente no Windows, corrigida no servidor;<br>• execução 3: **APROVADO em todas as etapas** (45 Py + 18 JS, build, 22/22 no container, Trivy com 0 bloqueantes) | Executado |
 | Pipeline completo no **GitHub Actions** | [devsecops_ci/](devsecops_ci/LEIA_ME.md): [run 44438716927](https://github.com/SaulVasconcelos/AgroSmart/actions/runs/44438716927) (PR #1), **APROVADO em todas as etapas** (45 Py + 18 JS, build com a imagem oficial, 22/22 no container, Trivy com 0 bloqueantes). Relatórios do artefato do run, com SHA-256 conferido | Executado |
@@ -15,7 +15,7 @@ Para cada item, a coluna Situação diz o que foi executado e o que ainda falta 
 | Regressão visual básica (Chromium) | [execucao/ux_larguras_telas.json](execucao/ux_larguras_telas.json): 5 telas × 4 larguras (1440, 768, 390, 320), sem rolagem horizontal e sem exceções JS | Executado |
 | Capturas da interface (Chromium) | [capturas/](capturas/): `21`/`22` painel de execução contínua (desktop/mobile), `23` Visão Geral com leituras novas, `24` detalhe da leitura rastreada (R2). Nenhuma exceção JS ([capturas_erros_js.json](execucao/capturas_erros_js.json)) | Executado |
 | Event log e análise de processo | [../04_processos/ANALISE_PROCESSO.md](../04_processos/ANALISE_PROCESSO.md) (40 casos, 600 eventos, 8 variantes, validação sem problemas) e experimento de escala | Executado |
-| Event log gerado **dentro do container** | `devsecops_ambiente_claude/20261118T024453Z/06_event_log_container.csv` (4 casos, validação sem problemas) | Executado com base substituta |
+| Event log gerado **dentro do container** | `devsecops_base_substituta/20261118T024453Z/06_event_log_container.csv` (4 casos, validação sem problemas) | Executado com base substituta |
 | Histórico da Fase 6 | [historico_fase6/](historico_fase6/LEIA_ME.md) | Somente referência |
 
 ## Notas

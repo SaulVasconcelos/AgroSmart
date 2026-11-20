@@ -6,15 +6,15 @@ Vídeo de 6 min 4 s (a exigência é de 5 a 8 minutos), gravado e montado em 19/
 |---|---|
 | [video_tecnico_agrosmart.mp4](video_tecnico_agrosmart.mp4) | O vídeo. 364,2 s, 1920 × 1080, 30 quadros por segundo, H.264 e áudio AAC |
 | [legendas.srt](legendas.srt) | O texto da narração, frase a frase, nos tempos do vídeo. É um arquivo à parte |
-| [projeto/](projeto/) | Os scripts da gravação e da montagem, o texto da narração e os dois áudios gerados |
-| [conferencia/](conferencia/) | O que a plataforma mostrou durante a gravação, a agenda final e um quadro do vídeo por fala |
+
+> Os arquivos de produção deste vídeo (scripts, capturas em alta, áudios separados e quadros de conferência) não fazem parte da entrega. Onde este texto cita um desses arquivos pelo nome, é só para registrar de onde veio cada coisa.
 
 **A equipe ainda precisa assistir ao vídeo com som.** O ambiente em que ele foi montado não reproduz áudio: a presença e a posição de cada fala foram medidas, mas a pronúncia e a entonação não foram ouvidas.
 
 ## O que é real e o que não é
 
 - **A imagem é uma gravação de tela.** Uma tela virtual de 1920 × 1080 foi gravada com o ffmpeg enquanto um Chromium com janela abria a plataforma e um terminal (xterm) recebia os comandos, digitados tecla a tecla. Nenhuma tela foi redesenhada. A única coisa sobreposta à página é a seta do cursor, desenhada pelo script porque o navegador automatizado não move o cursor do sistema.
-- **A plataforma estava em execução de verdade**, em container, com o `compose.yaml` do repositório. As leituras, a importação da observação de campo, a mudança de ND para R2, os ciclos da execução contínua, o comando `monitorar` e os logs aconteceram durante a gravação. O que a plataforma respondeu está em [conferencia/registro_gravacao.json](conferencia/registro_gravacao.json).
+- **A plataforma estava em execução de verdade**, em container, com o `compose.yaml` do repositório. As leituras, a importação da observação de campo, a mudança de ND para R2, os ciclos da execução contínua, o comando `monitorar` e os logs aconteceram durante a gravação. O que a plataforma respondeu está resumido abaixo.
 - **Os dados de sensores e de campo são simulados**, como em todo o projeto.
 - **A narração é voz sintética**: voz "Nika" do Gemini 3.8 Flash TTS (Google AI Studio), a mesma do vídeo pitch. Ninguém da equipe fala no vídeo. O cartão de abertura avisa isso.
 - **O container da gravação usa a base substituta.** O ambiente do Claude não acessa o Docker Hub, então a imagem `agrosmart:fase7` foi construída antes da gravação sobre `local/base-substituta:ubuntu24-python3` (Ubuntu 24.04 com Python 3.12), com `docker build --build-arg PYTHON_IMAGE=...`. A narração diz isso na cena 3, e o terminal mostra a lista de imagens e a linha do Dockerfile com a base oficial. O container com a base oficial `python:3.13-slim` foi aprovado no PC da equipe e no GitHub Actions: ver [03_evidencias/](../../03_evidencias/LEIA_ME.md).
@@ -45,7 +45,7 @@ Vídeo de 6 min 4 s (a exigência é de 5 a 8 minutos), gravado e montado em 19/
 
 ## O que a gravação registrou
 
-Do [registro_gravacao.json](conferencia/registro_gravacao.json):
+Do registro feito pelo script de gravação:
 
 - antes da importação, a última leitura do Talhão B (sensor S-002, 19/11/2026 20:17, umidade 37%, 26 °C) estava em **ND**, "Observação de campo ausente", avaliação "Parcial";
 - a importação respondeu "Importação concluída: 1 observação(ões) validadas. Filtros mantidos.";
@@ -53,17 +53,17 @@ Do [registro_gravacao.json](conferencia/registro_gravacao.json):
 - a execução contínua foi iniciada pela interface com intervalo de 15 s e seguiu sem falhas;
 - nenhuma exceção de JavaScript na página.
 
-A leitura do simulador é sorteada. A preparação ([projeto/prep.py](projeto/prep.py)) para a execução contínua e gera leituras do Talhão B até a última cair em ND com umidade de pelo menos 35%, que é o caso contado no roteiro. Nenhum valor é digitado nem editado.
+A leitura do simulador é sorteada. A preparação para a execução contínua e gera leituras do Talhão B até a última cair em ND com umidade de pelo menos 35%, que é o caso contado no roteiro. Nenhum valor é digitado nem editado.
 
 ## Como a narração foi encaixada
 
-O texto está em [projeto/narracao.json](projeto/narracao.json). Foi gerado em dois áudios (cenas 1 a 4 e 5 a 8). Para saber onde cada parágrafo e cada frase começam, cada áudio foi alinhado com uma leitura de referência do mesmo texto, feita parágrafo a parágrafo com o RHVoice (`alinhar.py` e `alinhar_frases.py`): todas as 18 fronteiras caíram dentro de uma pausa da fala. As ações da tela foram agendadas por esses instantes.
+O texto é o do [roteiro](../roteiro_video_tecnico.md), com os ajustes listados acima. Foi gerado em dois áudios (cenas 1 a 4 e 5 a 8). Para saber onde cada parágrafo e cada frase começam, cada áudio foi alinhado com uma leitura de referência do mesmo texto, feita parágrafo a parágrafo com o RHVoice (`alinhar.py` e `alinhar_frases.py`): todas as 18 fronteiras caíram dentro de uma pausa da fala. As ações da tela foram agendadas por esses instantes.
 
 ## O que foi conferido
 
 - **Duração:** 364,2 s, dentro de 5 a 8 minutos.
 - **Narração:** as 20 falas estão no vídeo, cada uma no instante previsto, com silêncio entre elas. Volume de −14,9 LUFS.
-- **Imagem e fala juntas:** um quadro do arquivo final por fala ([conferencia/](conferencia/)), comparado com o texto da fala. Em todos, a tela mostra o que a fala descreve.
+- **Imagem e fala juntas:** um quadro do arquivo final por fala, comparado com o texto da fala. Em todos, a tela mostra o que a fala descreve.
 - **Números falados:** 45 testes Python e 18 de interface, 22 verificações, 6 vulnerabilidades com correção e 47 sem, 40 casos e 600 eventos, 8 variantes, 6 entradas rejeitadas, menos de 3% e quase 70% do tempo, 25 ms por mil leituras, 93 ms e 18 decisões ND conferem com os documentos do repositório ([ANALISE_PROCESSO.md](../../04_processos/ANALISE_PROCESSO.md) e [devsecops_equipe](../../03_evidencias/devsecops_equipe/LEIA_ME.md)).
 
 ## O que não foi conferido
@@ -71,22 +71,6 @@ O texto está em [projeto/narracao.json](projeto/narracao.json). Foi gerado em d
 - **Como soa.** Pronúncia de termos como "healthcheck", "healthy", "Raw", "Trusted", "Refined", "Ruff", "Bandit" e "Trivy" precisa ser ouvida pela equipe.
 - **Os instantes das frases** vêm do alinhamento automático, não de audição. Pode haver diferença de alguns décimos de segundo entre a fala e o movimento do cursor.
 - **Revisão por outra pessoa.** A conferência acima foi feita por quem montou o vídeo.
-
-## Como refazer
-
-Requisitos: Linux com Docker, Python 3 com Playwright (Chromium), `markdown`, `numpy` e `librosa`, e os programas `Xvfb`, `xterm`, `xdotool`, `xsetroot`, `ffmpeg` e `RHVoice-test`.
-
-```bash
-cd 02_plataforma
-docker compose down -v && docker compose up -d --build     # plataforma do zero
-python ../05_apresentacao/gerar_observacao_demo.py          # observação de campo com a data de hoje
-cd ../05_apresentacao/video_tecnico/projeto
-python prep.py $(date +%F)                                   # para a execução contínua e deixa o Talhão B em ND
-python gravar.py                                             # grava as 8 cenas em cenas/
-python montar.py                                             # junta imagem, narração e legendas em out/
-```
-
-Para trocar a narração: gere os áudios novos como `parte1.wav` e `parte2.wav`, rode `alinhar.py` e `alinhar_frases.py` para cada um e grave de novo.
 
 ## Licenças e avisos
 

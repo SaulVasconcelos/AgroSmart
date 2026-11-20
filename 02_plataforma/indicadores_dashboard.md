@@ -31,7 +31,7 @@ Sem leituras, a interface comunica ausência e não exibe 0%/0 °C como médias 
 
 `/api/alertas` aplica talhão/datas, exclui R7/ND, aplica severidade e ordenação ao conjunto completo e só então pagina. A UI usa 20 por página. Total, faixa “exibindo X–Y de Z” e páginas correspondem ao resultado dessa consulta; contagens de severidade são calculadas após os filtros, incluindo severidade. Prioridade usa Crítica → Alta → Média e desempata por recência; “Mais recentes” usa recência.
 
-O GET legado /api/estado mantém listas de alertas/leituras limitadas a 120; a central utiliza o GET paginado para não perder ocorrências antigas. Últimas leituras na tabela de Talhões são uma amostra de até 25, com contagem explícita, tanto na comparação agregada quanto no detalhe, a partir do retorno legado. [Contratos](../CONTRATOS_UX_P0_P1.txt).
+O GET legado /api/estado mantém listas de alertas/leituras limitadas a 120; a central utiliza o GET paginado para não perder ocorrências antigas. Últimas leituras na tabela de Talhões são uma amostra de até 25, com contagem explícita, tanto na comparação agregada quanto no detalhe, a partir do retorno legado. [Contratos](../CONTRATOS_UX.txt).
 
 Ocorrência selecionada, regra, alerta, evidência, origem, completude e orientação são atributos do registro. Não há persistência de resolução: gravidade não significa incidente aberto, confirmado ou tratado.
 

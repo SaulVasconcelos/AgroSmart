@@ -2,11 +2,11 @@
 
 | Entregável | Situação |
 |---|---|
-| Slides do pitch (problema, solução, diferencial, público-alvo, proposta de valor) | **Prontos e aprovados pela equipe:** [slides_pitch_agrosmart.pdf](slides_pitch_agrosmart.pdf), 11 páginas em 16:9, gerado em 19/11/2026 a partir dos arquivos do deck, que estão em [slides_fonte/](slides_fonte/). O deck editável continua em <https://claude.ai/artifact/KqJzpFu9JXSFy71Du9Eukv> (privado da conta que o criou, até ser compartilhado) |
+| Slides do pitch (problema, solução, diferencial, público-alvo, proposta de valor) | **Prontos e aprovados pela equipe:** [slides_pitch_agrosmart.pdf](slides_pitch_agrosmart.pdf), 11 páginas em 16:9, gerado em 19/11/2026 a partir dos arquivos do deck. O deck editável continua em <https://claude.ai/artifact/KqJzpFu9JXSFy71Du9Eukv> (privado da conta que o criou, até ser compartilhado) |
 | Roteiro do vídeo final técnico (5–8 min) | **Pronto:** [roteiro_video_tecnico.md](roteiro_video_tecnico.md), 8 cenas, 7 minutos planejados. Os passos da interface foram ensaiados na versão final |
-| Roteiro do vídeo pitch (até 5 min) | **Aprovado pela equipe em 19/11/2026:** [roteiro_video_pitch_animado.md](roteiro_video_pitch_animado.md), filme animado narrado com voz gerada pelo Gemini, com imagens de lavoura do Gemini na abertura e telas reais animadas pelo plugin video-shotcraft. **Reserva:** [roteiro_video_pitch.md](roteiro_video_pitch.md), uma fala por slide, 4 min 40 s |
+| Roteiro do vídeo pitch (até 5 min) | **Aprovado pela equipe em 19/11/2026:** [roteiro_video_pitch.md](roteiro_video_pitch.md), filme animado narrado com voz gerada pelo Gemini, com imagens de lavoura do Gemini na abertura e telas reais animadas pelo plugin video-shotcraft |
 | Vídeo final técnico (5–8 min) — MP4 | **Gravado em 19/11/2026:** [video_tecnico/video_tecnico_agrosmart.mp4](video_tecnico/video_tecnico_agrosmart.mp4), 6 min 4 s, 1920 × 1080: gravação de tela da plataforma em execução (container, navegador e terminal), com narração gerada por IA e legendas à parte. Como foi feito e o que foi conferido: [video_tecnico/LEIA_ME.md](video_tecnico/LEIA_ME.md). **Falta a equipe assistir com som** |
-| Vídeo pitch (até 5 min) — MP4 | **Pronto e aprovado pela equipe em 19/11/2026:** [video_pitch_animado/video_pitch_agrosmart.mp4](video_pitch_animado/video_pitch_agrosmart.mp4), 2 min 14 s, 1920 × 1080, com versão sem trilha e legendas à parte. Como foi feito e o que foi medido: [video_pitch_animado/LEIA_ME.md](video_pitch_animado/LEIA_ME.md). O rascunho anterior, com voz RHVoice, foi reprovado (voz robótica) e continua em [video_pitch/](video_pitch/) |
+| Vídeo pitch (até 5 min) — MP4 | **Pronto e aprovado pela equipe em 19/11/2026:** [video_pitch/video_pitch_agrosmart.mp4](video_pitch/video_pitch_agrosmart.mp4), 2 min 14 s, 1920 × 1080, com legendas à parte. Como foi feito e o que foi medido: [video_pitch/LEIA_ME.md](video_pitch/LEIA_ME.md). |
 
 São dois vídeos separados. O MP4 prévio da Fase 6 é histórico e não atende aos requisitos da Fase 7.
 
@@ -32,7 +32,7 @@ O deck não traz números de mercado, clientes, ganhos de produtividade nem econ
 
 ### Como o PDF dos slides foi gerado
 
-O arquivo [slides_pitch_agrosmart.pdf](slides_pitch_agrosmart.pdf) foi gerado em 19/11/2026, no ambiente de trabalho do Claude, pelo script [slides_fonte/gerar_pdf_slides.py](slides_fonte/gerar_pdf_slides.py). O script desenha no Chromium os arquivos do deck ([slides_fonte/project/](slides_fonte/project/)), com as fontes do deck ([slides_fonte/fonts/](slides_fonte/fonts/)) e as telas de [capturas_pitch/](capturas_pitch/), e grava uma página de 1920 × 1080 px por slide. Os arquivos de `slides_fonte/project/` são cópia da versão do deck aprovada pela equipe, a mesma que estava no editor em 19/11/2026.
+O arquivo [slides_pitch_agrosmart.pdf](slides_pitch_agrosmart.pdf) foi gerado em 19/11/2026, no ambiente de trabalho do Claude, por um script que desenha no Chromium os arquivos do deck, com as fontes do deck e as telas de [capturas_pitch/](capturas_pitch/), e grava uma página de 1920 × 1080 px por slide. Os arquivos usados são os da versão do deck aprovada pela equipe, a mesma que estava no editor em 19/11/2026.
 
 Não é a exportação feita pela página do deck, então pequenos detalhes de desenho podem diferir do que o editor mostra. Foi conferido:
 
@@ -42,30 +42,15 @@ Não é a exportação feita pela página do deck, então pequenos detalhes de d
 - o endereço do repositório, no último slide, é um link clicável;
 - cada página, comparada com o mesmo slide desenhado na tela, só difere na borda das letras.
 
-Para gerar de novo: `python 05_apresentacao/slides_fonte/gerar_pdf_slides.py` (requer Python 3 e Playwright com Chromium).
 
-## Vídeo pitch animado
+## Vídeo pitch
 
-A versão atual do vídeo pitch está em [video_pitch_animado/](video_pitch_animado/), com o projeto que a gera e a conferência feita depois da montagem. O [LEIA_ME.md](video_pitch_animado/LEIA_ME.md) da pasta descreve as ferramentas, as diferenças em relação ao roteiro, a origem de cada imagem e de cada número e os avisos de licença.
-
-## Rascunho anterior: vídeo com voz RHVoice (reprovado)
-
-A pasta [video_pitch/](video_pitch/) tem o primeiro vídeo e tudo o que foi usado para montá-lo, em 19/11/2026, no ambiente de trabalho do Claude. A equipe o reprovou porque a voz ficou robótica:
-
-- **Imagem:** um quadro por slide em [video_pitch/quadros/](video_pitch/quadros/), desenhado no Chromium a partir dos arquivos do próprio deck, com as mesmas fontes. Não é uma exportação feita pela página do deck, então pequenos detalhes de desenho podem diferir.
-- **Narração:** voz sintética Letícia-F123, do sintetizador RHVoice 1.8.0 (pacotes `rhvoice` e `rhvoice-brazilian-portuguese` do Ubuntu 24.04). A voz é de Olga Yakovleva e Fernando H. F. Botelho, sob licença CC BY-SA 4.0. Ninguém da equipe fala no vídeo.
-- **Texto falado:** [video_pitch/narracao.json](video_pitch/narracao.json). Segue o [roteiro](roteiro_video_pitch.md), com três adaptações para a voz sintética: os números são ditos por extenso, "container" vira "contêiner" e os termos em inglês foram trocados ("pipeline" por "esteira de verificação", "GitHub Actions" por "serviço de integração contínua do repositório", "roadmap" por "plano de evolução", "login" por "autenticação de usuários"). O nome "Debian" não é falado. Os slides continuam com os termos originais.
-- **Legendas:** uma por frase, com o tempo exato de cada fala ([video_pitch/tempos.json](video_pitch/tempos.json)).
-
-Foi conferido: duração de 279,5 s (limite de 300 s), os 11 slides na ordem, a narração de cada slide começando 0,6 s depois da troca de slide e o volume uniforme entre os slides. **Não foi conferido:** como a voz soa. O ambiente não reproduz áudio nem tem reconhecimento de fala, então pronúncia e entonação precisam ser ouvidas por alguém da equipe.
-
-Para refazer, num Linux com RHVoice e ffmpeg: `python 05_apresentacao/video_pitch/montar_video_pitch.py`. Para corrigir uma palavra mal pronunciada, basta trocar o texto do campo `voz` em `narracao.json` e rodar de novo.
+O vídeo pitch está em [video_pitch/](video_pitch/). O [LEIA_ME.md](video_pitch/LEIA_ME.md) da pasta descreve as ferramentas, as diferenças em relação ao roteiro, a origem de cada imagem e de cada número e os avisos de licença.
 
 ## Capturas usadas nos slides
 
 As telas em [capturas_pitch/](capturas_pitch/) são capturas reais da versão final (`main`, commit `f8732f5`), feitas em 18/11/2026 no ambiente de trabalho do Claude, com execução nativa sobre uma cópia temporária da amostra. A leitura e a observação de campo são **simuladas**. O arquivo [registro.json](capturas_pitch/registro.json) guarda a leitura sorteada e a decisão antes e depois da observação. Não houve exceção JS.
 
-Para refazer (requer Playwright e Chromium): `python 05_apresentacao/capturar_telas_pitch.py`. A leitura sorteada muda a cada execução; se as capturas forem refeitas, os valores do slide 6 precisam ser atualizados para os do novo `registro.json`.
 
 ## Insumos já prontos para os vídeos
 

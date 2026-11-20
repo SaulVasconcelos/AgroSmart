@@ -1,94 +1,151 @@
-# Roteiro — vídeo pitch por slides (reserva)
+# Roteiro — vídeo pitch
 
-> O vídeo pitch entregue é o filme animado de [video_pitch_animado/](video_pitch_animado/LEIA_ME.md), feito a partir de [roteiro_video_pitch_animado.md](roteiro_video_pitch_animado.md) e aprovado pela equipe em 19/11/2026. Este roteiro, com uma fala por slide, fica como reserva, para uma apresentação ao vivo dos slides.
+**Aprovado pela equipe em 19/11/2026**, com estas decisões: o Claude operou o Gemini pelo navegador da equipe; a voz escolhida foi a "Nika"; a abertura usa imagens do Gemini; a trilha é a `bgm-tech-house`. O vídeo foi produzido e está em [video_pitch/](video_pitch/). O que mudou na produção (a abertura, a duração e alguns detalhes de cena) está no [LEIA_ME.md](video_pitch/LEIA_ME.md) daquela pasta. O texto abaixo é o roteiro como foi aprovado.
 
-Duração planejada: **4 min 40 s**. O limite é de 5 minutos, então há 20 segundos de folga.
+- **Duração planejada:** 2 min 12 s. O limite da entrega é de 5 minutos; um filme curto prende mais do que cinco minutos de narração.
+- **Formato:** 1920 × 1080, 30 quadros por segundo, em português do Brasil.
+- **Estrutura:** abertura com imagens de lavoura (30 s), filme do produto com telas reais animadas (80 s) e encerramento (22 s). **Narração do começo ao fim**, com voz gerada pelo Gemini.
 
-O pitch segue os 11 slides do deck: <https://claude.ai/artifact/KqJzpFu9JXSFy71Du9Eukv>. Os cinco itens exigidos pelo requisito 6 estão nestes slides:
+O que mudou em relação à primeira versão: a voz deixou de ser o problema. Antes, só a abertura tinha fala, e ela dependia de um plugin pago. Agora o vídeo inteiro é narrado com o texto escrito por nós.
 
-| Item exigido | Slide |
+## Quem faz o quê
+
+| Ferramenta | Papel no vídeo | Limites que afetam o roteiro |
+|---|---|---|
+| **Gemini — voz** (geração de fala no Google AI Studio) | A narração de todas as cenas, lendo exatamente o texto deste roteiro, em português do Brasil | É gratuita para qualquer conta Google, com limites de uso; não depende da assinatura. Quem escolhe a voz precisa ouvir, e o Claude não ouve áudio |
+| **Gemini — vídeo** (Veo 3.1 Fast, incluído na assinatura) | Três clipes curtos de lavoura para a abertura | O acesso no plano Plus é limitado. As fontes consultadas falam em cerca de 200 créditos por mês, algo como dez clipes; os limites mudam, então vale conferir no aplicativo. Cada clipe é curto, de cerca de 8 s. As imagens são geradas por IA: são ilustração, não registro de uma lavoura real |
+| **video-shotcraft** (plugin) | O filme do produto: telas reais do AgroMonitor com movimentos de câmera, texto animado, trilha e efeitos sonoros | Não tem voz. É gratuito e roda no ambiente do Claude. Em 19/11/2026 um quadro e um trecho de 2 s do projeto-modelo do plugin foram renderizados aqui, então a ferramenta funciona; o filme do AgroSmart ainda não foi feito |
+| **AI Avatar Presenter** (plugin da ManyMotions) | Fica **fora** desta versão | É pago, limita cada vídeo a 60 s, escreve o próprio texto e declara que não faz apresentação de produto. Com a voz do Gemini, deixou de ser necessário |
+
+O Gemini não tem conector nesta conversa. Para usá-lo há dois caminhos: alguém da equipe gera os arquivos e coloca na pasta do projeto, ou o Claude opera o Gemini pelo navegador da equipe, com autorização. Nos dois casos, a escolha da voz é de quem ouve.
+
+## Onde está cada item exigido no pitch
+
+| Item exigido | Cenas |
 |---|---|
-| Problema resolvido | 2 |
+| Problema resolvido | 1 |
 | Público-alvo | 3 |
-| Solução proposta | 4, 5 e 6 |
-| Diferencial competitivo | 7 |
-| Proposta de valor | 8 |
+| Solução proposta | 2, 4 e 5 |
+| Diferencial competitivo | 7, 8, 9 e 11 |
+| Proposta de valor | 14 |
 
-As falas são proposta: ajustem as palavras ao jeito de quem for apresentar, mas mantenham os números e os limites. A origem de cada afirmação está em [LEIA_ME.md](LEIA_ME.md).
+## Visual e som
 
-Já existe uma versão montada com **voz sintética**: [video_pitch/video_pitch.mp4](video_pitch/video_pitch.mp4). Ela usa estas falas, com as adaptações descritas em [LEIA_ME.md](LEIA_ME.md). As instruções abaixo valem se a equipe preferir gravar com a própria voz.
+- **Cores e letras:** as do próprio AgroMonitor. Verde-escuro `#0C3028` nos fundos de palco, cinza-claro `#F6F8F6` das páginas, verde `#17633F` e um único destaque em âmbar. Texto em Inter, a fonte da interface; títulos em Space Grotesk, a mesma do deck.
+- **Telas:** sempre capturas reais da versão final, com o selo "Dados simulados" visível. Nenhuma tela é redesenhada.
+- **Voz:** uma só, do começo ao fim. O tempo de cada cena é ajustado à duração real da fala, então os tempos abaixo podem variar alguns segundos.
+- **Trilha:** o plugin traz cinco faixas, com uso liberado segundo a documentação dele (`bgm-tech-house`, `cat-walk`, `g-eazy-nba-type`, `house-vibez`, `tonight-hiphop`). Ela fica baixa, sob a narração, e os cortes seguem a batida da faixa escolhida.
+- **Efeitos sonoros:** da biblioteca do plugin, um por movimento importante.
+- **Entrega:** duas versões, com trilha e sem trilha.
 
-## Antes de gravar
+## Bloco A — Abertura (0:00 a 0:30)
 
-1. Abram o deck em modo de apresentação, em tela cheia.
-2. Usem um gravador que capture a tela com o microfone, em 1920 × 1080.
-3. Ensaiem uma vez com cronômetro. Se a fala completa passar de 4 min 50 s, usem os cortes indicados no fim.
+### Cena 1 — O problema
 
-## O que não dizer
+| Tempo | Na tela | Texto na tela | Efeito |
+|---|---|---|---|
+| 0:00 a 0:08 | Clipe 1: lavoura de milho ao amanhecer, vista de cima, em movimento lento | — | Entrada simples |
+| 0:08 a 0:16 | Clipe 2: sensor de umidade cravado no solo, entre as fileiras | "Dados separados" | As três etiquetas entram uma a uma, no ritmo da fala |
+| 0:16 a 0:24 | Clipe 3: mão examinando uma folha de milho com manchas | "Alerta sem explicação" | — |
+| 0:24 a 0:30 | O clipe 3 escurece até o verde-escuro do palco | "Falta de dado vira “normal”" | Passagem para a marca |
 
-O projeto não tem dados para sustentar estas afirmações, então elas ficam fora da fala:
+Um aviso pequeno, "Imagens ilustrativas geradas por IA", fica no canto durante os três clipes.
+
+**Pedidos para o Gemini gerar os clipes** (16:9, sem pessoas reconhecíveis, sem texto na imagem, sem fala):
+
+1. "Plano aéreo lento sobre uma lavoura de milho ao amanhecer, névoa baixa, luz dourada, câmera avançando devagar, estilo documentário."
+2. "Close de um sensor de umidade cravado no solo entre fileiras de soja jovem, foco raso, câmera deslizando lentamente para o lado, luz natural da manhã."
+3. "Close da mão de uma agrônoma segurando uma folha de milho com manchas amareladas e uma pequena lagarta, câmera na mão e estável, luz natural."
+
+**Se a equipe não quiser gastar créditos de vídeo,** a cena vira texto animado sobre o fundo verde-escuro, com a mesma narração e as mesmas três etiquetas. O resto do roteiro não muda.
+
+## Bloco B — Filme do produto (0:30 a 1:50)
+
+Cada cena usa um único efeito do plugin, e nenhum efeito se repete. A coluna "Efeito" traz o nome do cartão do plugin; as amostras animadas de cada um estão em <https://vincentwei1021.github.io/video-shotcraft/library.html>.
+
+| # | Tempo | Item do pitch | O que acontece na tela | Texto na tela | Efeito |
+|---|---|---|---|---|---|
+| 2 | 0:30 a 0:35,5 | Solução (marca) | Fundo verde-escuro. O nome se desenha letra a letra e fica parado por mais de 1 s | "AgroMonitor" · "módulo do AgroSmart" | `letterspace-materialize` |
+| 3 | 0:35,5 a 0:42,5 | Público-alvo | Uma frase fixa; só a etiqueta do final troca, três vezes | "Para quem decide no campo:" + "o produtor rural" → "o agrônomo" → "o gestor da operação" | `pill-slot-cycle` |
+| 4 | 0:42,5 a 0:48,5 | Solução | A câmera começa colada no indicador "157 leituras no período" e sobe, revelando a Visão Geral inteira | "Sensores + observações de campo = prioridades por talhão" | `crane-rise-reveal` |
+| 5 | 0:48,5 a 0:54,5 | Solução | Um foco de luz percorre a página e para na linha do Talhão B. A câmera se aproxima, a linha se destaca da página e volta ao lugar | "Talhão B · prioridade alta · regra R2" | `spotlight-hero-card` |
+| 6 | 0:54,5 a 0:56,5 | (respiro) | Cartão de texto | "E quando falta dado?" | `paper-title-card` |
+| 7 | 0:56,5 a 1:05,5 | Diferencial: honesto com a incerteza | As duas capturas reais da mesma leitura ficam sobrepostas. Uma barra vertical atravessa a tela: de um lado "Indeterminada", do outro "Alta" | Antes: "Sem observação de campo: indeterminada" · Depois: "Com a observação: prioridade alta" | `before-after-slider-scrub` |
+| 8 | 1:05,5 a 1:13,5 | Diferencial: explicável | Uma linha de luz desce pelo cartão da ocorrência. Onde ela passa, molduras marcam a regra, a evidência e a orientação | "A regra: R2" · "A evidência: 34% de folhas afetadas, lagarta, 4 dias" · "A orientação: realizar inspeção técnica" | `scanline-annotate-focus` |
+| 9 | 1:13,5 a 1:22 | Diferencial: rastreável | A câmera corre por uma linha do tempo com as etapas principais de uma execução e freia na última | "Entrada recebida → Validar dados → Persistir Raw → Publicar Trusted → Aplicar regras → Publicar Refined → Execução concluída" | `timeline-travel` |
+| 10 | 1:22 a 1:24 | (respiro) | Cartão de texto | "E roda sozinho." | `paper-title-card` |
+| 11 | 1:24 a 1:32 | Diferencial: leve e local | Um terminal digita o comando. No Enter, corte para o painel real de execução contínua, com o estado "Ativa" | `docker compose up -d` · "Um container. Um comando." | `typewriter-moves`, variante `terminal-typewriter` |
+| 12 | 1:32 a 1:41 | Qualidade e segurança | O número gira dígito a dígito até travar. Depois entram duas linhas menores e uma nota | "63 testes automatizados aprovados" · "22 de 22 verificações no container" · "0 vulnerabilidades críticas ou altas com correção" · nota: "47 altas sem correção publicada seguem no relatório" | `odometer-digit-roll` |
+| 13 | 1:41 a 1:50 | Estágio do produto | Três cartões viram de frente, um depois do outro | "Entregue: motor de regras, painel, execução contínua, container, pipeline" · "Simulado: dados de sensores e de campo" · "Roadmap: sensores físicos, login, notificações" | `card-flip-reveal` |
+
+O cartão de respiro `paper-title-card` aparece duas vezes de propósito: ele é a pausa entre blocos de informação, não uma cena de efeito.
+
+## Bloco C — Encerramento (1:50 a 2:12)
+
+| # | Tempo | Item do pitch | O que acontece na tela | Texto na tela | Efeito |
+|---|---|---|---|---|---|
+| 14 | 1:50 a 2:00 | Proposta de valor | A primeira palavra aparece grande no centro; a frase se completa ao redor dela e fica parada por 2 s | "Saber onde olhar primeiro na lavoura, e por quê." | `lead-word-zoom-assemble` |
+| 15 | 2:00 a 2:12 | Encerramento | Elementos das cenas anteriores (a etiqueta "Alta", a regra "R2", um nó da linha do tempo, o terminal, o "63") voam de volta e cercam o nome. Fica parado por 1,5 s e escurece | "AgroSmart" · "AgroMonitor · Fase 7" · "github.com/SaulVasconcelos/AgroSmart" | `outro-group-photo-launch` |
+
+## Narração
+
+Este é o texto que o Gemini vai ler, cena por cena. São cerca de 250 palavras, o que dá entre 1 min 40 s e 1 min 55 s de fala dentro dos 2 min 12 s.
+
+Instrução de estilo para a voz: "Narração de vídeo de produto em português do Brasil, tom calmo, claro e confiante, ritmo natural, sem soar como propaganda."
+
+| Cena | Fala |
+|---|---|
+| 1 | Uma lavoura monitorada produz dados o tempo todo. Os sensores medem umidade e temperatura, e quem anda pelo campo anota o que vê nas plantas. Mas essas informações ficam separadas, e nenhuma delas diz onde está a urgência. Um alerta sem explicação é difícil de confiar. E, quando falta a observação de campo, o sensor sozinho não prova que está tudo bem. |
+| 2 | Este é o AgroMonitor, um módulo do AgroSmart. |
+| 3 | Ele foi pensado para quem decide no campo: o produtor rural, o agrônomo e o gestor da operação. |
+| 4 | Ele cruza sensores e observações de campo e mostra as prioridades de cada talhão. |
+| 5 | Aqui, o Talhão B aparece com prioridade alta, pela regra R2. |
+| 6 | E quando falta dado? |
+| 7 | Sem observação de campo, a resposta é indeterminada, nunca normal. Registrada a observação, a mesma leitura passa a prioridade alta. |
+| 8 | Toda prioridade mostra o porquê: a regra aplicada, a evidência usada e a orientação sugerida. |
+| 9 | Cada execução deixa rastro no event log, da entrada recebida até a publicação do resultado. |
+| 10 | E roda sozinho. |
+| 11 | Um comando sobe a plataforma em um container, e a execução contínua gera e processa leituras em ciclos. |
+| 12 | São 63 testes automatizados aprovados, 22 de 22 verificações no container e nenhuma vulnerabilidade crítica ou alta com correção disponível. |
+| 13 | O software está entregue e testado. Os dados são simulados. Sensores físicos, login e notificações ficam no roadmap. |
+| 14 | A nossa proposta de valor: saber onde olhar primeiro na lavoura, e por quê. |
+| 15 | AgroSmart. O código, as evidências e a documentação estão no nosso repositório. |
+
+## De onde vem cada imagem e cada número
+
+| Cena | Origem |
+|---|---|
+| 1 | Clipes gerados pelo Gemini (Veo). São ilustrativos e levam o aviso na tela |
+| 4 e 5 | Tela Visão Geral: captura real em [capturas_pitch/visao_geral.png](capturas_pitch/visao_geral.png). Na produção ela é refeita em alta resolução, com o mesmo fluxo |
+| 7 | [capturas_pitch/exemplo_antes_nd.png](capturas_pitch/exemplo_antes_nd.png) e [exemplo_depois_r2.png](capturas_pitch/exemplo_depois_r2.png): a mesma leitura do Talhão B, antes e depois da observação de campo ([registro.json](capturas_pitch/registro.json)) |
+| 8 | Cartão da ocorrência R2, da mesma captura |
+| 9 | Etapas do event log, como em [../04_processos/ANALISE_PROCESSO.md](../04_processos/ANALISE_PROCESSO.md), seção 3 |
+| 11 | Painel "Execução contínua e monitoramento": captura real, a refazer em alta resolução |
+| 12 | [../03_evidencias/devsecops_ci/LEIA_ME.md](../03_evidencias/devsecops_ci/LEIA_ME.md): 45 testes Python + 18 de interface, 22 de 22 verificações, 0 bloqueantes, 47 altas sem correção |
+| 13 | [../README.md](../README.md) e [LEIA_ME.md](LEIA_ME.md). O roadmap é proposta |
+
+## O que continua fora do vídeo
+
+O projeto não tem dados para sustentar estas afirmações, então elas não entram nem na fala nem no texto da tela:
 
 - que o problema ou os perfis foram validados com produtores;
 - ganho de produtividade, economia ou redução de defensivos;
 - comparação com concorrentes, ou que o produto é o único do mercado;
 - que existem sensores físicos, login, notificações ou inteligência artificial no produto.
 
-## Falas por slide
+A voz e os clipes da abertura são gerados por IA. Isso fica registrado em [LEIA_ME.md](LEIA_ME.md), e convém confirmar se a disciplina aceita.
 
-### Slide 1 — AgroSmart (0:00 a 0:15)
+## Três decisões da equipe antes de produzir
 
-> Olá, somos a equipe do AgroSmart. Vamos apresentar o AgroMonitor, o módulo que ajuda quem cuida da lavoura a saber onde olhar primeiro, e por quê.
+1. **Como o Gemini entra:** alguém da equipe gera a voz e os clipes e salva na pasta do projeto, ou o Claude opera o Gemini pelo navegador da equipe. Nos dois casos, alguém precisa ouvir e escolher a voz.
+2. **Abertura:** os três clipes de lavoura do Gemini, ou só texto animado.
+3. **Trilha, duração e cenas:** qual das cinco faixas, e se os 2 min 12 s e as 15 cenas estão bons ou se algo deve sair, entrar ou mudar de texto.
 
-### Slide 2 — O problema (0:15 a 0:45)
+## O que acontece depois da aprovação
 
-> Uma lavoura monitorada produz muitos dados. Os sensores medem umidade e temperatura o tempo todo, e quem anda pelo campo anota o que vê nas plantas. O problema é que essas informações ficam separadas e não dizem onde está a urgência. Quando chega um alerta sem explicação, é difícil confiar nele. E existe um risco silencioso: quando falta informação, o sistema pode tratar a situação como se estivesse tudo normal.
-
-### Slide 3 — Público-alvo (0:45 a 1:10)
-
-> Pensamos em três perfis. O produtor rural, que quer saber o que merece atenção hoje e em qual talhão. O agrônomo ou consultor, que precisa ver a evidência por trás de cada recomendação. E o gestor da operação, que acompanha onde as ocorrências se concentram ao longo do tempo. São hipóteses de produto, que ainda precisam ser validadas com usuários.
-
-### Slide 4 — A solução (1:10 a 1:40)
-
-> A nossa solução é o AgroMonitor. Ele cruza as leituras dos sensores com as observações de campo e devolve uma lista de prioridades por talhão. Esta é a tela real do produto, com dados simulados. O Talhão B, de milho, está com prioridade alta por alerta de infestação. O Talhão C, de café, com prioridade alta por estresse hídrico. E o Talhão A, de soja, está indeterminado, porque faltam dados.
-
-### Slide 5 — Como funciona (1:40 a 2:15)
-
-> Por dentro são quatro passos. As leituras e as observações entram e são validadas antes de gravar. Depois são tratadas: duplicatas removidas, e o que é inválido vai para quarentena. Em seguida, sete regras definem prioridade, alerta e orientação, e vale a primeira que se aplica. Por exemplo, pouca umidade com temperatura alta indica estresse hídrico, e a orientação é priorizar a irrigação. A saída é o painel, e a decisão final é sempre de uma pessoa.
-
-### Slide 6 — Um exemplo real (2:15 a 2:50)
-
-> Um exemplo real. O sensor do Talhão B mediu 50% de umidade e 33 graus. Sem observação de campo, o AgroMonitor responde "indeterminada" e pede o registro da observação. Ele não diz que está tudo bem. Quando registramos a observação, com 34% de folhas afetadas e lagarta há quatro dias, a mesma leitura passa a prioridade alta, pela regra R2, com orientação de inspeção técnica. A leitura do sensor não mudou. O que mudou foi a evidência disponível.
-
-### Slide 7 — Diferencial competitivo (2:50 a 3:20)
-
-> O nosso diferencial está em quatro pontos. É explicável: toda prioridade mostra a regra, a evidência e a justificativa. É honesto com a incerteza: sem dado de campo, a resposta é "indeterminada", nunca "normal". É rastreável: cada execução fica registrada do começo ao fim. E é leve: roda em um único container, sem depender de nuvem. São diferenciais que demonstramos no próprio produto.
-
-### Slide 8 — Proposta de valor (3:20 a 3:35)
-
-> A nossa proposta de valor cabe em uma frase: saber onde olhar primeiro na lavoura, e por quê. Para produtores, consultores e gestores, os dados viram prioridades de investigação, com regras explicáveis e evidência por talhão.
-
-### Slide 9 — Qualidade e segurança (3:35 a 4:05)
-
-> E o produto se sustenta tecnicamente. São 63 testes automatizados aprovados. A aplicação em container passa em 22 de 22 verificações. A análise de vulnerabilidades não encontrou nenhuma falha crítica ou alta que tenha correção disponível. E o mesmo pipeline foi aprovado em dois ambientes: no nosso computador e no GitHub Actions. Isso não significa zero vulnerabilidades: 47 de severidade alta, ainda sem correção do Debian, continuam no relatório.
-
-### Slide 10 — Entregue, simulado e roadmap (4:05 a 4:30)
-
-> Para sermos claros sobre o estágio do produto. O motor de regras, o painel, a execução contínua, o container, o pipeline e a análise de processo estão entregues e testados. Os dados de sensores e de campo são simulados. E o que ainda não existe está no roadmap: sensores físicos, login, notificações, processamento incremental e a validação com produtores.
-
-### Slide 11 — Encerramento (4:30 a 4:40)
-
-> O código, as evidências e a documentação estão no nosso repositório. Obrigado.
-
-## Se passar do tempo
-
-Cortem nesta ordem, até caber em 4 min 50 s:
-
-1. No slide 5, a frase do exemplo ("Por exemplo, pouca umidade…").
-2. No slide 9, a última frase. O aviso sobre as 47 vulnerabilidades continua escrito no slide.
-3. No slide 4, a descrição dos talhões C e A.
-
-## Depois de gravar
-
-- Confiram a duração: no máximo 5 minutos.
-- Confiram que cada fala bate com o slide que está na tela, principalmente os números dos slides 6 e 9.
-- Registrem em [LEIA_ME.md](LEIA_ME.md) onde o vídeo foi entregue. O GitHub recusa arquivos com mais de 100 MB.
+1. Voz: uma gravação por cena, com a voz escolhida. A duração de cada fala define o tempo final da cena.
+2. Clipes da abertura, se aprovados.
+3. Captura das telas em alta resolução, com o mesmo fluxo das capturas atuais.
+4. Montagem das cenas, uma por vez, conferindo um quadro de cada.
+5. Som: narração, trilha baixa com os cortes na batida e efeitos sonoros.
+6. Vídeo completo, conferido nos pontos de corte, com duração e áudio verificados. O que não dá para conferir daqui é como o som soa: a equipe precisa ouvir antes de entregar.
